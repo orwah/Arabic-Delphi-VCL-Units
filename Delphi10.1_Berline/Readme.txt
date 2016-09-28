@@ -28,10 +28,16 @@ DrawingStyle = dsGradient
 
 _______________
 ׁזַָ״ :
-׃םÊד Ê״זםׁ ו׀ו ַבדבÝַÊ ָװßב ֿזׁם זÊזÝםׁ ה׃־ ַֻֽֿ דהוַ
-בדÊַָÚֹ Ê״זםׁ ַבדבÝַÊ זַבֽױזב Úבל ַֻֽֿ ַבה׃־ דהוַ :
-- https://github.com/orwah/Arabic-Delphi-VCL-Units/
 
+- ׃םÊד Ê״זםׁ ו׀ו ַבדבÝַÊ ָװßב ֿזׁם זÊזÝםׁ ה׃־ ַֻֽֿ דהוַ
+בדÊַָÚֹ Ê״זםׁ ַבדבÝַÊ : 
+https://github.com/orwah/Arabic-Delphi-VCL-Units/
+
+- בבֽױזב Úבל ֲ־ׁ ה׃־ֹ דה ַבדבÝַÊ : 
+https://github.com/orwah/Arabic-Delphi-VCL-Units/archive/master.zip
+
+- בבדׂםֿ דה ַבדÚבזדַÊ זַבװׁזַֽÊ : 
+https://github.com/orwah/Arabic-Delphi-VCL-Units/wiki
 
 _______________
 Úׁזֹ Úבם Úם׃ל
