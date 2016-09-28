@@ -31,14 +31,14 @@ DrawingStyle = dsGradient
 _______________
 روابط :
 - سيتم تطوير هذه الملفات بشكل دوري وتوفير نسخ احدث منها
-لمتابعة تطوير الملفات
-- https://github.com/orwah/Arabic-Delphi-VCL-Units/
+لمتابعة تطوير الملفات : 
+https://github.com/orwah/Arabic-Delphi-VCL-Units/
 
-- للحصول على آخر نسخة من الملفت : 
-- https://github.com/orwah/Arabic-Delphi-VCL-Units/archive/master.zip
+- للحصول على آخر نسخة من الملفات : 
+https://github.com/orwah/Arabic-Delphi-VCL-Units/archive/master.zip
 
-- للمزيد من المعلومات والشروحات 
-- https://github.com/orwah/Arabic-Delphi-VCL-Units/wiki
+- للمزيد من المعلومات والشروحات : 
+https://github.com/orwah/Arabic-Delphi-VCL-Units/wiki
 
 
 _______________
