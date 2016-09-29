@@ -45,6 +45,13 @@ https://github.com/orwah/Arabic-Delphi-VCL-Units/archive/master.zip
 https://github.com/orwah/Arabic-Delphi-VCL-Units/wiki
 
 
+
+
+_______________
+English :
+- This is a replacement for VCL Standard Unites to make them support RTL Alignment (Right to Left) and Arabic Messages and Strings . 
+
+
 _______________
 عروة علي عيسى
 - www.orwah.net
