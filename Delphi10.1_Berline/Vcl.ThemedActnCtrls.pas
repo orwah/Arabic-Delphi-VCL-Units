@@ -5,6 +5,9 @@
 { Copyright(c) 2016 Embarcadero Technologies, Inc.      }
 {              All rights reserved                      }
 {                                                       }
+{ Get Last Version From Here :                          }
+{ https://github.com/orwah/Arabic-Delphi-VCL-Units      }
+{                                                       }
 {*******************************************************}
 
 unit Vcl.ThemedActnCtrls;
