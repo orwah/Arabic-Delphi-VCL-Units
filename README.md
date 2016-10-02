@@ -30,6 +30,8 @@ _______________
 - ToolBar DrawingStyle = dsNormal :
  يتسبب بانقلاب الصور , يمكن تلافي ذلك باختيار 
 DrawingStyle = dsGradient 
+- Hints لاتعمل بشكل صحيح
+-
 
 
 _______________
