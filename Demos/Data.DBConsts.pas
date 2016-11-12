@@ -2,9 +2,12 @@
 {                                                       }
 {            Arabic Delphi VCL Units                    }
 {                                                       }
-{ Modified by : Orwah Ali Issa (www.sy-it.com)          }
+{ Modified by : Orwah Ali Issa (www.orwah.net)          }
 {                                                       }
 { Delphi 10.1 Berline ..  File Version 0.1  1/10/2016   }
+{                                                       }
+{ Get Last Version From Here :                          }
+{ https://github.com/orwah/Arabic-Delphi-VCL-Units      }
 {                                                       }
 {*******************************************************}
 
@@ -41,7 +44,7 @@ resourcestring
   SInvalidVarByteArray = 'äãØ Ãæ ÍÌã ÛíÑ ÕÇáÍ ááÍŞá ''%s''';
   SFieldOutOfRange = 'ŞíãÉ ÍŞá ''%s'' ÎÇÑÌ ÇáãÌÇá ÇáãÓãæÍ';
 //  SBCDOverflow = '(Overflow)';
-  SCantAdjustPrecision = 'Error adjusting BCD precision';
+  SCantAdjustPrecision = 'ÎØÃ İí ÖÈØ ÏŞÉ ÇáÊÑŞíã ÇáÚÔÑí ÇáËäÇÆí BCD precision';
   SFieldRequired = 'ÍŞá ''%s'' íÌÈ Ãä íÍæí ŞíãÉ';
   SDataSetMissing = 'ÍŞá ''%s'' áíÓ áå ŞÇÚÏÉ ÏÇÊÇÓíÊ';
   SInvalidCalcType = 'ÍŞá ''%s'' áÇíãßäå Ãä íßæä ãä äãØ ÍÓÇÈí Ãæ ÈÍË (áæß ÃÈ)';
@@ -54,10 +57,10 @@ resourcestring
   SNoIndexForFields = 'áÇİåÑÓ ááÍŞæá : ''%s''';
   SIndexNotFound = 'ÇáİåÑÓ ''%s'' ÛíÑ ãæÌæÏ';
   SDBDuplicateName = 'ÇÓã ''%s'' ãßÑÑ İí %s';
-  SCircularDataLink = 'Circular datalinks are not allowed';
-  SLookupInfoError = 'Lookup information for field ''%s'' is incomplete';
-  SNewLookupFieldCaption = 'New Lookup Field';
-  SDataSourceChange = 'DataSource cannot be changed';
+  SCircularDataLink = 'æÕáÇÊ ÇáÈíÇäÇÊ ÊÓÊÏÚí ÈÚÖåÇ ÈÔßá ÏÇÆÑí (ßá ãäåÇ íÓÊÏÚí ÇáÂÎÑ) æåĞÇ ÛíÑ ãÓãæÍ';
+  SLookupInfoError = 'ãÚáæãÇÊ ÇáÈÍË Lookup ááÍŞá ''%s'' ÛíÑ ãßÊãáÉ';
+  SNewLookupFieldCaption = 'ÍŞá ÈÍË Lookup ÌÏíÏ';
+  SDataSourceChange = 'áÇíãßä ÊÛííÑ ãäÈÚ ÇáÈíÇäÇÊ DataSource';
   SNoNestedMasterSource = 'Nested datasets cannot have a MasterSource';
   SDataSetOpen = 'áÇíãßä ÇáŞíÇã ÈåĞå ÇáÚãáíÉ Úáì ÏÇÊÇÓíÊ ãİÊæÍÉ';
   SNotEditing = 'ÇáÈíÇäÇÊ áíÓÊ İí æÖÚ ÇáÅÏÎÇá Ãæ ÇáÊÚÏíá';
@@ -66,15 +69,15 @@ resourcestring
   SDataSetReadOnly = 'áÇíãßä ÊÚÏíá ÌÏæá ÈíÇäÇÊ ãÎÕÕ ááŞÑÇÁÉ İŞØ';
   SNestedDataSetClass = 'Nested dataset must inherit from %s';
   SExprTermination = 'ÊÚÈíÑ ÇáİáÊÑÉ ÇäÊåì ÈÔßá ÛíÑ ãäÇÓÈ';
-  SExprNameError = 'Unterminated field name';
-  SExprStringError = 'Unterminated string constant';
+  SExprNameError = 'ÇÓã ÇáÍŞá ÛíÑ ãäÊåí Unterminated';
+  SExprStringError = 'ËÇÈÊ äÕí ÛíÑ ãäÊåí Unterminated';
   SExprInvalidChar = 'Êã ÇÓÊÎÏÇã ãÍÑİ ÛíÑ ãäÇÓÈ İí ÊÚÈíÑ ÇáİáÊÑÉ : ''%s''';
   SExprNoLParen = '''('' ãÊæŞÚå , áßä %s æÌÏÊ';
   SExprNoRParen = ''')'' ãÊæŞÚÉ , áßä %s æÌÏÊ';
   SExprNoRParenOrComma = ''')'' Ãæ '','' ßÇäÊ ãÊæŞÚå æáßä %s æÌÏÊ';
-  SExprExpected = 'Expression expected but %s found';
+  SExprExpected = 'ÊÚÈíÑ ãÊæŞÚ æÈÏáÇ ãäå æÌÏ %s ';
   SExprBadField = 'ÇáÍŞá ''%s'' áÇíãßä ÇÓÊÎÏÇãå İí ÊÚÈíÑ ÇáİáÊÑÉ';
-  SExprBadNullTest = 'NULL only allowed with ''='' and ''<>''';
+  SExprBadNullTest = 'ÇáŞíãÉ ÇáÎÇáíÉ NULL ãÓãæÍÉ İŞØ ãÚ ''='' æ ''<>''';
   SExprRangeError = 'ÇáËÇÈÊ ÇáããÑ ÎÇÑÌ ÇáãÌÇá ÇáãÓãæÍ';
   SExprNotBoolean = 'ÍŞá ''%s'' áíÓ ãä äãØ ÈæáíÇäí';
   SExprIncorrect = 'ÊÚÈíÑ ÇáİáÊÑÉ áíÓ ãÕÇÛ ÈÔßá ÕÍíÍ';
@@ -84,22 +87,22 @@ resourcestring
   SExprNoArith = 'ÇáŞíÇã ÈÇáÍÓÇÈÇÊ ÇáÑíÇÖíÉ İí ÊÚÈíÑ ÇáİáÊÑÉ ÛíÑ ãÓãæÍÉ';
   SExprNotAgg = 'Expression is not an aggregate expression';
   SExprBadConst = 'ÇáËÇÈÊ áíÓ ãä äãØ ãäÇÓÈ : %s';
-  SExprNoAggFilter = 'Aggregate expressions not allowed in filters';
+  SExprNoAggFilter = 'ÚÈÇÑÇÊ ÇáÊÌãíÚ ÛíÑ ãÓãæÍÉ ÈÇáİáÇÊÑ';
   SExprEmptyInList = 'IN predicate list may not be empty';
   SInvalidKeywordUse = 'ÇÓÊÎÏÇã ÎÇØÆ áßáãÉ ãİÊÇÍíÉ';
-  STextFalse = 'ÎØÃ';
-  STextTrue = 'ÕÍ';
+  STextFalse = 'áÇ';
+  STextTrue = 'äÚã';
   SParameterNotFound = 'ÇáÈÇÑÇãÊÑ ''%s'' ÛíÑ ãæÌæÏ';
-  SInvalidVersion = 'Unable to load bind parameters';
+  SInvalidVersion = 'ÛíÑ ŞÇÏÑ Úáì ÊÍãíá ãÊÛíÑ ÇáÑÈØ bind parameters';
   SParamTooBig = 'ÇáÈÇÑÇãÊÑ ''%s'', áÇíÓÊØíÚ ÍİÙ ÈíÇäÇÊ ÃßÈÑ ãä  %d ÈÇíÊ';
   SBadFieldType = 'ÍŞá ''%s'' ãä äãØ ÛíÑ ãÏÚæã';
   SAggActive = 'áÇíãßä ÊÚÏíá ÇáÎÇÕíÉ ÚäÏãÇ íßæä ÇáÊÌãíÚ İÚÇá';
   SProviderSQLNotSupported = 'ÊÚÇÈíÑ ÅÓ ßíæ Åá ÛíÑ ãÏÚæãÉ';
   SProviderExecuteNotSupported = 'ÇáÊäİíĞ ÛíÑ ãÏÚæã';
-  SExprNoAggOnCalcs = 'Field ''%s'' is not the correct type of calculated field to be used in an aggregate, use an internalcalc';
+  SExprNoAggOnCalcs = 'ÇáÍŞá ''%s'' áíÓ ÇáäãØ ÇáÕÍíÍ ááÍŞæá ÇáÍÓÇÈíÉ ÇáĞí íÓÊÎÏã İí ÇáÊÌãíÚ aggregate,ÇÓÊÎÏã internalcalc';
   SRecordChanged = 'áã íÊã ÇáÚËæÑ Úáì ÇáÓÌá , ÑÈãÇ Êã ÊÚÏíáå ãä ãÓÊÎÏã ÂÎÑ';
   SDataSetUnidirectional = 'ÇáÚãáíÉ ÛíÑ ãÓãæÍÉ Úáì ÌÏæá ÈíÇäÇÊ ãä äãØ ÛíÑ ÇÊÌÇåí';
-  SUnassignedVar = 'Unassigned variant value';
+  SUnassignedVar = 'ŞíãÉ ÛíÑ ãåíÃÉ ãä äæÚ variant';
   SRecordNotFound = 'áã íÊã ÇáÚËæÑ Úáì ÇáÓÌá';
   SFileNameBlank = 'ÎÇÕíÉ ÇÓã Çáãáİ áÇíÌÈ Çä Êßæä İÇÑÛÉ';
   SFieldNameTooLarge = 'ÇáÍŞá %s ÊÎØì ÚÏÏ ãÍÇÑİ %d ';
@@ -107,14 +110,14 @@ resourcestring
 { For FMTBcd }
 
   SBcdOverflow = 'BCD overflow';
-  SInvalidBcdValue = '%s is not a valid BCD value';
-  SInvalidFormatType = 'Invalid format type for BCD';
+  SInvalidBcdValue = '%s áíÓÊ ŞíãÉ ÊÑŞíã ÚÔÑí ËäÇÆí ÕÇáÍÉ';
+  SInvalidFormatType = 'äãØ ÇáÊäÓíŞ ÛíÑ ÕÇáÍ ááÊÑŞíã ÇáÚÔÑí ÇáËäÇÆí BCD';
 
 { For SqlTimSt }
 
   SCouldNotParseTimeStamp = 'áÇ íãßä ÇáÊÚãá ãÚ ÇáÊÇÑíÎ Öãä ÇáÇÓÊÚáÇã';
   SInvalidSqlTimeStamp = 'ŞíãÉ ÇáÊÇÑíÎ æÇáæŞÊ ÇáãÓÊÎÏãÉ İí ÇáÇÓÊÚáÇã ÛíÑ ÕÇáÍÉ';
-  SCalendarTimeCannotBeRepresented = 'Calendar time cannot be represented';
+  SCalendarTimeCannotBeRepresented = 'áÇíãßä ÊãËíá æÚÑÖ ÇáÊæŞíÊ İí ÇáÊŞæíã (ÇáÑæÒäÇãå)';
 
   SDeleteRecordQuestion = 'åá ÊÑíÏ ÊÃßíÏ ÍĞİ ÇáÓÌá ¿';
   SDeleteMultipleRecordsQuestion = 'åá ÊÑíÏ ÍĞİ ÌãíÚ ÇáÓÌáÇÊ ÇáãÍÏÏÉ¿';
@@ -133,7 +136,7 @@ resourcestring
   SCaption = 'ÎØÃ İí ÇáÊÍÏíË - %s';
   SUnchanged = '<áã íÚÏá>';  
   SBinary = '(ËäÇÆí)';                              
-  SAdt = '(ADT)';   
+  SAdt = '(ãÛáİ)';   
   SArray = '(ãÕİæİÉ)'; 
   SFieldName = 'ÇÓã ÇáÍŞá'; 
   SOriginal = 'ÇáŞíãÉ ÇáÃÕáíÉ'; 
