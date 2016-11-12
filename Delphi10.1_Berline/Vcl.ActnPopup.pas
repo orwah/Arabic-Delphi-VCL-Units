@@ -2,7 +2,7 @@
 {                                                       }
 {            Arabic Delphi VCL Units                    }
 {                                                       }
-{ Modified by : Orwah Ali Issa (www.sy-it.com)          }
+{ Modified by : Orwah Ali Issa (www.orwah.net)          }
 {                                                       }
 { Delphi 10.1 Berline ..  File Version 0.1  1/10/2016   }
 {                                                       }

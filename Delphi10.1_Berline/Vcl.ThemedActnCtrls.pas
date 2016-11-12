@@ -1,14 +1,16 @@
 {*******************************************************}
 {                                                       }
-{            Delphi Visual Component Library            }
+{            Arabic Delphi VCL Units                    }
 {                                                       }
-{ Copyright(c) 2016 Embarcadero Technologies, Inc.      }
-{              All rights reserved                      }
+{ Modified by : Orwah Ali Issa (www.orwah.net)          }
+{                                                       }
+{ Delphi 10.1 Berline ..  File Version 0.1  1/10/2016   }
 {                                                       }
 { Get Last Version From Here :                          }
 { https://github.com/orwah/Arabic-Delphi-VCL-Units      }
 {                                                       }
 {*******************************************************}
+
 
 unit Vcl.ThemedActnCtrls;
 

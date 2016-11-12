@@ -2,7 +2,7 @@
 {                                                       }
 {            Arabic Delphi VCL Units                    }
 {                                                       }
-{ Modified by : Orwah Ali Issa (www.sy-it.com)          }
+{ Modified by : Orwah Ali Issa (www.orwah.net)          }
 {                                                       }
 { Delphi 10.1 Berline ..  File Version 0.1  1/10/2016   }
 {                                                       }
@@ -28,61 +28,61 @@ interface
   resourcestring
   SOpenFileTitle = '› Õ';
   SCantWriteResourceStreamError = '·«Ì„ﬂ‰ «·ﬂ «»… ·„Ê—œ „Œ’’ ··ﬁ—«¡… ›ﬁÿ';
-  SDuplicateReference = 'WriteObject called twice for the same instance';
-  SClassMismatch = 'Resource %s is of incorrect class';
+  SDuplicateReference = ' „ «” œ⁄«¡ €—÷ «·ﬂ «»… WriteObject „— Ì‰ „‰ √Ã· ‰›” «·„‰ ”Œ';
+  SClassMismatch = '«·„Ê«—œ %s  «»⁄Â ·’‰› €Ì— ’ÕÌÕ';
   SInvalidTabIndex = '›Â—” «· »ÊÌ» Œ«—Ã «·ÕœÊœ «·„”„ÊÕ…';
-  SInvalidTabPosition = 'Tab position incompatible with current tab style';
-  SInvalidTabStyle = 'Tab style incompatible with current tab position';
+  SInvalidTabPosition = '„Êﬁ⁄ «·’›Õ… €Ì— „ Ê«›ﬁ „⁄ ‰„ÿ «·’›Õ«  «·Õ«·Ì ';
+  SInvalidTabStyle = '‰„ÿ «·’›Õ… €Ì— „ Ê«›ﬁ „⁄ „Êﬁ⁄ «·’›Õ«  «·Õ«·Ì';
   SInvalidBitmap = '’Ê—… ‰ﬁÿÌ… €Ì— ’«·Õ…';
   SInvalidIcon = '√ÌﬁÊ‰… €Ì— ’«·Õ…';
-  SInvalidMetafile = 'Metafile is not valid';
+  SInvalidMetafile = '„·› «·„Ì « Metafile €Ì— ’«·Õ';
   SInvalidPixelFormat = ' ‰”Ìﬁ «·»Ìﬂ”·«  €Ì— ’«·Õ';
   SInvalidImage = '’Ê—… €Ì— ’«·Õ…';
   SBitmapEmpty = '«·’Ê—… «·‰ﬁÿÌ… ›«—€…';
-  SScanLine = 'Scan line index out of range';
+  SScanLine = '›Â—”  ⁄·Ì„… Scan line Œ«—Ã «·ÕœÊœ «·„„ﬂ‰…';
   SChangeIconSize = '·«Ì„ﬂ‰  €ÌÌ— ÕÃ„ «·√ÌﬁÊ‰…';
-  SChangeWicSize = 'Cannot change the size of a WIC Image';
-  SOleGraphic = 'Invalid operation on TOleGraphic';
+  SChangeWicSize = '·«Ì„ﬂ‰  €ÌÌ— ÕÃ„ ’Ê—… WIC';
+  SOleGraphic = '⁄„·Ì… €Ì— ’«·Õ… ⁄·Ï TOleGraphic';
   SUnknownExtension = '«„ œ«œ „·› ’Ê—… €Ì— „⁄—Ê› (.%s)';
   SUnknownClipboardFormat = ' ‰”Ìﬁ Õ«›Ÿ… €Ì— „œ⁄Ê„';
   SOutOfResources = 'Œ«—Ã „Ê«—œ «·‰Ÿ«„';
   SNoCanvasHandle = '«·ﬂ«‰›«” ·«Ì”„Õ »«·—”„';
-  SInvalidTextFormatFlag = 'Text format flag ''%s'' not supported';
+  SInvalidTextFormatFlag = '«· ''%s'' ›Ì  ‰”Ìﬁ «·‰’ €Ì— „œ⁄Ê„… ';
   SInvalidImageSize = 'ÕÃ„ «·’Ê—… €Ì— ’«·Õ';
   STooManyImages = '«·’Ê— √ﬂÀ— „‰ «·„„ﬂ‰';
-  SDimsDoNotMatch = 'Image dimensions do not match image list dimensions';
-  SInvalidImageList = 'Invalid ImageList';
+  SDimsDoNotMatch = '√»⁄«œ «·’Ê—… ·« ÿ«»ﬁ √»⁄«œ ·«∆Õ… «·’Ê— image list';
+  SInvalidImageList = '·«∆Õ… ’Ê— ImageList €Ì— ’«·Õ…';
   SReplaceImage = '€Ì— ﬁ«œ— ⁄·Ï «” »œ«· «·’Ê—…';
   SInsertImage =  '€Ì— ﬁ«œ— ⁄·Ï ≈œ—«Ã «·’Ê—…';
-  SImageIndexError = 'Invalid ImageList Index';
-  SImageReadFail = 'Failed to read ImageList data from stream';
-  SImageWriteFail = 'Failed to write ImageList data to stream';
-  SWindowDCError = 'Error creating window device context';
-  SClientNotSet = 'Client of TDrag not initialized';
-  SWindowClass = 'Error creating window class';
-  SWindowCreate = 'Error creating window';
+  SImageIndexError = '›Â—” ·«∆Õ… «·’Ê— ImageList €Ì— ’«·Õ';
+  SImageReadFail = '·«Ì„ﬂ‰ ﬁ—«¡… »Ì«‰«  ·«∆Õ… «·’Ê— ImageList „‰ «·„Ã—Ï stream';
+  SImageWriteFail = '·«Ì„ﬂ‰ ﬂ «»… »Ì«‰«  ·«∆Õ… «·’Ê— ImageList ≈·Ï «·„Ã—Ï stream';
+  SWindowDCError = 'Œÿ√ ›Ì ≈‰‘«¡  window device context';
+  SClientNotSet = 'ÊﬂÌ· TDrag ·„   „  ÂÌ√ Â';
+  SWindowClass = 'Œÿ√ ›Ì ≈‰‘«¡ ’‰› «·‰«›–…';
+  SWindowCreate = 'Œÿ√ ›Ì ≈‰‘«¡ «·‰«›–…';
   SCannotFocus = '·«Ì„ﬂ‰ «· —ﬂÌ“ ⁄·Ï ‰«›–… „⁄ÿ·… √Ê €Ì— „—∆Ì…';
-  SParentRequired = 'Control ''%s'' has no parent window';
-  SParentGivenNotAParent = 'Parent given is not a parent of ''%s''';
-  SMDIChildNotVisible = 'Cannot hide an MDI Child Form';
-  SVisibleChanged = 'Cannot change Visible in OnShow or OnHide';
-  SCannotShowModal = 'Cannot make a visible window modal';
-  SScrollBarRange = 'Scrollbar property out of range';
+  SParentRequired = '«·„ﬂÊ‰ ''%s'' ·Ì” ·Â ‰«›–… √»';
+  SParentGivenNotAParent = '«·„ﬂÊ‰ «·√» «·„⁄ÿÏ ·Ì” √»« ·‹ ''%s''';
+  SMDIChildNotVisible = '·«Ì„ﬂ‰ ≈Œ›«¡ ‰«›–… MDI ›—⁄Ì…';
+  SVisibleChanged = '·«Ì„ﬂ‰  €ÌÌ— Œ«’Ì… «·—ƒÌ… ›Ì ÕœÀÌ OnShow Ê OnHide';
+  SCannotShowModal = '·«Ì„ﬂ‰  ÕÊÌ· ‰«›–… „—∆Ì… ≈·Ï ‰Ê⁄ modal';
+  SScrollBarRange = 'Œ«’Ì… ‘—Ìÿ «· „—Ì— Œ«—Ã «·ÕœÊœ';
   SPropertyOutOfRange = 'Œ«’Ì… %s Œ«—Ã «·ﬁÌ„… «·„”„ÊÕ…';
-  SMenuIndexError = 'Menu index out of range';
-  SMenuReinserted = 'Menu inserted twice';
-  SMenuNotFound = 'Sub-menu is not in menu';
-  SNoTimers = 'Not enough timers available';
+  SMenuIndexError = '›Â—” «·ﬁ«∆„… Œ«—Ã «·ÕœÊœ';
+  SMenuReinserted = ' „ ≈÷«›… «·ﬁ«∆„… „— Ì‰';
+  SMenuNotFound = '«·ﬁ«∆„… «·›—⁄Ì… ·Ì”  ›Ì «·ﬁ«∆„…';
+  SNoTimers = '·«ÌÊÃœ „ƒﬁ «  ﬂ«›ÌÂ';
   SNotPrinting = '«·ÿ«»⁄… ·« ﬁÊ„ Õ«·Ì« »«·ÿ»«⁄…';
   SPrinting = 'Ã«—Ì «·ÿ»«⁄…';
   SPrinterIndexError = ' —ﬁÌ„ «·ÿ»«⁄… Œ«—Ã «·Õœ «·„„ﬂ‰';
   SInvalidPrinter = '«·ÿ«»⁄… «· Ì  „ «Œ Ì«—Â« €Ì— ’«·Õ…';
   SDeviceOnPort = '%s ⁄·Ï %s';
-  SGroupIndexTooLow = 'GroupIndex cannot be less than a previous menu item''s GroupIndex';
-  STwoMDIForms = 'Cannot have more than one MDI form per application';
-  SNoMDIForm = 'Cannot create form. No MDI forms are currently active';
-  SImageCanvasNeedsBitmap = 'Can only modify an image if it contains a bitmap';
-  SControlParentSetToSelf = 'A control cannot have itself as its parent';
+  SGroupIndexTooLow = 'GroupIndex ·«Ì„ﬂ‰ √‰  ﬂÊ‰ √ﬁ· „‰ ﬁÌ„… GroupIndex ”«»ﬁ… ›Ì √Õœ «·⁄‰«’—';
+  STwoMDIForms = '·«Ì„ﬂ‰ ÊÃÊœ √ﬂÀ— „‰ ‰„Ê–Ã MDI Ê«Õœ ›Ì «· ÿ»Ìﬁ';
+  SNoMDIForm = '·«Ì„ﬂ‰ ≈‰‘«¡ ‰„Ê–Ã. ·«ÌÊÃœ ‰„Ê–Ã MDI ›⁄«· Õ«·Ì«';
+  SImageCanvasNeedsBitmap = 'Ì„ﬂ‰  ⁄œÌ· «·’Ê—… ≈–« ﬂ«‰   ÕÊÌ „’›Ê›… ‰ﬁÿÌ… ›ﬁÿ „‰ ‰Ê⁄ bitmap';
+  SControlParentSetToSelf = '·«Ì„ﬂ‰ ··„ﬂÊ‰ √‰ ÌﬂÊ‰ √»« ·‰›”…';
   SOKButton = '„Ê«›ﬁ';
   SCancelButton = '≈·€«¡';
   SYesButton = '&‰⁄„';
@@ -96,43 +96,43 @@ interface
 
   SCannotDragForm = '·«Ì„ﬂ‰ ”Õ» «·‰«›–…';
   SPutObjectError = 'PutObject to undefined item';
-  SCardDLLNotLoaded = 'Could not load CARDS.DLL';
-  SDuplicateCardId = 'Duplicate CardId found';
+  SCardDLLNotLoaded = '·«Ì„ﬂ‰  Õ„Ì· „·› CARDS.DLL';
+  SDuplicateCardId = '—ﬁ„ CardId «·–Ì  „ «·⁄ÀÊ— ⁄·ÌÂ „ﬂ——';
 
-  SDdeErr = 'An error returned from DDE  ($0%x)';
-  SDdeConvErr = 'DDE Error - conversation not established ($0%x)';
-  SDdeMemErr = 'Error occurred when DDE ran out of memory ($0%x)';
-  SDdeNoConnect = 'Unable to connect DDE conversation';
+  SDdeErr = 'Œÿ√ „‰  DDE  ($0%x)';
+  SDdeConvErr = 'Œÿ√ DDE - ·„ Ì „  √”Ì” «·„Õ«œÀ… ($0%x)';
+  SDdeMemErr = 'ÕœÀ Œÿ√ »√‰ DDE  Ã«Ê“ «·–«ﬂ—… «·„”„ÊÕ… ($0%x)';
+  SDdeNoConnect = '·«Ì„ﬂ‰ «·« ’«· »„Õ«œÀ… DDE ';
 
   SFB = 'FB';
   SFG = 'FG';
   SBG = 'BG';
-  SOldTShape = 'Cannot load older version of TShape';
-  SVMetafiles = 'Metafiles';
-  SVEnhMetafiles = 'Enhanced Metafiles';
-  SVIcons = 'Icons';
-  SVBitmaps = 'Bitmaps';
-  SVTIFFImages = 'TIFF Images';
+  SOldTShape = '·«Ì„ﬂ‰  Õ„Ì· ≈’œ«—… √ﬁœ„ „‰ TShape';
+  SVMetafiles = '„·›«  „Ì « Metafiles';
+  SVEnhMetafiles = '„·›«  „Ì « „Õ”‰… Enhanced Metafiles';
+  SVIcons = '√ÌﬁÊ‰«  Icons';
+  SVBitmaps = '’Ê— ‰ﬁÿÌ… Bitmaps';
+  SVTIFFImages = '’Ê— TIFF';
 
   SVJPGImages = 'JPEG ’Ê—';
   SVPNGImages = 'PNG ’Ê—';
   SVGIFImages = 'GIF ’Ê—';
 
-  SGridTooLarge = 'Grid too large for operation';
-  STooManyDeleted = 'Too many rows or columns deleted';
+  SGridTooLarge = '«·‘»ﬂ… ﬂ»Ì—… Ãœ« ⁄·Ï Â–Â «·⁄„·Ì…';
+  STooManyDeleted = ' „ Õ–› ﬂ„Ì… ﬂ»Ì—… „‰ «·ÕﬁÊ· Ê«·√”ÿ—';
   SIndexOutOfRange = ' —ﬁÌ„ «·‘»ﬂ… Œ«—Ã «·Õœ «·„”„ÊÕ';
-  SFixedColTooBig = 'Fixed column count must be less than column count';
-  SFixedRowTooBig = 'Fixed row count must be less than row count';
+  SFixedColTooBig = '⁄œœ «·ÕﬁÊ· «·À«» … ÌÃ» «‰ ÌﬂÊ‰ √ﬁ· „‰ ⁄œœ «·ÕﬁÊ· «·ﬂ·Ì';
+  SFixedRowTooBig = '⁄œœ «·√”ÿ— «·À«» … ÌÃ» «‰ ÌﬂÊ‰ √ﬁ· „‰ ⁄œœ «·«”ÿ— «·ﬂ·Ì';
   SInvalidStringGridOp = '·«Ì„ﬂ‰ ≈œ—«Ã √Ê Õ–› «·”Ã·«  „‰ «·‘»ﬂ…';
-  SInvalidEnumValue = 'Invalid Enum Value';
-  SInvalidNumber = 'Invalid numeric value';
-  SOutlineIndexError = 'Outline index not found';
-  SOutlineExpandError = 'Parent must be expanded';
+  SInvalidEnumValue = 'ﬁÌ„… ”—œÌ… €Ì— ’«·Õ…';
+  SInvalidNumber = 'ﬁÌ„… —ﬁ„Ì… €Ì— ’«·Õ…';
+  SOutlineIndexError = '›Â—” «·Õœ «·Œ«—ÃÌ Outline ·„ Ì „ «·⁄ÀÊ— ⁄·ÌÂ';
+  SOutlineExpandError = 'ÌÃ» √‰ Ì „  Ê”Ì⁄ «·√»';
   SInvalidCurrentItem = 'ﬁÌ„… €Ì— ’«·Õ… ··⁄‰’— «·Õ«·Ì';
   SMaskErr = 'ﬁÌ„… «·„œŒ·«  €Ì— ’ÕÌÕ…';
   SMaskEditErr = 'ﬁÌ„… «·„œŒ·«  €Ì— ’ÕÌÕ….  «” Œœ„ “— «·≈·€«¡ ·· —«Ã⁄';
-  SOutlineError = 'Invalid outline index';
-  SOutlineBadLevel = 'Incorrect level assignment';
+  SOutlineError = '«·›Â—” «·Œ«—ÃÌ outline €Ì— ’«·Õ';
+  SOutlineBadLevel = '‰”» ﬁÌ„… „” ÊÏ €Ì— ’ÕÌÕ';
   SOutlineSelection = '«Œ Ì«— €Ì— ’«·Õ';
   SOutlineFileLoad = 'Œÿ√ ›Ì  Õ„Ì· «·„·›';
   SOutlineLongLine = '«·”ÿ— ÿÊÌ· Ãœ«';
@@ -184,7 +184,7 @@ interface
   SDefaultFilter = 'ﬂ· «·„·›«  (*.*)|*.*';
   sAllFilter = '«·ﬂ·';
   SNoVolumeLabel = ': [ - ·««”„ - ]';
-  SInsertLineError = 'Unable to insert a line';
+  SInsertLineError = '€Ì— ﬁ«œ— ⁄·Ï ≈÷«›… ”ÿ—';
 
   SConfirmCreateDir = '«·„Ã·œ «·„Õœœ €Ì— „ÊÃÊœ , Â·  —Ìœ ≈‰‘«¡Â?';
   SSelectDirCap = '«Œ — „Ã·œ';
@@ -210,14 +210,14 @@ interface
 
   SIniFileWriteError = '·«Ì„ﬂ‰ «·ﬂ «»… ⁄·Ï %s';
 
-  SBitsIndexError = 'Bits index out of range';
+  SBitsIndexError = '›Â—” «·» «  Œ«—Ã «·ÕœÊœ';
 
-  SUntitled = '(Untitled)';
+  SUntitled = '(»·«  ”„Ì…)';
 
   SInvalidRegType = '‰Ê⁄ »Ì«‰«  €Ì— ’«·Õ „‰ √Ã· ''%s''';
 
-  SUnknownConversion = 'Unknown RichEdit conversion file extension (.%s)';
-  SDuplicateMenus = 'Menu ''%s'' is already being used by another form';
+  SUnknownConversion = '«„ œ«œ „·› ‰’ „‰”ﬁ €Ì— „⁄—Ê› (.%s)';
+  SDuplicateMenus = '«·ﬁ«∆„… ''%s''  ” Œœ„ „”»ﬁ« „‰ ﬁ»· ‰«›–… «Œ—Ï';
 
   SPictureLabel = '«·’Ê—…:';
   SPictureDesc = ' (%dx%d)';
@@ -225,22 +225,22 @@ interface
 
   SCannotOpenAVI = '·«Ì„ﬂ‰ › Õ „·› ›ÌœÌÊ AVI';
 
-  SNotOpenErr = 'No MCI device open';
-  SMPOpenFilter = 'ﬂ· «·„·›«  (*.*)|*.*|Wave  (*.wav)|*.wav|Midi  (*.mid)|*.mid|Video for Windows (*.avi)|*.avi';
+  SNotOpenErr = '·„ Ì „ › Õ ÃÂ«“ MCI device ';
+  SMPOpenFilter = 'ﬂ· «·„·›«  (*.*)|*.*|Wave  (*.wav)|*.wav|Midi  (*.mid)|*.mid| ›ÌœÌÊ Ê‰œÊ“ (*.avi)|*.avi';
   SMCINil = '';
   SMCIAVIVideo = 'AVIVideo';
   SMCICDAudio = 'CDAudio';
   SMCIDAT = 'DAT';
   SMCIDigitalVideo = 'DigitalVideo';
   SMCIMMMovie = 'MMMovie';
-  SMCIOther = 'Other';
-  SMCIOverlay = 'Overlay';
-  SMCIScanner = 'Scanner';
-  SMCISequencer = 'Sequencer';
-  SMCIVCR = 'VCR';
+  SMCIOther = '¬Œ—';
+  SMCIOverlay = ' €ÿÌÂ';
+  SMCIScanner = '„«”ÕÂ';
+  SMCISequencer = '„”·”·';
+  SMCIVCR = '„”Ã· ›ÌœÌÊ ﬂ«”Ì  (VCR)';
   SMCIVideodisc = 'Videodisc';
   SMCIWaveAudio = 'WaveAudio';
-  SMCIUnknownError = 'Unknown error code';
+  SMCIUnknownError = 'Œÿ√ €Ì— „⁄—Ê›';
 
   SBoldItalicFont = '⁄—Ì÷ „«∆·';
   SBoldFont = '⁄—Ì÷';
@@ -255,54 +255,54 @@ interface
   SStop = ' Êﬁ›';
   SPause = ' Êﬁ› „ƒﬁ ';
   SContinue = '„ «»⁄…';
-  SInterrogate = 'interrogate';
+  SInterrogate = '«” ÃÊ«»';
   SShutdown = '≈Ìﬁ«›  ‘€Ì·';
-  SCustomError = 'Service failed in custom message(%d): %s';
-  SServiceInstallOK = 'Service installed successfully';
-  SServiceInstallFailed = 'Service "%s" failed to install with error: "%s"';
-  SServiceUninstallOK = 'Service uninstalled successfully';
-  SServiceUninstallFailed = 'Service "%s" failed to uninstall with error: "%s"';
+  SCustomError = '›‘· ›Ì «·Œœ„… , —”«·… „Œ’’… (%d): %s';
+  SServiceInstallOK = ' „  ‰’Ì» «·Œœ„… »‰Ã«Õ';
+  SServiceInstallFailed = '›‘·  ‰’Ì» «·Œœ„… "%s" ÕœÀ «·Œÿ√ «· «·Ì: "%s"';
+  SServiceUninstallOK = ' „ ≈·€«¡  ‰’Ì» «·Œœ„… »‰Ã«Õ';
+  SServiceUninstallFailed = '›‘·  ‰’Ì» «·Œœ„… "%s" „⁄ «·Œÿ√: "%s"';
 
 
 
-  SDockedCtlNeedsName = 'Docked control must have a name';
-  SDockTreeRemoveError = 'Error removing control from dock tree';
-  SDockZoneNotFound = ' - Dock zone not found';
-  SDockZoneHasNoCtl = ' - Dock zone has no control';
-  SDockZoneVersionConflict = 'Error loading dock zone from the stream. ' +
-    'Expecting version %d, but found %d.';
+  SDockedCtlNeedsName = '„ﬂÊ‰ «· —«’› ÌÃ» «‰ ÌﬂÊ‰ ·Â «”„';
+  SDockTreeRemoveError = 'Œÿ√ ≈“«·… «·„ﬂÊ‰ „‰ ‘Ã—… «· —«’›';
+  SDockZoneNotFound = ' - „‰ÿﬁ… «· —«’› €Ì— „ÊÃÊœ…';
+  SDockZoneHasNoCtl = ' - „‰ÿﬁ… «· —«’› ·Ì” ·« „·ﬂ „ﬂÊ‰« ';
+  SDockZoneVersionConflict = 'Œÿ√ ›Ì  Õ„Ì· „‰ÿﬁ…  —«’› „‰ «·„”·ﬂ Stream . ' +
+    '«·‰”Œ… «·„ Êﬁ⁄… %d, «·‰”Œ… «·„ÊÃÊœ… %d.';
 
   SAllCommands = 'ﬂ· «·√Ê«„—';
 
-  SDuplicateItem = 'List does not allow duplicates ($0%x)';
+  SDuplicateItem = '«·ﬁ«∆„… ·«  ”„Õ »«· ﬂ—«—«   ($0%x)';
 
   STextNotFound = '·„ Ì „ «·⁄ÀÊ— ⁄·Ï : "%s"';
   SBrowserExecError = '·„ Ì „  ÕœÌœ «·„” ⁄—÷ «·«› —«÷Ì';
 
   SColorBoxCustomCaption = '„Œ’’...';
 
-  SMultiSelectRequired = 'Multiselect mode must be on for this feature';
+  SMultiSelectRequired = 'ÌÃ»  ›⁄Ì· «·«Œ Ì«— «·„ ⁄œœ „‰ √Ã· Â–Â «·Œ«’Ì…';
 
-  SPromptArrayTooShort = 'Length of value array must be >= length of prompt array';
-  SPromptArrayEmpty = 'Prompt array must not be empty';
+  SPromptArrayTooShort = 'ÿÊ· „’›Ê›… «·ﬁÌ„ ÌÃ» «‰ ÌﬂÊ‰ >= ÿÊ· „’›Ê›… «·√Ê’«›';
+  SPromptArrayEmpty = '„’›Ê›… «·√Ê’«› ÌÃ» «‰ ·« ﬂÊ‰ ›«—€…';
 
   SUsername = '«&”„ «·„” Œœ„';
   SPassword = '&ﬂ·„… «·„—Ê—';
   SDomain = '«·&œÊ„Ì‰';
   SLogin = 'œŒÊ·';
 
-  SKeyCaption = 'Key';
-  SValueCaption = 'Value';
-  SKeyConflict = 'A key with the name of "%s" already exists';
-  SKeyNotFound = 'Key "%s" not found';
-  SNoColumnMoving = 'goColMoving is not a supported option';
-  SNoEqualsInKey = 'Key may not contain equals sign ("=")';
+  SKeyCaption = '«·„› «Õ';
+  SValueCaption = '«·ﬁÌ„…';
+  SKeyConflict = '„› «Õ »«”„ "%s" „ÊÃÊœ „”»ﬁ«';
+  SKeyNotFound = '«·„› «Õ "%s" €Ì— „ÊÃÊœ';
+  SNoColumnMoving = 'goColMoving ·Ì” ŒÌ«— „œ⁄Ê„';
+  SNoEqualsInKey = '«·„› «Õ ÌÃ» «‰ ·«ÌÕÊÌ «‘«—… «·„”«Ê«… ("=")';
 
   SSendError = 'Œÿ√ ›Ì «—”«· «·»—Ìœ';
   SAssignSubItemError = 'Cannot assign a subitem to an actionbar when one of it''s parent''s is already assigned to an actionbar';
-  SDeleteItemWithSubItems = 'Item %s has subitems, delete anyway?';
-  SDeleteNotAllowed = 'You are not allowed to delete this item';
-  SMoveNotAllowed = 'Item %s is not allowed to be moved';
+  SDeleteItemWithSubItems = '«·⁄‰’— %s ÌÕÊÌ ⁄‰«’— ›—⁄Ì…, Â·  —Ìœ Õ–›Â« ⁄·Ï ﬂ· Õ«·?';
+  SDeleteNotAllowed = '·«Ì”„Õ ·ﬂ »Õ–› Â–« «·⁄‰’—';
+  SMoveNotAllowed = '·«Ì”„Õ » Õ—Ìﬂ «·⁄‰’— %s ';
   SMoreButtons = '«·„“Ìœ „‰ «·√“—«—';
   SErrorDownloadingURL = 'Œÿ√ ›Ì  Õ„Ì·  URL: %s';
   SUrlMonDllMissing = '€Ì— ﬁ«œ— ⁄·Ï  Õ„Ì· %s';
@@ -310,8 +310,8 @@ interface
   SNoCategory = '(·« ’‰Ì›)';
   SExpand = ' Ê”Ì⁄';
   SErrorSettingPath = 'Œÿ√ ›Ì „”«— «·≈⁄œ«œ« : "%s"';
-  SLBPutError = 'Attempting to put items into a virtual style listbox';
-  SErrorLoadingFile = 'Œÿ√ ›Ì „Õ«Ê·…  Õ„Ì· „·› «·≈⁄œ«œ«  : %s'#13'Would you like to delete it?';
+  SLBPutError = '„Õ«Ê·… ·Ê÷⁄ ⁄‰’— ›Ì ·«∆Õ… «Œ Ì«— –«  ‰„ÿ «› —«÷Ì virtual style listbox';
+  SErrorLoadingFile = 'Œÿ√ ›Ì „Õ«Ê·…  Õ„Ì· „·› «·≈⁄œ«œ«  : %s'#13' Â·  —Ìœ Õ–›Â?';
   SResetUsageData = '≈⁄«œ… ÷»ÿ ﬂ· »Ì«‰«  «·«” Œœ«„ ø';
   SFileRunDialogTitle = ' ‘€Ì·';
   SNoName = '(·« «”„)';
@@ -320,24 +320,24 @@ interface
   SResetActionToolBar = '≈⁄«œ… ÷»ÿ ‘—Ìÿ «·√œÊ« ';
   SCustomize = '&«· Œ’Ì’...';
   SSeparator = '›«’·';
-  SCircularReferencesNotAllowed = 'Circular references not allowed';
+  SCircularReferencesNotAllowed = '«·„—Ã⁄ «·œ«∆—Ì €Ì— „”„ÊÕ';
   SCannotHideActionBand = '%s ·« Ì”„Õ »«·≈Œ›«¡';
-  SErrorSettingCount = 'Error setting %s.Count';
-  SListBoxMustBeVirtual = 'Listbox (%s) style must be virtual in order to set Count';
+  SErrorSettingCount = 'Œÿ√ ›Ì  Õœœ ⁄œœ  %s.';
+  SListBoxMustBeVirtual = '‰„ÿ ·«∆Õ… «·«Œ Ì«— (%s) ÌÃ» «‰ ÌﬂÊ‰ «› —«÷Ì virtual „‰ √Ã·  ÕœÌœ «·⁄œœ';
   SUnableToSaveSettings = '€Ì— ﬁ«œ— ⁄·Ï Õ›Ÿ «·≈⁄œ«œ« ';
-  SRestoreDefaultSchedule = 'Would you like to reset to the default Priority Schedule?';
-  SNoGetItemEventHandler = 'No OnGetItem event handler assigned';
-  SInvalidColorMap = 'Invalid Colormap this ActionBand requires ColorMaps of type TCustomActionBarColorMapEx';
-  SDuplicateActionBarStyleName = 'A style named %s has already been registered';
-  SMissingActionBarStyleName = 'A style named %s has not been registered';
+  SRestoreDefaultSchedule = 'Â·  —Ìœ ≈⁄«œ… «·÷»ÿ ≈·Ï  — Ì» «·√Ê·ÊÌ«  «·«› —«÷Ì?';
+  SNoGetItemEventHandler = '·„ Ì „ ‰”» ÕœÀ OnGetItem ';
+  SInvalidColorMap = 'ﬁ«∆„… √·Ê«‰ €Ì— ’«·Õ… „ﬂÊ‰ «·‹ ActionBand ÌÕ «Ã ﬁ«∆„… √·Ê«‰ „‰ ‰„ÿ TCustomActionBarColorMapEx';
+  SDuplicateActionBarStyleName = ' „  ”ÃÌ· ” «Ì· »«”„ %s „”»ﬁ«';
+  SMissingActionBarStyleName = '·„ Ì „  ”ÃÌ· ” «Ì· »«”„ %s ·„ Ì „ «· ”ÃÌ·';
   SStandardStyleActionBars = 'ÂÌ∆… ﬁÌ«”Ì…';
   SXPStyleActionBars = 'ÂÌ∆… ≈ﬂ” »Ì';
   SActionBarStyleMissing = 'No ActionBand style unit present in the uses clause.'#13 +
     'Your application must include either XPStyleActnCtrls, StdStyleActnCtrls or ' +
     'a third party ActionBand style unit in its uses clause';
-  sParameterCannotBeNil = '%s parameter in call to %s cannot be nil';
-  SInvalidColorString = 'Invalid Color string';
-  SActionManagerNotAssigned = '%s ActionManager property has not been assigned';
+  sParameterCannotBeNil = '«·»«—«„ — %s›Ì «·«” œ⁄«¡ %s ·«Ì„ﬂ‰ √‰ ÌﬂÊ‰ Œ«·Ì nil';
+  SInvalidColorString = '‰’ «··Ê‰ €Ì— ’«·Õ';
+  SActionManagerNotAssigned = '·„ Ì „  ÕœÌœ Œ«’Ì… ActionManager „‰ «Ã· %s ';
 
   SInvalidPath = '"%s" ÂÊ „”«— €Ì— ’«·Õ';
   SInvalidPathCaption = '„”«— €Ì— ’«·Õ';
@@ -348,28 +348,28 @@ interface
   SBigEndianEncoding = 'Big Endian Unicode';
   SUTF8Encoding = 'UTF-8';
   SUTF7Encoding = 'UTF-7';
-  SEncodingLabel = 'Encoding:';
+  SEncodingLabel = '«· —„Ì“:';
 
-  sCannotAddFixedSize = 'Cannot add columns or rows while expand style is fixed size';
-  sInvalidSpan = '''%d'' is not a valid span';
-  sInvalidRowIndex = 'Row index, %d, out of bounds';
-  sInvalidColumnIndex = 'Column index, %d, out of bounds';
-  sInvalidControlItem = 'ControlItem.Control cannot be set to owning GridPanel';
-  sCannotDeleteColumn = 'Cannot delete a column that contains controls';
-  sCannotDeleteRow = 'Cannot delete a row that contains controls';
-  sCellMember = 'Member';
-  sCellSizeType = 'Size Type';
-  sCellValue = 'Value';
-  sCellAutoSize = 'Auto';
-  sCellPercentSize = 'Percent';
-  sCellAbsoluteSize = 'Absolute';
-  sCellColumn = 'Column%d';
-  sCellRow = 'Row%d';
+  sCannotAddFixedSize = '·«Ì„ﬂ‰ ≈÷«›… ÕﬁÊ· √Ê √”ÿ— »Ì‰„« ‰„ÿ «· Ê”⁄ À«»  «·ÕÃ„';
+  sInvalidSpan = '''%d'' ·Ì” « ”«⁄ ’«·Õ';
+  sInvalidRowIndex = '›Â—” «·”ÿ—, %d, Œ«—Ã «·ÕœÊœ';
+  sInvalidColumnIndex = '›Â—” «·Õﬁ·, %d, Œ«—Ã «·ÕœÊœ';
+  sInvalidControlItem = 'ControlItem.Control ·«Ì„ﬂ‰ «‰ Ì„ ·ﬂ ÷„‰Â GridPanel';
+  sCannotDeleteColumn = '·«Ì„ﬂ‰ Õ–› ⁄„Êœ ÌÕÊÌ „ﬂÊ‰«  „‰ ‰Ê⁄ controls';
+  sCannotDeleteRow = '·«Ì„ﬂ‰ Õ–› ”ÿ— ÌÕÊÌ „ﬂÊ‰«  „‰ ‰Ê⁄ controls';
+  sCellMember = '⁄÷Ê';
+  sCellSizeType = '‰„ÿ «·ÕÃ„';
+  sCellValue = '«·ﬁÌ„…';
+  sCellAutoSize = '¬·Ì';
+  sCellPercentSize = '»«·„∆…';
+  sCellAbsoluteSize = '„ÿ·ﬁ';
+  sCellColumn = '«·⁄„Êœ%d';
+  sCellRow = '«·”ÿ—%d';
 
-  STrayIconRemoveError = 'Cannot remove shell notification icon';
-  STrayIconCreateError = 'Cannot create shell notification icon';
+  STrayIconRemoveError = '·«Ì„ﬂ‰ ≈“«·… √ÌﬁÊ‰…  »·Ì€«  «·ﬁ‘—… shell notification icon';
+  STrayIconCreateError = '·«Ì„ﬂ‰ ≈‰‘«¡ √ÌﬁÊ‰…  »·Ì€«  «·ﬁ‘—… shell notification icon';
 
-  SPageControlNotSet = 'PageControl must first be assigned';
+  SPageControlNotSet = ' ÌÃ» √‰ Ì „ ‰”» «·‹ PageControl √Ê·«';
 
   SWindowsVistaRequired = '%s ÌÕ «Ã ≈·Ï Windows Vista √Ê √ÕœÀ';
   SXPThemesRequired = '%s Ì ÿ·»  ›⁄Ì· «·”„«  ⁄·Ï Ê‰œÊ“';
@@ -378,127 +378,127 @@ interface
   STaskDlgRadioButtonCaption = 'Œ«‰… «Œ Ì«—%d';
   SInvalidTaskDlgButtonCaption = 'ÌÃ» «‰ ·«ÌﬂÊ‰ «‰’ «·⁄‰Ê«‰ ›«—€';
 
-  SInvalidCategoryPanelParent = 'CategoryPanel must have a CategoryPanelGroup as its parent';
-  SInvalidCategoryPanelGroupChild = 'Only CategoryPanels can be inserted into a CategoryPanelGroup';
+  SInvalidCategoryPanelParent = 'CategoryPanel ÌÃ» «‰  „·ﬂ CategoryPanelGroup ﬂ√» ·Â«';
+  SInvalidCategoryPanelGroupChild = '›ﬁÿ CategoryPanels Ì„ﬂ‰ ≈÷«› Â« ›Ì  CategoryPanelGroup';
 
-  SInvalidCanvasOperation = 'Invalid canvas operation';
-  SNoOwner = '%s has no owner';
-  SRequireSameOwner = 'Source and destination require the same owner';
-  SDirect2DInvalidOwner = '%s cannot be owned by a different canvas';
-  SDirect2DInvalidSolidBrush = 'Not a solid color brush';
-  SDirect2DInvalidBrushStyle = 'Invalid brush style';
+  SInvalidCanvasOperation = '⁄„·Ì… —”„ €Ì— ’«·Õ… ⁄·Ï  Canvas';
+  SNoOwner = '%s ·«Ì„·ﬂ √»';
+  SRequireSameOwner = '«·ÊÃÂ… Ê«·Âœﬁ Ì ÿ·»«‰ ‰›” «·„«·ﬂ';
+  SDirect2DInvalidOwner = '%s ·«Ì„ﬂ‰ √‰ ÌﬂÊ‰« „„·ÊﬂÌ‰ „‰ ﬁ»· «·Ê«Õ —”„ „Œ ·›… canvas';
+  SDirect2DInvalidSolidBrush = '·Ì” ›—‘«… √·Ê«‰ €Ì— „‰ﬁÿ⁄…';
+  SDirect2DInvalidBrushStyle = '‰„ÿ ›—‘«… €Ì— ’«·Õ';
 
   SKeyboardLocaleInfo = 'Œÿ√ ›Ì «” ⁄«œ… «·„⁄·Ê„«  «·„Õ·Ì…';
   SKeyboardLangChange = '›‘· ›Ì  €ÌÌ— ·€… «·≈œŒ«·';
 
   SOnlyWinControls = 'You can only tab dock TWinControl based Controls';
 
-  SNoKeyword = 'No help keyword specified.';
+  SNoKeyword = '·„ Ì „  ÕœÌœ ﬂ·„«  „› «ÕÌ… ··„”«⁄œ….';
 
-  SStyleLoadError = 'Unable to load style ''%s''';
-  SStyleLoadErrors = 'Unable to load styles: %s';
-  SStyleRegisterError = 'Style ''%s'' already registered';
-  SStyleClassRegisterError = 'Style class ''%s'' already registered';
-  SStyleNotFound = 'Style ''%s'' not found';
-  SStyleClassNotFound = 'Style class ''%s'' not found';
-  SStyleInvalidHandle = 'Invalid style handle';
-  SStyleFormatError = 'Invalid style format';
-  SStyleFileDescription = 'VCL Style File';
-  SStyleHookClassRegistered = 'Class ''%s'' is already registered for ''%s''';
-  SStyleHookClassNotRegistered = 'Class ''%s'' is not registered for ''%s''';
-  SStyleInvalidParameter = '%s parameter cannot be nil';
-  SStyleHookClassNotFound = 'A StyleHook class has not been registered for %s';
-  SStyleFeatureNotSupported = 'Feature not supported by this style';
-  SStyleNotRegistered = 'Style ''%s'' is not registered';
-  SStyleUnregisterError = 'Cannot unregister the system style';
-  SStyleNotRegisteredNoName = 'Style not registered';
+  SStyleLoadError = '€Ì— ﬁ«œ— ⁄·Ï  Õ„Ì· «·” «Ì· ''%s''';
+  SStyleLoadErrors = '€Ì— ﬁ«œ— ⁄·Ï  Õ„Ì· «·” «Ì·« : %s';
+  SStyleRegisterError = '«·” «Ì· ''%s''  „  ”ÃÌ·Â „”»ﬁ«';
+  SStyleClassRegisterError = '’‰› «·” «Ì· ''%s''  „  ”ÃÌ·Â „”»ﬁ«';
+  SStyleNotFound = '«·” «Ì· ''%s'' €Ì— „ÊÃÊœ';
+  SStyleClassNotFound = '’‰› «·” «Ì·''%s'' €Ì— „ÊÃÊœ';
+  SStyleInvalidHandle = '—ﬁ„ „ﬁ»÷ «·” «Ì· €Ì— ’«·Õ';
+  SStyleFormatError = ' ‰”Ìﬁ «·” «Ì· €Ì— ’«·Õ';
+  SStyleFileDescription = '„·› ” «Ì· VCL ';
+  SStyleHookClassRegistered = '«·’‰› ''%s''  „  ”ÃÌ·Â „”»ﬁ« „‰ «Ã· ''%s''';
+  SStyleHookClassNotRegistered = '«·’‰› ''%s'' ·„ Ì „  ”ÃÌ·Â „‰ √Ã· ''%s''';
+  SStyleInvalidParameter = '«·»«—«„ — %s ·«Ì„ﬂ‰ √‰ ÌﬂÊ‰ Œ«·Ì nil';
+  SStyleHookClassNotFound = '’‰› StyleHook ·„ Ì „  ”ÃÌ·Â „‰ √Ã· %s';
+  SStyleFeatureNotSupported = '«·„Ì“… ·Ì”  „œ⁄Ê„… „‰ Â–« «·” «Ì·';
+  SStyleNotRegistered = '«·” «Ì· ''%s'' ·Ì” „”Ã·';
+  SStyleUnregisterError = '·«Ì„ﬂ‰ ≈·€«¡  ”ÃÌ· ” «Ì· „‰ «·‰Ÿ«„';
+  SStyleNotRegisteredNoName = '·„ Ì „  ”ÃÌ· «·” «Ì·';
 
 
   // ColorToPrettyName strings
-  SNameBlack = 'Black';
-  SNameMaroon = 'Maroon';
-  SNameGreen = 'Green';
-  SNameOlive = 'Olive';
-  SNameNavy = 'Navy';
-  SNamePurple = 'Purple';
-  SNameTeal = 'Teal';
-  SNameGray = 'Gray';
-  SNameSilver = 'Silver';
-  SNameRed = 'Red';
-  SNameLime = 'Lime';
-  SNameYellow = 'Yellow';
-  SNameBlue = 'Blue';
-  SNameFuchsia = 'Fuchsia';
-  SNameAqua = 'Aqua';
-  SNameWhite = 'White';
-  SNameMoneyGreen = 'Money Green';
-  SNameSkyBlue = 'Sky Blue';
-  SNameCream = 'Cream';
-  SNameMedGray = 'Medium Gray';
-  SNameActiveBorder = 'Active Border';
-  SNameActiveCaption = 'Active Caption';
-  SNameAppWorkSpace = 'Application Workspace';
-  SNameBackground = 'Background';
-  SNameBtnFace = 'Button Face';
-  SNameBtnHighlight = 'Button Highlight';
-  SNameBtnShadow = 'Button Shadow';
-  SNameBtnText = 'Button Text';
-  SNameCaptionText = 'Caption Text';
-  SNameDefault = 'Default';
-  SNameGradientActiveCaption = 'Gradient Active Caption';
-  SNameGradientInactiveCaption = 'Gradient Inactive Caption';
-  SNameGrayText = 'Gray Text';
-  SNameHighlight = 'Highlight Background';
-  SNameHighlightText = 'Highlight Text';
-  SNameHotLight = 'Hot Light';
-  SNameInactiveBorder = 'Inactive Border';
-  SNameInactiveCaption = 'Inactive Caption';
-  SNameInactiveCaptionText = 'Inactive Caption Text';
-  SNameInfoBk = 'Info Background';
-  SNameInfoText = 'Info Text';
-  SNameMenu = 'Menu Background';
-  SNameMenuBar = 'Menu Bar';
-  SNameMenuHighlight = 'Menu Highlight';
-  SNameMenuText = 'Menu Text';
-  SNameNone = 'None';
-  SNameScrollBar = 'Scroll Bar';
-  SName3DDkShadow = '3D Dark Shadow';
-  SName3DLight = '3D Light';
-  SNameWindow = 'Window Background';
-  SNameWindowFrame = 'Window Frame';
-  SNameWindowText = 'Window Text';
+  SNameBlack = '«”Êœ';
+  SNameMaroon = 'ﬂ” ‰«∆Ì';
+  SNameGreen = '√Œ÷—';
+  SNameOlive = '“Ì Ê‰Ì';
+  SNameNavy = '»Õ—Ì';
+  SNamePurple = '√—ÃÊ«‰Ì';
+  SNameTeal = '√Œ÷— „“—ﬁ';
+  SNameGray = '—„«œÌ';
+  SNameSilver = '›÷Ì';
+  SNameRed = '√Õ„—';
+  SNameLime = '·Ì„Ê‰Ì';
+  SNameYellow = '√’›—';
+  SNameBlue = '√“—ﬁ';
+  SNameFuchsia = '›Ê‘Ì«';
+  SNameAqua = '√ﬂÊ«';
+  SNameWhite = '√»Ì÷';
+  SNameMoneyGreen = '√Œ÷— „«·Ì';
+  SNameSkyBlue = '”„«ÊÌ';
+  SNameCream = 'ﬂ—Ì„';
+  SNameMedGray = '—„«œÌ „⁄ œ·';
+  SNameActiveBorder = '_Õœ ›⁄«·';
+  SNameActiveCaption = '_⁄‰Ê«‰ ›⁄«·';
+  SNameAppWorkSpace = '_„”«Õ… «· ÿ»Ìﬁ';
+  SNameBackground = '_Œ·›Ì…';
+  SNameBtnFace = '_ÊÃÂ «·“—';
+  SNameBtnHighlight = '_≈‘—«ﬁ «·“—';
+  SNameBtnShadow = '_Ÿ· «·“—';
+  SNameBtnText = '_‰’ «·“—';
+  SNameCaptionText = '_‰’ «·⁄‰Ê«‰';
+  SNameDefault = '«› —«÷Ì';
+  SNameGradientActiveCaption = '_⁄‰Ê«‰ ›⁄«· „ œ—Ã';
+  SNameGradientInactiveCaption = '_⁄‰Ê«‰ €Ì—›⁄«· „ œ—Ã';
+  SNameGrayText = '_‰’ —„«œÌ';
+  SNameHighlight = '_Œ·›Ì… „‘—ﬁ…';
+  SNameHighlightText = '_‰’ „‘—ﬁ';
+  SNameHotLight = '_÷Ê¡ Õ«—';
+  SNameInactiveBorder = '_Õœ €Ì— ›⁄«·';
+  SNameInactiveCaption = '_⁄‰Ê«‰ €Ì— ›⁄«·';
+  SNameInactiveCaptionText = '‰’ ⁄‰Ê«‰ €Ì— ›⁄«·';
+  SNameInfoBk = '_Œ·›Ì… „⁄·Ê„« ';
+  SNameInfoText = '_‰’ „⁄·Ê„« ';
+  SNameMenu = '_Œ·›Ì… ﬁ«∆„…';
+  SNameMenuBar = '_‘—Ìÿ ﬁ«∆„…';
+  SNameMenuHighlight = '_ﬁ«∆„… „‘—ﬁ…';
+  SNameMenuText = '_‰’ «·ﬁ«∆„…';
+  SNameNone = '·«‘Ì¡';
+  SNameScrollBar = '_‘—Ìÿ «·√œÊ« ';
+  SName3DDkShadow = '_Ÿ· 3œ';
+  SName3DLight = '_÷Ê¡ 3œ';
+  SNameWindow = '_Œ·›Ì… ‰«›–…';
+  SNameWindowFrame = '_≈ÿ«— ‰«›–…';
+  SNameWindowText = '_‰’ ‰«›–…';
 
-  SInvalidBitmapPixelFormat = 'Invalid bitmap pixel format, should be a 32 bit image';
+  SInvalidBitmapPixelFormat = '’Ê—… ‰ﬁÿÌ… »‰„ÿ  ‰”Ìﬁ »ﬂ”·«  €Ì— ’«·Õ, ÌÃ» «‰  ﬂÊ‰ 32 bit ';
   SJumplistsItemErrorGetpsi = 'Querying the IPropertyStore interface';
-  SJumplistsItemErrorInitializepropvar = 'Initializing a variant property';
-  SJumplistsItemErrorSetps = 'Setting the value of a property store';
-  SJumplistsItemErrorCommitps = 'Committing a property store';
+  SJumplistsItemErrorInitializepropvar = ' ÂÌ∆… Œ«’Ì… „‰ ‰„ÿ variant ';
+  SJumplistsItemErrorSetps = '÷»ÿ ﬁÌ„… „Œ“‰ «·Œ«’Ì…';
+  SJumplistsItemErrorCommitps = '≈Ìœ«⁄ „Œ“‰ «·Œ«’Ì… (Õ›Ÿ)';
   SJumplistsItemErrorSettingarguments = 'Setting the arguments of a jump list item';
   SJumplistsItemErrorSettingpath = 'Setting the path of a jump list item';
   SJumplistsItemErrorSettingicon = 'Setting the icon location of a jump list item';
   SJumplistsItemErrorAddingtobjarr = 'Adding an item to an object array';
   SJumplistsItemErrorGettingobjarr = 'Querying the IObjectArray interface';
   SJumplistsItemErrorNofriendlyname = 'The FriendlyName property of an item must not be empty';
-  SJumplistsItemException = 'JumpListItem exception: Error %d: %s';
-  SJumplistException = 'JumpList exception: Error %d: %s';
+  SJumplistsItemException = '«” À‰«¡ ÊŒÿ√ ›Ì JumpListItem : %d: %s';
+  SJumplistException = '«” À‰«¡ ÊŒÿ√ ›À JumpList : %d: %s';
   SJumplistErrorBeginlist = 'Initiating a building session for a new jump list';
   SJumplistErrorAppendrc = 'Appending an item to the recent files category of a new jump list';
   SJumplistErrorAppendfc = 'Appending an item to the frequent files category of a new jump list';
   SJumplistErrorAddusertasks = 'Adding your tasks to a new jump list';
   SJumplistErrorAddcategory = 'Adding a custom category (''%s'') and its child items to a new jump list';
   SJumplistErrorCommitlist = 'Committing a new jump list';
-  SJumplistExceptionInvalidOS = 'The current operating system does not support jump lists';
-  SJumplistExceptionAppID = 'The current process already has an application ID: %s';
+  SJumplistExceptionInvalidOS = '⁄„·Ì… «·‰Ÿ«„ «·Õ«·Ì… ·« œ⁄„ ·Ê«∆Õ «·ﬁ›“ jump lists';
+  SJumplistExceptionAppID = '«·⁄„·Ì… «·Õ«·Ì… ·Â« —ﬁ„  ÿ»Ìﬁ „”»ﬁ application ID: %s';
 
   { BeginInvoke }
 
-  sBeginInvokeNoHandle = 'Cannot call BeginInvoke on a control with no parent or window handle';
+  sBeginInvokeNoHandle = '·«Ì„ﬂ‰ «” œ⁄«¡l BeginInvoke ·„ﬂÊ‰ ·Ì” ·Â √» √Ê —ﬁ„ „ﬁ»÷';
 
   SToggleSwitchCaptionOn = '≈Ìﬁ«›';
   SToggleSwitchCaptionOff = ' ‘€Ì·';
-  SInvalidRelativePanelControlItem = 'ControlItem.Control cannot be set to owning RelativePanel';
+  SInvalidRelativePanelControlItem = 'ControlItem.Control ·«Ì„ﬂ‰ ÷»ÿ… ·«„ ·«ﬂ RelativePanel';
   SInvalidRelativePanelSibling = 'Control is not a sibling within RelativePanel';
-  SInvalidRelativePanelSiblingSelf = 'Control cannot be positioned relative to itself';
+  SInvalidRelativePanelSiblingSelf = '·«Ì„ﬂ‰ ÷»ÿ «·„ﬂÊ‰ ·ÌﬂÊ‰ „Êﬁ⁄Â „ ⁄·ﬁ »‰›”Â relative to itself';
 
 implementation
 

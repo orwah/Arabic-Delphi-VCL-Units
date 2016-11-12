@@ -2,7 +2,7 @@
 {                                                       }
 {            Arabic Delphi VCL Units                    }
 {                                                       }
-{ Modified by : Orwah Ali Issa (www.sy-it.com)          }
+{ Modified by : Orwah Ali Issa (www.orwah.net)          }
 {                                                       }
 { Delphi 10.1 Berline ..  File Version 0.1  1/10/2016   }
 {                                                       }
@@ -25,35 +25,35 @@ unit System.RTLConsts;
 interface
 
 resourcestring
-  SAncestorNotFound = 'Ancestor for ''%s'' not found';
+  SAncestorNotFound = '«·”·› «·√⁄·Ï ·‹ ''%s'' ·„ Ì „ «·⁄ÀÊ— ⁄·ÌÂ';
   SAssignError = '·«Ì„ﬂ‰ ‰”»  %s ≈·Ï a %s';
-  SBitsIndexError = 'Bits index out of range';
-  SBucketListLocked = 'List is locked during an active ForEach';
-  SCantWriteResourceStreamError = 'Can''t write to a read-only resource stream';
+  SBitsIndexError = '›Â—” «·ﬁÌ„ «·À‰«∆Ì… Œ«—Ã «·ÕœÊœ «·„”„ÊÕ…';
+  SBucketListLocked = '«·ﬁ«∆„… „ﬁ›·… Œ·«· Õ·ﬁ… ForEach ›⁄«·…';
+  SCantWriteResourceStreamError = '·«Ì„ﬂ‰ «·ﬂ «»… ≈·Ï „”·ﬂ resource stream Œ«’ »«·ﬁ—«¡… ›ﬁÿ';
   SCharExpected = '''''%s'''' „ Êﬁ⁄…';
-  SCheckSynchronizeError = 'CheckSynchronize called from thread $%x, which is NOT the main thread';
-  SClassNotFound = 'Class %s not found';
-  SDelimiterQuoteCharError = 'Delimiter and QuoteChar properties cannot have the same value';
-  SDuplicateClass = 'A class named %s already exists';
+  SCheckSynchronizeError = 'CheckSynchronize  „ «” œ⁄«∆Â „‰ «·„”·ﬂ thread $%x, ÊÂÊ ·Ì” «·„”·ﬂ «·—∆Ì”Ì';
+  SClassNotFound = '«·’‰› %s ·„ Ì „ «·⁄ÀÊ— ⁄·ÌÂ';
+  SDelimiterQuoteCharError = '«·Œ«’Ì «‰ Delimiter Ê QuoteChar ·«ÌÃ» √‰ Ì„ ·ﬂ« ‰›” «·ﬁÌ„…';
+  SDuplicateClass = '’‰› »«·«”„ %s „ÊÃÊœ „”»ﬁ«';
   SDuplicateItem = '«··«∆Õ… ·« ”„Õ »«·ﬁÌ„ «·„ﬂ——… ($0%x)';
   SDuplicateName = '„ﬂÊ‰ »Â–« «·«”„ %s „ÊÃÊœ „”»ﬁ«';
   SDuplicateString = '«··«∆Õ… «·‰’Ì… ·« ”„Õ »«·ﬁÌ„ «·„ﬂ——…';
   SFCreateError = '·«Ì„ﬂ‰ ≈‰‘«¡ «·„·› %s';
   SFCreateErrorEx = '·«Ì„ﬂ‰ ≈‰‘«¡ «·„·› "%s". %s';
-  SFixedColTooBig = 'Fixed column count must be less than column count';
-  SFixedRowTooBig = 'Fixed row count must be less than row count';
+  SFixedColTooBig = '⁄œœ «·ÕﬁÊ· «·À«»  ÌÃ» √‰ ÌﬂÊ‰ √ﬁ· „‰ «·⁄œœ «·ﬂ·Ì ··ÕﬁÊ· ';
+  SFixedRowTooBig = '⁄œœ «·”ÿÊ— «·À«» Â ÌÃ» √‰ ÌﬂÊ‰ √ﬁ· „‰ «·⁄œœ «·ﬂ·Ì ··”ÿÊ—';
   SFOpenError = '·«Ì„ﬂ‰ › Õ «·„·› %s';
   SFOpenErrorEx = '·«Ì„ﬂ‰ › Õ «·„·› "%s". %s';
   SGridTooLarge = '«·‘»ﬂ… ﬂ»Ì—… Ãœ« ·Â–Â «·⁄„·Ì…';
-  SIdentifierExpected = 'Identifier expected';
+  SIdentifierExpected = '„‰ «·„ Êﬁ⁄ ÊÃÊœ „⁄—›';
   SIndexOutOfRange = '›Â—” «·‘»ﬂ… Œ«—Ã «·„Ã«· «·„”„ÊÕ';
   SIniFileWriteError = '·«Ì„ﬂ‰ «·ﬂ «»… ≈·Ï %s';
 
   SInvalidActionCreation = '›‘· ›Ì ≈‰‘«¡ «·ÕœÀ';
-  SInvalidActionEnumeration = 'Invalid action enumeration';
-  SInvalidActionRegistration = 'Invalid action registration';
-  SInvalidActionUnregistration = 'Invalid action unregistration';
-  StrNoClientClass = 'The client can not be an instance of class %s';
+  SInvalidActionEnumeration = '”—œ «·ÕœÀ €Ì— ’«·Õ';
+  SInvalidActionRegistration = ' ÕœÌÀ «·ÕœÀ €Ì— ’«·Õ ';
+  SInvalidActionUnregistration = '≈·€«¡  ”ÃÌ· «·ÕœÀ €Ì— ’«·Õ';
+  StrNoClientClass = '«·“»Ê‰ ·«Ì„ﬂ‰ √‰ ÌﬂÊ‰ „‰ «·’‰› %s';
   StrEActionNoSuported = '«·’‰› %s ·«Ìœ⁄„ Â–« «·ÕœÀ';
 
   SInvalidBinary = 'ﬁÌ„… À‰«∆Ì… €Ì— ’«·Õ…';
@@ -76,9 +76,9 @@ resourcestring
   SListIndexError = 'œ·Ì· «··«∆Õ… Œ«—Ã «·ÕœÊœ «·„„ﬂ‰… (%d)';
   SMaskErr = 'ﬁÌ„… «·≈œŒ«· €Ì— ’ÕÌÕ…';
   SMaskEditErr = 'ﬁÌ„… ≈œŒ«· €Ì— ’ÕÌÕ… , «” Œœ„ “— «·≈·€«¡ ·· —«Ã⁄ ⁄‰ «· €Ì—« ';
-  SMemoryBufferOverrun = 'Memory Buffer overrun';
-  SMemoryStreamError = 'Out of memory while expanding memory stream';
-  SNoComSupport = '%s has not been registered as a COM class';
+  SMemoryBufferOverrun = ' „  Ã«Ê“ «·–«ﬂ—… «·Ê”ÌÿÌ… «·„Œ’’… («·»›—)';
+  SMemoryStreamError = ' „  Ã«Ê“ «·–«ﬂ—… Œ·«·  ⁄„·Ì…  Ê”Ì⁄ „”·ﬂ „‰ ‰Ê⁄ memory stream';
+  SNoComSupport = '%s ·„ Ì „  ”ÃÌ·… ﬂ’‰› „‰ ‰Ê⁄  COM ';
   SNotPrinting = '«·ÿ«»⁄… ·« ﬁÊ„ »«·ÿ»«⁄… Õ«·Ì«';
   SNumberExpected = 'ﬁÌ„… —ﬁ„Ì… „ Êﬁ⁄…';
   SAnsiUTF8Expected = 'ﬂÊœ ANSI √Ê UTF8 „ Êﬁ⁄';
@@ -93,22 +93,22 @@ resourcestring
   SRegisterError = ' ”ÃÌ· „ﬂÊ‰ €Ì— ’«·Õ';
   SRegSetDataFailed = '›‘· ÷»ÿ »Ì«‰«  ''%s''';
   SResNotFound = '«·„Ê—œ %s ·„ Ì „ «·⁄ÀÊ— ⁄·ÌÂ';
-  SSeekNotImplemented = '%s.Seek not implemented';
+  SSeekNotImplemented = '«·ÿ·» %s .·„ ÌœŒ· ÕÌ“ «· ‰›Ì–';
   SSortedListError = '«·⁄„·Ì… €Ì— „”„ÊÕ… ⁄·Ï ·«∆Õ… „— »…';
   SStringExpected = 'ﬁÌ„… ‰’Ì… „ Êﬁ⁄…';
   SSymbolExpected = '%s „ Êﬁ⁄';
   STooManyDeleted = ' „ Õ–› ’›Ê› √Ê √⁄„œ… √ﬂÀ— „‰ «·„ Êﬁ⁄';
-  SUnknownGroup = '%s not in a class registration group';
+  SUnknownGroup = '%s ·Ì”  ›Ì „Ã„Ê⁄…  ”ÃÌ· ’‰›';
   SUnknownProperty = '«·Œ«’Ì… %s €Ì— „ÊÃÊœ…';
   SWriteError = 'Œÿ√ ﬂ «»… ›Ì «·„”·ﬂ';
   SStreamSetSize = 'Œÿ√ ›Ì  ÕœÌœ ÕÃ„ «·„”·ﬂ';
   SThreadCreateError = 'Œÿ√ ›Ì ≈‰‘«¡ «·„”·ﬂ: %s';
   SThreadError = 'Œÿ√ ›Ì «·„”·ﬂ : %s (%d)';
-  SThreadExternalTerminate = 'Cannot terminate an externally created thread';
-  SThreadExternalWait = 'Cannot wait for an externally created thread';
-  SThreadStartError = 'Cannot call Start on a running or suspended thread';
-  SThreadExternalCheckTerminated = 'Cannot call CheckTerminated on an externally created thread';
-  SThreadExternalSetReturnValue = 'Cannot call SetReturnValue on an externally create thread';
+  SThreadExternalTerminate = '·«Ì„ﬂ‰ ≈‰Â«¡ „”·ﬂ  „ ≈‰‘«ƒ… Œ«—ÃÌ«';
+  SThreadExternalWait = '·«Ì„ﬂ‰ «‰ Ÿ«— „”·ﬂ  „ ≈‰‘«ƒ… Œ«—ÃÌ«';
+  SThreadStartError = '·«Ì„ﬂ‰ «” œ⁄«¡ Ê»œ¡ „”·ﬂ ›Ì Õ«·… «· ‰›Ì– √Ê «·≈Ìﬁ«›';
+  SThreadExternalCheckTerminated = '·«Ì„ﬂ‰ «” œ⁄«¡ CheckTerminated ·„”·ﬂ  „ ≈‰‘«ƒ… Œ«—ÃÌ«';
+  SThreadExternalSetReturnValue = '·«Ì„ﬂ‰ «” œ⁄«¡ SetReturnValue ·„”·ﬂ  „ ≈‰‘«ƒ… Œ«—ÃÌ«';
 
   SParamIsNil = '«·„ €Ì— %s ·«Ì„ﬂ‰ √‰  ﬂÊ‰ ﬁÌ„ Â Œ«·Ì… nil';
   SParamIsNegative = '«·„ €Ì— %s ·«Ì„ﬂ‰ √‰  ﬂÊ‰ ﬁÌ„ Â ”«·»…';
@@ -131,11 +131,11 @@ resourcestring
   SFileNotFound = '«·„·› «·„Õœœ ·«Ì„ﬂ‰ «·⁄ÀÊ— ⁄·ÌÂ';
   SFileAlreadyExists = '«·„·› «·„Õœœ „ÊÃÊœ „”»ﬁ«';
 
-  SInvalidDateDay = '(%d, %d) is not a valid DateDay pair';
-  SInvalidDateWeek = '(%d, %d, %d) is not a valid DateWeek triplet';
-  SInvalidDateMonthWeek = '(%d, %d, %d, %d) is not a valid DateMonthWeek quad';
-  SInvalidDayOfWeekInMonth = '(%d, %d, %d, %d) is not a valid DayOfWeekInMonth quad';
-  SInvalidJulianDate = '%f Julian cannot be represented as a DateTime';
+  SInvalidDateDay = '(%d, %d) ·Ì” “ÊÃ  «—ÌŒ ÊÌÊ„ „”„ÊÕ (DateDay) ';
+  SInvalidDateWeek = '(%d, %d, %d) ·Ì” À·«ÀÌ  «—ÌŒ Ê«”»Ê⁄ „”„ÊÕ (DateWeek)';
+  SInvalidDateMonthWeek = '(%d, %d, %d, %d) ·Ì” —»«⁄Ì  «—ÌŒ ‘Â— «”»Ê⁄ „”„ÊÕ (DateMonthWeek)';
+  SInvalidDayOfWeekInMonth = '(%d, %d, %d, %d) ·Ì” —»«⁄Ì ÌÊ„ «”»Ê⁄ ›Ì ‘Â— „”„ÊÕ (DayOfWeekInMonth)';
+  SInvalidJulianDate = '%f «· ﬁÊÌ„ «·ÌÊ·ÌÊ”Ì ·«Ì„ﬂ‰ ≈⁄«œ…  „ÀÌ·… „‰ ‰Ê⁄  «—ÌŒ';
   SMissingDateTimeField = '?';
   SMinimumDateError = '«· Ê«—ÌŒ ﬁ»· «·”‰… 1 €Ì— „”„ÊÕ…';
   SLocalTimeInvalid = '«·Êﬁ  «·„Õ·Ì «·„⁄ÿÏ "%s" €Ì— „”„ÊÕ (ﬂ«∆‰ ›Ì «·ﬁ —… «·„›ﬁÊœ… ⁄‰œ  ﬁœÌ„ «·”«⁄…).';
@@ -153,16 +153,16 @@ resourcestring
   SConvIllegalFamily = '⁄«∆·… €Ì— „”„ÊÕ…';
   SConvFactorZero = '%s ·œÌÂ „⁄«„· ’›—Ì';
   SConvStrParseError = '·«Ì„ﬂ‰  Õ·Ì· %s';
-  SFailedToCallConstructor = 'TStrings descendant %s failed to call inherited constructor';
+  SFailedToCallConstructor = ' %s ’‰› „‰Õœ— „‰ TStrings ›‘· ›Ì «” œ⁄«¡ «·„‰ÂÃ «·»«‰Ì «·√»';
 
-  sWindowsSocketError = 'Windows socket error: %s (%d), on API ''%s''';
-  sAsyncSocketError = 'Asynchronous socket error %d';
+  sWindowsSocketError = 'Œÿ√ ›Ì „ﬁ»” Ê‰œÊ“ : %s (%d), ›Ì «· API ''%s''';
+  sAsyncSocketError = 'Œÿ√ „ﬁ»” ·«„ “«„‰ %d';
   sNoAddress = '·„ Ì „  ÕœÌœ ⁄‰Ê«‰';
-  sCannotListenOnOpen = 'Can''t listen on an open socket';
-  sCannotCreateSocket = 'Can''t create new socket';
-  sSocketAlreadyOpen = 'Socket already open';
-  sCantChangeWhileActive = 'Can''t change value while socket is active';
-  sSocketMustBeBlocking = 'Socket must be in blocking mode';
+  sCannotListenOnOpen = '·«Ì„ﬂ‰ «·«” „«⁄ «·Ï „ﬁ»” ﬁÌœ «·› Õ';
+  sCannotCreateSocket = '·«Ì„ﬂ‰ ≈‰‘«¡ „ﬁ»” ÃœÌœ';
+  sSocketAlreadyOpen = '«·„ﬁ»” „› ÊÕ „”»ﬁ«';
+  sCantChangeWhileActive = '·«Ì„ﬂ‰  €ÌÌ— «·ﬁÌ„… »Ì‰„« ÌﬂÊ‰ «·„ﬁ»” ›⁄«·';
+  sSocketMustBeBlocking = '«·„ﬁ»” ÌÃ» «‰ ÌﬂÊ‰ ›Ì ‰„ÿ blocking mode';
   sSocketIOError = '%s Œÿ√ %d, %s';
   sSocketRead = 'ﬁ—«¡…';
   sSocketWrite = 'ﬂ «»…';
@@ -188,24 +188,24 @@ resourcestring
   sArgumentOutOfRange_InvalidLowSurrogate = 'A valid low surrogate character is >= $DC00 and <= $DFFF';
   sArgumentOutOfRange_Index = '«·›Â—” Œ«—Ã «·ÕœÊœ (%d).  ÌÃ» «‰ ÌﬂÊ‰ >= 0 Ê < %d';
   sArgumentOutOfRange_StringIndex = '«·›Â—” «·‰’Ì Œ«—Ã «·ÕœÊœ (%d).  ÌÃ» √‰ ÌﬂÊ‰ >= %d Ê <= %d';
-  sArgumentOutOfRange_InvalidUTF32 = 'Invalid UTF32 character value.  Must be >= 0 and <= $10FFFF, excluding surrogate pair ranges';
+  sArgumentOutOfRange_InvalidUTF32 = 'ﬁÌ„… „Õ«—› » —„Ì“ UTF32 €Ì— ’«·Õ….  ÌÃ» «‰  ﬂÊ‰ >= 0 Ê <= $10FFFF, »«” À‰«¡ surrogate pair ranges';
   sArgument_InvalidHighSurrogate = 'High surrogate char without a following low surrogate char at index: %d. Check that the string is encoded properly';
   sArgument_InvalidLowSurrogate = 'Low surrogate char without a preceding high surrogate char at index: %d. Check that the string is encoded properly';
   sArgumentOutOfRange_NeedNonNegValue = '«·„⁄«„·, %s, ÌÃ» «‰ ÌﬂÊ‰ >= 0';
   sArgumentOutOfRange_OffLenInvalid = '«·≈“«Õ… Ê«·ÿÊ· €Ì— „”„ÊÕ… ··„’›Ê›… «·„⁄ÿ«…';
 
-  sInvalidStringAndObjectArrays = 'Length of Strings and Objects arrays must be equal';
+  sInvalidStringAndObjectArrays = 'ÿÊ· «·‹ Strings Ê „’›Ê›… «·‹ Objects ÌÃ» √‰ ÌﬂÊ‰ „ ÿ«»ﬁ';
 
-  sSameArrays = 'Source and Destination arrays must not be the same';
+  sSameArrays = '„’›Ê›… «·„’œ— Ê«·ÊÃÂ… ÌÃ» √‰ ·«ÌﬂÊ‰« „ ÿ«»ﬁ Ì‰';
 
   sNoConstruct = '«·’‰› %s ·«Ì»œÊ √‰Â  „  ‘ÌÌœÂ';
 
   sCannotCallAcquireOnConditionVar = 'Cannot call Acquire on TConditionVariable.  Must call WaitFor with an external TMutex';
-  sInvalidTimeoutValue = 'Invalid Timeout value: %s';
-  sNamedSyncObjectsNotSupported = 'Named synchronization objects not supported on this platform';
+  sInvalidTimeoutValue = 'ﬁÌ„… „Â·… «·«‰ Â«¡ €Ì— ’«·Õ… : %s';
+  sNamedSyncObjectsNotSupported = '«·√€—«÷ «·„ “«„‰… «·„”«… €Ì— „œ⁄Ê„… ›Ì Â–Â «·„‰’… («·‰Ÿ«„)';
 
-  sInvalidInitialSemaphoreCount = 'Invalid InitialCount: %d';
-  sInvalidMaxSemaphoreCount = 'Invalid MaxCount: %d';
+  sInvalidInitialSemaphoreCount = '«· ⁄œ«œ «·√Ê·Ì €Ì— ’«·Õ : %d';
+  sInvalidMaxSemaphoreCount = '«· ⁄œ«œ «·√ﬁ’Ï €Ì— ’ÕÌÕ: %d';
   sSemaphoreCanceled = 'Invalid operation. Semaphore canceled';
   sInvalidSemaphoreReleaseCount = 'Invalid semaphore release count: %d';
   sSemaphoreReachedMaxCount = 'Semaphore reached MaxCount';
@@ -213,23 +213,23 @@ resourcestring
 
   sErrorCreatingEvent = 'Œÿ√ ›Ì ≈‰‘«¡ «·ÕœÀ';
 
-  sSpinCountOutOfRange = 'SpinCount out of range. Must be between 0 and %d';
+  sSpinCountOutOfRange = 'SpinCount Œ«—Ã «·„œÏ , ÌÃ» √‰ ÌﬂÊ‰ »Ì‰  0 Ê %d';
 
-  sCountdownEventCanceled = 'Countdown canceled';
-  sInvalidResetCount = 'Invalid Reset Count: %d';
-  sInvalidInitialCount = 'Invalid Count: %d';
-  sInvalidDecrementCount = 'Invalid Decrement Count: %d';
-  sInvalidIncrementCount = 'Invalid Increment Count: %d';
-  sInvalidDecrementOperation = 'Decrement amount will cause invalid results: Count: %d, CurCount: %d';
+  sCountdownEventCanceled = '«·⁄œ «· ‰«“·Ì  „ ≈·€«¡…';
+  sInvalidResetCount = ' ⁄œ«œ ≈⁄«œ… «·÷»ÿ €Ì— ’«·Õ: %d';
+  sInvalidInitialCount = ' ⁄œ«œ €Ì— ’«·Õ: %d';
+  sInvalidDecrementCount = ' ⁄œ«œ «·“Ì«œ… €Ì— ’«·Õ : %d';
+  sInvalidIncrementCount = ' ⁄œ«œ «·≈‰ﬁ«’ €Ì— ’«·Õ: %d';
+  sInvalidDecrementOperation = ' ⁄œ«œ «·≈‰ﬁ«’ ”Ê› Ì”»» ‰ «∆Ã €Ì— ’«·Õ…: «· ⁄œ«œ: %d, «· ⁄œ«œ «·Õ«·Ì: %d';
   sInvalidIncrementOperation = 'Count already max: Amount: %d, CurCount: %d';
-  sCountdownAlreadyZero = 'Countdown already reached zero (0)';
+  sCountdownAlreadyZero = '«·⁄œ «· ‰«“·Ì ﬁœ Ê’· ≈·Ï «·’›— „”»ﬁ«';
 
-  sTimespanTooLong = 'Timespan too long';
-  sInvalidTimespanDuration = 'The duration cannot be returned because the absolute value exceeds the value of TTimeSpan.MaxValue';
-  sTimespanValueCannotBeNan = 'Value cannot be NaN';
-  sCannotNegateTimespan = 'Negating the minimum value of a Timespan is invalid';
-  sInvalidTimespanFormat = 'Invalid Timespan format';
-  sTimespanElementTooLong = 'Timespan element too long';
+  sTimespanTooLong = '«·›«’· «·“„‰Ì «·„Õœœ ÿÊÌ· Ãœ«';
+  sInvalidTimespanDuration = '·«Ì„ﬂ‰ ≈⁄«œ… «·„œ… «·“„‰Ì… , ·≈‰ «·ﬁÌ„Â  Ã«Ê“  «·ﬁÌ„… «·⁄·Ì« ·‹ TTimeSpan.MaxValue';
+  sTimespanValueCannotBeNan = '«·ﬁÌ„… ·«Ì„ﬂ‰ √‰  ﬂÊ‰ NaN';
+  sCannotNegateTimespan = '⁄ﬂ” «·ﬁÌ„… «·œ‰Ì« ··›«’· «·“„‰Ì €Ì— „”„ÊÕ ';
+  sInvalidTimespanFormat = ' ‰”Ìﬁ «·›«’· «·“„‰Ì €Ì— ’«·Ã';
+  sTimespanElementTooLong = '⁄‰’— «·›«’· «·“„‰Ì ÿÊÌ· Ãœ«';
 
   { ************************************************************************* }
   { Distance's family type }
@@ -253,8 +253,8 @@ resourcestring
   SFeetDescription = 'ﬁœ„';
   SYardsDescription = 'Ì«—œ';
   SMilesDescription = '„Ì·';
-  SNauticalMilesDescription = 'NauticalMiles';
-  SAstronomicalUnitsDescription = 'AstronomicalUnits';
+  SNauticalMilesDescription = '„Ì· »Õ—Ì';
+  SAstronomicalUnitsDescription = 'ÊÕœ… ›·ﬂÌ…';
   SLightYearsDescription = '”‰… ÷Ê∆Ì…';
   SParsecsDescription = '›—”Œ ‰Ã„Ì';
   SCubitsDescription = '–—«⁄';
@@ -277,16 +277,16 @@ resourcestring
   SSquareCentimetersDescription = '”‰ Ì„ — „—»⁄';
   SSquareDecimetersDescription = 'œÌ”Ì„ — „—»⁄';
   SSquareMetersDescription = '„ — „—»⁄';
-  SSquareDecametersDescription = 'SquareDecameters';
-  SSquareHectometersDescription = 'SquareHectometers';
+  SSquareDecametersDescription = 'œÌ”Ì„ — „—»⁄';
+  SSquareHectometersDescription = 'Âﬂ Ê„ — „—»⁄';
   SSquareKilometersDescription = 'ﬂÌ·Ê„ — „—»⁄';
   SSquareInchesDescription = '≈‰‘ „—»⁄';
-  SSquareFeetDescription = 'SquareFeet';
-  SSquareYardsDescription = 'SquareYards';
-  SSquareMilesDescription = 'SquareMiles';
+  SSquareFeetDescription = 'ﬁœ„ „—»⁄';
+  SSquareYardsDescription = 'Ì«—œÂ „—»⁄Â';
+  SSquareMilesDescription = '„Ì· „—»⁄';
   SAcresDescription = '›œ«‰';
-  SCentaresDescription = 'Centares';
-  SAresDescription = 'Ares';
+  SCentaresDescription = '„ — „—»⁄';
+  SAresDescription = '⁄‘— œÊ‰„';
   SHectaresDescription = 'Âﬂ «—';
   SSquareRodsDescription = 'SquareRods';
 
@@ -299,56 +299,56 @@ resourcestring
   SCubicCentimetersDescription = '”‰ Ì„ — „ﬂ⁄»';
   SCubicDecimetersDescription = 'œÌ”Ì„ — „ﬂ⁄»';
   SCubicMetersDescription = '„ — „ﬂ⁄»';
-  SCubicDecametersDescription = 'CubicDecameters';
-  SCubicHectometersDescription = 'CubicHectometers';
+  SCubicDecametersDescription = 'œÌ”„ — „ﬂ⁄»';
+  SCubicHectometersDescription = 'ÂÌﬂ Ê„ — „ﬂ⁄»';
   SCubicKilometersDescription = 'ﬂÌ·Ê„ — „ﬂ⁄»';
   SCubicInchesDescription = '≈‰‘ „ﬂ⁄»';
-  SCubicFeetDescription = 'CubicFeet';
-  SCubicYardsDescription = 'CubicYards';
-  SCubicMilesDescription = 'CubicMiles';
-  SMilliLitersDescription = 'MilliLiters';
-  SCentiLitersDescription = 'CentiLiters';
-  SDeciLitersDescription = 'DeciLiters';
-  SLitersDescription = 'Liters';
-  SDecaLitersDescription = 'DecaLiters';
-  SHectoLitersDescription = 'HectoLiters';
-  SKiloLitersDescription = 'KiloLiters';
-  SAcreFeetDescription = 'AcreFeet';
-  SAcreInchesDescription = 'AcreInches';
-  SCordsDescription = 'Cords';
-  SCordFeetDescription = 'CordFeet';
-  SDecisteresDescription = 'Decisteres';
-  SSteresDescription = 'Steres';
-  SDecasteresDescription = 'Decasteres';
+  SCubicFeetDescription = 'ﬁœ„ „ﬂ⁄»…';
+  SCubicYardsDescription = 'Ì«—œÂ „ﬂ⁄»…';
+  SCubicMilesDescription = '„Ì· „ﬂ⁄»';
+  SMilliLitersDescription = '„Ì·Ì · —';
+  SCentiLitersDescription = '”‰ Ì ·Ì —';
+  SDeciLitersDescription = 'œÌ”Ì ·Ì —';
+  SLitersDescription = '· —';
+  SDecaLitersDescription = 'œÌﬂ« ·Ì —';
+  SHectoLitersDescription = 'ÂÌﬂ Ê · —';
+  SKiloLitersDescription = 'ﬂÌ·Ê · —';
+  SAcreFeetDescription = '√ﬂ—…  ﬁœ„';
+  SAcreInchesDescription = '√ﬂ—… ≈‰‘';
+  SCordsDescription = 'ﬂœ”…';
+  SCordFeetDescription = 'ﬂœ”… ﬁœ„';
+  SDecisteresDescription = 'œ”Ì «” Ì—';
+  SSteresDescription = '«” Ì—';
+  SDecasteresDescription = 'œÌﬂ« «” Ì—';
 
   { American Fluid Units }
-  SFluidGallonsDescription = 'FluidGallons';
-  SFluidQuartsDescription = 'FluidQuarts';
-  SFluidPintsDescription = 'FluidPints';
-  SFluidCupsDescription = 'FluidCups';
-  SFluidGillsDescription = 'FluidGills';
-  SFluidOuncesDescription = 'FluidOunces';
-  SFluidTablespoonsDescription = 'FluidTablespoons';
-  SFluidTeaspoonsDescription = 'FluidTeaspoons';
+  SFluidGallonsDescription = '€«·Ê‰ „«∆⁄';
+  SFluidQuartsDescription = '—»⁄ €«·Ê‰ „«∆⁄';
+  SFluidPintsDescription = 'À„‰ €«·Ê‰ (‰’› ·Ì —)';
+  SFluidCupsDescription = 'ﬂÊ»';
+  SFluidGillsDescription = '„ﬂÌ«·';
+  SFluidOuncesDescription = '√Ê‰’… ”«∆·…';
+  SFluidTablespoonsDescription = '„·⁄ﬁ… ÿ⁄«„';
+  SFluidTeaspoonsDescription = '„·⁄ﬁ… ‘«Ì';
 
   { American Dry Units }
-  SDryGallonsDescription = 'DryGallons';
-  SDryQuartsDescription = 'DryQuarts';
-  SDryPintsDescription = 'DryPints';
-  SDryPecksDescription = 'DryPecks';
-  SDryBucketsDescription = 'DryBuckets';
-  SDryBushelsDescription = 'DryBushels';
+  SDryGallonsDescription = '€«·Ê‰ Ã«›';
+  SDryQuartsDescription = '—»⁄ €«·Ê‰';
+  SDryPintsDescription = 'À„‰ €«·Ê‰';
+  SDryPecksDescription = '»ﬂ¯';
+  SDryBucketsDescription = '”ÿ·';
+  SDryBushelsDescription = '»Ê‘·';
 
   { English Imperial Fluid/Dry Units }
-  SUKGallonsDescription = 'UKGallons';
-  SUKPottlesDescription = 'UKPottle';
-  SUKQuartsDescription = 'UKQuarts';
-  SUKPintsDescription = 'UKPints';
-  SUKGillsDescription = 'UKGill';
-  SUKOuncesDescription = 'UKOunces';
-  SUKPecksDescription = 'UKPecks';
-  SUKBucketsDescription = 'UKBuckets';
-  SUKBushelsDescription = 'UKBushels';
+  SUKGallonsDescription = '€«·Ê‰ »—Ìÿ«‰Ì';
+  SUKPottlesDescription = '‰’› €«·Ê‰ »—Ìÿ«‰Ì';
+  SUKQuartsDescription = '—»⁄ €«·Ê‰ »—Ìÿ«‰Ì';
+  SUKPintsDescription = 'À„‰ €«·Ê‰ »—Ìÿ«‰Ì';
+  SUKGillsDescription = '„ﬂÌ«· »—Ìÿ«‰Ì';
+  SUKOuncesDescription = '«Ê‰’… »—Ìÿ«‰Ì…';
+  SUKPecksDescription = '»ﬂ¯ »—Ìÿ«‰Ì';
+  SUKBucketsDescription = '”ÿ· »—Ìÿ«‰Ì';
+  SUKBushelsDescription = '»Ê‘· »—Ìÿ«‰Ì';
 
   { ************************************************************************* }
   { Mass's family type }
@@ -365,13 +365,13 @@ resourcestring
   SHectogramsDescription = 'ÂÌﬂ Ê€—«„';
   SKilogramsDescription = 'ﬂÌ·Ê€—«„';
   SMetricTonsDescription = 'ÿ‰ „ —Ì';
-  SDramsDescription = 'Drams';
-  SGrainsDescription = 'Grains';
+  SDramsDescription = 'œ—Â„';
+  SGrainsDescription = 'Õ»…';
   STonsDescription = 'ÿ‰';
-  SLongTonsDescription = 'LongTons';
-  SOuncesDescription = 'Ounces';
-  SPoundsDescription = 'Pounds';
-  SStonesDescription = 'Stones';
+  SLongTonsDescription = 'ÿ‰ ÿÊÌ·';
+  SOuncesDescription = '√Ê‰’…';
+  SPoundsDescription = '»«Ê‰œ';
+  SStonesDescription = 'ÕÃ—';
 
   { ************************************************************************* }
   { Temperature's family type }
@@ -405,71 +405,66 @@ resourcestring
   SJulianDateDescription = '«· ﬁÊÌ„ «·ÌÊ·ÌÊ”Ì';
   SModifiedJulianDateDescription = '«· ﬁÊÌ„ «·ÌÊ·ÌÊ”Ì «·„⁄œ·';
 
-  SInvalidDate = '''''%s'''' is not a valid date' deprecated 'Use SysConst.SInvalidDate';
-  SInvalidDateTime = '''''%s'''' is not a valid date and time' deprecated 'Use SysConst.SInvalidDateTime';
-  SInvalidInteger = '''''%s'''' is not a valid integer value' deprecated 'Use SysConst.SInvalidInteger';
-  SInvalidTime = '''''%s'''' is not a valid time' deprecated 'Use SysConst.SInvalidTime';
-  STimeEncodeError = 'Invalid argument to time encode' deprecated 'Use SysConst.STimeEncodeError';
 
-  SGUIDAlreadyDefined = 'GUID ''%s'' was previously registered';
-  SNoComComponent = 'Constructing COM object ''%s'' for which there is no wrapper component';
-  SNoComClass = '%s.GetComClass returned nil';
-  SNoCOMClassSpecified = 'No ComClass specified';
-  SNoCOMClassesRegistered = 'No COM classes have been registered';
+  SGUIDAlreadyDefined = 'GUID ''%s''  „  ”ÃÌ·Â „”»ﬁ«';
+  SNoComComponent = '»‰«¡ €—÷ „‰ ‰Ê⁄ COM : ''%s'' ·Ì” ·Â „ﬂÊ‰ Ì€·›Â ';
+  SNoComClass = '%s.GetComClass √⁄«œ ﬁÌ„… ›«—€… nil';
+  SNoCOMClassSpecified = '·„ Ì „  ÕœÌœ ComClass';
+  SNoCOMClassesRegistered = '·„ Ì „  ”ÃÌ· √Ì √’‰«› „‰ ‰„ÿ COM';
 
-  SNoContext = 'No context-sensitive help installed';
-  SNoContextFound = 'No help found for context %d';
-  SNoIndex = 'Unable to open Index';
-  SNoSearch = 'Unable to open Search';
-  SNoTableOfContents = 'Unable to find a Table of Contents';
-  SNoTopics = 'No topic-based help system installed';
-  SNothingFound = 'No help found for %s';
+  SNoContext = '·« ÌÊÃœ „”«⁄œ… Õ”«”… ··”Ì«ﬁ  „  ‰’Ì»Â«';
+  SNoContextFound = '·„ Ì „ «·⁄ÀÊ— ⁄·Ï „”«⁄œ… · %d';
+  SNoIndex = '€Ì— ﬁ«œ— ⁄·Ï › Õ «·›Â—”';
+  SNoSearch = '€Ì— ﬁ«œ— ⁄·Ï › Õ «·»ÕÀ';
+  SNoTableOfContents = '€Ì— ﬁ«œ— ⁄·Ï ≈ÌÃ«œ ›Â—” «·„Õ ÊÌ« ';
+  SNoTopics = '·„ Ì „  ‰’Ì» ‰Ÿ«„ „”«⁄œ… „»‰Ì ⁄·Ï «·„Ê«÷Ì⁄ topic-based help';
+  SNothingFound = '·„ Ì „ «·⁄ÀÊ— ⁄·Ï „”«⁄œ… „‰ «Ã· %s';
 
-  SMethodNotFound = 'Method %s of class %s not found';
-  STypeMisMatch = 'Type mismatch in parameter %d for method %s';
-  SInvalidDispID = 'Invalid DispID for parameter %d in method %s';
-  SParamRequired = 'Parameter %d required for method %s';
-  SMethodOver = 'Method definition for %s has over %d parameters';
-  STooManyParams = 'Too many parameters for method %s';
-  SNoRTTIInfoType = 'Unable to invoke method %s that use unpublished type';
-  SResultIsExtended = '10bytes-Extended type in method %s'' return type is not supported';
-  SParamIsExtended = '10bytes-Extended type in parameter %d in method %s is not supported';
+  SMethodNotFound = '„‰ÂÃ %s «·’‰› %s ·„ Ì „ «·⁄ÀÊ— ⁄·ÌÂ';
+  STypeMisMatch = '‰„ÿ €Ì— „ÿ«»ﬁ ··„ €Ì— %d „‰ Ã· «·„‰ÂÃ %s';
+  SInvalidDispID = 'DispID €Ì— ’«·Õ ··„ €Ì—  %d ›Ì «·„‰ÂÃ %s';
+  SParamRequired = '„ €Ì— „ÿ·Ê» %d „‰ √Ã· «·„‰ÂÃ %s';
+  SMethodOver = ' ⁄—Ì› «·„‰ÂÃ ·‹ %s ·œÌÂ √ﬂÀ— „‰  %d „ €Ì—';
+  STooManyParams = '„ €Ì—«  √ﬂÀ— „‰ «·„ÿ·Ê» , ··„‰ÂÃ %s';
+  SNoRTTIInfoType = '€Ì— ﬁ«œ— ⁄·Ï «” Õ÷«— «·„‰ÂÃ %s «·–Ì Ì” Œœ„ ‰„ÿ €Ì— „‰‘Ê— (unpublished)';
+  SResultIsExtended = '‰„ÿ 10bytes-Extended type ›Ì «·„‰ÂÃ %s'' Ì⁄Ìœ √‰ ﬁÌ„… «·‰„ÿ €Ì— „œ⁄Ê„…';
+  SParamIsExtended = '‰„ÿ 10bytes-Extended type ›Ì «·„ €Ì— %d ›Ì «·„‰ÂÃ %s €Ì— „œ⁄Ê„ ';
 
   SArgumentOutOfRange = '«·„ €Ì— Œ«—Ã «·„œÏ «·„”„ÊÕ';
   SArgumentNil = '«·„ €Ì— ÌÃ» √‰ ·«ÌﬂÊ‰ Œ«·Ì Nil';
-  SErrorCantModifyWhileIterating = 'Cannot modify a collection while iterating';
-  SUnbalancedOperation = 'Unbalanced stack or queue operation';
+  SErrorCantModifyWhileIterating = '·« Ì„ﬂ‰  ⁄œÌ· „Ã„Ê⁄… √À‰«¡ «· ﬂ—«—';
+  SUnbalancedOperation = '⁄„·Ì… „ﬂœ” √Ê — · €Ì— „ Ê«“‰… ';
   SGenericItemNotFound = '«·⁄‰’— €Ì— „ÊÃÊœ';
   SGenericDuplicateItem = '«·ﬁÌ„ «·„ﬂ——… €Ì— „”„ÊÕ…';
 
-  SSpinLockInvalidOperation = 'Thread tracking isn''t enabled';
-  SSpinLockReEntered = 'SpinLock has been re-entered on the same thread';
-  SSpinLockNotOwned = 'SpinLock not owned by the current thread';
+  SSpinLockInvalidOperation = '  »⁄ «·„”«·ﬂ €Ì— „›⁄·';
+  SSpinLockReEntered = ' „ ≈⁄«œ… ≈œŒ«· SpinLock ›Ì ‰›” «·„”·ﬂ';
+  SSpinLockNotOwned = 'SpinLock €Ì— „„·Êﬂ „‰ ﬁ»· «·„”·ﬂ «·Õ«·Ì';
 
-  SInsufficientRtti = 'Insufficient RTTI available to support this operation';
+  SInsufficientRtti = '„⁄·Ê„«  «·√‰„«ÿ €Ì— „ Ê›—… ›Ì “„‰ «· ‘€Ì· RTTI ·œ⁄„ Â–Â «·⁄„·Ì…';
   SParameterCountMismatch = '⁄œœ «·„ €Ì—«  €Ì— „ÿ«»ﬁ';
   SParameterCountExceeded = ' „  ŒÿÌ ⁄œœ «·„ €Ì—« ';
   SConversionError = '‰„ÿ €Ì— „ Ê«›ﬁ';
-  SNonPublicType = 'Type ''%s'' is not declared in the interface section of a unit';
-  SByRefArgMismatch = 'VAR and OUT arguments must match parameter type exactly';
+  SNonPublicType = '«·‰„ÿ ''%s'' ·„ Ì⁄—› ›Ì ﬁ”„ interface ··ÊÕœ…';
+  SByRefArgMismatch = 'ﬂ· „‰ VAR Ê OUT ÌÃ» «‰ Ì„·ﬂ« «‰„«ÿ „ €Ì—«  „ ÿ«»ﬁ…';
 
-  SInsufficientReadBuffer = 'Insufficient buffer for requested data';
+  SInsufficientReadBuffer = '«·–«ﬂ—… «·Ê”ÌÿÌ… («·»›—) €Ì— ﬂ«›ÌÂ ··»Ì«‰«  «· Ì  „  «” ⁄«œ Â«';
 
-  SInvalid7BitEncodedInteger = 'Invalid 7 bit integer stream encoding';
-  SNoSurrogates = 'Surrogates not allowed as a single char';
-  SInvalidStringLength = 'Invalid string length';
-  SReadPastEndOfStream = 'Attempt to read past end of stream';
+  SInvalid7BitEncodedInteger = ' —„Ì“ 7»  ··integer stream €Ì— ’«·Õ';
+  SNoSurrogates = '«·»œÌ· €Ì— „”„ÊÕ ﬂ„Õ—› „›—œ';
+  SInvalidStringLength = 'ÿÊ· «·‰’ €Ì— ’«·Õ';
+  SReadPastEndOfStream = '„Õ«Ê·… ··ﬁ—«¡… „‰ «·‰’   Ã«Ê“ ‰Â«Ì Â';
 
   SInvalidGuidArray = 'Byte array for GUID must be exactly %d bytes long';
 
-  SServiceNotFound = 'Specified Login Credential Service not found';
+  SServiceNotFound = 'Œœ„… «⁄ „«œ  ”ÃÌ· «·œŒÊ· «· Ì  „ «Œ Ì«—Â« €Ì— „ÊÃÊœ…';
 
   { Class group report strings }
 
-  sClassGroupHeader = 'Group[%d] - Active: %s';
-  sGroupClassesHeader = '  Group Classes';
-  sClassListHeader = '  Classes';
-  sClassAliasesHeader = '  Class Aliases';
+  sClassGroupHeader = '«·„Ã„Ê⁄…[%d] - ‰‘ÿ: %s';
+  sGroupClassesHeader = '  √’‰«› «·„Ã„Ê⁄…';
+  sClassListHeader = '  «’‰«›';
+  sClassAliasesHeader = '  »œ«∆· «·√’‰«›';
 
 {$IFDEF MACOS}
   sInvalidConversion = 'Invalid conversion from %s to %s';
@@ -505,53 +500,53 @@ resourcestring
   SWindows8 = 'ÊÌ‰œÊ“ 8';
   SWindows8Point1 = 'ÊÌ‰œÊ“ 8.1';
   SWindows10 = 'ÊÌ‰œÊ“ 10';
-  SItaskbarInterfaceException = '%s interface is not supported on this OS version';
-  SHookException = 'Could not hook messages, buttons and preview events will not work';
-  SInitializeException = 'Could not initialize taskbar. Error: %d';
-  SInstanceException = 'There is another taskbar control instance';
-  SButtonsLimitException = 'Windows taskbar only supports %d buttons on preview tabs';
-  SCouldNotRegisterTabException = 'Could not register tab. Error %d';
-  SInvalidProgressValueException = '%d is incorrect. Should be between 0 and %d';
-  SThumbPreviewException = 'Failed to set bitmap as thumbnail preview. Error: %d';
-  SBitmapPreviewException = 'Failed to set bitmap as preview. Error: %d';
+  SItaskbarInterfaceException = '%s Â–Â «·Ê«ÃÂ… €Ì— „œ⁄Ê„… ›Ì Â–Â «·≈’œ«—… „‰ «·‰Ÿ«„';
+  SHookException = '·«Ì„ﬂ‰ —»ÿ Ê »«œ· «·—”«∆·, «·√“—«— Ê√Õœ«À «·⁄—÷ ·‰  ⁄„· ';
+  SInitializeException = '·«Ì„ﬂ‰  ÂÌ∆… ‘—Ìÿ «·„Â«„ . Œÿ√ : %d';
+  SInstanceException = 'Â‰«ﬂ ‰”Œ… √Œ—Ï „‰ ‘—Ìÿ «·„Â«„ ';
+  SButtonsLimitException = '‘—Ìÿ „Â«„ Ê‰œÊ“ Ìœ⁄„ ›ﬁÿ %d √“—«— ›Ì ’›Õ«  «·„⁄«Ì‰…';
+  SCouldNotRegisterTabException = '·«Ì„ﬂ‰  ”ÃÌ· «·’›Õ… . Œÿ√ %d';
+  SInvalidProgressValueException = '%d ·Ì” ’ÕÌÕ . ÌÃ» «‰ ÌﬂÊ‰ »Ì‰ 0 Ê %d';
+  SThumbPreviewException = '›‘· ≈⁄œ«œ «·’Ê—… ﬂ⁄—÷ „’€—«  . Œÿ√: %d';
+  SBitmapPreviewException = '›‘· ≈⁄œ«œ «·’Ê—… ··„⁄«Ì‰Â. Œÿ√: %d';
   { WinRT support strings }
-  SWinRTNoRTTI = 'No RTTI information found for class %s';
-  SWinRTInstanceError = 'Cannot create instance of class %s';
-  SWinRTICreatedError = 'The created instance of class %s is wrong';
-  SWinRTHStringError = 'Error creating HString for %s';
-  SWinRTFactoryError = 'Cannot get factory for class %s';
-  SWinRTWrongFactoryError = 'The factory obtained for %s is wrong';
-  SWinRTInteropError = 'Cannot create interop class';
+  SWinRTNoRTTI = '·„ Ì „ «·⁄ÀÊ— ⁄·Ï „⁄·Ê„«  √‰„«ÿ “„‰ «· ‘€Ì· RTTI ··’‰› %s';
+  SWinRTInstanceError = '·« Ì„ﬂ‰ ≈‰‘«¡ €—÷ „‰ «·’‰› %s';
+  SWinRTICreatedError = '«·€—÷ «·–Ì Ì „ ≈‰‘«ƒÂ „‰ «·’‰› %s Œ«ÿ∆';
+  SWinRTHStringError = 'Œÿ√ ›Ì ≈‰‘«¡ HString „‰ √Ã· %s';
+  SWinRTFactoryError = '·«Ì„ﬂ‰ «” Õ’«· factory ··’‰› %s';
+  SWinRTWrongFactoryError = '«·‹ factory «·„” Õ’· „‰ √Ã· %s Œ«ÿ∆';
+  SWinRTInteropError = '·«Ì„ﬂ‰ ≈‰‘«¡ ’‰› interop';
 {$ENDIF}
 {$IF defined(MACOS) or defined(ANDROID)}
   SVersionStr = '%s (Version %d.%d.%d)';
 {$ENDIF}
   { Zip Strings}
-  SZipErrorRead            = 'Error reading zip file';
-  SZipErrorWrite           = 'Error writing zip file';
-  SZipInvalidLocalHeader   = 'Invalid Zip Local Header signature';
-  SZipInvalidCentralHeader = 'Invalid Zip Central Header signature';
-  SZipNotSupported         = 'Support for compression method not registered: %s';
-  SZipNotOpen              = 'File must be open';
-  SZipNoWrite              = 'File must be open for writing';
-  SZipNoRead               = 'File must be open for reading';
-  SZipNotEmpty             = 'Zip file must be empty';
-  SZipFileNameEmpty        = 'File name must not be empty';
+  SZipErrorRead            = 'Œÿ√ ›Ì ﬁ—«¡… „·› „÷€Êÿ zip';
+  SZipErrorWrite           = 'Œÿ√ ›Ì ﬂ «»… „·› „÷€Êÿ zip';
+  SZipInvalidLocalHeader   = 'Œÿ√ ›Ì  ÊﬁÌ⁄  —ÊÌ”… LocalHeader „·› „÷€Êÿ zip';
+  SZipInvalidCentralHeader = 'Œÿ√ ›Ì  ÊﬁÌ⁄  —ÊÌ”… Central Header „·› „÷€Êÿ Zip';
+  SZipNotSupported         = 'œ⁄„ ‰„ÿ «·÷€ÿ €Ì— „”Ã· : %s';
+  SZipNotOpen              = 'ÌÃ» «‰ Ì „ › Õ «·„·›';
+  SZipNoWrite              = '”Ã» «‰ Ì „ › Õ «·„·› ··ﬂ «»…';
+  SZipNoRead               = 'ÌÃ» «‰ Ì „ › Õ «·„·› ··ﬁ—«¡…';
+  SZipNotEmpty             = '„·› Zip ÌÃ» «‰ ÌﬂÊ‰ ›«—€';
+  SZipFileNameEmpty        = '«”„ «·„·› ÌÃ» «‰ ·«ÌﬂÊ‰ ›«—€';
 
-  sObserverUnsupported = 'Observer is not supported';
+  sObserverUnsupported = '«·„—«ﬁ» Observer €Ì— „œ⁄Ê„';
   sObserverMultipleSingleCast = 'Cannot have multiple single cast observers added to the observers collection';
   sObserverNoInterface = 'The object does not implement the observer interface';
   sObserverNoSinglecastFound = 'No single cast observer with ID %d was added to the observer collection';
   sObserverNoMulticastFound = 'No multi cast observer with ID %d was added to the observer collection';
-  sObserverNotAvailable = 'Observer is not available';
+  sObserverNotAvailable = '«·„—«ﬁ» Observer €Ì— „ Ê›—';
 
-  SGeocodeMultipleRequests = 'Cannot initiate two or more geocoding requests at the same time';
-  SLocationSensorStarted = 'The location sensor is started';
-  SSensorIndexError = 'The sensor on the specified index (%d) is not found';
+  SGeocodeMultipleRequests = '·«Ì„ﬂ‰  ÂÌ∆… √À‰«¡ √Ê √ﬂÀ— „‰ ÿ·»«  geocoding requests ›Ì ‰›” «·Êﬁ ';
+  SLocationSensorStarted = 'Õ”«” «·„Êﬁ⁄  „  ‘€Ì·Â';
+  SSensorIndexError = '«·Õ”«” «·„Õœœ »«· — Ì» (%d) ·„ Ì „ «·⁄ÀÊ— ⁄·ÌÂ';
                                                           
 {IFDEF MACOS}
-  SLocationServiceUnauthorized = 'Unauthorized to use location services';
-  SLocationServiceDisabled = 'Location services are disabled';
+  SLocationServiceUnauthorized = '€Ì— „’—Õ ·ﬂ »«” Œœ«„ Œœ„… «·„Ê«ﬁ⁄';
+  SLocationServiceDisabled = 'Œœ„«  «·„Ê«ﬁ⁄ €Ì— „›⁄·…';
 {ENDIF}
 
   {$IFDEF ANDROID}
@@ -566,18 +561,18 @@ resourcestring
 
   { System.Devices }
   sCannotManuallyConstructDevice = 'Manual construction of TDeviceInfo is not supported'; // move to System.RTLConsts.
-  sAttributeExists = 'Attribute ''%s'' already exists';
-  sDeviceExists = 'Device ''%s'' already exists';
+  sAttributeExists = '«·’›… ''%s'' „ÊÃÊœ… „”»ﬁ«';
+  sDeviceExists = '«·ÃÂ«“ ''%s'' „ÊÃÊœ „”»ﬁ«';
 
   { System.Hash }
-  SHashCanNotUpdateMD5 = 'MD5: Cannot update a finalized hash';
-  SHashCanNotUpdateSHA1 = 'SHA1: Cannot update a finalized hash';
-  SHashCanNotUpdateSHA2 = 'SHA2: Cannot update a finalized hash';
+  SHashCanNotUpdateMD5 = 'MD5: ·«Ì„ﬂ‰  ÕœÌÀ Â«‘ «·‰Â«Ì… finalized hash';
+  SHashCanNotUpdateSHA1 = 'SHA1: ·«Ì„ﬂ‰  ÕœÌÀ Â«‘ «·‰Â«Ì… finalized hash';
+  SHashCanNotUpdateSHA2 = 'SHA2: ·«Ì„ﬂ‰  ÕœÌÀ Â«‘ «·‰Â«Ì…finalized hash';
 
   { System.NetEncoding }
-  sErrorDecodingURLText = 'Error decoding URL style (%%XX) encoded string at position %d';
-  sInvalidURLEncodedChar = 'Invalid URL encoded character (%s) at position %d';
-  sInvalidHTMLEncodedChar = 'Invalid HTML encoded character (%s) at position %d';
+  sErrorDecodingURLText = 'Œÿ√ ›Ì ›ﬂ ‰„ÿ URL style (%%XX) «·‰’ «·„—„“ ›Ì «·„Êﬁ⁄ %d';
+  sInvalidURLEncodedChar = '„Õ—› ⁄‰Ê«‰ URL „—„“ €Ì— ’«·Õ (%s) ›Ì «·„Êﬁ⁄ %d';
+  sInvalidHTMLEncodedChar = '„Õ—› HTML „—„“ €Ì— ’«·Õ (%s) ›Ì «·„Êﬁ⁄ %d';
 
   { System.Threading }
   sStopAfterBreak = 'The Break method was previously called. Break and Stop may not be used in combination in iterations of the same loop';
@@ -585,20 +580,20 @@ resourcestring
   sInvalidTaskConstruction = 'Cannot construct an ITask in this manner';
   sEmptyJoinTaskList = 'List of tasks to Join method empty';
   sWaitNilTask = 'At least one task in array nil';
-  sCannotStartCompletedTask = 'Cannot start a task that has already completed';
-  sOneOrMoreTasksCancelled = 'One or more tasks were cancelled';
-  sDefaultAggregateExceptionMsg = 'One or more errors occurred';
+  sCannotStartCompletedTask = '·«Ì„ﬂ‰ »œ¡ „Â„… «ﬂ „·  ·· Ê';
+  sOneOrMoreTasksCancelled = '„Â„… √Ê √ﬂÀ— ”Ì „ ≈·€«∆Â«';
+  sDefaultAggregateExceptionMsg = 'ÕœÀ  √Œÿ«¡';
 
   { System.Types }
-  sMustWaitOnOneEvent = 'Must wait on at least one event';
+  sMustWaitOnOneEvent = 'ÌÃ» «‰ Ÿ«— ÕœÀ Ê«Õœ ⁄·Ï «·√ﬁ·';
 
   { TComponent.BeginInvoke }
   sBeginInvokeDestroying = 'Cannot call BeginInvoke on a TComponent in the process of destruction';
 
   { System.ShareContract }
-  SShareContractNotAvailable = 'ShareContract not available';
-  SShareContractNotSupported = 'Sharing not supported under %s';
-  SShareContractNotInitialized = 'TShareContract.OnProcessMessages event must be assigned first';
+  SShareContractNotAvailable = 'ShareContract €Ì— „ Ê›—';
+  SShareContractNotSupported = '«·„‘«—ﬂ… ·Ì”  „”„ÊÕ…  Õ  %s';
+  SShareContractNotInitialized = 'ÕœÀ TShareContract.OnProcessMessages ÌÃ» √‰ Ì „ «”‰«œÂ √Ê·«';
 
 
 const

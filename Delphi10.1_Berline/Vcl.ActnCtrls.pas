@@ -1,5 +1,18 @@
 {*******************************************************}
 {                                                       }
+{            Arabic Delphi VCL Units                    }
+{                                                       }
+{ Modified by : Orwah Ali Issa (www.orwah.net)          }
+{                                                       }
+{ Delphi 10.1 Berline ..  File Version 0.1  1/10/2016   }
+{                                                       }
+{ Get Last Version From Here :                          }
+{ https://github.com/orwah/Arabic-Delphi-VCL-Units      }
+{                                                       }
+{*******************************************************}
+
+{*******************************************************}
+{                                                       }
 {            Delphi Visual Component Library            }
 {                                                       }
 { Copyright(c) 2016 Embarcadero Technologies, Inc.      }

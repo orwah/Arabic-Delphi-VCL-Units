@@ -2,7 +2,7 @@
 {                                                       }
 {            Arabic Delphi VCL Units                    }
 {                                                       }
-{ Modified by : Orwah Ali Issa (www.sy-it.com)          }
+{ Modified by : Orwah Ali Issa (www.orwah.net)          }
 {                                                       }
 { Delphi 10.1 Berline ..  File Version 0.1  1/10/2016   }
 {                                                       }
@@ -38,7 +38,7 @@ resourcestring
   SInvalidDateTime = '''%s'' ·Ì”  ﬁÌ„… „‰«”»… ·· «—ÌŒ';
   SInvalidDateTimeFloat = '''%g'' ·Ì”  ﬁÌ„… „‰«”»… ·· «—ÌŒ Ê«·Êﬁ ';
   SInvalidTimeStamp = '''%d.%d'' ·Ì”  ﬁÌ„… „‰ÿﬁ… “„‰Ì… „‰«”»…';
-  SInvalidGUID = '''%s'' is not a valid GUID value';
+  SInvalidGUID = '''%s'' ·Ì”  ﬁÌ„… GUID ’«·Õ…';
   SInvalidBoolean = '''%s'' ·Ì”  ﬁÌ„… »Ê·Ì«‰Ì… „‰«”»…';
   STimeEncodeError = '„⁄«„·  ‰”Ìﬁ «·Êﬁ  €Ì— „”„ÊÕ';
   SDateEncodeError = '„⁄«„·  ‰”Ìﬁ «· «—ÌŒ €Ì— „”„ÊÕ';
@@ -59,7 +59,7 @@ resourcestring
   SOverflow = 'ﬁÌ„… ⁄œœ ⁄‘—Ì ›«∆÷…';
   SUnderflow = 'ﬁÌ„… ⁄œœ ⁄‘—Ì œÊ‰ «·„”„ÊÕ';
   SInvalidPointer = '⁄„·Ì… „ƒ‘—«  €Ì— „”„ÊÕ…';
-  SInvalidCast = 'Invalid class typecast';
+  SInvalidCast = ' ÕÊÌ· €Ì— ’«·Õ ··√’‰«›';
 {$IFDEF MSWINDOWS}
   SAccessViolationArg3 = 'œŒÊ· «‰ Â«ﬂÌ ··⁄‰Ê«‰ %p. %s „‰ «·⁄‰Ê«‰ %p';
 {$ENDIF MSWINDOWS}
@@ -68,42 +68,42 @@ resourcestring
 {$ENDIF LINUX or MACOS or ANDROID}
   SAccessViolationNoArg = 'œŒÊ· «‰ Â«ﬂÌ';
   SStackOverflow = '›Ì÷ ›Ì «·„ﬂœ”';
-  SControlC = 'Control-C hit';
-  SQuit = 'Quit key hit';
-  SPrivilege = 'Privileged instruction';
+  SControlC = '≈÷€ÿ Control-C';
+  SQuit = '≈÷€ÿ “— «·Œ—ÊÃ Quit';
+  SPrivilege = '«· ⁄·Ì„…  Õ «Ã ’·«ÕÌ« ';
   SOperationAborted = ' „ «‰Â«¡ «·⁄„·Ì…';
-  SException = 'Exception %s in module %s at %p.' + sLineBreak + '%s%s' + sLineBreak;
+  SException = '«” À‰«¡ %s ›Ì ÊÕœ… %s ›Ì %p.' + sLineBreak + '%s%s' + sLineBreak;
   SExceptTitle = 'Œÿ√ ›Ì «· ÿ»Ìﬁ ';
 {$IF Defined(LINUX) or Defined(MACOS) or Defined(ANDROID)}
   SSigactionFailed = 'sigaction call failed';
   SOSExceptionHandlingFailed = 'OS exception handling initialization failed';
 {$ENDIF LINUX or MACOS or ANDROID}
-  SInvalidFormat = 'Format ''%s'' invalid or incompatible with argument';
-  SArgumentMissing = 'No argument for format ''%s''';
-  SDispatchError = 'Variant method calls not supported';
+  SInvalidFormat = '«· ‰”Ìﬁ ''%s'' €Ì— ’«·Õ √Ê €Ì— „ Ê«›ﬁ „⁄ «·„⁄«„·';
+  SArgumentMissing = '·«„⁄«„·  „‰ √Ã· «· ‰”Ìﬁ ''%s''';
+  SDispatchError = '«” œ⁄«¡«  «·„‰«ÂÃ „‰ ‰Ê⁄ Variant €Ì— „œ⁄Ê„…';
   SReadAccess = 'ﬁ—«¡…';
   SWriteAccess = 'ﬂ «»…';
   SExecuteAccess = ' ‰›Ì–';
   SInvalidAccess = 'œŒÊ· €Ì— „”„ÊÕ';
-  SResultTooLong = 'Format result longer than 4096 characters';
-  SFormatTooLong = 'Format string too long';
+  SResultTooLong = '‰ ÌÃ… «· ‰”Ìﬁ √ﬂ»— „‰ 4096 „Õ—›';
+  SFormatTooLong = '‰’ «· ‰”Ìﬁ ÿÊÌ· Ãœ«';
 {$IFDEF MACOS}
-  SCFStringFailed = 'Error creating CFString';
+  SCFStringFailed = 'Œÿ√ ›Ì ≈‰‘«¡ CFString';
 {$ENDIF MACOS}
 {$IF defined(USE_LIBICU)}
-  SICUError = 'ICU Error: %d, %s';
+  SICUError = 'Œÿ√ ICU : %d, %s';
   SICUErrorOverflow = 'ICU Overflow Error: %d, %s, Needed Length=%d';
 {$ENDIF defined(USE_LIBICU)}
 
-  SVarArrayCreate = 'Error creating variant or safe array';
-  SVarArrayBounds = 'Variant or safe array index out of bounds';
-  SVarArrayLocked = 'Variant or safe array is locked';
-  SVarArrayWithHResult = 'Unexpected variant or safe array error: %s%.8x';
+  SVarArrayCreate = 'Œÿ√ ›Ì ≈‰‘«¡ «·„ €Ì— √Ê «·„’›Ê›…';
+  SVarArrayBounds = '«·›Â—” «·„Õœœ Œ«—Ã «·ÕœÊœ';
+  SVarArrayLocked = '«·„ €Ì— √Ê «·„’›Ê›… „ﬁ›·…';
+  SVarArrayWithHResult = 'Œÿ√ €Ì— „ Êﬁ⁄ ›Ì «·„ €Ì— «Ê «·„’›Ê›… : %s%.8x';
 
-  SInvalidVarCast = 'Invalid variant type conversion';
-  SInvalidVarOp = 'Invalid variant operation';
-  SInvalidVarNullOp = 'Invalid NULL variant operation';
-  SInvalidVarOpWithHResultWithPrefix = 'Invalid variant operation (%s%.8x)'#10'%s';
+  SInvalidVarCast = ' €Ì— €Ì— ’«·Õ ·‰„ÿ «·„ ÕÊ· „‰ ‰Ê⁄ variant';
+  SInvalidVarOp = '⁄„·Ì… €Ì— ’«·Õ… ⁄·Ï „ ÕÊ· „‰ ‰„ÿ variant';
+  SInvalidVarNullOp = '⁄„·Ì… €Ì— ’«·Õ… ⁄·Ï „ €Ì— variant ﬁÌ„ Â  NULL';
+  SInvalidVarOpWithHResultWithPrefix = '⁄„·Ì… €Ì— ’«·Õ… ⁄·Ï „ €Ì— „‰ ‰„ÿ variant (%s%.8x)'#10'%s';
   SVarTypeRangeCheck1 = 'Range check error for variant of type (%s)';
   SVarTypeRangeCheck2 = 'Range check error while converting variant of type (%s) into type (%s)';
   SVarTypeOutOfRangeWithPrefix = 'Custom variant type (%s%.4x) is out of range';
@@ -111,52 +111,44 @@ resourcestring
   SVarTypeNotUsableWithPrefix = 'Custom variant type (%s%.4x) is not usable';
   SVarTypeTooManyCustom = 'Too many custom variant types have been registered';
 
-  // the following are not used anymore
-  SVarNotArray = 'Variant is not an array' deprecated; // not used, use SVarInvalid instead
-  SVarTypeUnknown = 'Unknown custom variant type ($%.4x)' deprecated; // not used anymore
-  SVarTypeOutOfRange = 'Custom variant type ($%.4x) is out of range' deprecated;
-  SVarTypeAlreadyUsed = 'Custom variant type ($%.4x) already used by %s' deprecated;
-  SVarTypeNotUsable = 'Custom variant type ($%.4x) is not usable' deprecated;
-  SInvalidVarOpWithHResult = 'Invalid variant operation ($%.8x)' deprecated;
-
-  SVarTypeCouldNotConvert = 'Could not convert variant of type (%s) into type (%s)';
-  SVarTypeConvertOverflow = 'Overflow while converting variant of type (%s) into type (%s)';
-  SVarOverflow = 'Variant overflow';
-  SVarInvalid = 'Invalid argument';
-  SVarBadType = 'Invalid variant type';
-  SVarNotImplemented = 'Operation not supported';
-  SVarOutOfMemory = 'Variant operation ran out memory';
-  SVarUnexpected = 'Unexpected variant error';
+  SVarTypeCouldNotConvert = '·«Ì„ﬂ‰  ÕÊÌ· „ ÕÊ· variant „‰ ‰„ÿ (%s) «·Ï ‰„ÿ (%s)';
+  SVarTypeConvertOverflow = 'ÕœÀ  Õ«·… ›Ì÷ ⁄‰œ  €ÌÌ— „ ÕÊ· variant „‰ ‰„ÿ (%s) ≈·Ï ‰„ÿ (%s)';
+  SVarOverflow = 'ÕœÀ  Õ«·… ›Ì÷ „⁄ „ ÕÊ· „‰ ‰Ê⁄ Variant';
+  SVarInvalid = '„⁄«„· €Ì— ’«·Õ';
+  SVarBadType = '‰„ÿ „ ÕÊ· variant €Ì— ’«·Õ';
+  SVarNotImplemented = '«·⁄„·Ì… €Ì— „œ⁄Ê„…';
+  SVarOutOfMemory = '«·⁄„·Ì… ⁄·Ï „ ÕÊ· Variant Œ—Ã  ⁄‰ «·–«ﬂ—… «·„Œ’’…';
+  SVarUnexpected = 'Œÿ√ €Ì— „⁄—Ê› ›Ì „ ÕÊ· variant';
 
   SVarDataClearRecursing = 'Recursion while doing a VarDataClear';
   SVarDataCopyRecursing = 'Recursion while doing a VarDataCopy';
   SVarDataCopyNoIndRecursing = 'Recursion while doing a VarDataCopyNoInd';
   SVarDataInitRecursing = 'Recursion while doing a VarDataInit';
   SVarDataCastToRecursing = 'Recursion while doing a VarDataCastTo';
-  SVarIsEmpty = 'Variant is empty';
-  sUnknownFromType = 'Cannot convert from the specified type';
-  sUnknownToType = 'Cannot convert to the specified type';
-  SExternalException = 'External exception %x';
-  SAssertionFailed = 'Assertion failed';
-  SIntfCastError = 'Interface not supported';
+  SVarIsEmpty = '«·„ ÕÊ· Variant ›«—€';
+  sUnknownFromType = '·«Ì„ﬂ‰ «· ÕÊÌ· „‰ «·‰„ÿ «·„Õœœ';
+  sUnknownToType = '·«Ì„ﬂ‰ «· ÕÊÌ· ≈·Ï «·‰„ÿ «·„Õœœ';
+  SExternalException = '«” À‰«¡ Œ«—ÃÌ %x';
+  SAssertionFailed = '›‘· ›Ì «· ÊﬂÌœ';
+  SIntfCastError = '«·Ê«ÃÂ… €Ì— „œ⁄Ê„…';
   SSafecallException = 'Exception in safecall method';
   SMonitorLockException = 'Object lock not owned';
   SNoMonitorSupportException = 'Monitor support function not initialized';
-  SNotImplemented = 'Feature not implemented';
+  SNotImplemented = '«·„Ì“… €Ì— „œ⁄Ê„…';
   SObjectDisposed = 'Method called on disposed object';
-  SAssertError = '%s (%s, line %d)';
+  SAssertError = '%s (%s, «·”ÿ— %d)';
   SAbstractError = 'Abstract Error';
-  SModuleAccessViolation = 'Access violation at address %p in module ''%s''. %s of address %p';
-  SCannotReadPackageInfo = 'Cannot access package information for package ''%s''';
-  sErrorLoadingPackage = 'Can''t load package %s.'+sLineBreak+'%s';
-  SInvalidPackageFile = 'Invalid package file ''%s''';
-  SInvalidPackageHandle = 'Invalid package handle';
-  SDuplicatePackageUnit = 'Cannot load package ''%s.''  It contains unit ''%s'', ' +
-    'which is also contained in package ''%s''';
+  SModuleAccessViolation = '«‰ Â«ﬂ ›Ì «·Ê’Ê· ··⁄‰Ê«‰ %p ›Ì «·ÊÕœ… ''%s''. %s ··⁄‰Ê«‰ %p';
+  SCannotReadPackageInfo = '·«Ì„ﬂ‰ «·œŒÊ· «·Ï „⁄·Ê„«  «·—“„… , ··Õ“„… ''%s''';
+  sErrorLoadingPackage = '·«Ì„ﬂ‰  Õ„Ì· «·Õ“„… %s.'+sLineBreak+'%s';
+  SInvalidPackageFile = '„·› «·Õ“„… €Ì— ’«·Õ ''%s''';
+  SInvalidPackageHandle = '—ﬁ„ „ﬁ»÷ «·Õ“„… €Ì— ’«·Õ';
+  SDuplicatePackageUnit = '·«Ì„ﬂ‰  Õ„Ì· «·Õ“„… ''%s.''  «‰Â«  ÕÊÌ «·ÊÕœ… ''%s'', ' +
+    'Ê«· Ì ÂÌ «Ì÷« „Õ Ê«… ›Ì «·Õ“„… ''%s''';
   SOSError = 'Œÿ√ ›Ì «·‰Ÿ«„.  «·ﬂÊœ: %d.'+sLineBreak+'%s%s';
   SUnkOSError = '›‘· «” œ⁄«¡ ÊŸÌ›… „‰ «·‰Ÿ«„';
 {$IFDEF MSWINDOWS}
-  SWin32Error = 'Win32 Error.  Code: %d.'#10'%s' deprecated 'Use SOSError'; 
+  SWin32Error = 'Œÿ√ ÊÌ‰œÊ“32 , «·—„“: %d.'#10'%s' deprecated 'Use SOSError'; 
   SUnkWin32Error = 'A Win32 API function failed' deprecated 'Use SUnkOSError';
 {$ENDIF}
   SNL = '«· ÿ»Ìﬁ €Ì— „—Œ’ ·«” Œœ«„ Â–Â «·„Ì“…';
@@ -208,18 +200,18 @@ resourcestring
 {$ENDIF}
 
   SCannotCreateDir = '·«Ì„ﬂ‰ ≈‰‘«¡ «·„Ã·œ';
-  SCodesetConversionError = 'Codeset conversion failure';
+  SCodesetConversionError = '›‘· ›Ì  ÕÊÌ· Codeset';
 
   // Used by TEncoding
-  SInvalidSourceArray = 'Invalid source array';
-  SInvalidDestinationArray = 'Invalid destination array';
-  SCharIndexOutOfBounds = 'Character index out of bounds (%d)';
-  SByteIndexOutOfBounds = 'Start index out of bounds (%d)';
-  SInvalidCharCount = 'Invalid count (%d)';
-  SInvalidDestinationIndex = 'Invalid destination index (%d)';
-  SInvalidCodePage = 'Invalid code page';
-  SInvalidEncodingName = 'Invalid encoding name';
-  SNoMappingForUnicodeCharacter = 'No mapping for the Unicode character exists in the target multi-byte code page';
+  SInvalidSourceArray = '„’›Ê›… «·„’œ— €Ì— ’«·Õ…';
+  SInvalidDestinationArray = '„’›Ê›… «·ÊÃÂ… €Ì— ’«·Õ…';
+  SCharIndexOutOfBounds = '›Â—” «·„Õ—› Œ«—Ã «·ÕœÊœ (%d)';
+  SByteIndexOutOfBounds = '›Â—” «·»œ«Ì… Œ«—Ã «·ÕœÊœ (%d)';
+  SInvalidCharCount = ' ⁄œ«œ €Ì— ’«·Õ (%d)';
+  SInvalidDestinationIndex = '›Â—” ÊÃÂ… €Ì— ’«·Õ (%d)';
+  SInvalidCodePage = '’›Õ… «·ﬂÊœ €Ì— ’«·Õ…';
+  SInvalidEncodingName = '«”„ «· —„Ì“ €Ì— ’«·Õ';
+  SNoMappingForUnicodeCharacter = '·«ÌÊÃœ  ŒÿÌÿ „‰ «Ã· „Õ«—› ÌÊ‰ÌﬂÊœ „ÊÃÊœ ›Ì ’›Õ… «·ﬂÊœ «·Âœ› multi-byte code page';
 
 implementation
 
