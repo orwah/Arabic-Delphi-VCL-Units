@@ -5809,6 +5809,7 @@ begin
       //orwah
 if bidimode=bdRightToLeft then
 begin
+StyleElements := [ seBorder, seFont]; //·ﬂÌ ·« ŸÂ— «·⁄‰«ÊÌ‰ »«·„ﬁ·Ê»
 Params.Style := Params.Style or TVS_RTLREADING;
 Params.ExStyle := Params.ExStyle or WS_EX_LAYOUTRTL or WS_EX_NOINHERITLAYOUT;
 end;
@@ -6517,7 +6518,7 @@ var
   Details: TThemedElementDetails;
 begin
   if (PageControl <> nil) and StyleServices.Enabled and
-     (seClient in PageControl.StyleElements) and
+    //orwah (seClient in PageControl.StyleElements) and
      ((PageControl.Style = tsTabs) or TStyleManager.IsCustomStyleActive) then
   begin
     GetWindowRect(Handle, R);
@@ -7304,6 +7305,7 @@ begin
   //orwah
   if bidimode=bdRightToLeft then
 begin
+StyleElements := [ seBorder, seFont]; //·ﬂÌ ·« ŸÂ— «·⁄‰«ÊÌ‰ »«·„ﬁ·Ê»
   Params.Style := Params.Style or TVS_RTLREADING;
   Params.ExStyle := Params.ExStyle or WS_EX_LAYOUTRTL or WS_EX_RIGHT;
 end;
@@ -8045,7 +8047,11 @@ begin
 
         //orwah
     if bidimode=bdRightToLeft then
+    begin
+     StyleElements := [ seBorder, seFont]; //·ﬂÌ ·« ŸÂ— «·⁄‰«ÊÌ‰ »«·„ﬁ·Ê»
      Params.ExStyle := Params.ExStyle or WS_EX_LAYOUTRTL or WS_EX_NOINHERITLAYOUT;
+     end;
+
   end;
 end;
 
@@ -22438,6 +22444,7 @@ begin
     if parent.bidimode=bdRightToLeft then
     begin
   //  drawingstyle:=dsGradient;
+       StyleElements := [ seBorder, seFont]; // ·ﬂÌ ·« ŸÂ— «·⁄‰Ê«Ì‰ »«·„ﬁ·Ê»
     transparent:=false;
     Params.ExStyle :=Params.ExStyle or WS_EX_TRANSPARENT or WS_EX_RTLREADING or WS_EX_RIGHT or WS_EX_LAYOUTRTL or WS_EX_NOINHERITLAYOUT;
     end;
