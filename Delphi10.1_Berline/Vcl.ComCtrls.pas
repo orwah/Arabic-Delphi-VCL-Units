@@ -595,7 +595,6 @@ type
     class destructor Destroy;
     function GetOnDrawPanel: TDrawPanelEvent;
     procedure SetOnDrawPanel(const Value: TDrawPanelEvent);
-
   published
     property Action;
     property AutoHint default False;
@@ -3075,7 +3074,6 @@ type
 {$ENDIF}
     function StoreGroups: Boolean;
   protected
-
     procedure ActionChange(Sender: TObject; CheckDefaults: Boolean); override;
     function CanObserve(const ID: Integer): Boolean; override;
     function CanChange(Item: TListItem; Change: Integer): Boolean; dynamic;
@@ -6271,17 +6269,10 @@ end;
 
 { TTabControl }
 
-//procedure TTabControl.CNNotify(var Msg: TWMNotify);
-//begin
-//
-//end;
-
 class constructor TTabControl.Create;
 begin
   TCustomStyleEngine.RegisterStyleHook(TTabControl, TTabControlStyleHook);
 end;
-
-
 
 class destructor TTabControl.Destroy;
 begin
@@ -6354,7 +6345,6 @@ begin
   inherited CreateParams(Params);
     with Params.WindowClass do
       style := style and not (CS_HREDRAW or CS_VREDRAW);
-
 end;
 
 procedure TTabSheet.ReadState(Reader: TReader);
@@ -6541,9 +6531,6 @@ begin
   ControlStyle := [csDoubleClicks, csOpaque, csPannable, csGestures];
   FPages := TList.Create;
 end;
-
-
-
 
 destructor TPageControl.Destroy;
 var
@@ -12983,15 +12970,10 @@ end;
 
 { TTreeView }
 
-
-
-
 class constructor TTreeView.Create;
 begin
   TCustomStyleEngine.RegisterStyleHook(TTreeView, TTreeViewStyleHook);
 end;
-
-
 
 class destructor TTreeView.Destroy;
 begin
@@ -21772,17 +21754,12 @@ begin
   FStyle := tbsButton;
 end;
 
-
-
 procedure TToolButton.MouseDown(Button: TMouseButton; Shift: TShiftState;
   X, Y: Integer);
-
 begin
-
   if (Style = tbsDropDown) and (Button = mbLeft) then
     if Enabled or EnableDropdown then
     Down := not Down;
-
   inherited MouseDown(Button, Shift, X, Y);
 end;
 
@@ -22424,7 +22401,6 @@ const
   FlatOnXp: array[Boolean] of DWORD = (0, TBSTYLE_FLAT);
   TransparentStyles: array[Boolean] of DWORD = (0, TBSTYLE_TRANSPARENT);
   CustomizeStyles: array[Boolean] of DWORD = (0, CCS_ADJUSTABLE);
-
 begin
   FNewStyle := InitCommonControl(ICC_BAR_CLASSES);
   inherited CreateParams(Params);
@@ -23863,7 +23839,6 @@ var
             else
               Inc(LWidth, 13);
 
-
           Tmp := X + LWidth;
           if Tmp > CX then
             CX := Tmp;
@@ -24218,7 +24193,6 @@ var
   NMTB: PNMToolBar;
   TBCustomDraw: PNMTBCustomDraw;
 {$ENDIF}
-
 begin
   with Message do
     case NMHdr.code of
@@ -24498,8 +24472,6 @@ begin
           FRestoring := False;
         end;
     end;
-
-
 end;
 
 procedure TToolBar.RecreateButtonsFromToolbar;
@@ -24899,7 +24871,7 @@ begin
          if bidimode=bdRightToLeft then
          inc(X, cDropDownWidth div 2)
          else
-          dec(X, cDropDownWidth div 2);
+          Dec(X, cDropDownWidth div 2);
       end;
       if (List and not AllowTextButtons) or
          (AllowTextButtons and (Button.Style = tbsTextButton)) then
@@ -24942,10 +24914,15 @@ begin
       FBitmap.Canvas.Brush.Style := bsClear;
       if (ImageList <> nil) and List and ((Button.Style <> tbsTextButton) or
          ((Button.Style = tbsTextButton) and (Button.ImageIndex <> -1))) then
+	  begin
        if bidimode=bdRightToLeft then
         R.Left := - ImageList.Width
       else
         R.Left := ImageList.Width;
+	  end
+	  else
+        R.Left := 0;
+		
       R.Right := Button.Width;
 
       Str := Button.Caption;
@@ -29338,6 +29315,13 @@ var
   IConX, IConY: Integer;
   PS: TPaintStruct;
 begin
+  if Message.Msg = WM_MOUSEWHEEL then
+  begin
+    WndProc(Message);
+    if Message.Result = 1 then
+      Exit;
+  end;
+
   if Style = csExDropDown then
   begin
     case Message.Msg of
@@ -29775,8 +29759,6 @@ class constructor TStatusBar.Create;
 begin
   TCustomStyleEngine.RegisterStyleHook(TStatusBar, TStatusBarStyleHook);
 end;
-
-
 
 class destructor TStatusBar.Destroy;
 begin
@@ -33135,6 +33117,14 @@ procedure TToolBarStyleHook.WndProc(var Message: TMessage);
 begin
   // Reserved for potential updates
   inherited;
+  case Message.Msg of
+    TB_SETIMAGELIST:
+      if FImages <> nil then
+      begin
+        FreeAndNil(FImages);
+        RedrawWindow(Handle, nil, 0, RDW_INVALIDATE);
+      end;
+  end;  
 end;
 
 procedure TToolBarStyleHook.PaintNC(Canvas: TCanvas);
@@ -33336,8 +33326,18 @@ begin
       R1 := R;
       if TStyleManager.SystemStyle.Enabled then
         R1.Right := R1.Left + 4;
-      Details := LStyle.GetElementDetails(ttbSeparatorNormal);
-      LStyle.DrawElement(Canvas.Handle, Details, R1);
+      if (Control is TToolBar) and not (TToolBar(Control).Wrapable) and
+         (TToolBar(Control).Buttons[I].Wrap) then
+      begin
+        R1 := Rect(0, R1.CenterPoint.Y, Control.ClientWidth, R1.CenterPoint.Y + 2);
+        Frame3D(Canvas, R1,
+          StyleServices.GetSystemColor(clBtnShadow), StyleServices.GetSystemColor(clBtnHighLight), 1);
+      end
+      else
+      begin
+        Details := LStyle.GetElementDetails(ttbSeparatorNormal);
+        LStyle.DrawElement(Canvas.Handle, Details, R1);
+      end;
       ImageDrawed := False;
     end
     else if DrawButtonFace then

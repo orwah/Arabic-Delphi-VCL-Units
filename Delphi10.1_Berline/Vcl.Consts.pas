@@ -26,6 +26,7 @@ unit Vcl.Consts;
 interface
 
   resourcestring
+  SSelectADate = '«Œ —  «—ÌŒ';
   SOpenFileTitle = '› Õ';
   SCantWriteResourceStreamError = '·«Ì„ﬂ‰ «·ﬂ «»… ·„Ê—œ „Œ’’ ··ﬁ—«¡… ›ﬁÿ';
   SDuplicateReference = ' „ «” œ⁄«¡ €—÷ «·ﬂ «»… WriteObject „— Ì‰ „‰ √Ã· ‰›” «·„‰ ”Œ';
