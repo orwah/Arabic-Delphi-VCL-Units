@@ -55,11 +55,14 @@ type
     N5: TMenuItem;
     N12: TMenuItem;
     CustomizeActionBars1: TCustomizeActionBars;
-    TabSheet4: TTabSheet;
-    Button5: TButton;
     TabControl1: TTabControl;
     MonthCalendar1: TMonthCalendar;
     HeaderControl1: THeaderControl;
+    N6: TMenuItem;
+    N41: TMenuItem;
+    ComboBox1: TComboBox;
+    Button6: TButton;
+    Button5: TButton;
     procedure TrackBar1Change(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
@@ -71,6 +74,9 @@ type
     procedure AdvMemoPaste1Execute(Sender: TObject);
     procedure AdvMemoDelete1Execute(Sender: TObject);
     procedure Button5Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure ComboBox1Change(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -84,7 +90,7 @@ implementation
 
 {$R *.dfm}
 
-
+ uses vcl.themes;
 
 
 procedure TForm1.AdvMemoCopy1Execute(Sender: TObject);
@@ -142,6 +148,26 @@ end;
 procedure TForm1.Button5Click(Sender: TObject);
 begin
 PageControl1.Pages[500].SetFocus;
+end;
+
+procedure TForm1.Button6Click(Sender: TObject);
+begin
+InputBox('«·⁄‰Ê«‰','√œŒ· «·ﬁÌ„…','«·ﬁÌ„…');
+end;
+
+procedure TForm1.ComboBox1Change(Sender: TObject);
+begin
+ TStyleManager.SetStyle(ComboBox1.Text);
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+var StyleName:string;
+begin
+  for StyleName in TStyleManager.StyleNames do
+    ComboBox1.Items.Add(StyleName);
+
+  ComboBox1.ItemIndex := ComboBox1.Items.IndexOf(TStyleManager.ActiveStyle.Name);
+
 end;
 
 procedure TForm1.TrackBar1Change(Sender: TObject);

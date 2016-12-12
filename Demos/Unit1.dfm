@@ -3,8 +3,8 @@ object Form1: TForm1
   Top = 0
   BiDiMode = bdRightToLeft
   Caption = '   '#1576#1585#1606#1575#1605#1580' '#1578#1580#1585#1610#1576#1610'  . .'
-  ClientHeight = 425
-  ClientWidth = 668
+  ClientHeight = 435
+  ClientWidth = 687
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,16 +13,18 @@ object Form1: TForm1
   Font.Style = []
   OldCreateOrder = False
   ParentBiDiMode = False
+  PopupMenu = PopupMenu1
+  OnCreate = FormCreate
   DesignSize = (
-    668
-    425)
+    687
+    435)
   PixelsPerInch = 96
   TextHeight = 13
   object TreeView1: TTreeView
-    Left = 531
-    Top = 100
+    Left = 550
+    Top = 123
     Width = 129
-    Height = 300
+    Height = 287
     Anchors = [akTop, akRight, akBottom]
     Indent = 19
     PopupMenu = PopupMenu1
@@ -49,21 +51,23 @@ object Form1: TForm1
   object PageControl1: TPageControl
     Left = 11
     Top = 36
-    Width = 514
-    Height = 364
+    Width = 533
+    Height = 374
     ActivePage = TabSheet1
     Anchors = [akLeft, akTop, akRight, akBottom]
+    TabHeight = 20
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = '   '#1605#1603#1608#1606#1575#1578'   '
-      ExplicitLeft = 8
-      ExplicitTop = 28
+      ExplicitTop = 24
+      ExplicitWidth = 506
+      ExplicitHeight = 336
       DesignSize = (
-        506
-        336)
+        525
+        344)
       object DateTimePicker1: TDateTimePicker
-        Left = 315
-        Top = 104
+        Left = 337
+        Top = 120
         Width = 167
         Height = 21
         Anchors = [akTop, akRight]
@@ -73,16 +77,12 @@ object Form1: TForm1
       end
       object ListView1: TListView
         Left = 3
-        Top = 104
-        Width = 170
-        Height = 65
+        Top = 120
+        Width = 206
+        Height = 73
         Columns = <
           item
-            Caption = #1588#1588
-          end
-          item
-            Alignment = taRightJustify
-            Caption = #1604#1575#1604#1575
+            Caption = #1593#1605#1608#1583
           end>
         Groups = <
           item
@@ -100,15 +100,16 @@ object Form1: TForm1
             TitleImage = -1
           end>
         Items.ItemData = {
-          05440000000200000000000000FFFFFFFFFFFFFFFF0000000000000000000000
-          00042E0644064A06290600000000FFFFFFFFFFFFFFFF00000000000000000000
-          000004330644064A064406}
+          056C0000000300000000000000FFFFFFFFFFFFFFFF0000000000000000000000
+          00052E0644064A062906310000000000FFFFFFFFFFFFFFFF0000000000000000
+          00000000052E0644064A0629063200FFFFFFFFFFFFFFFFFFFFFFFF00000000FF
+          FFFFFF00000000052E0644064A0629063300}
         TabOrder = 1
       end
       object TrackBar1: TTrackBar
-        Left = 3
-        Top = 20
-        Width = 482
+        Left = 5
+        Top = 28
+        Width = 501
         Height = 45
         Anchors = [akLeft, akTop, akRight]
         Position = 2
@@ -116,9 +117,9 @@ object Form1: TForm1
         OnChange = TrackBar1Change
       end
       object ProgressBar1: TProgressBar
-        Left = 3
-        Top = 63
-        Width = 479
+        Left = 5
+        Top = 71
+        Width = 498
         Height = 17
         Anchors = [akLeft, akTop, akRight]
         Max = 10
@@ -127,9 +128,9 @@ object Form1: TForm1
       end
       object TabControl1: TTabControl
         Left = 3
-        Top = 175
+        Top = 208
         Width = 206
-        Height = 158
+        Height = 121
         TabOrder = 4
         Tabs.Strings = (
           #1578#1575#1576'1'
@@ -138,19 +139,21 @@ object Form1: TForm1
         TabIndex = 0
       end
       object MonthCalendar1: TMonthCalendar
-        Left = 215
+        Left = 234
         Top = 173
         Width = 288
         Height = 160
         Anchors = [akTop, akRight]
-        Date = 42641.683281701380000000
+        Date = 42641.845642546290000000
         TabOrder = 5
+        ExplicitLeft = 215
       end
       object HeaderControl1: THeaderControl
-        Left = 0
-        Top = 0
+        Left = 2
+        Top = 8
         Width = 506
         Height = 17
+        Align = alNone
         Sections = <
           item
             Alignment = taRightJustify
@@ -164,19 +167,19 @@ object Form1: TForm1
             Text = #1579#1575#1606#1610
             Width = 50
           end>
-        ExplicitLeft = 64
-        ExplicitTop = 176
-        ExplicitWidth = 0
       end
     end
     object TabSheet3: TTabSheet
       Caption = '  '#1589#1606#1575#1583#1610#1602' '#1575#1604#1585#1587#1575#1574#1604' '
       ImageIndex = 2
+      ExplicitTop = 24
+      ExplicitWidth = 506
+      ExplicitHeight = 336
       DesignSize = (
-        506
-        336)
+        525
+        344)
       object Button1: TButton
-        Left = 372
+        Left = 391
         Top = 40
         Width = 99
         Height = 25
@@ -184,9 +187,10 @@ object Form1: TForm1
         Caption = 'showmessage'
         TabOrder = 0
         OnClick = Button1Click
+        ExplicitLeft = 372
       end
       object Button3: TButton
-        Left = 372
+        Left = 391
         Top = 71
         Width = 99
         Height = 25
@@ -194,10 +198,11 @@ object Form1: TForm1
         Caption = 'messagedlg'
         TabOrder = 1
         OnClick = Button3Click
+        ExplicitLeft = 372
       end
       object Button4: TButton
-        Left = 372
-        Top = 128
+        Left = 391
+        Top = 152
         Width = 99
         Height = 25
         Anchors = [akTop, akRight]
@@ -205,14 +210,36 @@ object Form1: TForm1
         TabOrder = 2
         OnClick = Button4Click
       end
+      object Button6: TButton
+        Left = 391
+        Top = 102
+        Width = 99
+        Height = 25
+        Anchors = [akTop, akRight]
+        Caption = 'InputBox'
+        TabOrder = 3
+        OnClick = Button6Click
+      end
+      object Button5: TButton
+        Left = 391
+        Top = 183
+        Width = 99
+        Height = 25
+        Caption = 'Out Of Bound'
+        TabOrder = 4
+        OnClick = Button5Click
+      end
     end
     object TabSheet2: TTabSheet
-      Caption = #1575#1604#1571#1603#1588#1606#1586' Actions'
+      Caption = 'Action Bars'
       ImageIndex = 2
+      PopupMenu = PopupActionBar1
+      ExplicitTop = 24
+      ExplicitHeight = 346
       object ActionMainMenuBar1: TActionMainMenuBar
         Left = 0
         Top = 0
-        Width = 506
+        Width = 525
         Height = 25
         UseSystemFont = False
         ActionManager = ActionManager1
@@ -230,11 +257,12 @@ object Form1: TForm1
         Font.Style = []
         ParentBiDiMode = False
         Spacing = 0
+        ExplicitWidth = 506
       end
       object ActionToolBar1: TActionToolBar
         Left = 0
         Top = 25
-        Width = 506
+        Width = 525
         Height = 34
         ActionManager = ActionManager1
         Caption = 'ActionToolBar1'
@@ -251,37 +279,27 @@ object Form1: TForm1
         Orientation = boRightToLeft
         ParentFont = False
         Spacing = 0
+        ExplicitWidth = 506
       end
       object Memo1: TMemo
         Left = 0
         Top = 59
-        Width = 506
-        Height = 277
+        Width = 525
+        Height = 285
         Align = alClient
         Lines.Strings = (
           'Memo1')
         PopupMenu = PopupActionBar1
         TabOrder = 2
-      end
-    end
-    object TabSheet4: TTabSheet
-      Caption = #1585#1587#1575#1574#1604' '#1586#1605#1606' '#1575#1604#1578#1588#1594#1610#1604
-      ImageIndex = 3
-      object Button5: TButton
-        Left = 344
-        Top = 40
-        Width = 75
-        Height = 25
-        Caption = #1582#1575#1585#1580' '#1575#1604#1581#1583#1608#1583
-        TabOrder = 0
-        OnClick = Button5Click
+        ExplicitWidth = 506
+        ExplicitHeight = 277
       end
     end
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Top = 406
-    Width = 668
+    Top = 416
+    Width = 687
     Height = 19
     Panels = <
       item
@@ -294,12 +312,14 @@ object Form1: TForm1
         Text = #1605#1587#1575#1593#1583#1577
         Width = 150
       end>
-    SimpleText = #9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9'test'
+    SimpleText = #9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9'test'
+    ExplicitTop = 406
+    ExplicitWidth = 668
   end
   object ToolBar1: TToolBar
     Left = 0
     Top = 0
-    Width = 668
+    Width = 687
     Height = 30
     AutoSize = True
     ButtonHeight = 30
@@ -311,6 +331,7 @@ object Form1: TForm1
     ShowCaptions = True
     TabOrder = 3
     Transparent = False
+    ExplicitWidth = 668
     object ToolButton1: TToolButton
       Left = 0
       Top = 0
@@ -354,8 +375,8 @@ object Form1: TForm1
     end
   end
   object Button2: TButton
-    Left = 534
-    Top = 52
+    Left = 550
+    Top = 75
     Width = 120
     Height = 42
     Anchors = [akTop, akRight]
@@ -363,13 +384,22 @@ object Form1: TForm1
     TabOrder = 4
     OnClick = Button2Click
   end
+  object ComboBox1: TComboBox
+    Left = 550
+    Top = 48
+    Width = 129
+    Height = 21
+    TabOrder = 5
+    Text = 'ComboBox1'
+    OnChange = ComboBox1Change
+  end
   object ImageList1: TImageList
     Height = 24
     Width = 24
     Left = 56
-    Top = 137
+    Top = 121
     Bitmap = {
-      494C010106001400500018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010106001400540018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000003000000001002000000000000048
       000000000000000000000000000000000000000000007D7D7D007D7D7D007D7D
       7D007D7D7D007D7D7D007D7D7D007D7D7D007D7D7D007D7D7D007D7D7D007D7D
@@ -971,16 +1001,28 @@ object Form1: TForm1
       000000000000}
   end
   object PopupMenu1: TPopupMenu
+    Alignment = paCenter
+    AutoHotkeys = maManual
+    Images = ImageList1
     Left = 104
     Top = 112
     object N11: TMenuItem
       Caption = #1582#1610#1575#1585' 1'
+      ImageIndex = 4
     end
     object N21: TMenuItem
       Caption = #1582#1610#1575#1585' 2'
+      ImageIndex = 3
+    end
+    object N6: TMenuItem
+      Caption = '-'
     end
     object N31: TMenuItem
-      Caption = #1582#1610#1575#1585' 3'
+      Caption = #1582#1610#1575#1585' 3       '
+      object N41: TMenuItem
+        Caption = #1582#1610#1575#1585'4'
+        ImageIndex = 0
+      end
     end
   end
   object ActionManager1: TActionManager
@@ -1101,8 +1143,8 @@ object Form1: TForm1
     AutoHotkeys = maManual
     AutoLineReduction = maManual
     Images = ImageList1
-    Left = 392
-    Top = 136
+    Left = 272
+    Top = 80
     object MenuItem1: TMenuItem
       Action = AdvMemoCopy1
       AutoHotkeys = maManual

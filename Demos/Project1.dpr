@@ -3,7 +3,9 @@ program Project1;
 uses
   Vcl.Forms,
   System.Classes,
-  Unit1 in 'Unit1.pas' {Form1};
+  Unit1 in 'Unit1.pas' {Form1},
+  Vcl.Themes,
+  Vcl.Styles;
 
 {$R *.res}
 
