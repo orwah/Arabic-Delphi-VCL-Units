@@ -263,7 +263,13 @@ end;
 
       Offset := FSubMenuGlyphRect.Left - LBounds.Right -
         LMenuItemMargins.cxRightWidth - LSubMenuGlyphMargins.cxLeftWidth;
-      OffsetRect(LBounds, Offset, 0);
+
+        //orwah
+      if BiDiMode=bdRightToLeft  then
+      OffsetRect(LBounds,Offset - LWidth, 0)
+      else
+      OffsetRect(LBounds,Offset, 0);
+
       // Add Width of menu item to ShortCutBounds before using
       ShortCutBounds := LBounds;
       Inc(LWidth, LMenuItemMargins.cxLeftWidth + LMenuItemMargins.cxRightWidth);
