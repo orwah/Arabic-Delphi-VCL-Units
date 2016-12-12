@@ -322,7 +322,6 @@ var
   LColor: TColor;
   LDetails: TThemedElementDetails;
 begin
-
   // get format and color
   LFormats := TTextFormatFlags(Flags);
   if Selected and Enabled then
@@ -346,11 +345,13 @@ begin
     Winapi.Windows.DrawText(DC, PChar(LCaption), Length(LCaption), Rect, Flags);
   end
   else
+  begin
   //orwah
   if BiDiMode=bdRightToLeft then
   StyleServices.DrawText(DC, LDetails, LCaption, Rect, [tfRight, tfRtlReading], LColor)
   else
     StyleServices.DrawText(DC, LDetails, LCaption, Rect,LFormats , LColor);
+  end;
 end;
 
 procedure TThemedMenuItem.DrawBackground(var PaintRect: TRect);
@@ -417,7 +418,7 @@ begin
       else
       Location.X := (TextBounds.Left - ImageList.Width - Margins.Left - Margins.Right) div 2;
 
-    end;
+     end;
 
     if ImageList.Height = LImageSize.Y then
       Location.Y := ((FCheckRect.Bottom - FCheckRect.Top) - LImageSize.Y) div 2
@@ -469,7 +470,6 @@ procedure TThemedMenuItem.DrawText(var Rect: TRect; var Flags: Cardinal; Text: s
 var
   LRect: TRect;
 begin
-
   // Draw menu highlight
   if Selected and Enabled then
     StyleServices.DrawElement(Canvas.Handle, StyleServices.GetElementDetails(tmPopupItemHot), FPaintRect)
@@ -489,9 +489,9 @@ begin
   LRect.Right:=LRect.Right- GetImageSize.X-14;
 
    LRect.Top:=LRect.Top+(GetImageSize.Y div 4);
-   end
-   else
-   begin
+  end
+  else
+  begin
   DoDrawText(Canvas.Handle, Text, LRect, Flags or DT_CALCRECT or DT_NOCLIP);
   OffsetRect(LRect, Rect.Left,
   ((FPaintRect.Bottom - FPaintRect.Top) - (LRect.Bottom - LRect.Top)) div 2);

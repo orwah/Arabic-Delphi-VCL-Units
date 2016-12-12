@@ -6251,9 +6251,13 @@ begin
         Parent := Result;
         Picture.Icon.Handle := LoadIcon(0, IconID);
         AutoSize := True;
-        //SetBounds(HorzMargin, VertMargin, 32, 32);
+		
         //orwah
-        SetBounds(Result.width-58, VertMargin, 32, 32);
+        if Application.BiDiMode=bdRightToLeft then
+        SetBounds(Result.width-58, VertMargin, 32, 32)
+        else
+        SetBounds(HorzMargin, VertMargin, 32, 32);
+
       end;
     TMessageForm(Result).Message := TLabel.Create(Result);
     with TMessageForm(Result).Message do
@@ -6296,11 +6300,7 @@ begin
           if B = CancelButton then
             Cancel := True;
           SetBounds(X, IconTextHeight + VertMargin + VertSpacing,
-          ButtonWidth, ButtonHeight);
-          //orwah  ﬁ·» «·√“—«—
-        //  SetBounds(result.width-X, IconTextHeight + VertMargin + VertSpacing,
-        //    ButtonWidth, ButtonHeight);
-
+            ButtonWidth, ButtonHeight);
           Inc(X, ButtonWidth + ButtonSpacing);
           if B = mbHelp then
             OnClick := TMessageForm(Result).HelpButtonClick;
@@ -6720,7 +6720,8 @@ begin
   Form := TInputQueryForm.CreateNew(Application);
   with Form do
     try
-    BiDiMode:=bdRightToLeft;
+      // orwah
+      BiDiMode := Application.BiDiMode;
       FCloseQueryFunc :=
         function: Boolean
         var
@@ -6763,7 +6764,13 @@ begin
           Parent := Form;
           Caption := GetPromptCaption(APrompts[I]);
 		  //Left := MulDiv(8, DialogUnits.X, 4);
-          Left := Form.Width-Width-12;
+		  
+          // orwah
+          if BiDiMode = bdRightToLeft then
+            Left := Form.Width - Width - 12
+          else
+            Left := MulDiv(8, DialogUnits.X, 4);
+			
           Top := CurPrompt;
           Constraints.MaxWidth := MaxPromptWidth;
           WordWrap := True;
@@ -6773,12 +6780,22 @@ begin
         begin
           Parent := Form;
           PasswordChar := GetPasswordChar(APrompts[I]);
-		  //Left := Prompt.Left + MaxPromptWidth;
-          Left := 8;
+
+          // orwah
+          if BiDiMode = bdRightToLeft then
+            Left := 8
+          else
+            Left := Prompt.Left + MaxPromptWidth;
+
           Top := Prompt.Top + Prompt.Height - DialogUnits.Y -
             (GetTextBaseline(Edit, Canvas) - GetTextBaseline(Prompt, Canvas));
-		//	Width := Form.ClientWidth - Left - MulDiv(8, DialogUnits.X, 4);
-          Width := Form.ClientWidth - Left - Prompt.Width-10;
+
+          // orwah
+          if BiDiMode = bdRightToLeft then
+            Width := Form.ClientWidth - Left - Prompt.Width - 10
+          else
+            Width := Form.ClientWidth - Left - MulDiv(8, DialogUnits.X, 4);
+
           MaxLength := 255;
           Text := AValues[I];
           SelectAll;
@@ -6795,7 +6812,15 @@ begin
         Caption := SMsgDlgOK;
         ModalResult := mrOk;
         Default := True;
-        SetBounds(Form.ClientWidth - (ButtonWidth + MulDiv(8, DialogUnits.X, 4)) , ButtonTop, ButtonWidth, ButtonHeight);
+
+        // orwah
+        if BiDiMode = bdRightToLeft then
+          SetBounds(Form.ClientWidth - (ButtonWidth + MulDiv(8, DialogUnits.X, 4)), ButtonTop, ButtonWidth,
+            ButtonHeight)
+        else
+          SetBounds(Form.ClientWidth - (ButtonWidth + MulDiv(8, DialogUnits.X, 4)) * 2, ButtonTop, ButtonWidth,
+            ButtonHeight);
+
       end;
       with TButton.Create(Form) do
       begin
@@ -6803,7 +6828,15 @@ begin
         Caption := SMsgDlgCancel;
         ModalResult := mrCancel;
         Cancel := True;
-        SetBounds(Form.ClientWidth - (ButtonWidth + MulDiv(8, DialogUnits.X, 4))*2, ButtonTop, ButtonWidth, ButtonHeight);
+
+        // orwah
+        if BiDiMode = bdRightToLeft then
+          SetBounds(Form.ClientWidth - (ButtonWidth + MulDiv(8, DialogUnits.X, 4)) * 2, ButtonTop, ButtonWidth,
+            ButtonHeight)
+        else
+          SetBounds(Form.ClientWidth - (ButtonWidth + MulDiv(8, DialogUnits.X, 4)), ButtonTop, ButtonWidth,
+            ButtonHeight);
+
         Form.ClientHeight := Top + Height + 13;
       end;
       if ShowModal = mrOk then
@@ -6869,7 +6902,6 @@ begin
   try
     Title := ATitle;
     DefaultExt := ADefaultExt;
-
     if AFilter = '' then
       Filter := SDefaultFilter else
       Filter := AFilter;
@@ -6881,10 +6913,7 @@ begin
   finally
     Free;
   end;
-
 end;
-
-
 
 type
   TDefaultLoginCredentials = class sealed
@@ -6962,13 +6991,13 @@ initialization
   TLoginCredentialService.RegisterLoginHandler(TLoginCredentialService.Default, TDefaultLoginCredentials.LoginEventUsrPw);
   TLoginCredentialService.RegisterLoginHandler(TLoginCredentialService.DefaultUsrPwDm, TDefaultLoginCredentials.LoginEvent);
   TLoginCredentialService.RegisterLoginHandler(TLoginCredentialService.DefaultUsrPw, TDefaultLoginCredentials.LoginEventUsrPw);
-  //orwah
-  {NOT WORK WITH DLL's ..}
-  if Assigned(Application)  then
-  begin
+// orwah
+//if not IsLibrary then { NOT WORK WITH DLL's .. }
+ if Assigned(Application)  then
+ begin
+  Application.BiDiMode:= bdRightToLeft;
   Application.OnException :=  MyExceptionClass.MyExceptionHandler;
-  Application.BiDiMode:=bdRightToLeft;
-  end;
+ end;
 
   finalization
   TLoginCredentialService.UnregisterLoginHandler(TLoginCredentialService.DefaultUsrPw, TDefaultLoginCredentials.LoginEventUsrPw);
