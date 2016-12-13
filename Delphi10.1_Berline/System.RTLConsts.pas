@@ -16,455 +16,457 @@
 {                                                       }
 {           CodeGear Delphi Runtime Library             }
 {                                                       }
-{ Copyright(c) 1995-2015 Embarcadero Technologies, Inc. }
+{ Copyright(c) 2016 Embarcadero Technologies, Inc.      }
+{              All rights reserved                      }
 {                                                       }
 {*******************************************************}
 
 unit System.RTLConsts;
 
 interface
+{$HPPEMIT LEGACYHPP}
 
 resourcestring
-  SAncestorNotFound = 'ÇáÓáİ ÇáÃÚáì áÜ ''%s'' áã íÊã ÇáÚËæÑ Úáíå';
-  SAssignError = 'áÇíãßä äÓÈ  %s Åáì a %s';
-  SBitsIndexError = 'İåÑÓ ÇáŞíã ÇáËäÇÆíÉ ÎÇÑÌ ÇáÍÏæÏ ÇáãÓãæÍÉ';
-  SBucketListLocked = 'ÇáŞÇÆãÉ ãŞİáÉ ÎáÇá ÍáŞÉ ForEach İÚÇáÉ';
-  SCantWriteResourceStreamError = 'áÇíãßä ÇáßÊÇÈÉ Åáì ãÓáß resource stream ÎÇÕ ÈÇáŞÑÇÁÉ İŞØ';
-  SCharExpected = '''''%s'''' ãÊæŞÚÉ';
-  SCheckSynchronizeError = 'CheckSynchronize Êã ÇÓÊÏÚÇÆå ãä ÇáãÓáß thread $%x, æåæ áíÓ ÇáãÓáß ÇáÑÆíÓí';
-  SClassNotFound = 'ÇáÕäİ %s áã íÊã ÇáÚËæÑ Úáíå';
-  SDelimiterQuoteCharError = 'ÇáÎÇÕíÊÇä Delimiter æ QuoteChar áÇíÌÈ Ãä íãÊáßÇ äİÓ ÇáŞíãÉ';
-  SDuplicateClass = 'Õäİ ÈÇáÇÓã %s ãæÌæÏ ãÓÈŞÇ';
-  SDuplicateItem = 'ÇááÇÆÍÉ áÇÊÓãÍ ÈÇáŞíã ÇáãßÑÑÉ ($0%x)';
-  SDuplicateName = 'ãßæä ÈåĞÇ ÇáÇÓã %s ãæÌæÏ ãÓÈŞÇ';
-  SDuplicateString = 'ÇááÇÆÍÉ ÇáäÕíÉ áÇÊÓãÍ ÈÇáŞíã ÇáãßÑÑÉ';
-  SFCreateError = 'áÇíãßä ÅäÔÇÁ Çáãáİ %s';
-  SFCreateErrorEx = 'áÇíãßä ÅäÔÇÁ Çáãáİ "%s". %s';
-  SFixedColTooBig = 'ÚÏÏ ÇáÍŞæá ÇáËÇÈÊ íÌÈ Ãä íßæä ÃŞá ãä ÇáÚÏÏ Çáßáí ááÍŞæá ';
-  SFixedRowTooBig = 'ÚÏÏ ÇáÓØæÑ ÇáËÇÈÊå íÌÈ Ãä íßæä ÃŞá ãä ÇáÚÏÏ Çáßáí ááÓØæÑ';
-  SFOpenError = 'áÇíãßä İÊÍ Çáãáİ %s';
-  SFOpenErrorEx = 'áÇíãßä İÊÍ Çáãáİ "%s". %s';
-  SGridTooLarge = 'ÇáÔÈßÉ ßÈíÑÉ ÌÏÇ áåĞå ÇáÚãáíÉ';
-  SIdentifierExpected = 'ãä ÇáãÊæŞÚ æÌæÏ ãÚÑİ';
-  SIndexOutOfRange = 'İåÑÓ ÇáÔÈßÉ ÎÇÑÌ ÇáãÌÇá ÇáãÓãæÍ';
-  SIniFileWriteError = 'áÇíãßä ÇáßÊÇÈÉ Åáì %s';
+  SAncestorNotFound = 'Ø§Ù„Ø³Ù„Ù Ø§Ù„Ø£Ø¹Ù„Ù‰ Ù„Ù€ ''%s'' Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„ÙŠÙ‡';
+  SAssignError = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ù†Ø³Ø¨  %s Ø¥Ù„Ù‰ a %s';
+  SBitsIndexError = 'ÙÙ‡Ø±Ø³ Ø§Ù„Ù‚ÙŠÙ… Ø§Ù„Ø«Ù†Ø§Ø¦ÙŠØ© Ø®Ø§Ø±Ø¬ Ø§Ù„Ø­Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø³Ù…ÙˆØ­Ø©';
+  SBucketListLocked = 'Ø§Ù„Ù‚Ø§Ø¦Ù…Ø© Ù…Ù‚ÙÙ„Ø© Ø®Ù„Ø§Ù„ Ø­Ù„Ù‚Ø© ForEach ÙØ¹Ø§Ù„Ø©';
+  SCantWriteResourceStreamError = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ù„ÙƒØªØ§Ø¨Ø© Ø¥Ù„Ù‰ Ù…Ø³Ù„Ùƒ resource stream Ø®Ø§Øµ Ø¨Ø§Ù„Ù‚Ø±Ø§Ø¡Ø© ÙÙ‚Ø·';
+  SCharExpected = '''''%s'''' Ù…ØªÙˆÙ‚Ø¹Ø©';
+  SCheckSynchronizeError = 'CheckSynchronize ØªÙ… Ø§Ø³ØªØ¯Ø¹Ø§Ø¦Ù‡ Ù…Ù† Ø§Ù„Ù…Ø³Ù„Ùƒ thread $%x, ÙˆÙ‡Ùˆ Ù„ÙŠØ³ Ø§Ù„Ù…Ø³Ù„Ùƒ Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠ';
+  SClassNotFound = 'Ø§Ù„ØµÙ†Ù %s Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„ÙŠÙ‡';
+  SDelimiterQuoteCharError = 'Ø§Ù„Ø®Ø§ØµÙŠØªØ§Ù† Delimiter Ùˆ QuoteChar Ù„Ø§ÙŠØ¬Ø¨ Ø£Ù† ÙŠÙ…ØªÙ„ÙƒØ§ Ù†ÙØ³ Ø§Ù„Ù‚ÙŠÙ…Ø©';
+  SDuplicateClass = 'ØµÙ†Ù Ø¨Ø§Ù„Ø§Ø³Ù… %s Ù…ÙˆØ¬ÙˆØ¯ Ù…Ø³Ø¨Ù‚Ø§';
+  SDuplicateItem = 'Ø§Ù„Ù„Ø§Ø¦Ø­Ø© Ù„Ø§ØªØ³Ù…Ø­ Ø¨Ø§Ù„Ù‚ÙŠÙ… Ø§Ù„Ù…ÙƒØ±Ø±Ø© ($0%x)';
+  SDuplicateName = 'Ù…ÙƒÙˆÙ† Ø¨Ù‡Ø°Ø§ Ø§Ù„Ø§Ø³Ù… %s Ù…ÙˆØ¬ÙˆØ¯ Ù…Ø³Ø¨Ù‚Ø§';
+  SDuplicateString = 'Ø§Ù„Ù„Ø§Ø¦Ø­Ø© Ø§Ù„Ù†ØµÙŠØ© Ù„Ø§ØªØ³Ù…Ø­ Ø¨Ø§Ù„Ù‚ÙŠÙ… Ø§Ù„Ù…ÙƒØ±Ø±Ø©';
+  SFCreateError = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø¥Ù†Ø´Ø§Ø¡ Ø§Ù„Ù…Ù„Ù %s';
+  SFCreateErrorEx = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø¥Ù†Ø´Ø§Ø¡ Ø§Ù„Ù…Ù„Ù "%s". %s';
+  SFixedColTooBig = 'Ø¹Ø¯Ø¯ Ø§Ù„Ø­Ù‚ÙˆÙ„ Ø§Ù„Ø«Ø§Ø¨Øª ÙŠØ¬Ø¨ Ø£Ù† ÙŠÙƒÙˆÙ† Ø£Ù‚Ù„ Ù…Ù† Ø§Ù„Ø¹Ø¯Ø¯ Ø§Ù„ÙƒÙ„ÙŠ Ù„Ù„Ø­Ù‚ÙˆÙ„ ';
+  SFixedRowTooBig = 'Ø¹Ø¯Ø¯ Ø§Ù„Ø³Ø·ÙˆØ± Ø§Ù„Ø«Ø§Ø¨ØªÙ‡ ÙŠØ¬Ø¨ Ø£Ù† ÙŠÙƒÙˆÙ† Ø£Ù‚Ù„ Ù…Ù† Ø§Ù„Ø¹Ø¯Ø¯ Ø§Ù„ÙƒÙ„ÙŠ Ù„Ù„Ø³Ø·ÙˆØ±';
+  SFOpenError = 'Ù„Ø§ÙŠÙ…ÙƒÙ† ÙØªØ­ Ø§Ù„Ù…Ù„Ù %s';
+  SFOpenErrorEx = 'Ù„Ø§ÙŠÙ…ÙƒÙ† ÙØªØ­ Ø§Ù„Ù…Ù„Ù "%s". %s';
+  SGridTooLarge = 'Ø§Ù„Ø´Ø¨ÙƒØ© ÙƒØ¨ÙŠØ±Ø© Ø¬Ø¯Ø§ Ù„Ù‡Ø°Ù‡ Ø§Ù„Ø¹Ù…Ù„ÙŠØ©';
+  SIdentifierExpected = 'Ù…Ù† Ø§Ù„Ù…ØªÙˆÙ‚Ø¹ ÙˆØ¬ÙˆØ¯ Ù…Ø¹Ø±Ù';
+  SIndexOutOfRange = 'ÙÙ‡Ø±Ø³ Ø§Ù„Ø´Ø¨ÙƒØ© Ø®Ø§Ø±Ø¬ Ø§Ù„Ù…Ø¬Ø§Ù„ Ø§Ù„Ù…Ø³Ù…ÙˆØ­';
+  SIniFileWriteError = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ù„ÙƒØªØ§Ø¨Ø© Ø¥Ù„Ù‰ %s';
 
-  SInvalidActionCreation = 'İÔá İí ÅäÔÇÁ ÇáÍÏË';
-  SInvalidActionEnumeration = 'ÓÑÏ ÇáÍÏË ÛíÑ ÕÇáÍ';
-  SInvalidActionRegistration = 'ÊÍÏíË ÇáÍÏË ÛíÑ ÕÇáÍ ';
-  SInvalidActionUnregistration = 'ÅáÛÇÁ ÊÓÌíá ÇáÍÏË ÛíÑ ÕÇáÍ';
-  StrNoClientClass = 'ÇáÒÈæä áÇíãßä Ãä íßæä ãä ÇáÕäİ %s';
-  StrEActionNoSuported = 'ÇáÕäİ %s áÇíÏÚã åĞÇ ÇáÍÏË';
+  SInvalidActionCreation = 'ÙØ´Ù„ ÙÙŠ Ø¥Ù†Ø´Ø§Ø¡ Ø§Ù„Ø­Ø¯Ø«';
+  SInvalidActionEnumeration = 'Ø³Ø±Ø¯ Ø§Ù„Ø­Ø¯Ø« ØºÙŠØ± ØµØ§Ù„Ø­';
+  SInvalidActionRegistration = 'ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø­Ø¯Ø« ØºÙŠØ± ØµØ§Ù„Ø­ ';
+  SInvalidActionUnregistration = 'Ø¥Ù„ØºØ§Ø¡ ØªØ³Ø¬ÙŠÙ„ Ø§Ù„Ø­Ø¯Ø« ØºÙŠØ± ØµØ§Ù„Ø­';
+  StrNoClientClass = 'Ø§Ù„Ø²Ø¨ÙˆÙ† Ù„Ø§ÙŠÙ…ÙƒÙ† Ø£Ù† ÙŠÙƒÙˆÙ† Ù…Ù† Ø§Ù„ØµÙ†Ù %s';
+  StrEActionNoSuported = 'Ø§Ù„ØµÙ†Ù %s Ù„Ø§ÙŠØ¯Ø¹Ù… Ù‡Ø°Ø§ Ø§Ù„Ø­Ø¯Ø«';
 
-  SInvalidBinary = 'ŞíãÉ ËäÇÆíÉ ÛíÑ ÕÇáÍÉ';
-  SInvalidFileName = 'ÇÓã Çáãáİ ÛíÑ ÕÇáÍ : - %s';
-  SInvalidImage = 'ÊäÓíŞ ÛíÑ ÕÇáÍ';
-  SInvalidMask = '''%s'' åæ ŞäÇÚ ÛíÑ ÕÇáå ãä ÃÌá (%d)';
-  SInvalidName = '''''%s'''' ÇÓã ãßæä ÛíÑ ÕÇáÍ';
-  SInvalidProperty = 'ŞíãÉ ÇáÎÇÕíÉ ÛíÑ ÕÇáÍÉ';
-  SInvalidPropertyElement = 'ÚäÕÑ ÎÇÕíÉ ÛíÑ ÕÇáÍ: %s';
-  SInvalidPropertyPath = 'ãÓÇÑ ÎÇÕíÉ ÛíÑ ÕÇáÍ';
-  SInvalidPropertyType = 'äãØ ÎÇÕíÉ ÛíÑ ÕÇáÍ: %s';
-  SInvalidPropertyValue = 'ŞíãÉ ÇáÎÇÕíÉ ÛíÑ ÕÇáÍÉ';
-  SInvalidRegType = 'äãØ ãÚØíÇÊ ÛíÑ ÕÇáÍ ãä ÃÌá ''%s''';
-  SInvalidString = 'ËÇÈÊ äÕí ÛíÑ ÕÇáÍ';
-  SInvalidStringGridOp = 'áÇ íãßä ÅÖÇİÉ Ãæ ÍĞİ Õİæİ ãä ÇáÔÈßÉ';
-  SItemNotFound = 'áÇíãßä ÇáÚËæÑ Úáì ÇáÚäÕÑ  ($0%x)';
-  SLineTooLong = 'ÓØÑ Øæíá ÌÏÇ';
-  SListCapacityError = 'ÓÚÉ ÇááÇÆÍÉ ÎÇÑÌ ÇáÍÏæÏ ÇáããßäÉ (%d)';
-  SListCountError = 'ÊÚÏÇÏ ÇááÇÆÍÉ ÎÇÑÌ ÇáÍÏæÏ ÇáããßäÉ (%d)';
-  SListIndexError = 'Ïáíá ÇááÇÆÍÉ ÎÇÑÌ ÇáÍÏæÏ ÇáããßäÉ (%d)';
-  SMaskErr = 'ŞíãÉ ÇáÅÏÎÇá ÛíÑ ÕÍíÍÉ';
-  SMaskEditErr = 'ŞíãÉ ÅÏÎÇá ÛíÑ ÕÍíÍÉ , ÇÓÊÎÏã ÒÑ ÇáÅáÛÇÁ ááÊÑÇÌÚ Úä ÇáÊÛíÑÇÊ';
-  SMemoryBufferOverrun = 'Êã ÊÌÇæÒ ÇáĞÇßÑÉ ÇáæÓíØíÉ ÇáãÎÕÕÉ (ÇáÈİÑ)';
-  SMemoryStreamError = 'Êã ÊÌÇæÒ ÇáĞÇßÑÉ ÎáÇá  ÚãáíÉ ÊæÓíÚ ãÓáß ãä äæÚ memory stream';
-  SNoComSupport = '%s áã íÊã ÊÓÌíáÉ ßÕäİ ãä äæÚ  COM ';
-  SNotPrinting = 'ÇáØÇÈÚÉ áÇÊŞæã ÈÇáØÈÇÚÉ ÍÇáíÇ';
-  SNumberExpected = 'ŞíãÉ ÑŞãíÉ ãÊæŞÚÉ';
-  SAnsiUTF8Expected = 'ßæÏ ANSI Ãæ UTF8 ãÊæŞÚ';
-  SParseError = '%s İí ÇáÓØÑ %d';
-  SComponentNameTooLong = 'Çáãßæä ''%s'' íÊæŞÚ ÍÏæÏ 64 ãÍÑİ';
-  SPropertyException = 'ÎØÃ İí ŞÑÇÁÉ %s%s%s: %s';
-  SPrinting = 'ÌÇÑí ÇáØÈÇÚÉ';
-  SReadError = 'ÎØÃ İí ŞÑÇÁÉ ÇáãÓáß';
-  SReadOnlyProperty = 'ÇáÎÇÕíÉ ááŞÑÇÁÉ İŞØ';
-  SRegCreateFailed = 'İÔá ÅäÔÇÁ ÇáãİÊÇÍ %s';
-  SRegGetDataFailed = 'İÔá ÇÓÊÍÕÇá ÈíÇäÇÊ ''%s''';
-  SRegisterError = 'ÊÓÌíá ãßæä ÛíÑ ÕÇáÍ';
-  SRegSetDataFailed = 'İÔá ÖÈØ ÈíÇäÇÊ ''%s''';
-  SResNotFound = 'ÇáãæÑÏ %s áã íÊã ÇáÚËæÑ Úáíå';
-  SSeekNotImplemented = 'ÇáØáÈ %s .áã íÏÎá ÍíÒ ÇáÊäİíĞ';
-  SSortedListError = 'ÇáÚãáíÉ ÛíÑ ãÓãæÍÉ Úáì áÇÆÍÉ ãÑÊÈÉ';
-  SStringExpected = 'ŞíãÉ äÕíÉ ãÊæŞÚÉ';
-  SSymbolExpected = '%s ãÊæŞÚ';
-  STooManyDeleted = 'Êã ÍĞİ Õİæİ Ãæ ÃÚãÏÉ ÃßËÑ ãä ÇáãÊæŞÚ';
-  SUnknownGroup = '%s áíÓÊ İí ãÌãæÚÉ ÊÓÌíá Õäİ';
-  SUnknownProperty = 'ÇáÎÇÕíÉ %s ÛíÑ ãæÌæÏÉ';
-  SWriteError = 'ÎØÃ ßÊÇÈÉ İí ÇáãÓáß';
-  SStreamSetSize = 'ÎØÃ İí ÊÍÏíÏ ÍÌã ÇáãÓáß';
-  SThreadCreateError = 'ÎØÃ İí ÅäÔÇÁ ÇáãÓáß: %s';
-  SThreadError = 'ÎØÃ İí ÇáãÓáß : %s (%d)';
-  SThreadExternalTerminate = 'áÇíãßä ÅäåÇÁ ãÓáß Êã ÅäÔÇÄÉ ÎÇÑÌíÇ';
-  SThreadExternalWait = 'áÇíãßä ÇäÊÙÇÑ ãÓáß Êã ÅäÔÇÄÉ ÎÇÑÌíÇ';
-  SThreadStartError = 'áÇíãßä ÇÓÊÏÚÇÁ æÈÏÁ ãÓáß İí ÍÇáÉ ÇáÊäİíĞ Ãæ ÇáÅíŞÇİ';
-  SThreadExternalCheckTerminated = 'áÇíãßä ÇÓÊÏÚÇÁ CheckTerminated áãÓáß Êã ÅäÔÇÄÉ ÎÇÑÌíÇ';
-  SThreadExternalSetReturnValue = 'áÇíãßä ÇÓÊÏÚÇÁ SetReturnValue áãÓáß Êã ÅäÔÇÄÉ ÎÇÑÌíÇ';
+  SInvalidBinary = 'Ù‚ÙŠÙ…Ø© Ø«Ù†Ø§Ø¦ÙŠØ© ØºÙŠØ± ØµØ§Ù„Ø­Ø©';
+  SInvalidFileName = 'Ø§Ø³Ù… Ø§Ù„Ù…Ù„Ù ØºÙŠØ± ØµØ§Ù„Ø­ : - %s';
+  SInvalidImage = 'ØªÙ†Ø³ÙŠÙ‚ ØºÙŠØ± ØµØ§Ù„Ø­';
+  SInvalidMask = '''%s'' Ù‡Ùˆ Ù‚Ù†Ø§Ø¹ ØºÙŠØ± ØµØ§Ù„Ù‡ Ù…Ù† Ø£Ø¬Ù„ (%d)';
+  SInvalidName = '''''%s'''' Ø§Ø³Ù… Ù…ÙƒÙˆÙ† ØºÙŠØ± ØµØ§Ù„Ø­';
+  SInvalidProperty = 'Ù‚ÙŠÙ…Ø© Ø§Ù„Ø®Ø§ØµÙŠØ© ØºÙŠØ± ØµØ§Ù„Ø­Ø©';
+  SInvalidPropertyElement = 'Ø¹Ù†ØµØ± Ø®Ø§ØµÙŠØ© ØºÙŠØ± ØµØ§Ù„Ø­: %s';
+  SInvalidPropertyPath = 'Ù…Ø³Ø§Ø± Ø®Ø§ØµÙŠØ© ØºÙŠØ± ØµØ§Ù„Ø­';
+  SInvalidPropertyType = 'Ù†Ù…Ø· Ø®Ø§ØµÙŠØ© ØºÙŠØ± ØµØ§Ù„Ø­: %s';
+  SInvalidPropertyValue = 'Ù‚ÙŠÙ…Ø© Ø§Ù„Ø®Ø§ØµÙŠØ© ØºÙŠØ± ØµØ§Ù„Ø­Ø©';
+  SInvalidRegType = 'Ù†Ù…Ø· Ù…Ø¹Ø·ÙŠØ§Øª ØºÙŠØ± ØµØ§Ù„Ø­ Ù…Ù† Ø£Ø¬Ù„ ''%s''';
+  SInvalidString = 'Ø«Ø§Ø¨Øª Ù†ØµÙŠ ØºÙŠØ± ØµØ§Ù„Ø­';
+  SInvalidStringGridOp = 'Ù„Ø§ ÙŠÙ…ÙƒÙ† Ø¥Ø¶Ø§ÙØ© Ø£Ùˆ Ø­Ø°Ù ØµÙÙˆÙ Ù…Ù† Ø§Ù„Ø´Ø¨ÙƒØ©';
+  SItemNotFound = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ø§Ù„Ø¹Ù†ØµØ±  ($0%x)';
+  SLineTooLong = 'Ø³Ø·Ø± Ø·ÙˆÙŠÙ„ Ø¬Ø¯Ø§';
+  SListCapacityError = 'Ø³Ø¹Ø© Ø§Ù„Ù„Ø§Ø¦Ø­Ø© Ø®Ø§Ø±Ø¬ Ø§Ù„Ø­Ø¯ÙˆØ¯ Ø§Ù„Ù…Ù…ÙƒÙ†Ø© (%d)';
+  SListCountError = 'ØªØ¹Ø¯Ø§Ø¯ Ø§Ù„Ù„Ø§Ø¦Ø­Ø© Ø®Ø§Ø±Ø¬ Ø§Ù„Ø­Ø¯ÙˆØ¯ Ø§Ù„Ù…Ù…ÙƒÙ†Ø© (%d)';
+  SListIndexError = 'Ø¯Ù„ÙŠÙ„ Ø§Ù„Ù„Ø§Ø¦Ø­Ø© Ø®Ø§Ø±Ø¬ Ø§Ù„Ø­Ø¯ÙˆØ¯ Ø§Ù„Ù…Ù…ÙƒÙ†Ø© (%d)';
+  SMaskErr = 'Ù‚ÙŠÙ…Ø© Ø§Ù„Ø¥Ø¯Ø®Ø§Ù„ ØºÙŠØ± ØµØ­ÙŠØ­Ø©';
+  SMaskEditErr = 'Ù‚ÙŠÙ…Ø© Ø¥Ø¯Ø®Ø§Ù„ ØºÙŠØ± ØµØ­ÙŠØ­Ø© , Ø§Ø³ØªØ®Ø¯Ù… Ø²Ø± Ø§Ù„Ø¥Ù„ØºØ§Ø¡ Ù„Ù„ØªØ±Ø§Ø¬Ø¹ Ø¹Ù† Ø§Ù„ØªØºÙŠØ±Ø§Øª';
+  SMemoryBufferOverrun = 'ØªÙ… ØªØ¬Ø§ÙˆØ² Ø§Ù„Ø°Ø§ÙƒØ±Ø© Ø§Ù„ÙˆØ³ÙŠØ·ÙŠØ© Ø§Ù„Ù…Ø®ØµØµØ© (Ø§Ù„Ø¨ÙØ±)';
+  SMemoryStreamError = 'ØªÙ… ØªØ¬Ø§ÙˆØ² Ø§Ù„Ø°Ø§ÙƒØ±Ø© Ø®Ù„Ø§Ù„  Ø¹Ù…Ù„ÙŠØ© ØªÙˆØ³ÙŠØ¹ Ù…Ø³Ù„Ùƒ Ù…Ù† Ù†ÙˆØ¹ memory stream';
+  SNoComSupport = '%s Ù„Ù… ÙŠØªÙ… ØªØ³Ø¬ÙŠÙ„Ø© ÙƒØµÙ†Ù Ù…Ù† Ù†ÙˆØ¹  COM ';
+  SNotPrinting = 'Ø§Ù„Ø·Ø§Ø¨Ø¹Ø© Ù„Ø§ØªÙ‚ÙˆÙ… Ø¨Ø§Ù„Ø·Ø¨Ø§Ø¹Ø© Ø­Ø§Ù„ÙŠØ§';
+  SNumberExpected = 'Ù‚ÙŠÙ…Ø© Ø±Ù‚Ù…ÙŠØ© Ù…ØªÙˆÙ‚Ø¹Ø©';
+  SAnsiUTF8Expected = 'ÙƒÙˆØ¯ ANSI Ø£Ùˆ UTF8 Ù…ØªÙˆÙ‚Ø¹';
+  SParseError = '%s ÙÙŠ Ø§Ù„Ø³Ø·Ø± %d';
+  SComponentNameTooLong = 'Ø§Ù„Ù…ÙƒÙˆÙ† ''%s'' ÙŠØªÙˆÙ‚Ø¹ Ø­Ø¯ÙˆØ¯ 64 Ù…Ø­Ø±Ù';
+  SPropertyException = 'Ø®Ø·Ø£ ÙÙŠ Ù‚Ø±Ø§Ø¡Ø© %s%s%s: %s';
+  SPrinting = 'Ø¬Ø§Ø±ÙŠ Ø§Ù„Ø·Ø¨Ø§Ø¹Ø©';
+  SReadError = 'Ø®Ø·Ø£ ÙÙŠ Ù‚Ø±Ø§Ø¡Ø© Ø§Ù„Ù…Ø³Ù„Ùƒ';
+  SReadOnlyProperty = 'Ø§Ù„Ø®Ø§ØµÙŠØ© Ù„Ù„Ù‚Ø±Ø§Ø¡Ø© ÙÙ‚Ø·';
+  SRegCreateFailed = 'ÙØ´Ù„ Ø¥Ù†Ø´Ø§Ø¡ Ø§Ù„Ù…ÙØªØ§Ø­ %s';
+  SRegGetDataFailed = 'ÙØ´Ù„ Ø§Ø³ØªØ­ØµØ§Ù„ Ø¨ÙŠØ§Ù†Ø§Øª ''%s''';
+  SRegisterError = 'ØªØ³Ø¬ÙŠÙ„ Ù…ÙƒÙˆÙ† ØºÙŠØ± ØµØ§Ù„Ø­';
+  SRegSetDataFailed = 'ÙØ´Ù„ Ø¶Ø¨Ø· Ø¨ÙŠØ§Ù†Ø§Øª ''%s''';
+  SResNotFound = 'Ø§Ù„Ù…ÙˆØ±Ø¯ %s Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„ÙŠÙ‡';
+  SSeekNotImplemented = 'Ø§Ù„Ø·Ù„Ø¨ %s .Ù„Ù… ÙŠØ¯Ø®Ù„ Ø­ÙŠØ² Ø§Ù„ØªÙ†ÙÙŠØ°';
+  SSortedListError = 'Ø§Ù„Ø¹Ù…Ù„ÙŠØ© ØºÙŠØ± Ù…Ø³Ù…ÙˆØ­Ø© Ø¹Ù„Ù‰ Ù„Ø§Ø¦Ø­Ø© Ù…Ø±ØªØ¨Ø©';
+  SStringExpected = 'Ù‚ÙŠÙ…Ø© Ù†ØµÙŠØ© Ù…ØªÙˆÙ‚Ø¹Ø©';
+  SSymbolExpected = '%s Ù…ØªÙˆÙ‚Ø¹';
+  STooManyDeleted = 'ØªÙ… Ø­Ø°Ù ØµÙÙˆÙ Ø£Ùˆ Ø£Ø¹Ù…Ø¯Ø© Ø£ÙƒØ«Ø± Ù…Ù† Ø§Ù„Ù…ØªÙˆÙ‚Ø¹';
+  SUnknownGroup = '%s Ù„ÙŠØ³Øª ÙÙŠ Ù…Ø¬Ù…ÙˆØ¹Ø© ØªØ³Ø¬ÙŠÙ„ ØµÙ†Ù';
+  SUnknownProperty = 'Ø§Ù„Ø®Ø§ØµÙŠØ© %s ØºÙŠØ± Ù…ÙˆØ¬ÙˆØ¯Ø©';
+  SWriteError = 'Ø®Ø·Ø£ ÙƒØªØ§Ø¨Ø© ÙÙŠ Ø§Ù„Ù…Ø³Ù„Ùƒ';
+  SStreamSetSize = 'Ø®Ø·Ø£ ÙÙŠ ØªØ­Ø¯ÙŠØ¯ Ø­Ø¬Ù… Ø§Ù„Ù…Ø³Ù„Ùƒ';
+  SThreadCreateError = 'Ø®Ø·Ø£ ÙÙŠ Ø¥Ù†Ø´Ø§Ø¡ Ø§Ù„Ù…Ø³Ù„Ùƒ: %s';
+  SThreadError = 'Ø®Ø·Ø£ ÙÙŠ Ø§Ù„Ù…Ø³Ù„Ùƒ : %s (%d)';
+  SThreadExternalTerminate = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø¥Ù†Ù‡Ø§Ø¡ Ù…Ø³Ù„Ùƒ ØªÙ… Ø¥Ù†Ø´Ø§Ø¤Ø© Ø®Ø§Ø±Ø¬ÙŠØ§';
+  SThreadExternalWait = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ù†ØªØ¸Ø§Ø± Ù…Ø³Ù„Ùƒ ØªÙ… Ø¥Ù†Ø´Ø§Ø¤Ø© Ø®Ø§Ø±Ø¬ÙŠØ§';
+  SThreadStartError = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ø³ØªØ¯Ø¹Ø§Ø¡ ÙˆØ¨Ø¯Ø¡ Ù…Ø³Ù„Ùƒ ÙÙŠ Ø­Ø§Ù„Ø© Ø§Ù„ØªÙ†ÙÙŠØ° Ø£Ùˆ Ø§Ù„Ø¥ÙŠÙ‚Ø§Ù';
+  SThreadExternalCheckTerminated = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ø³ØªØ¯Ø¹Ø§Ø¡ CheckTerminated Ù„Ù…Ø³Ù„Ùƒ ØªÙ… Ø¥Ù†Ø´Ø§Ø¤Ø© Ø®Ø§Ø±Ø¬ÙŠØ§';
+  SThreadExternalSetReturnValue = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ø³ØªØ¯Ø¹Ø§Ø¡ SetReturnValue Ù„Ù…Ø³Ù„Ùƒ ØªÙ… Ø¥Ù†Ø´Ø§Ø¤Ø© Ø®Ø§Ø±Ø¬ÙŠØ§';
 
-  SParamIsNil = 'ÇáãÊÛíÑ %s áÇíãßä Ãä Êßæä ŞíãÊå ÎÇáíÉ nil';
-  SParamIsNegative = 'ÇáãÊÛíÑ %s áÇíãßä Ãä Êßæä ŞíãÊå ÓÇáÈÉ';
-  SInputBufferExceed = 'Êã ÊÌÇæÒ ŞíãÉ ÇáãÎÒä ÇáãÄŞÊ ááÅÏÎÇá Input Buffer %s = %d, %s = %d';
+  SParamIsNil = 'Ø§Ù„Ù…ØªØºÙŠØ± %s Ù„Ø§ÙŠÙ…ÙƒÙ† Ø£Ù† ØªÙƒÙˆÙ† Ù‚ÙŠÙ…ØªÙ‡ Ø®Ø§Ù„ÙŠØ© nil';
+  SParamIsNegative = 'Ø§Ù„Ù…ØªØºÙŠØ± %s Ù„Ø§ÙŠÙ…ÙƒÙ† Ø£Ù† ØªÙƒÙˆÙ† Ù‚ÙŠÙ…ØªÙ‡ Ø³Ø§Ù„Ø¨Ø©';
+  SInputBufferExceed = 'ØªÙ… ØªØ¬Ø§ÙˆØ² Ù‚ÙŠÙ…Ø© Ø§Ù„Ù…Ø®Ø²Ù† Ø§Ù„Ù…Ø¤Ù‚Øª Ù„Ù„Ø¥Ø¯Ø®Ø§Ù„ Input Buffer %s = %d, %s = %d';
 
-  SInvalidCharsInPath = 'ÇáãÓÇÑ íÍæí ãÍÇÑİ ÛíÑ ÕÇáÍÉ';
-  SInvalidCharsInFileName = 'ÇÓã Çáãáİ íÍæí ãÍÇÑİ ÛíÑ ÕÇáÍÉ';
-  SInvalidCharsInSearchPattern = 'ÃäãÇØ ÇáÈÍË ÊÍæí ãÍÇÑİ ÛíÑ ÕÇáÍÉ';
-  SPathTooLong = 'ÇáãÓÇÑ ÇáãÍÏÏ Øæíá ÌÏÇ';
-  SPathNotFound = 'ÇáãÓÇÑ ÇáãÍÏÏ ÛíÑ ãæÌæÏ';
-  SPathFormatNotSupported = 'ÊäÓíŞ ÇáãÓÇÑ åĞÇ ÛíÑ ãÏÚæã';
-  SDirectoryNotEmpty = 'ÇáãÌáÏ ÇáãÍÏÏ ÛíÑ İÇÑÛ';
-  SDirectoryAlreadyExists = 'ÇáãÌáÏ ÇáãÍÏÏ ãæÌæÏ ãÓÈŞÇ';
-  SDirectoryInvalid = 'ÇÓã ÇáãÌáÏ ÇáãÍÏÏ ÛíÑ ÕÇáÍ';
-  SSourceDirIsDestDir = 'ÇáãÌáÏ ÇáåÏİ åæ äİÓ ÇáãÌáÏ ÇáãÕÏÑ';
-  SSourceFileIsDestFile = 'Çáãáİ ÇáåÏİ åæ äİÓ ÇáãÌáÏ ÇáæÌåÉ';
-  SPathToFileNeeded = 'ÇáãÓÇÑ íÌÈ Ãä íÍÏÏ ãáİ';
-  SSameRootDrive = 'ãÓÇÑ ÇáåÏİ æÇáãÕÏÑ íÌÈ Ãä íßæäÇ İí äİÓ ÇáŞÑÕ';
-  SDriveNotFound = 'ÇáŞÑÕ áÇíãßä ÇáÚËæÑ Úáíå';
-  SFileNotFound = 'Çáãáİ ÇáãÍÏÏ áÇíãßä ÇáÚËæÑ Úáíå';
-  SFileAlreadyExists = 'Çáãáİ ÇáãÍÏÏ ãæÌæÏ ãÓÈŞÇ';
+  SInvalidCharsInPath = 'Ø§Ù„Ù…Ø³Ø§Ø± ÙŠØ­ÙˆÙŠ Ù…Ø­Ø§Ø±Ù ØºÙŠØ± ØµØ§Ù„Ø­Ø©';
+  SInvalidCharsInFileName = 'Ø§Ø³Ù… Ø§Ù„Ù…Ù„Ù ÙŠØ­ÙˆÙŠ Ù…Ø­Ø§Ø±Ù ØºÙŠØ± ØµØ§Ù„Ø­Ø©';
+  SInvalidCharsInSearchPattern = 'Ø£Ù†Ù…Ø§Ø· Ø§Ù„Ø¨Ø­Ø« ØªØ­ÙˆÙŠ Ù…Ø­Ø§Ø±Ù ØºÙŠØ± ØµØ§Ù„Ø­Ø©';
+  SPathTooLong = 'Ø§Ù„Ù…Ø³Ø§Ø± Ø§Ù„Ù…Ø­Ø¯Ø¯ Ø·ÙˆÙŠÙ„ Ø¬Ø¯Ø§';
+  SPathNotFound = 'Ø§Ù„Ù…Ø³Ø§Ø± Ø§Ù„Ù…Ø­Ø¯Ø¯ ØºÙŠØ± Ù…ÙˆØ¬ÙˆØ¯';
+  SPathFormatNotSupported = 'ØªÙ†Ø³ÙŠÙ‚ Ø§Ù„Ù…Ø³Ø§Ø± Ù‡Ø°Ø§ ØºÙŠØ± Ù…Ø¯Ø¹ÙˆÙ…';
+  SDirectoryNotEmpty = 'Ø§Ù„Ù…Ø¬Ù„Ø¯ Ø§Ù„Ù…Ø­Ø¯Ø¯ ØºÙŠØ± ÙØ§Ø±Øº';
+  SDirectoryAlreadyExists = 'Ø§Ù„Ù…Ø¬Ù„Ø¯ Ø§Ù„Ù…Ø­Ø¯Ø¯ Ù…ÙˆØ¬ÙˆØ¯ Ù…Ø³Ø¨Ù‚Ø§';
+  SDirectoryInvalid = 'Ø§Ø³Ù… Ø§Ù„Ù…Ø¬Ù„Ø¯ Ø§Ù„Ù…Ø­Ø¯Ø¯ ØºÙŠØ± ØµØ§Ù„Ø­';
+  SSourceDirIsDestDir = 'Ø§Ù„Ù…Ø¬Ù„Ø¯ Ø§Ù„Ù‡Ø¯Ù Ù‡Ùˆ Ù†ÙØ³ Ø§Ù„Ù…Ø¬Ù„Ø¯ Ø§Ù„Ù…ØµØ¯Ø±';
+  SSourceFileIsDestFile = 'Ø§Ù„Ù…Ù„Ù Ø§Ù„Ù‡Ø¯Ù Ù‡Ùˆ Ù†ÙØ³ Ø§Ù„Ù…Ø¬Ù„Ø¯ Ø§Ù„ÙˆØ¬Ù‡Ø©';
+  SPathToFileNeeded = 'Ø§Ù„Ù…Ø³Ø§Ø± ÙŠØ¬Ø¨ Ø£Ù† ÙŠØ­Ø¯Ø¯ Ù…Ù„Ù';
+  SSameRootDrive = 'Ù…Ø³Ø§Ø± Ø§Ù„Ù‡Ø¯Ù ÙˆØ§Ù„Ù…ØµØ¯Ø± ÙŠØ¬Ø¨ Ø£Ù† ÙŠÙƒÙˆÙ†Ø§ ÙÙŠ Ù†ÙØ³ Ø§Ù„Ù‚Ø±Øµ';
+  SDriveNotFound = 'Ø§Ù„Ù‚Ø±Øµ Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„ÙŠÙ‡';
+  SFileNotFound = 'Ø§Ù„Ù…Ù„Ù Ø§Ù„Ù…Ø­Ø¯Ø¯ Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„ÙŠÙ‡';
+  SFileAlreadyExists = 'Ø§Ù„Ù…Ù„Ù Ø§Ù„Ù…Ø­Ø¯Ø¯ Ù…ÙˆØ¬ÙˆØ¯ Ù…Ø³Ø¨Ù‚Ø§';
 
-  SInvalidDateDay = '(%d, %d) áíÓ ÒæÌ ÊÇÑíÎ æíæã ãÓãæÍ (DateDay) ';
-  SInvalidDateWeek = '(%d, %d, %d) áíÓ ËáÇËí ÊÇÑíÎ æÇÓÈæÚ ãÓãæÍ (DateWeek)';
-  SInvalidDateMonthWeek = '(%d, %d, %d, %d) áíÓ ÑÈÇÚí ÊÇÑíÎ ÔåÑ ÇÓÈæÚ ãÓãæÍ (DateMonthWeek)';
-  SInvalidDayOfWeekInMonth = '(%d, %d, %d, %d) áíÓ ÑÈÇÚí íæã ÇÓÈæÚ İí ÔåÑ ãÓãæÍ (DayOfWeekInMonth)';
-  SInvalidJulianDate = '%f ÇáÊŞæíã ÇáíæáíæÓí áÇíãßä ÅÚÇÏÉ ÊãËíáÉ ãä äæÚ ÊÇÑíÎ';
+  SInvalidDateDay = '(%d, %d) Ù„ÙŠØ³ Ø²ÙˆØ¬ ØªØ§Ø±ÙŠØ® ÙˆÙŠÙˆÙ… Ù…Ø³Ù…ÙˆØ­ (DateDay) ';
+  SInvalidDateWeek = '(%d, %d, %d) Ù„ÙŠØ³ Ø«Ù„Ø§Ø«ÙŠ ØªØ§Ø±ÙŠØ® ÙˆØ§Ø³Ø¨ÙˆØ¹ Ù…Ø³Ù…ÙˆØ­ (DateWeek)';
+  SInvalidDateMonthWeek = '(%d, %d, %d, %d) Ù„ÙŠØ³ Ø±Ø¨Ø§Ø¹ÙŠ ØªØ§Ø±ÙŠØ® Ø´Ù‡Ø± Ø§Ø³Ø¨ÙˆØ¹ Ù…Ø³Ù…ÙˆØ­ (DateMonthWeek)';
+  SInvalidDayOfWeekInMonth = '(%d, %d, %d, %d) Ù„ÙŠØ³ Ø±Ø¨Ø§Ø¹ÙŠ ÙŠÙˆÙ… Ø§Ø³Ø¨ÙˆØ¹ ÙÙŠ Ø´Ù‡Ø± Ù…Ø³Ù…ÙˆØ­ (DayOfWeekInMonth)';
+  SInvalidJulianDate = '%f Ø§Ù„ØªÙ‚ÙˆÙŠÙ… Ø§Ù„ÙŠÙˆÙ„ÙŠÙˆØ³ÙŠ Ù„Ø§ÙŠÙ…ÙƒÙ† Ø¥Ø¹Ø§Ø¯Ø© ØªÙ…Ø«ÙŠÙ„Ø© Ù…Ù† Ù†ÙˆØ¹ ØªØ§Ø±ÙŠØ®';
   SMissingDateTimeField = '?';
-  SMinimumDateError = 'ÇáÊæÇÑíÎ ŞÈá ÇáÓäÉ 1 ÛíÑ ãÓãæÍÉ';
-  SLocalTimeInvalid = 'ÇáæŞÊ ÇáãÍáí ÇáãÚØì "%s" ÛíÑ ãÓãæÍ (ßÇÆä İí ÇáŞÊÑÉ ÇáãİŞæÏÉ ÚäÏ ÊŞÏíã ÇáÓÇÚÉ).';
+  SMinimumDateError = 'Ø§Ù„ØªÙˆØ§Ø±ÙŠØ® Ù‚Ø¨Ù„ Ø§Ù„Ø³Ù†Ø© 1 ØºÙŠØ± Ù…Ø³Ù…ÙˆØ­Ø©';
+  SLocalTimeInvalid = 'Ø§Ù„ÙˆÙ‚Øª Ø§Ù„Ù…Ø­Ù„ÙŠ Ø§Ù„Ù…Ø¹Ø·Ù‰ "%s" ØºÙŠØ± Ù…Ø³Ù…ÙˆØ­ (ÙƒØ§Ø¦Ù† ÙÙŠ Ø§Ù„Ù‚ØªØ±Ø© Ø§Ù„Ù…ÙÙ‚ÙˆØ¯Ø© Ø¹Ù†Ø¯ ØªÙ‚Ø¯ÙŠÙ… Ø§Ù„Ø³Ø§Ø¹Ø©).';
 
-  SConvIncompatibleTypes2 = 'ÃäãÇØ ÊÍæíá ÛíÑ ãßÊãáÉ [%s, %s]';
-  SConvIncompatibleTypes3 = 'ÃäãÇØ ÊÍæíá ÛíÑ ãßÊãáÉ [%s, %s, %s]';
-  SConvIncompatibleTypes4 = 'ÃäãÇØ ÊÍæíá ÛíÑ ãßÊãáÉ [%s - %s, %s - %s]';
-  SConvUnknownType = 'äãØ ÊÍæíá ÛíÑ ãÚÑæİ %s';
-  SConvDuplicateType = 'äãØ ÇáÊÍæíá (%s) ãÓÌá ãÓÈŞÇ İí %s';
-  SConvUnknownFamily = 'ÚÇÆáÉ ÇáÊÍæíá ÛíÑ ãÚÑæİÉ %s';
-  SConvDuplicateFamily = 'ÚÇÆáÉ ÇáÊÍæíá (%s) ãÓÌáÉ ãÓÈŞÇ';
+  SConvIncompatibleTypes2 = 'Ø£Ù†Ù…Ø§Ø· ØªØ­ÙˆÙŠÙ„ ØºÙŠØ± Ù…ÙƒØªÙ…Ù„Ø© [%s, %s]';
+  SConvIncompatibleTypes3 = 'Ø£Ù†Ù…Ø§Ø· ØªØ­ÙˆÙŠÙ„ ØºÙŠØ± Ù…ÙƒØªÙ…Ù„Ø© [%s, %s, %s]';
+  SConvIncompatibleTypes4 = 'Ø£Ù†Ù…Ø§Ø· ØªØ­ÙˆÙŠÙ„ ØºÙŠØ± Ù…ÙƒØªÙ…Ù„Ø© [%s - %s, %s - %s]';
+  SConvUnknownType = 'Ù†Ù…Ø· ØªØ­ÙˆÙŠÙ„ ØºÙŠØ± Ù…Ø¹Ø±ÙˆÙ %s';
+  SConvDuplicateType = 'Ù†Ù…Ø· Ø§Ù„ØªØ­ÙˆÙŠÙ„ (%s) Ù…Ø³Ø¬Ù„ Ù…Ø³Ø¨Ù‚Ø§ ÙÙŠ %s';
+  SConvUnknownFamily = 'Ø¹Ø§Ø¦Ù„Ø© Ø§Ù„ØªØ­ÙˆÙŠÙ„ ØºÙŠØ± Ù…Ø¹Ø±ÙˆÙØ© %s';
+  SConvDuplicateFamily = 'Ø¹Ø§Ø¦Ù„Ø© Ø§Ù„ØªØ­ÙˆÙŠÙ„ (%s) Ù…Ø³Ø¬Ù„Ø© Ù…Ø³Ø¨Ù‚Ø§';
   SConvUnknownDescription = '[$%.8x]' deprecated; // no longer used
   SConvUnknownDescriptionWithPrefix = '[%s%.8x]';
-  SConvIllegalType = 'äãØ ÛíÑ ãÓãæÍ';
-  SConvIllegalFamily = 'ÚÇÆáÉ ÛíÑ ãÓãæÍÉ';
-  SConvFactorZero = '%s áÏíå ãÚÇãá ÕİÑí';
-  SConvStrParseError = 'áÇíãßä ÊÍáíá %s';
-  SFailedToCallConstructor = ' %s Õäİ ãäÍÏÑ ãä TStrings İÔá İí ÇÓÊÏÚÇÁ ÇáãäåÌ ÇáÈÇäí ÇáÃÈ';
+  SConvIllegalType = 'Ù†Ù…Ø· ØºÙŠØ± Ù…Ø³Ù…ÙˆØ­';
+  SConvIllegalFamily = 'Ø¹Ø§Ø¦Ù„Ø© ØºÙŠØ± Ù…Ø³Ù…ÙˆØ­Ø©';
+  SConvFactorZero = '%s Ù„Ø¯ÙŠÙ‡ Ù…Ø¹Ø§Ù…Ù„ ØµÙØ±ÙŠ';
+  SConvStrParseError = 'Ù„Ø§ÙŠÙ…ÙƒÙ† ØªØ­Ù„ÙŠÙ„ %s';
+  SFailedToCallConstructor = ' %s ØµÙ†Ù Ù…Ù†Ø­Ø¯Ø± Ù…Ù† TStrings ÙØ´Ù„ ÙÙŠ Ø§Ø³ØªØ¯Ø¹Ø§Ø¡ Ø§Ù„Ù…Ù†Ù‡Ø¬ Ø§Ù„Ø¨Ø§Ù†ÙŠ Ø§Ù„Ø£Ø¨';
 
-  sWindowsSocketError = 'ÎØÃ İí ãŞÈÓ æäÏæÒ : %s (%d), İí Çá API ''%s''';
-  sAsyncSocketError = 'ÎØÃ ãŞÈÓ áÇãÊÒÇãä %d';
-  sNoAddress = 'áã íÊã ÊÍÏíÏ ÚäæÇä';
-  sCannotListenOnOpen = 'áÇíãßä ÇáÇÓÊãÇÚ Çáì ãŞÈÓ ŞíÏ ÇáİÊÍ';
-  sCannotCreateSocket = 'áÇíãßä ÅäÔÇÁ ãŞÈÓ ÌÏíÏ';
-  sSocketAlreadyOpen = 'ÇáãŞÈÓ ãİÊæÍ ãÓÈŞÇ';
-  sCantChangeWhileActive = 'áÇíãßä ÊÛííÑ ÇáŞíãÉ ÈíäãÇ íßæä ÇáãŞÈÓ İÚÇá';
-  sSocketMustBeBlocking = 'ÇáãŞÈÓ íÌÈ Çä íßæä İí äãØ blocking mode';
-  sSocketIOError = '%s ÎØÃ %d, %s';
-  sSocketRead = 'ŞÑÇÁÉ';
-  sSocketWrite = 'ßÊÇÈÉ';
+  sWindowsSocketError = 'Ø®Ø·Ø£ ÙÙŠ Ù…Ù‚Ø¨Ø³ ÙˆÙ†Ø¯ÙˆØ² : %s (%d), ÙÙŠ Ø§Ù„ API ''%s''';
+  sAsyncSocketError = 'Ø®Ø·Ø£ Ù…Ù‚Ø¨Ø³ Ù„Ø§Ù…ØªØ²Ø§Ù…Ù† %d';
+  sNoAddress = 'Ù„Ù… ÙŠØªÙ… ØªØ­Ø¯ÙŠØ¯ Ø¹Ù†ÙˆØ§Ù†';
+  sCannotListenOnOpen = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ù„Ø§Ø³ØªÙ…Ø§Ø¹ Ø§Ù„Ù‰ Ù…Ù‚Ø¨Ø³ Ù‚ÙŠØ¯ Ø§Ù„ÙØªØ­';
+  sCannotCreateSocket = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø¥Ù†Ø´Ø§Ø¡ Ù…Ù‚Ø¨Ø³ Ø¬Ø¯ÙŠØ¯';
+  sSocketAlreadyOpen = 'Ø§Ù„Ù…Ù‚Ø¨Ø³ Ù…ÙØªÙˆØ­ Ù…Ø³Ø¨Ù‚Ø§';
+  sCantChangeWhileActive = 'Ù„Ø§ÙŠÙ…ÙƒÙ† ØªØºÙŠÙŠØ± Ø§Ù„Ù‚ÙŠÙ…Ø© Ø¨ÙŠÙ†Ù…Ø§ ÙŠÙƒÙˆÙ† Ø§Ù„Ù…Ù‚Ø¨Ø³ ÙØ¹Ø§Ù„';
+  sSocketMustBeBlocking = 'Ø§Ù„Ù…Ù‚Ø¨Ø³ ÙŠØ¬Ø¨ Ø§Ù† ÙŠÙƒÙˆÙ† ÙÙŠ Ù†Ù…Ø· blocking mode';
+  sSocketIOError = '%s Ø®Ø·Ø£ %d, %s';
+  sSocketRead = 'Ù‚Ø±Ø§Ø¡Ø©';
+  sSocketWrite = 'ÙƒØªØ§Ø¨Ø©';
 
-  SCmplxCouldNotParseImaginary = 'áÇíãßä ÊÍáíá ÇáŞÓã ÇáÊÎíáí';
-  SCmplxCouldNotParseSymbol = 'áÇíãßä ÊÍáíá ÇáÑãÒ ÇáãØáæÈ ''%s'' ';
-  SCmplxCouldNotParsePlus = 'áÇíãßä ÊÍáíá ÇáÑãÒ ÇáãØáæÈ  ''+'' (Ãæ ''-'') ';
-  SCmplxCouldNotParseReal = 'áÇíãßä ÊÍáíá ÇáŞÓã ÇáÍŞíŞí';
-  SCmplxUnexpectedEOS = 'äåÇíÉ ÇáÓáÓáÉ ÇáäÕíÉ ÛíÑ ãÊæŞÚå [%s]';
-  SCmplxUnexpectedChars = 'ãÍÇÑİ ÛíÑ ãÊæŞÚÉ';
+  SCmplxCouldNotParseImaginary = 'Ù„Ø§ÙŠÙ…ÙƒÙ† ØªØ­Ù„ÙŠÙ„ Ø§Ù„Ù‚Ø³Ù… Ø§Ù„ØªØ®ÙŠÙ„ÙŠ';
+  SCmplxCouldNotParseSymbol = 'Ù„Ø§ÙŠÙ…ÙƒÙ† ØªØ­Ù„ÙŠÙ„ Ø§Ù„Ø±Ù…Ø² Ø§Ù„Ù…Ø·Ù„ÙˆØ¨ ''%s'' ';
+  SCmplxCouldNotParsePlus = 'Ù„Ø§ÙŠÙ…ÙƒÙ† ØªØ­Ù„ÙŠÙ„ Ø§Ù„Ø±Ù…Ø² Ø§Ù„Ù…Ø·Ù„ÙˆØ¨  ''+'' (Ø£Ùˆ ''-'') ';
+  SCmplxCouldNotParseReal = 'Ù„Ø§ÙŠÙ…ÙƒÙ† ØªØ­Ù„ÙŠÙ„ Ø§Ù„Ù‚Ø³Ù… Ø§Ù„Ø­Ù‚ÙŠÙ‚ÙŠ';
+  SCmplxUnexpectedEOS = 'Ù†Ù‡Ø§ÙŠØ© Ø§Ù„Ø³Ù„Ø³Ù„Ø© Ø§Ù„Ù†ØµÙŠØ© ØºÙŠØ± Ù…ØªÙˆÙ‚Ø¹Ù‡ [%s]';
+  SCmplxUnexpectedChars = 'Ù…Ø­Ø§Ø±Ù ØºÙŠØ± Ù…ØªÙˆÙ‚Ø¹Ø©';
   SCmplxErrorSuffix = '%s [%s<?>%s]';
 
-  hNoSystem = 'áã íÊã ÊäÕíÈ ãÏíÑ ãáİÇÊ ÇáãÓÇÚÏÉ.';
-  hNoTopics = 'áã íÊã ÊäÕíÈ ãÓÇÚÏÉ ÈäÇÁ Úáì ÇáãæÇÖíÚ.';
-  hNoContext = 'áã íÊã ÊäÕíÈ ãÓÇÚÏÉ ÍÓÇÓÉ ááÓíÇŞ.';
-  hNoContextFound = 'áã íÊã ÇáÚËæÑ Úáì ãÓÇÚÏÉ ááÓíÇŞ %d.';
-  hNothingFound = 'áã íÊã ÇáÚËæÑ Úáì ãÓÇÚÏÉ áÜ "%s"';
-  hNoTableOfContents = 'áã íÊã ÇáÚËæÑ Úáì ÌÏæá ÇáãÍÊæíÇÊ.';
-  hNoFilterViewer = 'áÇíæÌÏ ãÓÊÚÑÖ ãÓÇÚÏÉ íÏÚã ÇáİáÊÑÉ';
+  hNoSystem = 'Ù„Ù… ÙŠØªÙ… ØªÙ†ØµÙŠØ¨ Ù…Ø¯ÙŠØ± Ù…Ù„ÙØ§Øª Ø§Ù„Ù…Ø³Ø§Ø¹Ø¯Ø©.';
+  hNoTopics = 'Ù„Ù… ÙŠØªÙ… ØªÙ†ØµÙŠØ¨ Ù…Ø³Ø§Ø¹Ø¯Ø© Ø¨Ù†Ø§Ø¡ Ø¹Ù„Ù‰ Ø§Ù„Ù…ÙˆØ§Ø¶ÙŠØ¹.';
+  hNoContext = 'Ù„Ù… ÙŠØªÙ… ØªÙ†ØµÙŠØ¨ Ù…Ø³Ø§Ø¹Ø¯Ø© Ø­Ø³Ø§Ø³Ø© Ù„Ù„Ø³ÙŠØ§Ù‚.';
+  hNoContextFound = 'Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ù…Ø³Ø§Ø¹Ø¯Ø© Ù„Ù„Ø³ÙŠØ§Ù‚ %d.';
+  hNothingFound = 'Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ù…Ø³Ø§Ø¹Ø¯Ø© Ù„Ù€ "%s"';
+  hNoTableOfContents = 'Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ø¬Ø¯ÙˆÙ„ Ø§Ù„Ù…Ø­ØªÙˆÙŠØ§Øª.';
+  hNoFilterViewer = 'Ù„Ø§ÙŠÙˆØ¬Ø¯ Ù…Ø³ØªØ¹Ø±Ø¶ Ù…Ø³Ø§Ø¹Ø¯Ø© ÙŠØ¯Ø¹Ù… Ø§Ù„ÙÙ„ØªØ±Ø©';
 
-  sArgumentInvalid = 'ãÚÇãá ÛíÑ ÕÇáÍ';
+  sArgumentInvalid = 'Ù…Ø¹Ø§Ù…Ù„ ØºÙŠØ± ØµØ§Ù„Ø­';
   sArgumentOutOfRange_InvalidHighSurrogate = 'A valid high surrogate character is >= $D800 and <= $DBFF';
   sArgumentOutOfRange_InvalidLowSurrogate = 'A valid low surrogate character is >= $DC00 and <= $DFFF';
-  sArgumentOutOfRange_Index = 'ÇáİåÑÓ ÎÇÑÌ ÇáÍÏæÏ (%d).  íÌÈ Çä íßæä >= 0 æ < %d';
-  sArgumentOutOfRange_StringIndex = 'ÇáİåÑÓ ÇáäÕí ÎÇÑÌ ÇáÍÏæÏ (%d).  íÌÈ Ãä íßæä >= %d æ <= %d';
-  sArgumentOutOfRange_InvalidUTF32 = 'ŞíãÉ ãÍÇÑİ ÈÊÑãíÒ UTF32 ÛíÑ ÕÇáÍÉ.  íÌÈ Çä Êßæä >= 0 æ <= $10FFFF, ÈÇÓÊËäÇÁ surrogate pair ranges';
+  sArgumentOutOfRange_Index = 'Ø§Ù„ÙÙ‡Ø±Ø³ Ø®Ø§Ø±Ø¬ Ø§Ù„Ø­Ø¯ÙˆØ¯ (%d).  ÙŠØ¬Ø¨ Ø§Ù† ÙŠÙƒÙˆÙ† >= 0 Ùˆ < %d';
+  sArgumentOutOfRange_StringIndex = 'Ø§Ù„ÙÙ‡Ø±Ø³ Ø§Ù„Ù†ØµÙŠ Ø®Ø§Ø±Ø¬ Ø§Ù„Ø­Ø¯ÙˆØ¯ (%d).  ÙŠØ¬Ø¨ Ø£Ù† ÙŠÙƒÙˆÙ† >= %d Ùˆ <= %d';
+  sArgumentOutOfRange_InvalidUTF32 = 'Ù‚ÙŠÙ…Ø© Ù…Ø­Ø§Ø±Ù Ø¨ØªØ±Ù…ÙŠØ² UTF32 ØºÙŠØ± ØµØ§Ù„Ø­Ø©.  ÙŠØ¬Ø¨ Ø§Ù† ØªÙƒÙˆÙ† >= 0 Ùˆ <= $10FFFF, Ø¨Ø§Ø³ØªØ«Ù†Ø§Ø¡ surrogate pair ranges';
   sArgument_InvalidHighSurrogate = 'High surrogate char without a following low surrogate char at index: %d. Check that the string is encoded properly';
   sArgument_InvalidLowSurrogate = 'Low surrogate char without a preceding high surrogate char at index: %d. Check that the string is encoded properly';
-  sArgumentOutOfRange_NeedNonNegValue = 'ÇáãÚÇãá, %s, íÌÈ Çä íßæä >= 0';
-  sArgumentOutOfRange_OffLenInvalid = 'ÇáÅÒÇÍÉ æÇáØæá ÛíÑ ãÓãæÍÉ ááãÕİæİÉ ÇáãÚØÇÉ';
+  sArgumentOutOfRange_NeedNonNegValue = 'Ø§Ù„Ù…Ø¹Ø§Ù…Ù„, %s, ÙŠØ¬Ø¨ Ø§Ù† ÙŠÙƒÙˆÙ† >= 0';
+  sArgumentOutOfRange_OffLenInvalid = 'Ø§Ù„Ø¥Ø²Ø§Ø­Ø© ÙˆØ§Ù„Ø·ÙˆÙ„ ØºÙŠØ± Ù…Ø³Ù…ÙˆØ­Ø© Ù„Ù„Ù…ØµÙÙˆÙØ© Ø§Ù„Ù…Ø¹Ø·Ø§Ø©';
 
-  sInvalidStringAndObjectArrays = 'Øæá ÇáÜ Strings æ ãÕİæİÉ ÇáÜ Objects íÌÈ Ãä íßæä ãÊØÇÈŞ';
+  sInvalidStringAndObjectArrays = 'Ø·ÙˆÙ„ Ø§Ù„Ù€ Strings Ùˆ Ù…ØµÙÙˆÙØ© Ø§Ù„Ù€ Objects ÙŠØ¬Ø¨ Ø£Ù† ÙŠÙƒÙˆÙ† Ù…ØªØ·Ø§Ø¨Ù‚';
 
-  sSameArrays = 'ãÕİæİÉ ÇáãÕÏÑ æÇáæÌåÉ íÌÈ Ãä áÇíßæäÇ ãÊØÇÈŞÊíä';
+  sSameArrays = 'Ù…ØµÙÙˆÙØ© Ø§Ù„Ù…ØµØ¯Ø± ÙˆØ§Ù„ÙˆØ¬Ù‡Ø© ÙŠØ¬Ø¨ Ø£Ù† Ù„Ø§ÙŠÙƒÙˆÙ†Ø§ Ù…ØªØ·Ø§Ø¨Ù‚ØªÙŠÙ†';
 
-  sNoConstruct = 'ÇáÕäİ %s áÇíÈÏæ Ãäå Êã ÊÔííÏå';
+  sNoConstruct = 'Ø§Ù„ØµÙ†Ù %s Ù„Ø§ÙŠØ¨Ø¯Ùˆ Ø£Ù†Ù‡ ØªÙ… ØªØ´ÙŠÙŠØ¯Ù‡';
 
   sCannotCallAcquireOnConditionVar = 'Cannot call Acquire on TConditionVariable.  Must call WaitFor with an external TMutex';
-  sInvalidTimeoutValue = 'ŞíãÉ ãåáÉ ÇáÇäÊåÇÁ ÛíÑ ÕÇáÍÉ : %s';
-  sNamedSyncObjectsNotSupported = 'ÇáÃÛÑÇÖ ÇáãÊÒÇãäÉ ÇáãÓÇÉ ÛíÑ ãÏÚæãÉ İí åĞå ÇáãäÕÉ (ÇáäÙÇã)';
+  sInvalidTimeoutValue = 'Ù‚ÙŠÙ…Ø© Ù…Ù‡Ù„Ø© Ø§Ù„Ø§Ù†ØªÙ‡Ø§Ø¡ ØºÙŠØ± ØµØ§Ù„Ø­Ø© : %s';
+  sNamedSyncObjectsNotSupported = 'Ø§Ù„Ø£ØºØ±Ø§Ø¶ Ø§Ù„Ù…ØªØ²Ø§Ù…Ù†Ø© Ø§Ù„Ù…Ø³Ø§Ø© ØºÙŠØ± Ù…Ø¯Ø¹ÙˆÙ…Ø© ÙÙŠ Ù‡Ø°Ù‡ Ø§Ù„Ù…Ù†ØµØ© (Ø§Ù„Ù†Ø¸Ø§Ù…)';
 
-  sInvalidInitialSemaphoreCount = 'ÇáÊÚÏÇÏ ÇáÃæáí ÛíÑ ÕÇáÍ : %d';
-  sInvalidMaxSemaphoreCount = 'ÇáÊÚÏÇÏ ÇáÃŞÕì ÛíÑ ÕÍíÍ: %d';
+  sInvalidInitialSemaphoreCount = 'Ø§Ù„ØªØ¹Ø¯Ø§Ø¯ Ø§Ù„Ø£ÙˆÙ„ÙŠ ØºÙŠØ± ØµØ§Ù„Ø­ : %d';
+  sInvalidMaxSemaphoreCount = 'Ø§Ù„ØªØ¹Ø¯Ø§Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ ØºÙŠØ± ØµØ­ÙŠØ­: %d';
   sSemaphoreCanceled = 'Invalid operation. Semaphore canceled';
   sInvalidSemaphoreReleaseCount = 'Invalid semaphore release count: %d';
   sSemaphoreReachedMaxCount = 'Semaphore reached MaxCount';
   sErrorCreatingSemaphore = 'Error Creating Semaphore';
 
-  sErrorCreatingEvent = 'ÎØÃ İí ÅäÔÇÁ ÇáÍÏË';
+  sErrorCreatingEvent = 'Ø®Ø·Ø£ ÙÙŠ Ø¥Ù†Ø´Ø§Ø¡ Ø§Ù„Ø­Ø¯Ø«';
 
-  sSpinCountOutOfRange = 'SpinCount ÎÇÑÌ ÇáãÏì , íÌÈ Ãä íßæä Èíä  0 æ %d';
+  sSpinCountOutOfRange = 'SpinCount Ø®Ø§Ø±Ø¬ Ø§Ù„Ù…Ø¯Ù‰ , ÙŠØ¬Ø¨ Ø£Ù† ÙŠÙƒÙˆÙ† Ø¨ÙŠÙ†  0 Ùˆ %d';
 
-  sCountdownEventCanceled = 'ÇáÚÏ ÇáÊäÇÒáí Êã ÅáÛÇÁÉ';
-  sInvalidResetCount = 'ÊÚÏÇÏ ÅÚÇÏÉ ÇáÖÈØ ÛíÑ ÕÇáÍ: %d';
-  sInvalidInitialCount = 'ÊÚÏÇÏ ÛíÑ ÕÇáÍ: %d';
-  sInvalidDecrementCount = 'ÊÚÏÇÏ ÇáÒíÇÏÉ ÛíÑ ÕÇáÍ : %d';
-  sInvalidIncrementCount = 'ÊÚÏÇÏ ÇáÅäŞÇÕ ÛíÑ ÕÇáÍ: %d';
-  sInvalidDecrementOperation = 'ÊÚÏÇÏ ÇáÅäŞÇÕ Óæİ íÓÈÈ äÊÇÆÌ ÛíÑ ÕÇáÍÉ: ÇáÊÚÏÇÏ: %d, ÇáÊÚÏÇÏ ÇáÍÇáí: %d';
+  sCountdownEventCanceled = 'Ø§Ù„Ø¹Ø¯ Ø§Ù„ØªÙ†Ø§Ø²Ù„ÙŠ ØªÙ… Ø¥Ù„ØºØ§Ø¡Ø©';
+  sInvalidResetCount = 'ØªØ¹Ø¯Ø§Ø¯ Ø¥Ø¹Ø§Ø¯Ø© Ø§Ù„Ø¶Ø¨Ø· ØºÙŠØ± ØµØ§Ù„Ø­: %d';
+  sInvalidInitialCount = 'ØªØ¹Ø¯Ø§Ø¯ ØºÙŠØ± ØµØ§Ù„Ø­: %d';
+  sInvalidDecrementCount = 'ØªØ¹Ø¯Ø§Ø¯ Ø§Ù„Ø²ÙŠØ§Ø¯Ø© ØºÙŠØ± ØµØ§Ù„Ø­ : %d';
+  sInvalidIncrementCount = 'ØªØ¹Ø¯Ø§Ø¯ Ø§Ù„Ø¥Ù†Ù‚Ø§Øµ ØºÙŠØ± ØµØ§Ù„Ø­: %d';
+  sInvalidDecrementOperation = 'ØªØ¹Ø¯Ø§Ø¯ Ø§Ù„Ø¥Ù†Ù‚Ø§Øµ Ø³ÙˆÙ ÙŠØ³Ø¨Ø¨ Ù†ØªØ§Ø¦Ø¬ ØºÙŠØ± ØµØ§Ù„Ø­Ø©: Ø§Ù„ØªØ¹Ø¯Ø§Ø¯: %d, Ø§Ù„ØªØ¹Ø¯Ø§Ø¯ Ø§Ù„Ø­Ø§Ù„ÙŠ: %d';
   sInvalidIncrementOperation = 'Count already max: Amount: %d, CurCount: %d';
-  sCountdownAlreadyZero = 'ÇáÚÏ ÇáÊäÇÒáí ŞÏ æÕá Åáì ÇáÕİÑ ãÓÈŞÇ';
+  sCountdownAlreadyZero = 'Ø§Ù„Ø¹Ø¯ Ø§Ù„ØªÙ†Ø§Ø²Ù„ÙŠ Ù‚Ø¯ ÙˆØµÙ„ Ø¥Ù„Ù‰ Ø§Ù„ØµÙØ± Ù…Ø³Ø¨Ù‚Ø§';
 
-  sTimespanTooLong = 'ÇáİÇÕá ÇáÒãäí ÇáãÍÏÏ Øæíá ÌÏÇ';
-  sInvalidTimespanDuration = 'áÇíãßä ÅÚÇÏÉ ÇáãÏÉ ÇáÒãäíÉ , áÅä ÇáŞíãå ÊÌÇæÒÊ ÇáŞíãÉ ÇáÚáíÇ áÜ TTimeSpan.MaxValue';
-  sTimespanValueCannotBeNan = 'ÇáŞíãÉ áÇíãßä Ãä Êßæä NaN';
-  sCannotNegateTimespan = 'ÚßÓ ÇáŞíãÉ ÇáÏäíÇ ááİÇÕá ÇáÒãäí ÛíÑ ãÓãæÍ ';
-  sInvalidTimespanFormat = 'ÊäÓíŞ ÇáİÇÕá ÇáÒãäí ÛíÑ ÕÇáÌ';
-  sTimespanElementTooLong = 'ÚäÕÑ ÇáİÇÕá ÇáÒãäí Øæíá ÌÏÇ';
+  sTimespanTooLong = 'Ø§Ù„ÙØ§ØµÙ„ Ø§Ù„Ø²Ù…Ù†ÙŠ Ø§Ù„Ù…Ø­Ø¯Ø¯ Ø·ÙˆÙŠÙ„ Ø¬Ø¯Ø§';
+  sInvalidTimespanDuration = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø¥Ø¹Ø§Ø¯Ø© Ø§Ù„Ù…Ø¯Ø© Ø§Ù„Ø²Ù…Ù†ÙŠØ© , Ù„Ø¥Ù† Ø§Ù„Ù‚ÙŠÙ…Ù‡ ØªØ¬Ø§ÙˆØ²Øª Ø§Ù„Ù‚ÙŠÙ…Ø© Ø§Ù„Ø¹Ù„ÙŠØ§ Ù„Ù€ TTimeSpan.MaxValue';
+  sTimespanValueCannotBeNan = 'Ø§Ù„Ù‚ÙŠÙ…Ø© Ù„Ø§ÙŠÙ…ÙƒÙ† Ø£Ù† ØªÙƒÙˆÙ† NaN';
+  sCannotNegateTimespan = 'Ø¹ÙƒØ³ Ø§Ù„Ù‚ÙŠÙ…Ø© Ø§Ù„Ø¯Ù†ÙŠØ§ Ù„Ù„ÙØ§ØµÙ„ Ø§Ù„Ø²Ù…Ù†ÙŠ ØºÙŠØ± Ù…Ø³Ù…ÙˆØ­ ';
+  sInvalidTimespanFormat = 'ØªÙ†Ø³ÙŠÙ‚ Ø§Ù„ÙØ§ØµÙ„ Ø§Ù„Ø²Ù…Ù†ÙŠ ØºÙŠØ± ØµØ§Ù„Ø¬';
+  sTimespanElementTooLong = 'Ø¹Ù†ØµØ± Ø§Ù„ÙØ§ØµÙ„ Ø§Ù„Ø²Ù…Ù†ÙŠ Ø·ÙˆÙŠÙ„ Ø¬Ø¯Ø§';
 
   { ************************************************************************* }
   { Distance's family type }
-  SDistanceDescription = 'ÇáãÓÇİÉ';
+  SDistanceDescription = 'Ø§Ù„Ù…Ø³Ø§ÙØ©';
 
   { Distance's various conversion types }
-  SMicromicronsDescription = 'ãíßÑæ ãíßÑæä';
-  SAngstromsDescription = 'ÃäÌÓÊÑæã';
-  SMillimicronsDescription = 'ãíáí ãíßÑæä';
-  SMicronsDescription = 'ãíßÑæä';
-  SMillimetersDescription = 'ãíáíãÊÑ';
-  SCentimetersDescription = 'ÓäÊíãÊÑ';
-  SDecimetersDescription = 'ÏíÓíãÊÑ';
-  SMetersDescription = 'ãÊÑ';
-  SDecametersDescription = 'ÏíßÇãÊÑ(10ã)';
-  SHectometersDescription = 'åíßÊæãÊÑ(100ã)';
-  SKilometersDescription = 'ßíáæãÊÑ';
-  SMegametersDescription = 'ãíÛÇãÊÑ';
-  SGigametersDescription = 'ÛíÛÇãÊÑ';
-  SInchesDescription = 'ÅäÔ';
-  SFeetDescription = 'ŞÏã';
-  SYardsDescription = 'íÇÑÏ';
-  SMilesDescription = 'ãíá';
-  SNauticalMilesDescription = 'ãíá ÈÍÑí';
-  SAstronomicalUnitsDescription = 'æÍÏÉ İáßíÉ';
-  SLightYearsDescription = 'ÓäÉ ÖæÆíÉ';
-  SParsecsDescription = 'İÑÓÎ äÌãí';
-  SCubitsDescription = 'ĞÑÇÚ';
-  SFathomsDescription = 'ŞÇãÉ';
-  SFurlongsDescription = 'İÑáäÛ';
-  SHandsDescription = 'ĞÑÇÚ';
-  SPacesDescription = 'ÎØæÉ';
-  SRodsDescription = 'ŞÖíÈ';
-  SChainsDescription = 'ÓáÓáÉ';
-  SLinksDescription = 'ÇÑÊÈÇØ';
+  SMicromicronsDescription = 'Ù…ÙŠÙƒØ±Ùˆ Ù…ÙŠÙƒØ±ÙˆÙ†';
+  SAngstromsDescription = 'Ø£Ù†Ø¬Ø³ØªØ±ÙˆÙ…';
+  SMillimicronsDescription = 'Ù…ÙŠÙ„ÙŠ Ù…ÙŠÙƒØ±ÙˆÙ†';
+  SMicronsDescription = 'Ù…ÙŠÙƒØ±ÙˆÙ†';
+  SMillimetersDescription = 'Ù…ÙŠÙ„ÙŠÙ…ØªØ±';
+  SCentimetersDescription = 'Ø³Ù†ØªÙŠÙ…ØªØ±';
+  SDecimetersDescription = 'Ø¯ÙŠØ³ÙŠÙ…ØªØ±';
+  SMetersDescription = 'Ù…ØªØ±';
+  SDecametersDescription = 'Ø¯ÙŠÙƒØ§Ù…ØªØ±(10Ù…)';
+  SHectometersDescription = 'Ù‡ÙŠÙƒØªÙˆÙ…ØªØ±(100Ù…)';
+  SKilometersDescription = 'ÙƒÙŠÙ„ÙˆÙ…ØªØ±';
+  SMegametersDescription = 'Ù…ÙŠØºØ§Ù…ØªØ±';
+  SGigametersDescription = 'ØºÙŠØºØ§Ù…ØªØ±';
+  SInchesDescription = 'Ø¥Ù†Ø´';
+  SFeetDescription = 'Ù‚Ø¯Ù…';
+  SYardsDescription = 'ÙŠØ§Ø±Ø¯';
+  SMilesDescription = 'Ù…ÙŠÙ„';
+  SNauticalMilesDescription = 'Ù…ÙŠÙ„ Ø¨Ø­Ø±ÙŠ';
+  SAstronomicalUnitsDescription = 'ÙˆØ­Ø¯Ø© ÙÙ„ÙƒÙŠØ©';
+  SLightYearsDescription = 'Ø³Ù†Ø© Ø¶ÙˆØ¦ÙŠØ©';
+  SParsecsDescription = 'ÙØ±Ø³Ø® Ù†Ø¬Ù…ÙŠ';
+  SCubitsDescription = 'Ø°Ø±Ø§Ø¹';
+  SFathomsDescription = 'Ù‚Ø§Ù…Ø©';
+  SFurlongsDescription = 'ÙØ±Ù„Ù†Øº';
+  SHandsDescription = 'Ø°Ø±Ø§Ø¹';
+  SPacesDescription = 'Ø®Ø·ÙˆØ©';
+  SRodsDescription = 'Ù‚Ø¶ÙŠØ¨';
+  SChainsDescription = 'Ø³Ù„Ø³Ù„Ø©';
+  SLinksDescription = 'Ø§Ø±ØªØ¨Ø§Ø·';
   SPicasDescription = 'Picas';
-  SPointsDescription = 'äŞØÉ';
+  SPointsDescription = 'Ù†Ù‚Ø·Ø©';
 
   { ************************************************************************* }
   { Area's family type }
-  SAreaDescription = 'ÇáãÓÇÍÉ';
+  SAreaDescription = 'Ø§Ù„Ù…Ø³Ø§Ø­Ø©';
 
   { Area's various conversion types }
-  SSquareMillimetersDescription = 'ãáíãÊÑ ãÑÈÚ';
-  SSquareCentimetersDescription = 'ÓäÊíãÊÑ ãÑÈÚ';
-  SSquareDecimetersDescription = 'ÏíÓíãÊÑ ãÑÈÚ';
-  SSquareMetersDescription = 'ãÊÑ ãÑÈÚ';
-  SSquareDecametersDescription = 'ÏíÓíãÊÑ ãÑÈÚ';
-  SSquareHectometersDescription = 'åßÊæãÊÑ ãÑÈÚ';
-  SSquareKilometersDescription = 'ßíáæãÊÑ ãÑÈÚ';
-  SSquareInchesDescription = 'ÅäÔ ãÑÈÚ';
-  SSquareFeetDescription = 'ŞÏã ãÑÈÚ';
-  SSquareYardsDescription = 'íÇÑÏå ãÑÈÚå';
-  SSquareMilesDescription = 'ãíá ãÑÈÚ';
-  SAcresDescription = 'İÏÇä';
-  SCentaresDescription = 'ãÊÑ ãÑÈÚ';
-  SAresDescription = 'ÚÔÑ Ïæäã';
-  SHectaresDescription = 'åßÊÇÑ';
+  SSquareMillimetersDescription = 'Ù…Ù„ÙŠÙ…ØªØ± Ù…Ø±Ø¨Ø¹';
+  SSquareCentimetersDescription = 'Ø³Ù†ØªÙŠÙ…ØªØ± Ù…Ø±Ø¨Ø¹';
+  SSquareDecimetersDescription = 'Ø¯ÙŠØ³ÙŠÙ…ØªØ± Ù…Ø±Ø¨Ø¹';
+  SSquareMetersDescription = 'Ù…ØªØ± Ù…Ø±Ø¨Ø¹';
+  SSquareDecametersDescription = 'Ø¯ÙŠØ³ÙŠÙ…ØªØ± Ù…Ø±Ø¨Ø¹';
+  SSquareHectometersDescription = 'Ù‡ÙƒØªÙˆÙ…ØªØ± Ù…Ø±Ø¨Ø¹';
+  SSquareKilometersDescription = 'ÙƒÙŠÙ„ÙˆÙ…ØªØ± Ù…Ø±Ø¨Ø¹';
+  SSquareInchesDescription = 'Ø¥Ù†Ø´ Ù…Ø±Ø¨Ø¹';
+  SSquareFeetDescription = 'Ù‚Ø¯Ù… Ù…Ø±Ø¨Ø¹';
+  SSquareYardsDescription = 'ÙŠØ§Ø±Ø¯Ù‡ Ù…Ø±Ø¨Ø¹Ù‡';
+  SSquareMilesDescription = 'Ù…ÙŠÙ„ Ù…Ø±Ø¨Ø¹';
+  SAcresDescription = 'ÙØ¯Ø§Ù†';
+  SCentaresDescription = 'Ù…ØªØ± Ù…Ø±Ø¨Ø¹';
+  SAresDescription = 'Ø¹Ø´Ø± Ø¯ÙˆÙ†Ù…';
+  SHectaresDescription = 'Ù‡ÙƒØªØ§Ø±';
   SSquareRodsDescription = 'SquareRods';
 
   { ************************************************************************* }
   { Volume's family type }
-  SVolumeDescription = 'ÇáÍÌæã';
+  SVolumeDescription = 'Ø§Ù„Ø­Ø¬ÙˆÙ…';
 
   { Volume's various conversion types }
-  SCubicMillimetersDescription = 'ãíáíãÊÑ ãßÚÈ';
-  SCubicCentimetersDescription = 'ÓäÊíãÊÑ ãßÚÈ';
-  SCubicDecimetersDescription = 'ÏíÓíãÊÑ ãßÚÈ';
-  SCubicMetersDescription = 'ãÊÑ ãßÚÈ';
-  SCubicDecametersDescription = 'ÏíÓãÊÑ ãßÚÈ';
-  SCubicHectometersDescription = 'åíßÊæãÊÑ ãßÚÈ';
-  SCubicKilometersDescription = 'ßíáæãÊÑ ãßÚÈ';
-  SCubicInchesDescription = 'ÅäÔ ãßÚÈ';
-  SCubicFeetDescription = 'ŞÏã ãßÚÈÉ';
-  SCubicYardsDescription = 'íÇÑÏå ãßÚÈÉ';
-  SCubicMilesDescription = 'ãíá ãßÚÈ';
-  SMilliLitersDescription = 'ãíáí áÊÑ';
-  SCentiLitersDescription = 'ÓäÊí áíÊÑ';
-  SDeciLitersDescription = 'ÏíÓí áíÊÑ';
-  SLitersDescription = 'áÊÑ';
-  SDecaLitersDescription = 'ÏíßÇ áíÊÑ';
-  SHectoLitersDescription = 'åíßÊæ áÊÑ';
-  SKiloLitersDescription = 'ßíáæ áÊÑ';
-  SAcreFeetDescription = 'ÃßÑÉ  ŞÏã';
-  SAcreInchesDescription = 'ÃßÑÉ ÅäÔ';
-  SCordsDescription = 'ßÏÓÉ';
-  SCordFeetDescription = 'ßÏÓÉ ŞÏã';
-  SDecisteresDescription = 'ÏÓí ÇÓÊíÑ';
-  SSteresDescription = 'ÇÓÊíÑ';
-  SDecasteresDescription = 'ÏíßÇ ÇÓÊíÑ';
+  SCubicMillimetersDescription = 'Ù…ÙŠÙ„ÙŠÙ…ØªØ± Ù…ÙƒØ¹Ø¨';
+  SCubicCentimetersDescription = 'Ø³Ù†ØªÙŠÙ…ØªØ± Ù…ÙƒØ¹Ø¨';
+  SCubicDecimetersDescription = 'Ø¯ÙŠØ³ÙŠÙ…ØªØ± Ù…ÙƒØ¹Ø¨';
+  SCubicMetersDescription = 'Ù…ØªØ± Ù…ÙƒØ¹Ø¨';
+  SCubicDecametersDescription = 'Ø¯ÙŠØ³Ù…ØªØ± Ù…ÙƒØ¹Ø¨';
+  SCubicHectometersDescription = 'Ù‡ÙŠÙƒØªÙˆÙ…ØªØ± Ù…ÙƒØ¹Ø¨';
+  SCubicKilometersDescription = 'ÙƒÙŠÙ„ÙˆÙ…ØªØ± Ù…ÙƒØ¹Ø¨';
+  SCubicInchesDescription = 'Ø¥Ù†Ø´ Ù…ÙƒØ¹Ø¨';
+  SCubicFeetDescription = 'Ù‚Ø¯Ù… Ù…ÙƒØ¹Ø¨Ø©';
+  SCubicYardsDescription = 'ÙŠØ§Ø±Ø¯Ù‡ Ù…ÙƒØ¹Ø¨Ø©';
+  SCubicMilesDescription = 'Ù…ÙŠÙ„ Ù…ÙƒØ¹Ø¨';
+  SMilliLitersDescription = 'Ù…ÙŠÙ„ÙŠ Ù„ØªØ±';
+  SCentiLitersDescription = 'Ø³Ù†ØªÙŠ Ù„ÙŠØªØ±';
+  SDeciLitersDescription = 'Ø¯ÙŠØ³ÙŠ Ù„ÙŠØªØ±';
+  SLitersDescription = 'Ù„ØªØ±';
+  SDecaLitersDescription = 'Ø¯ÙŠÙƒØ§ Ù„ÙŠØªØ±';
+  SHectoLitersDescription = 'Ù‡ÙŠÙƒØªÙˆ Ù„ØªØ±';
+  SKiloLitersDescription = 'ÙƒÙŠÙ„Ùˆ Ù„ØªØ±';
+  SAcreFeetDescription = 'Ø£ÙƒØ±Ø©  Ù‚Ø¯Ù…';
+  SAcreInchesDescription = 'Ø£ÙƒØ±Ø© Ø¥Ù†Ø´';
+  SCordsDescription = 'ÙƒØ¯Ø³Ø©';
+  SCordFeetDescription = 'ÙƒØ¯Ø³Ø© Ù‚Ø¯Ù…';
+  SDecisteresDescription = 'Ø¯Ø³ÙŠ Ø§Ø³ØªÙŠØ±';
+  SSteresDescription = 'Ø§Ø³ØªÙŠØ±';
+  SDecasteresDescription = 'Ø¯ÙŠÙƒØ§ Ø§Ø³ØªÙŠØ±';
 
   { American Fluid Units }
-  SFluidGallonsDescription = 'ÛÇáæä ãÇÆÚ';
-  SFluidQuartsDescription = 'ÑÈÚ ÛÇáæä ãÇÆÚ';
-  SFluidPintsDescription = 'Ëãä ÛÇáæä (äÕİ áíÊÑ)';
-  SFluidCupsDescription = 'ßæÈ';
-  SFluidGillsDescription = 'ãßíÇá';
-  SFluidOuncesDescription = 'ÃæäÕÉ ÓÇÆáÉ';
-  SFluidTablespoonsDescription = 'ãáÚŞÉ ØÚÇã';
-  SFluidTeaspoonsDescription = 'ãáÚŞÉ ÔÇí';
+  SFluidGallonsDescription = 'ØºØ§Ù„ÙˆÙ† Ù…Ø§Ø¦Ø¹';
+  SFluidQuartsDescription = 'Ø±Ø¨Ø¹ ØºØ§Ù„ÙˆÙ† Ù…Ø§Ø¦Ø¹';
+  SFluidPintsDescription = 'Ø«Ù…Ù† ØºØ§Ù„ÙˆÙ† (Ù†ØµÙ Ù„ÙŠØªØ±)';
+  SFluidCupsDescription = 'ÙƒÙˆØ¨';
+  SFluidGillsDescription = 'Ù…ÙƒÙŠØ§Ù„';
+  SFluidOuncesDescription = 'Ø£ÙˆÙ†ØµØ© Ø³Ø§Ø¦Ù„Ø©';
+  SFluidTablespoonsDescription = 'Ù…Ù„Ø¹Ù‚Ø© Ø·Ø¹Ø§Ù…';
+  SFluidTeaspoonsDescription = 'Ù…Ù„Ø¹Ù‚Ø© Ø´Ø§ÙŠ';
 
   { American Dry Units }
-  SDryGallonsDescription = 'ÛÇáæä ÌÇİ';
-  SDryQuartsDescription = 'ÑÈÚ ÛÇáæä';
-  SDryPintsDescription = 'Ëãä ÛÇáæä';
-  SDryPecksDescription = 'Èßø';
-  SDryBucketsDescription = 'ÓØá';
-  SDryBushelsDescription = 'ÈæÔá';
+  SDryGallonsDescription = 'ØºØ§Ù„ÙˆÙ† Ø¬Ø§Ù';
+  SDryQuartsDescription = 'Ø±Ø¨Ø¹ ØºØ§Ù„ÙˆÙ†';
+  SDryPintsDescription = 'Ø«Ù…Ù† ØºØ§Ù„ÙˆÙ†';
+  SDryPecksDescription = 'Ø¨ÙƒÙ‘';
+  SDryBucketsDescription = 'Ø³Ø·Ù„';
+  SDryBushelsDescription = 'Ø¨ÙˆØ´Ù„';
 
   { English Imperial Fluid/Dry Units }
-  SUKGallonsDescription = 'ÛÇáæä ÈÑíØÇäí';
-  SUKPottlesDescription = 'äÕİ ÛÇáæä ÈÑíØÇäí';
-  SUKQuartsDescription = 'ÑÈÚ ÛÇáæä ÈÑíØÇäí';
-  SUKPintsDescription = 'Ëãä ÛÇáæä ÈÑíØÇäí';
-  SUKGillsDescription = 'ãßíÇá ÈÑíØÇäí';
-  SUKOuncesDescription = 'ÇæäÕÉ ÈÑíØÇäíÉ';
-  SUKPecksDescription = 'Èßø ÈÑíØÇäí';
-  SUKBucketsDescription = 'ÓØá ÈÑíØÇäí';
-  SUKBushelsDescription = 'ÈæÔá ÈÑíØÇäí';
+  SUKGallonsDescription = 'ØºØ§Ù„ÙˆÙ† Ø¨Ø±ÙŠØ·Ø§Ù†ÙŠ';
+  SUKPottlesDescription = 'Ù†ØµÙ ØºØ§Ù„ÙˆÙ† Ø¨Ø±ÙŠØ·Ø§Ù†ÙŠ';
+  SUKQuartsDescription = 'Ø±Ø¨Ø¹ ØºØ§Ù„ÙˆÙ† Ø¨Ø±ÙŠØ·Ø§Ù†ÙŠ';
+  SUKPintsDescription = 'Ø«Ù…Ù† ØºØ§Ù„ÙˆÙ† Ø¨Ø±ÙŠØ·Ø§Ù†ÙŠ';
+  SUKGillsDescription = 'Ù…ÙƒÙŠØ§Ù„ Ø¨Ø±ÙŠØ·Ø§Ù†ÙŠ';
+  SUKOuncesDescription = 'Ø§ÙˆÙ†ØµØ© Ø¨Ø±ÙŠØ·Ø§Ù†ÙŠØ©';
+  SUKPecksDescription = 'Ø¨ÙƒÙ‘ Ø¨Ø±ÙŠØ·Ø§Ù†ÙŠ';
+  SUKBucketsDescription = 'Ø³Ø·Ù„ Ø¨Ø±ÙŠØ·Ø§Ù†ÙŠ';
+  SUKBushelsDescription = 'Ø¨ÙˆØ´Ù„ Ø¨Ø±ÙŠØ·Ø§Ù†ÙŠ';
 
   { ************************************************************************* }
   { Mass's family type }
-  SMassDescription = 'ÇáÃæÒÇä';
+  SMassDescription = 'Ø§Ù„Ø£ÙˆØ²Ø§Ù†';
 
   { Mass's various conversion types }
-  SNanogramsDescription = 'äÇäæ ÛÑÇã';
-  SMicrogramsDescription = 'ãíßÑæ ÛÑÇã';
-  SMilligramsDescription = 'ãíáí ÛÑÇã';
-  SCentigramsDescription = 'ÓäÊíÛÑÇã';
-  SDecigramsDescription = 'ÏíÓíÛÑÇã';
-  SGramsDescription = 'ÛÑÇã';
-  SDecagramsDescription = 'ÏíßÇ ÛÑÇã';
-  SHectogramsDescription = 'åíßÊæÛÑÇã';
-  SKilogramsDescription = 'ßíáæÛÑÇã';
-  SMetricTonsDescription = 'Øä ãÊÑí';
-  SDramsDescription = 'ÏÑåã';
-  SGrainsDescription = 'ÍÈÉ';
-  STonsDescription = 'Øä';
-  SLongTonsDescription = 'Øä Øæíá';
-  SOuncesDescription = 'ÃæäÕÉ';
-  SPoundsDescription = 'ÈÇæäÏ';
-  SStonesDescription = 'ÍÌÑ';
+  SNanogramsDescription = 'Ù†Ø§Ù†Ùˆ ØºØ±Ø§Ù…';
+  SMicrogramsDescription = 'Ù…ÙŠÙƒØ±Ùˆ ØºØ±Ø§Ù…';
+  SMilligramsDescription = 'Ù…ÙŠÙ„ÙŠ ØºØ±Ø§Ù…';
+  SCentigramsDescription = 'Ø³Ù†ØªÙŠØºØ±Ø§Ù…';
+  SDecigramsDescription = 'Ø¯ÙŠØ³ÙŠØºØ±Ø§Ù…';
+  SGramsDescription = 'ØºØ±Ø§Ù…';
+  SDecagramsDescription = 'Ø¯ÙŠÙƒØ§ ØºØ±Ø§Ù…';
+  SHectogramsDescription = 'Ù‡ÙŠÙƒØªÙˆØºØ±Ø§Ù…';
+  SKilogramsDescription = 'ÙƒÙŠÙ„ÙˆØºØ±Ø§Ù…';
+  SMetricTonsDescription = 'Ø·Ù† Ù…ØªØ±ÙŠ';
+  SDramsDescription = 'Ø¯Ø±Ù‡Ù…';
+  SGrainsDescription = 'Ø­Ø¨Ø©';
+  STonsDescription = 'Ø·Ù†';
+  SLongTonsDescription = 'Ø·Ù† Ø·ÙˆÙŠÙ„';
+  SOuncesDescription = 'Ø£ÙˆÙ†ØµØ©';
+  SPoundsDescription = 'Ø¨Ø§ÙˆÙ†Ø¯';
+  SStonesDescription = 'Ø­Ø¬Ø±';
 
   { ************************************************************************* }
   { Temperature's family type }
-  STemperatureDescription = 'ÇáÍÑÇÑÉ';
+  STemperatureDescription = 'Ø§Ù„Ø­Ø±Ø§Ø±Ø©';
 
   { Temperature's various conversion types }
-  SCelsiusDescription = 'ÓíáÓíæÓ';
-  SKelvinDescription = 'ßíáİä';
-  SFahrenheitDescription = 'İÇåÑäåÇíÊ';
-  SRankineDescription = 'ÑÇäßíä';
-  SReaumurDescription = 'ÑíÇãæÑ';
+  SCelsiusDescription = 'Ø³ÙŠÙ„Ø³ÙŠÙˆØ³';
+  SKelvinDescription = 'ÙƒÙŠÙ„ÙÙ†';
+  SFahrenheitDescription = 'ÙØ§Ù‡Ø±Ù†Ù‡Ø§ÙŠØª';
+  SRankineDescription = 'Ø±Ø§Ù†ÙƒÙŠÙ†';
+  SReaumurDescription = 'Ø±ÙŠØ§Ù…ÙˆØ±';
 
   { ************************************************************************* }
   { Time's family type }
-  STimeDescription = 'ÇáæŞÊ';
+  STimeDescription = 'Ø§Ù„ÙˆÙ‚Øª';
 
   { Time's various conversion types }
-  SMilliSecondsDescription = 'ãíáí ËÇäíÉ';
-  SSecondsDescription = 'ËÇäíÉ';
-  SMinutesDescription = 'ÏŞíŞÉ';
-  SHoursDescription = 'ÓÇÚÉ';
-  SDaysDescription = 'íæã';
-  SWeeksDescription = 'ÃÓÈæÚ';
-  SFortnightsDescription = 'ÃÓÈæÚÇä';
-  SMonthsDescription = 'ÔåÑ';
-  SYearsDescription = 'ÓäÉ';
-  SDecadesDescription = 'ÚŞÏ';
-  SCenturiesDescription = 'ŞÑä';
-  SMillenniaDescription = 'ÃáİíÉ';
-  SDateTimeDescription = 'ÊÇÑíÎ ææŞÊ';
-  SJulianDateDescription = 'ÇáÊŞæíã ÇáíæáíæÓí';
-  SModifiedJulianDateDescription = 'ÇáÊŞæíã ÇáíæáíæÓí ÇáãÚÏá';
+  SMilliSecondsDescription = 'Ù…ÙŠÙ„ÙŠ Ø«Ø§Ù†ÙŠØ©';
+  SSecondsDescription = 'Ø«Ø§Ù†ÙŠØ©';
+  SMinutesDescription = 'Ø¯Ù‚ÙŠÙ‚Ø©';
+  SHoursDescription = 'Ø³Ø§Ø¹Ø©';
+  SDaysDescription = 'ÙŠÙˆÙ…';
+  SWeeksDescription = 'Ø£Ø³Ø¨ÙˆØ¹';
+  SFortnightsDescription = 'Ø£Ø³Ø¨ÙˆØ¹Ø§Ù†';
+  SMonthsDescription = 'Ø´Ù‡Ø±';
+  SYearsDescription = 'Ø³Ù†Ø©';
+  SDecadesDescription = 'Ø¹Ù‚Ø¯';
+  SCenturiesDescription = 'Ù‚Ø±Ù†';
+  SMillenniaDescription = 'Ø£Ù„ÙÙŠØ©';
+  SDateTimeDescription = 'ØªØ§Ø±ÙŠØ® ÙˆÙˆÙ‚Øª';
+  SJulianDateDescription = 'Ø§Ù„ØªÙ‚ÙˆÙŠÙ… Ø§Ù„ÙŠÙˆÙ„ÙŠÙˆØ³ÙŠ';
+  SModifiedJulianDateDescription = 'Ø§Ù„ØªÙ‚ÙˆÙŠÙ… Ø§Ù„ÙŠÙˆÙ„ÙŠÙˆØ³ÙŠ Ø§Ù„Ù…Ø¹Ø¯Ù„';
 
 
-  SGUIDAlreadyDefined = 'GUID ''%s'' Êã ÊÓÌíáå ãÓÈŞÇ';
-  SNoComComponent = 'ÈäÇÁ ÛÑÖ ãä äæÚ COM : ''%s'' áíÓ áå ãßæä íÛáİå ';
-  SNoComClass = '%s.GetComClass ÃÚÇÏ ŞíãÉ İÇÑÛÉ nil';
-  SNoCOMClassSpecified = 'áã íÊã ÊÍÏíÏ ComClass';
-  SNoCOMClassesRegistered = 'áã íÊã ÊÓÌíá Ãí ÃÕäÇİ ãä äãØ COM';
+  SGUIDAlreadyDefined = 'GUID ''%s'' ØªÙ… ØªØ³Ø¬ÙŠÙ„Ù‡ Ù…Ø³Ø¨Ù‚Ø§';
+  SNoComComponent = 'Ø¨Ù†Ø§Ø¡ ØºØ±Ø¶ Ù…Ù† Ù†ÙˆØ¹ COM : ''%s'' Ù„ÙŠØ³ Ù„Ù‡ Ù…ÙƒÙˆÙ† ÙŠØºÙ„ÙÙ‡ ';
+  SNoComClass = '%s.GetComClass Ø£Ø¹Ø§Ø¯ Ù‚ÙŠÙ…Ø© ÙØ§Ø±ØºØ© nil';
+  SNoCOMClassSpecified = 'Ù„Ù… ÙŠØªÙ… ØªØ­Ø¯ÙŠØ¯ ComClass';
+  SNoCOMClassesRegistered = 'Ù„Ù… ÙŠØªÙ… ØªØ³Ø¬ÙŠÙ„ Ø£ÙŠ Ø£ØµÙ†Ø§Ù Ù…Ù† Ù†Ù…Ø· COM';
 
-  SNoContext = 'áÇ íæÌÏ ãÓÇÚÏÉ ÍÓÇÓÉ ááÓíÇŞ Êã ÊäÕíÈåÇ';
-  SNoContextFound = 'áã íÊã ÇáÚËæÑ Úáì ãÓÇÚÏÉ á %d';
-  SNoIndex = 'ÛíÑ ŞÇÏÑ Úáì İÊÍ ÇáİåÑÓ';
-  SNoSearch = 'ÛíÑ ŞÇÏÑ Úáì İÊÍ ÇáÈÍË';
-  SNoTableOfContents = 'ÛíÑ ŞÇÏÑ Úáì ÅíÌÇÏ İåÑÓ ÇáãÍÊæíÇÊ';
-  SNoTopics = 'áã íÊã ÊäÕíÈ äÙÇã ãÓÇÚÏÉ ãÈäí Úáì ÇáãæÇÖíÚ topic-based help';
-  SNothingFound = 'áã íÊã ÇáÚËæÑ Úáì ãÓÇÚÏÉ ãä ÇÌá %s';
+  SNoContext = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…Ø³Ø§Ø¹Ø¯Ø© Ø­Ø³Ø§Ø³Ø© Ù„Ù„Ø³ÙŠØ§Ù‚ ØªÙ… ØªÙ†ØµÙŠØ¨Ù‡Ø§';
+  SNoContextFound = 'Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ù…Ø³Ø§Ø¹Ø¯Ø© Ù„ %d';
+  SNoIndex = 'ØºÙŠØ± Ù‚Ø§Ø¯Ø± Ø¹Ù„Ù‰ ÙØªØ­ Ø§Ù„ÙÙ‡Ø±Ø³';
+  SNoSearch = 'ØºÙŠØ± Ù‚Ø§Ø¯Ø± Ø¹Ù„Ù‰ ÙØªØ­ Ø§Ù„Ø¨Ø­Ø«';
+  SNoTableOfContents = 'ØºÙŠØ± Ù‚Ø§Ø¯Ø± Ø¹Ù„Ù‰ Ø¥ÙŠØ¬Ø§Ø¯ ÙÙ‡Ø±Ø³ Ø§Ù„Ù…Ø­ØªÙˆÙŠØ§Øª';
+  SNoTopics = 'Ù„Ù… ÙŠØªÙ… ØªÙ†ØµÙŠØ¨ Ù†Ø¸Ø§Ù… Ù…Ø³Ø§Ø¹Ø¯Ø© Ù…Ø¨Ù†ÙŠ Ø¹Ù„Ù‰ Ø§Ù„Ù…ÙˆØ§Ø¶ÙŠØ¹ topic-based help';
+  SNothingFound = 'Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ù…Ø³Ø§Ø¹Ø¯Ø© Ù…Ù† Ø§Ø¬Ù„ %s';
 
-  SMethodNotFound = 'ãäåÌ %s ÇáÕäİ %s áã íÊã ÇáÚËæÑ Úáíå';
-  STypeMisMatch = 'äãØ ÛíÑ ãØÇÈŞ ááãÊÛíÑ %d ãä Ìá ÇáãäåÌ %s';
-  SInvalidDispID = 'DispID ÛíÑ ÕÇáÍ ááãÊÛíÑ  %d İí ÇáãäåÌ %s';
-  SParamRequired = 'ãÊÛíÑ ãØáæÈ %d ãä ÃÌá ÇáãäåÌ %s';
-  SMethodOver = 'ÊÚÑíİ ÇáãäåÌ áÜ %s áÏíå ÃßËÑ ãä  %d ãÊÛíÑ';
-  STooManyParams = 'ãÊÛíÑÇÊ ÃßËÑ ãä ÇáãØáæÈ , ááãäåÌ %s';
-  SNoRTTIInfoType = 'ÛíÑ ŞÇÏÑ Úáì ÇÓÊÍÖÇÑ ÇáãäåÌ %s ÇáĞí íÓÊÎÏã äãØ ÛíÑ ãäÔæÑ (unpublished)';
-  SResultIsExtended = 'äãØ 10bytes-Extended type İí ÇáãäåÌ %s'' íÚíÏ Ãä ŞíãÉ ÇáäãØ ÛíÑ ãÏÚæãÉ';
-  SParamIsExtended = 'äãØ 10bytes-Extended type İí ÇáãÊÛíÑ %d İí ÇáãäåÌ %s ÛíÑ ãÏÚæã ';
+  SMethodNotFound = 'Ù…Ù†Ù‡Ø¬ %s Ø§Ù„ØµÙ†Ù %s Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„ÙŠÙ‡';
+  STypeMisMatch = 'Ù†Ù…Ø· ØºÙŠØ± Ù…Ø·Ø§Ø¨Ù‚ Ù„Ù„Ù…ØªØºÙŠØ± %d Ù…Ù† Ø¬Ù„ Ø§Ù„Ù…Ù†Ù‡Ø¬ %s';
+  SInvalidDispID = 'DispID ØºÙŠØ± ØµØ§Ù„Ø­ Ù„Ù„Ù…ØªØºÙŠØ±  %d ÙÙŠ Ø§Ù„Ù…Ù†Ù‡Ø¬ %s';
+  SParamRequired = 'Ù…ØªØºÙŠØ± Ù…Ø·Ù„ÙˆØ¨ %d Ù…Ù† Ø£Ø¬Ù„ Ø§Ù„Ù…Ù†Ù‡Ø¬ %s';
+  SMethodOver = 'ØªØ¹Ø±ÙŠÙ Ø§Ù„Ù…Ù†Ù‡Ø¬ Ù„Ù€ %s Ù„Ø¯ÙŠÙ‡ Ø£ÙƒØ«Ø± Ù…Ù†  %d Ù…ØªØºÙŠØ±';
+  STooManyParams = 'Ù…ØªØºÙŠØ±Ø§Øª Ø£ÙƒØ«Ø± Ù…Ù† Ø§Ù„Ù…Ø·Ù„ÙˆØ¨ , Ù„Ù„Ù…Ù†Ù‡Ø¬ %s';
+  SNoRTTIInfoType = 'ØºÙŠØ± Ù‚Ø§Ø¯Ø± Ø¹Ù„Ù‰ Ø§Ø³ØªØ­Ø¶Ø§Ø± Ø§Ù„Ù…Ù†Ù‡Ø¬ %s Ø§Ù„Ø°ÙŠ ÙŠØ³ØªØ®Ø¯Ù… Ù†Ù…Ø· ØºÙŠØ± Ù…Ù†Ø´ÙˆØ± (unpublished)';
+  SResultIsExtended = 'Ù†Ù…Ø· 10bytes-Extended type ÙÙŠ Ø§Ù„Ù…Ù†Ù‡Ø¬ %s'' ÙŠØ¹ÙŠØ¯ Ø£Ù† Ù‚ÙŠÙ…Ø© Ø§Ù„Ù†Ù…Ø· ØºÙŠØ± Ù…Ø¯Ø¹ÙˆÙ…Ø©';
+  SParamIsExtended = 'Ù†Ù…Ø· 10bytes-Extended type ÙÙŠ Ø§Ù„Ù…ØªØºÙŠØ± %d ÙÙŠ Ø§Ù„Ù…Ù†Ù‡Ø¬ %s ØºÙŠØ± Ù…Ø¯Ø¹ÙˆÙ… ';
 
-  SArgumentOutOfRange = 'ÇáãÊÛíÑ ÎÇÑÌ ÇáãÏì ÇáãÓãæÍ';
-  SArgumentNil = 'ÇáãÊÛíÑ íÌÈ Ãä áÇíßæä ÎÇáí Nil';
-  SErrorCantModifyWhileIterating = 'áÇ íãßä ÊÚÏíá ãÌãæÚÉ ÃËäÇÁ ÇáÊßÑÇÑ';
-  SUnbalancedOperation = 'ÚãáíÉ ãßÏÓ Ãæ ÑÊá ÛíÑ ãÊæÇÒäÉ ';
-  SGenericItemNotFound = 'ÇáÚäÕÑ ÛíÑ ãæÌæÏ';
-  SGenericDuplicateItem = 'ÇáŞíã ÇáãßÑÑÉ ÛíÑ ãÓãæÍÉ';
+  SArgumentOutOfRange = 'Ø§Ù„Ù…ØªØºÙŠØ± Ø®Ø§Ø±Ø¬ Ø§Ù„Ù…Ø¯Ù‰ Ø§Ù„Ù…Ø³Ù…ÙˆØ­';
+  SArgumentNil = 'Ø§Ù„Ù…ØªØºÙŠØ± ÙŠØ¬Ø¨ Ø£Ù† Ù„Ø§ÙŠÙƒÙˆÙ† Ø®Ø§Ù„ÙŠ Nil';
+  SErrorCantModifyWhileIterating = 'Ù„Ø§ ÙŠÙ…ÙƒÙ† ØªØ¹Ø¯ÙŠÙ„ Ù…Ø¬Ù…ÙˆØ¹Ø© Ø£Ø«Ù†Ø§Ø¡ Ø§Ù„ØªÙƒØ±Ø§Ø±';
+  SUnbalancedOperation = 'Ø¹Ù…Ù„ÙŠØ© Ù…ÙƒØ¯Ø³ Ø£Ùˆ Ø±ØªÙ„ ØºÙŠØ± Ù…ØªÙˆØ§Ø²Ù†Ø© ';
+  SGenericItemNotFound = 'Ø§Ù„Ø¹Ù†ØµØ± ØºÙŠØ± Ù…ÙˆØ¬ÙˆØ¯';
+  SGenericDuplicateItem = 'Ø§Ù„Ù‚ÙŠÙ… Ø§Ù„Ù…ÙƒØ±Ø±Ø© ØºÙŠØ± Ù…Ø³Ù…ÙˆØ­Ø©';
 
-  SSpinLockInvalidOperation = 'ÊÊÈÚ ÇáãÓÇáß ÛíÑ ãİÚá';
-  SSpinLockReEntered = 'Êã ÅÚÇÏÉ ÅÏÎÇá SpinLock İí äİÓ ÇáãÓáß';
-  SSpinLockNotOwned = 'SpinLock ÛíÑ ããáæß ãä ŞÈá ÇáãÓáß ÇáÍÇáí';
+  SSpinLockInvalidOperation = 'ØªØªØ¨Ø¹ Ø§Ù„Ù…Ø³Ø§Ù„Ùƒ ØºÙŠØ± Ù…ÙØ¹Ù„';
+  SSpinLockReEntered = 'ØªÙ… Ø¥Ø¹Ø§Ø¯Ø© Ø¥Ø¯Ø®Ø§Ù„ SpinLock ÙÙŠ Ù†ÙØ³ Ø§Ù„Ù…Ø³Ù„Ùƒ';
+  SSpinLockNotOwned = 'SpinLock ØºÙŠØ± Ù…Ù…Ù„ÙˆÙƒ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ø³Ù„Ùƒ Ø§Ù„Ø­Ø§Ù„ÙŠ';
 
-  SInsufficientRtti = 'ãÚáæãÇÊ ÇáÃäãÇØ ÛíÑ ãÊæİÑÉ İí Òãä ÇáÊÔÛíá RTTI áÏÚã åĞå ÇáÚãáíÉ';
-  SParameterCountMismatch = 'ÚÏÏ ÇáãÊÛíÑÇÊ ÛíÑ ãØÇÈŞ';
-  SParameterCountExceeded = 'Êã ÊÎØí ÚÏÏ ÇáãÊÛíÑÇÊ';
-  SConversionError = 'äãØ ÛíÑ ãÊæÇİŞ';
-  SNonPublicType = 'ÇáäãØ ''%s'' áã íÚÑİ İí ŞÓã interface ááæÍÏÉ';
-  SByRefArgMismatch = 'ßá ãä VAR æ OUT íÌÈ Çä íãáßÇ ÇäãÇØ ãÊÛíÑÇÊ ãÊØÇÈŞÉ';
+  SInsufficientRtti = 'Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø§Ù„Ø£Ù†Ù…Ø§Ø· ØºÙŠØ± Ù…ØªÙˆÙØ±Ø© ÙÙŠ Ø²Ù…Ù† Ø§Ù„ØªØ´ØºÙŠÙ„ RTTI Ù„Ø¯Ø¹Ù… Ù‡Ø°Ù‡ Ø§Ù„Ø¹Ù…Ù„ÙŠØ©';
+  SParameterCountMismatch = 'Ø¹Ø¯Ø¯ Ø§Ù„Ù…ØªØºÙŠØ±Ø§Øª ØºÙŠØ± Ù…Ø·Ø§Ø¨Ù‚';
+  SParameterCountExceeded = 'ØªÙ… ØªØ®Ø·ÙŠ Ø¹Ø¯Ø¯ Ø§Ù„Ù…ØªØºÙŠØ±Ø§Øª';
+  SConversionError = 'Ù†Ù…Ø· ØºÙŠØ± Ù…ØªÙˆØ§ÙÙ‚';
+  SNonPublicType = 'Ø§Ù„Ù†Ù…Ø· ''%s'' Ù„Ù… ÙŠØ¹Ø±Ù ÙÙŠ Ù‚Ø³Ù… interface Ù„Ù„ÙˆØ­Ø¯Ø©';
+  SByRefArgMismatch = 'ÙƒÙ„ Ù…Ù† VAR Ùˆ OUT ÙŠØ¬Ø¨ Ø§Ù† ÙŠÙ…Ù„ÙƒØ§ Ø§Ù†Ù…Ø§Ø· Ù…ØªØºÙŠØ±Ø§Øª Ù…ØªØ·Ø§Ø¨Ù‚Ø©';
 
-  SInsufficientReadBuffer = 'ÇáĞÇßÑÉ ÇáæÓíØíÉ (ÇáÈİÑ) ÛíÑ ßÇİíå ááÈíÇäÇÊ ÇáÊí ÊãÊ ÇÓÊÚÇÏÊåÇ';
+  SInsufficientReadBuffer = 'Ø§Ù„Ø°Ø§ÙƒØ±Ø© Ø§Ù„ÙˆØ³ÙŠØ·ÙŠØ© (Ø§Ù„Ø¨ÙØ±) ØºÙŠØ± ÙƒØ§ÙÙŠÙ‡ Ù„Ù„Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„ØªÙŠ ØªÙ…Øª Ø§Ø³ØªØ¹Ø§Ø¯ØªÙ‡Ø§';
 
-  SInvalid7BitEncodedInteger = 'ÊÑãíÒ 7ÈÊ ááinteger stream ÛíÑ ÕÇáÍ';
-  SNoSurrogates = 'ÇáÈÏíá ÛíÑ ãÓãæÍ ßãÍÑİ ãİÑÏ';
-  SInvalidStringLength = 'Øæá ÇáäÕ ÛíÑ ÕÇáÍ';
-  SReadPastEndOfStream = 'ãÍÇæáÉ ááŞÑÇÁÉ ãä ÇáäÕ ÊÊÌÇæÒ äåÇíÊå';
+  SInvalid7BitEncodedInteger = 'ØªØ±Ù…ÙŠØ² 7Ø¨Øª Ù„Ù„integer stream ØºÙŠØ± ØµØ§Ù„Ø­';
+  SNoSurrogates = 'Ø§Ù„Ø¨Ø¯ÙŠÙ„ ØºÙŠØ± Ù…Ø³Ù…ÙˆØ­ ÙƒÙ…Ø­Ø±Ù Ù…ÙØ±Ø¯';
+  SInvalidStringLength = 'Ø·ÙˆÙ„ Ø§Ù„Ù†Øµ ØºÙŠØ± ØµØ§Ù„Ø­';
+  SReadPastEndOfStream = 'Ù…Ø­Ø§ÙˆÙ„Ø© Ù„Ù„Ù‚Ø±Ø§Ø¡Ø© Ù…Ù† Ø§Ù„Ù†Øµ ØªØªØ¬Ø§ÙˆØ² Ù†Ù‡Ø§ÙŠØªÙ‡';
 
   SInvalidGuidArray = 'Byte array for GUID must be exactly %d bytes long';
 
-  SServiceNotFound = 'ÎÏãÉ ÇÚÊãÇÏ ÊÓÌíá ÇáÏÎæá ÇáÊí Êã ÇÎÊíÇÑåÇ ÛíÑ ãæÌæÏÉ';
+  SServiceNotFound = 'Ø®Ø¯Ù…Ø© Ø§Ø¹ØªÙ…Ø§Ø¯ ØªØ³Ø¬ÙŠÙ„ Ø§Ù„Ø¯Ø®ÙˆÙ„ Ø§Ù„ØªÙŠ ØªÙ… Ø§Ø®ØªÙŠØ§Ø±Ù‡Ø§ ØºÙŠØ± Ù…ÙˆØ¬ÙˆØ¯Ø©';
 
   { Class group report strings }
 
-  sClassGroupHeader = 'ÇáãÌãæÚÉ[%d] - äÔØ: %s';
-  sGroupClassesHeader = '  ÃÕäÇİ ÇáãÌãæÚÉ';
-  sClassListHeader = '  ÇÕäÇİ';
-  sClassAliasesHeader = '  ÈÏÇÆá ÇáÃÕäÇİ';
+  sClassGroupHeader = 'Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø©[%d] - Ù†Ø´Ø·: %s';
+  sGroupClassesHeader = '  Ø£ØµÙ†Ø§Ù Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø©';
+  sClassListHeader = '  Ø§ØµÙ†Ø§Ù';
+  sClassAliasesHeader = '  Ø¨Ø¯Ø§Ø¦Ù„ Ø§Ù„Ø£ØµÙ†Ø§Ù';
 
 {$IFDEF MACOS}
   sInvalidConversion = 'Invalid conversion from %s to %s';
@@ -482,71 +484,71 @@ resourcestring
 
 {$IFDEF MSWINDOWS}
   { TOSVersion strings }
-  SVersionStr = '%s (ÇáÅÕÏÇÑÉ %d.%d, ÇáÈäÇÁ %d, %5:s)';
-  SSPVersionStr = '%s ÍÒãÉ ÇáÎÏãÉ %4:d (ÇáÅÕÏÇÑÉ %1:d.%2:d, ÇáÈäÇÁ %3:d, %5:s)';
-  SVersion32 = 'ÅÕÏÇÑ 32 ÈÊ';
-  SVersion64 = 'ÅÕÏÇÑ 64 ÈÊ';
-  SWindows = 'æíäÏæÒ';
-  SWindowsVista = 'æíäÏæÒ İíÓÊÇ';
+  SVersionStr = '%s (Ø§Ù„Ø¥ØµØ¯Ø§Ø±Ø© %d.%d, Ø§Ù„Ø¨Ù†Ø§Ø¡ %d, %5:s)';
+  SSPVersionStr = '%s Ø­Ø²Ù…Ø© Ø§Ù„Ø®Ø¯Ù…Ø© %4:d (Ø§Ù„Ø¥ØµØ¯Ø§Ø±Ø© %1:d.%2:d, Ø§Ù„Ø¨Ù†Ø§Ø¡ %3:d, %5:s)';
+  SVersion32 = 'Ø¥ØµØ¯Ø§Ø± 32 Ø¨Øª';
+  SVersion64 = 'Ø¥ØµØ¯Ø§Ø± 64 Ø¨Øª';
+  SWindows = 'ÙˆÙŠÙ†Ø¯ÙˆØ²';
+  SWindowsVista = 'ÙˆÙŠÙ†Ø¯ÙˆØ² ÙÙŠØ³ØªØ§';
   SWindowsServer2008 = 'Windows Server 2008';
-  SWindows7 = 'æíäÏæÒ 7';
+  SWindows7 = 'ÙˆÙŠÙ†Ø¯ÙˆØ² 7';
   SWindowsServer2008R2 = 'Windows Server 2008 R2';
   SWindows2000 = 'Windows 2000';
-  SWindowsXP = 'æíäÏæÒ ÅßÓ Èí';
+  SWindowsXP = 'ÙˆÙŠÙ†Ø¯ÙˆØ² Ø¥ÙƒØ³ Ø¨ÙŠ';
   SWindowsServer2003 = 'Windows Server 2003';
   SWindowsServer2003R2 = 'Windows Server 2003 R2';
   SWindowsServer2012 = 'Windows Server 2012';
   SWindowsServer2012R2 = 'Windows Server 2012 R2';
-  SWindows8 = 'æíäÏæÒ 8';
-  SWindows8Point1 = 'æíäÏæÒ 8.1';
-  SWindows10 = 'æíäÏæÒ 10';
-  SItaskbarInterfaceException = '%s åĞå ÇáæÇÌåÉ ÛíÑ ãÏÚæãÉ İí åĞå ÇáÅÕÏÇÑÉ ãä ÇáäÙÇã';
-  SHookException = 'áÇíãßä ÑÈØ æÊÈÇÏá ÇáÑÓÇÆá, ÇáÃÒÑÇÑ æÃÍÏÇË ÇáÚÑÖ áä ÊÚãá ';
-  SInitializeException = 'áÇíãßä ÊåíÆÉ ÔÑíØ ÇáãåÇã . ÎØÃ : %d';
-  SInstanceException = 'åäÇß äÓÎÉ ÃÎÑì ãä ÔÑíØ ÇáãåÇã ';
-  SButtonsLimitException = 'ÔÑíØ ãåÇã æäÏæÒ íÏÚã İŞØ %d ÃÒÑÇÑ İí ÕİÍÇÊ ÇáãÚÇíäÉ';
-  SCouldNotRegisterTabException = 'áÇíãßä ÊÓÌíá ÇáÕİÍÉ . ÎØÃ %d';
-  SInvalidProgressValueException = '%d áíÓ ÕÍíÍ . íÌÈ Çä íßæä Èíä 0 æ %d';
-  SThumbPreviewException = 'İÔá ÅÚÏÇÏ ÇáÕæÑÉ ßÚÑÖ ãÕÛÑÇÊ . ÎØÃ: %d';
-  SBitmapPreviewException = 'İÔá ÅÚÏÇÏ ÇáÕæÑÉ ááãÚÇíäå. ÎØÃ: %d';
+  SWindows8 = 'ÙˆÙŠÙ†Ø¯ÙˆØ² 8';
+  SWindows8Point1 = 'ÙˆÙŠÙ†Ø¯ÙˆØ² 8.1';
+  SWindows10 = 'ÙˆÙŠÙ†Ø¯ÙˆØ² 10';
+  SItaskbarInterfaceException = '%s Ù‡Ø°Ù‡ Ø§Ù„ÙˆØ§Ø¬Ù‡Ø© ØºÙŠØ± Ù…Ø¯Ø¹ÙˆÙ…Ø© ÙÙŠ Ù‡Ø°Ù‡ Ø§Ù„Ø¥ØµØ¯Ø§Ø±Ø© Ù…Ù† Ø§Ù„Ù†Ø¸Ø§Ù…';
+  SHookException = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø±Ø¨Ø· ÙˆØªØ¨Ø§Ø¯Ù„ Ø§Ù„Ø±Ø³Ø§Ø¦Ù„, Ø§Ù„Ø£Ø²Ø±Ø§Ø± ÙˆØ£Ø­Ø¯Ø§Ø« Ø§Ù„Ø¹Ø±Ø¶ Ù„Ù† ØªØ¹Ù…Ù„ ';
+  SInitializeException = 'Ù„Ø§ÙŠÙ…ÙƒÙ† ØªÙ‡ÙŠØ¦Ø© Ø´Ø±ÙŠØ· Ø§Ù„Ù…Ù‡Ø§Ù… . Ø®Ø·Ø£ : %d';
+  SInstanceException = 'Ù‡Ù†Ø§Ùƒ Ù†Ø³Ø®Ø© Ø£Ø®Ø±Ù‰ Ù…Ù† Ø´Ø±ÙŠØ· Ø§Ù„Ù…Ù‡Ø§Ù… ';
+  SButtonsLimitException = 'Ø´Ø±ÙŠØ· Ù…Ù‡Ø§Ù… ÙˆÙ†Ø¯ÙˆØ² ÙŠØ¯Ø¹Ù… ÙÙ‚Ø· %d Ø£Ø²Ø±Ø§Ø± ÙÙŠ ØµÙØ­Ø§Øª Ø§Ù„Ù…Ø¹Ø§ÙŠÙ†Ø©';
+  SCouldNotRegisterTabException = 'Ù„Ø§ÙŠÙ…ÙƒÙ† ØªØ³Ø¬ÙŠÙ„ Ø§Ù„ØµÙØ­Ø© . Ø®Ø·Ø£ %d';
+  SInvalidProgressValueException = '%d Ù„ÙŠØ³ ØµØ­ÙŠØ­ . ÙŠØ¬Ø¨ Ø§Ù† ÙŠÙƒÙˆÙ† Ø¨ÙŠÙ† 0 Ùˆ %d';
+  SThumbPreviewException = 'ÙØ´Ù„ Ø¥Ø¹Ø¯Ø§Ø¯ Ø§Ù„ØµÙˆØ±Ø© ÙƒØ¹Ø±Ø¶ Ù…ØµØºØ±Ø§Øª . Ø®Ø·Ø£: %d';
+  SBitmapPreviewException = 'ÙØ´Ù„ Ø¥Ø¹Ø¯Ø§Ø¯ Ø§Ù„ØµÙˆØ±Ø© Ù„Ù„Ù…Ø¹Ø§ÙŠÙ†Ù‡. Ø®Ø·Ø£: %d';
   { WinRT support strings }
-  SWinRTNoRTTI = 'áã íÊã ÇáÚËæÑ Úáì ãÚáæãÇÊ ÃäãÇØ Òãä ÇáÊÔÛíá RTTI ááÕäİ %s';
-  SWinRTInstanceError = 'áÇ íãßä ÅäÔÇÁ ÛÑÖ ãä ÇáÕäİ %s';
-  SWinRTICreatedError = 'ÇáÛÑÖ ÇáĞí íÊã ÅäÔÇÄå ãä ÇáÕäİ %s ÎÇØÆ';
-  SWinRTHStringError = 'ÎØÃ İí ÅäÔÇÁ HString ãä ÃÌá %s';
-  SWinRTFactoryError = 'áÇíãßä ÇÓÊÍÕÇá factory ááÕäİ %s';
-  SWinRTWrongFactoryError = 'ÇáÜ factory ÇáãÓÊÍÕá ãä ÃÌá %s ÎÇØÆ';
-  SWinRTInteropError = 'áÇíãßä ÅäÔÇÁ Õäİ interop';
+  SWinRTNoRTTI = 'Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø£Ù†Ù…Ø§Ø· Ø²Ù…Ù† Ø§Ù„ØªØ´ØºÙŠÙ„ RTTI Ù„Ù„ØµÙ†Ù %s';
+  SWinRTInstanceError = 'Ù„Ø§ ÙŠÙ…ÙƒÙ† Ø¥Ù†Ø´Ø§Ø¡ ØºØ±Ø¶ Ù…Ù† Ø§Ù„ØµÙ†Ù %s';
+  SWinRTICreatedError = 'Ø§Ù„ØºØ±Ø¶ Ø§Ù„Ø°ÙŠ ÙŠØªÙ… Ø¥Ù†Ø´Ø§Ø¤Ù‡ Ù…Ù† Ø§Ù„ØµÙ†Ù %s Ø®Ø§Ø·Ø¦';
+  SWinRTHStringError = 'Ø®Ø·Ø£ ÙÙŠ Ø¥Ù†Ø´Ø§Ø¡ HString Ù…Ù† Ø£Ø¬Ù„ %s';
+  SWinRTFactoryError = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ø³ØªØ­ØµØ§Ù„ factory Ù„Ù„ØµÙ†Ù %s';
+  SWinRTWrongFactoryError = 'Ø§Ù„Ù€ factory Ø§Ù„Ù…Ø³ØªØ­ØµÙ„ Ù…Ù† Ø£Ø¬Ù„ %s Ø®Ø§Ø·Ø¦';
+  SWinRTInteropError = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø¥Ù†Ø´Ø§Ø¡ ØµÙ†Ù interop';
 {$ENDIF}
 {$IF defined(MACOS) or defined(ANDROID)}
   SVersionStr = '%s (Version %d.%d.%d)';
 {$ENDIF}
   { Zip Strings}
-  SZipErrorRead            = 'ÎØÃ İí ŞÑÇÁÉ ãáİ ãÖÛæØ zip';
-  SZipErrorWrite           = 'ÎØÃ İí ßÊÇÈÉ ãáİ ãÖÛæØ zip';
-  SZipInvalidLocalHeader   = 'ÎØÃ İí ÊæŞíÚ ÊÑæíÓÉ LocalHeader ãáİ ãÖÛæØ zip';
-  SZipInvalidCentralHeader = 'ÎØÃ İí ÊæŞíÚ ÊÑæíÓÉ Central Header ãáİ ãÖÛæØ Zip';
-  SZipNotSupported         = 'ÏÚã äãØ ÇáÖÛØ ÛíÑ ãÓÌá : %s';
-  SZipNotOpen              = 'íÌÈ Çä íÊã İÊÍ Çáãáİ';
-  SZipNoWrite              = 'ÓÌÈ Çä íÊã İÊÍ Çáãáİ ááßÊÇÈÉ';
-  SZipNoRead               = 'íÌÈ Çä íÊã İÊÍ Çáãáİ ááŞÑÇÁÉ';
-  SZipNotEmpty             = 'ãáİ Zip íÌÈ Çä íßæä İÇÑÛ';
-  SZipFileNameEmpty        = 'ÇÓã Çáãáİ íÌÈ Çä áÇíßæä İÇÑÛ';
+  SZipErrorRead            = 'Ø®Ø·Ø£ ÙÙŠ Ù‚Ø±Ø§Ø¡Ø© Ù…Ù„Ù Ù…Ø¶ØºÙˆØ· zip';
+  SZipErrorWrite           = 'Ø®Ø·Ø£ ÙÙŠ ÙƒØªØ§Ø¨Ø© Ù…Ù„Ù Ù…Ø¶ØºÙˆØ· zip';
+  SZipInvalidLocalHeader   = 'Ø®Ø·Ø£ ÙÙŠ ØªÙˆÙ‚ÙŠØ¹ ØªØ±ÙˆÙŠØ³Ø© LocalHeader Ù…Ù„Ù Ù…Ø¶ØºÙˆØ· zip';
+  SZipInvalidCentralHeader = 'Ø®Ø·Ø£ ÙÙŠ ØªÙˆÙ‚ÙŠØ¹ ØªØ±ÙˆÙŠØ³Ø© Central Header Ù…Ù„Ù Ù…Ø¶ØºÙˆØ· Zip';
+  SZipNotSupported         = 'Ø¯Ø¹Ù… Ù†Ù…Ø· Ø§Ù„Ø¶ØºØ· ØºÙŠØ± Ù…Ø³Ø¬Ù„ : %s';
+  SZipNotOpen              = 'ÙŠØ¬Ø¨ Ø§Ù† ÙŠØªÙ… ÙØªØ­ Ø§Ù„Ù…Ù„Ù';
+  SZipNoWrite              = 'Ø³Ø¬Ø¨ Ø§Ù† ÙŠØªÙ… ÙØªØ­ Ø§Ù„Ù…Ù„Ù Ù„Ù„ÙƒØªØ§Ø¨Ø©';
+  SZipNoRead               = 'ÙŠØ¬Ø¨ Ø§Ù† ÙŠØªÙ… ÙØªØ­ Ø§Ù„Ù…Ù„Ù Ù„Ù„Ù‚Ø±Ø§Ø¡Ø©';
+  SZipNotEmpty             = 'Ù…Ù„Ù Zip ÙŠØ¬Ø¨ Ø§Ù† ÙŠÙƒÙˆÙ† ÙØ§Ø±Øº';
+  SZipFileNameEmpty        = 'Ø§Ø³Ù… Ø§Ù„Ù…Ù„Ù ÙŠØ¬Ø¨ Ø§Ù† Ù„Ø§ÙŠÙƒÙˆÙ† ÙØ§Ø±Øº';
 
-  sObserverUnsupported = 'ÇáãÑÇŞÈ Observer ÛíÑ ãÏÚæã';
+  sObserverUnsupported = 'Ø§Ù„Ù…Ø±Ø§Ù‚Ø¨ Observer ØºÙŠØ± Ù…Ø¯Ø¹ÙˆÙ…';
   sObserverMultipleSingleCast = 'Cannot have multiple single cast observers added to the observers collection';
   sObserverNoInterface = 'The object does not implement the observer interface';
   sObserverNoSinglecastFound = 'No single cast observer with ID %d was added to the observer collection';
   sObserverNoMulticastFound = 'No multi cast observer with ID %d was added to the observer collection';
-  sObserverNotAvailable = 'ÇáãÑÇŞÈ Observer ÛíÑ ãÊæİÑ';
+  sObserverNotAvailable = 'Ø§Ù„Ù…Ø±Ø§Ù‚Ø¨ Observer ØºÙŠØ± Ù…ØªÙˆÙØ±';
 
-  SGeocodeMultipleRequests = 'áÇíãßä ÊåíÆÉ ÃËäÇÁ Ãæ ÃßËÑ ãä ØáÈÇÊ geocoding requests İí äİÓ ÇáæŞÊ';
-  SLocationSensorStarted = 'ÍÓÇÓ ÇáãæŞÚ Êã ÊÔÛíáå';
-  SSensorIndexError = 'ÇáÍÓÇÓ ÇáãÍÏÏ ÈÇáÊÑÊíÈ (%d) áã íÊã ÇáÚËæÑ Úáíå';
+  SGeocodeMultipleRequests = 'Ù„Ø§ÙŠÙ…ÙƒÙ† ØªÙ‡ÙŠØ¦Ø© Ø£Ø«Ù†Ø§Ø¡ Ø£Ùˆ Ø£ÙƒØ«Ø± Ù…Ù† Ø·Ù„Ø¨Ø§Øª geocoding requests ÙÙŠ Ù†ÙØ³ Ø§Ù„ÙˆÙ‚Øª';
+  SLocationSensorStarted = 'Ø­Ø³Ø§Ø³ Ø§Ù„Ù…ÙˆÙ‚Ø¹ ØªÙ… ØªØ´ØºÙŠÙ„Ù‡';
+  SSensorIndexError = 'Ø§Ù„Ø­Ø³Ø§Ø³ Ø§Ù„Ù…Ø­Ø¯Ø¯ Ø¨Ø§Ù„ØªØ±ØªÙŠØ¨ (%d) Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„ÙŠÙ‡';
                                                           
 {IFDEF MACOS}
-  SLocationServiceUnauthorized = 'ÛíÑ ãÕÑÍ áß ÈÇÓÊÎÏÇã ÎÏãÉ ÇáãæÇŞÚ';
-  SLocationServiceDisabled = 'ÎÏãÇÊ ÇáãæÇŞÚ ÛíÑ ãİÚáÉ';
+  SLocationServiceUnauthorized = 'ØºÙŠØ± Ù…ØµØ±Ø­ Ù„Ùƒ Ø¨Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø®Ø¯Ù…Ø© Ø§Ù„Ù…ÙˆØ§Ù‚Ø¹';
+  SLocationServiceDisabled = 'Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ù…ÙˆØ§Ù‚Ø¹ ØºÙŠØ± Ù…ÙØ¹Ù„Ø©';
 {ENDIF}
 
   {$IFDEF ANDROID}
@@ -555,24 +557,24 @@ resourcestring
   {$ENDIF}
 
   { System.DateUtils }
-  SInvalidDateString = 'äÕ ÇáÊÇÑíÎ ÛíÑ ãŞÈæá: %s';
-  SInvalidTimeString = 'äÕ ÇáæŞÊ ÛíÑ ãŞÈæá: %s';
-  SInvalidOffsetString = 'äÕ ÅÒÇÍÉ ÇáæŞÊ ÛíÑ ãÓãæÍÉ: %s';
+  SInvalidDateString = 'Ù†Øµ Ø§Ù„ØªØ§Ø±ÙŠØ® ØºÙŠØ± Ù…Ù‚Ø¨ÙˆÙ„: %s';
+  SInvalidTimeString = 'Ù†Øµ Ø§Ù„ÙˆÙ‚Øª ØºÙŠØ± Ù…Ù‚Ø¨ÙˆÙ„: %s';
+  SInvalidOffsetString = 'Ù†Øµ Ø¥Ø²Ø§Ø­Ø© Ø§Ù„ÙˆÙ‚Øª ØºÙŠØ± Ù…Ø³Ù…ÙˆØ­Ø©: %s';
 
   { System.Devices }
   sCannotManuallyConstructDevice = 'Manual construction of TDeviceInfo is not supported'; // move to System.RTLConsts.
-  sAttributeExists = 'ÇáÕİÉ ''%s'' ãæÌæÏÉ ãÓÈŞÇ';
-  sDeviceExists = 'ÇáÌåÇÒ ''%s'' ãæÌæÏ ãÓÈŞÇ';
+  sAttributeExists = 'Ø§Ù„ØµÙØ© ''%s'' Ù…ÙˆØ¬ÙˆØ¯Ø© Ù…Ø³Ø¨Ù‚Ø§';
+  sDeviceExists = 'Ø§Ù„Ø¬Ù‡Ø§Ø² ''%s'' Ù…ÙˆØ¬ÙˆØ¯ Ù…Ø³Ø¨Ù‚Ø§';
 
   { System.Hash }
-  SHashCanNotUpdateMD5 = 'MD5: áÇíãßä ÊÍÏíË åÇÔ ÇáäåÇíÉ finalized hash';
-  SHashCanNotUpdateSHA1 = 'SHA1: áÇíãßä ÊÍÏíË åÇÔ ÇáäåÇíÉ finalized hash';
-  SHashCanNotUpdateSHA2 = 'SHA2: áÇíãßä ÊÍÏíË åÇÔ ÇáäåÇíÉfinalized hash';
+  SHashCanNotUpdateMD5 = 'MD5: Ù„Ø§ÙŠÙ…ÙƒÙ† ØªØ­Ø¯ÙŠØ« Ù‡Ø§Ø´ Ø§Ù„Ù†Ù‡Ø§ÙŠØ© finalized hash';
+  SHashCanNotUpdateSHA1 = 'SHA1: Ù„Ø§ÙŠÙ…ÙƒÙ† ØªØ­Ø¯ÙŠØ« Ù‡Ø§Ø´ Ø§Ù„Ù†Ù‡Ø§ÙŠØ© finalized hash';
+  SHashCanNotUpdateSHA2 = 'SHA2: Ù„Ø§ÙŠÙ…ÙƒÙ† ØªØ­Ø¯ÙŠØ« Ù‡Ø§Ø´ Ø§Ù„Ù†Ù‡Ø§ÙŠØ©finalized hash';
 
   { System.NetEncoding }
-  sErrorDecodingURLText = 'ÎØÃ İí İß äãØ URL style (%%XX) ÇáäÕ ÇáãÑãÒ İí ÇáãæŞÚ %d';
-  sInvalidURLEncodedChar = 'ãÍÑİ ÚäæÇä URL ãÑãÒ ÛíÑ ÕÇáÍ (%s) İí ÇáãæŞÚ %d';
-  sInvalidHTMLEncodedChar = 'ãÍÑİ HTML ãÑãÒ ÛíÑ ÕÇáÍ (%s) İí ÇáãæŞÚ %d';
+  sErrorDecodingURLText = 'Ø®Ø·Ø£ ÙÙŠ ÙÙƒ Ù†Ù…Ø· URL style (%%XX) Ø§Ù„Ù†Øµ Ø§Ù„Ù…Ø±Ù…Ø² ÙÙŠ Ø§Ù„Ù…ÙˆÙ‚Ø¹ %d';
+  sInvalidURLEncodedChar = 'Ù…Ø­Ø±Ù Ø¹Ù†ÙˆØ§Ù† URL Ù…Ø±Ù…Ø² ØºÙŠØ± ØµØ§Ù„Ø­ (%s) ÙÙŠ Ø§Ù„Ù…ÙˆÙ‚Ø¹ %d';
+  sInvalidHTMLEncodedChar = 'Ù…Ø­Ø±Ù HTML Ù…Ø±Ù…Ø² ØºÙŠØ± ØµØ§Ù„Ø­ (%s) ÙÙŠ Ø§Ù„Ù…ÙˆÙ‚Ø¹ %d';
 
   { System.Threading }
   sStopAfterBreak = 'The Break method was previously called. Break and Stop may not be used in combination in iterations of the same loop';
@@ -580,21 +582,23 @@ resourcestring
   sInvalidTaskConstruction = 'Cannot construct an ITask in this manner';
   sEmptyJoinTaskList = 'List of tasks to Join method empty';
   sWaitNilTask = 'At least one task in array nil';
-  sCannotStartCompletedTask = 'áÇíãßä ÈÏÁ ãåãÉ ÇßÊãáÊ ááÊæ';
-  sOneOrMoreTasksCancelled = 'ãåãÉ Ãæ ÃßËÑ ÓíÊã ÅáÛÇÆåÇ';
-  sDefaultAggregateExceptionMsg = 'ÍÏËÊ ÃÎØÇÁ';
+  sCannotStartCompletedTask = 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø¨Ø¯Ø¡ Ù…Ù‡Ù…Ø© Ø§ÙƒØªÙ…Ù„Øª Ù„Ù„ØªÙˆ';
+  sOneOrMoreTasksCancelled = 'Ù…Ù‡Ù…Ø© Ø£Ùˆ Ø£ÙƒØ«Ø± Ø³ÙŠØªÙ… Ø¥Ù„ØºØ§Ø¦Ù‡Ø§';
+  sDefaultAggregateExceptionMsg = 'Ø­Ø¯Ø«Øª Ø£Ø®Ø·Ø§Ø¡';
 
   { System.Types }
-  sMustWaitOnOneEvent = 'íÌÈ ÇäÊÙÇÑ ÍÏË æÇÍÏ Úáì ÇáÃŞá';
+  sMustWaitOnOneEvent = 'ÙŠØ¬Ø¨ Ø§Ù†ØªØ¸Ø§Ø± Ø­Ø¯Ø« ÙˆØ§Ø­Ø¯ Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„';
 
   { TComponent.BeginInvoke }
   sBeginInvokeDestroying = 'Cannot call BeginInvoke on a TComponent in the process of destruction';
 
   { System.ShareContract }
-  SShareContractNotAvailable = 'ShareContract ÛíÑ ãÊæİÑ';
-  SShareContractNotSupported = 'ÇáãÔÇÑßÉ áíÓÊ ãÓãæÍÉ ÊÍÊ %s';
-  SShareContractNotInitialized = 'ÍÏË TShareContract.OnProcessMessages íÌÈ Ãä íÊã ÇÓäÇÏå ÃæáÇ';
+  SShareContractNotAvailable = 'ShareContract ØºÙŠØ± Ù…ØªÙˆÙØ±';
+  SShareContractNotSupported = 'Ø§Ù„Ù…Ø´Ø§Ø±ÙƒØ© Ù„ÙŠØ³Øª Ù…Ø³Ù…ÙˆØ­Ø© ØªØ­Øª %s';
+  SShareContractNotInitialized = 'Ø­Ø¯Ø« TShareContract.OnProcessMessages ÙŠØ¬Ø¨ Ø£Ù† ÙŠØªÙ… Ø§Ø³Ù†Ø§Ø¯Ù‡ Ø£ÙˆÙ„Ø§';
 
+  { WinRT.Bluetooth }
+  SNoAsyncInfo = 'The object does not implement the IAsyncInfo interface';
 
 const
   SEmpty: string = 'Empty';  // do not localize

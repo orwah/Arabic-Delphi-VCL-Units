@@ -25,125 +25,125 @@ unit Data.DBConsts;
 interface
 
 resourcestring
-  SInvalidFieldSize = 'อฬใ วแอÞแ Ûํั ีอํอ';
-  SInvalidFieldKind = 'ไใุ วแอÞแ Ûํั ีอํอ';
-  SInvalidFieldRegistration = 'สำฬํแ วแอÞแ Ûํั ีอํอ';
-  SUnknownFieldType = 'อÞแ ''%s'' ใไ ไใุ Ûํั ใฺัๆÝ';
-  SFieldNameMissing = 'วำใ วแอÞแ Ûํั ใึศๆุ';
-  SDuplicateFieldName = 'วำใ วแอÞแ ''%s'' ใ฿ัั';
-  SFieldNotFound = 'แใ ํสใ วแฺหๆั ฺแ์ วแอÞแ : ''%s''';
-  SFieldAccessError = 'แวํใ฿ไ วแๆีๆแ แแอÞแ ''%s'' ฿ไใุ %s';
-  SFieldValueError = 'Þํใษ Ûํั ีวแอษ แอÞแ  ''%s''';
-  SFieldRangeError = '%g แํำส Þํใษ ีวแอษ แอÞแ ''%s''. วแใฬวแ วแใำใๆอ ๅๆ ใไ %g ลแ์ %g';
-  SBcdFieldRangeError = '%s แํำส Þํใษ ีวแอษ แอÞแ ''%s''. วแใฬวแ วแใำใๆอ ๅๆ ใไ %s ลแ์ %s';
-  SInvalidIntegerValue = '''%s'' แํำส Þํใษ ฺฯฯ ีอํอ (ศแว Ýวีแษ) แแอÞแ ''%s''';
-  SInvalidBoolValue = '''%s'' แํำส Þํใษ ศๆแํวไํษ ีอํอษ แแอÞแ ''%s''';
-  SInvalidFloatValue = '''%s'' แํำส Þํใษ ฺฯฯ อÞํÞํ (Ýวีแษ ฺวฦใษ) แแอÞแ ''%s''';
-  SFieldTypeMismatch = 'วแไใุ Ûํั ใุวศÞ แแอÞแ ''%s'', วแใสๆÞฺ: %s วแใุศÞ: %s';
-  SFieldSizeMismatch = 'วแำฺษ รๆ วแอฬใ Ûํั ใุวศÞษ แแอÞแ ''%s'', วแใสๆÞฺ: %d วแใุศÞ: %d';
-  SInvalidVarByteArray = 'ไใุ รๆ อฬใ Ûํั ีวแอ แแอÞแ ''%s''';
-  SFieldOutOfRange = 'Þํใษ อÞแ ''%s'' ฮวัฬ วแใฬวแ วแใำใๆอ';
+  SInvalidFieldSize = 'ุญุฌู… ุงูุญูู ุบูุฑ ุตุญูุญ';
+  SInvalidFieldKind = 'ูู…ุท ุงูุญูู ุบูุฑ ุตุญูุญ';
+  SInvalidFieldRegistration = 'ุชุณุฌูู ุงูุญูู ุบูุฑ ุตุญูุญ';
+  SUnknownFieldType = 'ุญูู ''%s'' ู…ู ูู…ุท ุบูุฑ ู…ุนุฑูู';
+  SFieldNameMissing = 'ุงุณู… ุงูุญูู ุบูุฑ ู…ุถุจูุท';
+  SDuplicateFieldName = 'ุงุณู… ุงูุญูู ''%s'' ู…ูุฑุฑ';
+  SFieldNotFound = 'ูู… ูุชู… ุงูุนุซูุฑ ุนูู ุงูุญูู : ''%s''';
+  SFieldAccessError = 'ูุงูู…ูู ุงููุตูู ููุญูู ''%s'' ููู…ุท %s';
+  SFieldValueError = 'ููู…ุฉ ุบูุฑ ุตุงูุญุฉ ูุญูู  ''%s''';
+  SFieldRangeError = '%g ููุณุช ููู…ุฉ ุตุงูุญุฉ ูุญูู ''%s''. ุงูู…ุฌุงู ุงูู…ุณู…ูุญ ูู ู…ู %g ุฅูู %g';
+  SBcdFieldRangeError = '%s ููุณุช ููู…ุฉ ุตุงูุญุฉ ูุญูู ''%s''. ุงูู…ุฌุงู ุงูู…ุณู…ูุญ ูู ู…ู %s ุฅูู %s';
+  SInvalidIntegerValue = '''%s'' ููุณุช ููู…ุฉ ุนุฏุฏ ุตุญูุญ (ุจูุง ูุงุตูุฉ) ููุญูู ''%s''';
+  SInvalidBoolValue = '''%s'' ููุณุช ููู…ุฉ ุจูููุงููุฉ ุตุญูุญุฉ ููุญูู ''%s''';
+  SInvalidFloatValue = '''%s'' ููุณุช ููู…ุฉ ุนุฏุฏ ุญูููู (ูุงุตูุฉ ุนุงุฆู…ุฉ) ููุญูู ''%s''';
+  SFieldTypeMismatch = 'ุงููู…ุท ุบูุฑ ู…ุทุงุจู ููุญูู ''%s'', ุงูู…ุชููุน: %s ุงูู…ุทุจู: %s';
+  SFieldSizeMismatch = 'ุงูุณุนุฉ ุฃู ุงูุญุฌู… ุบูุฑ ู…ุทุงุจูุฉ ููุญูู ''%s'', ุงูู…ุชููุน: %d ุงูู…ุทุจู: %d';
+  SInvalidVarByteArray = 'ูู…ุท ุฃู ุญุฌู… ุบูุฑ ุตุงูุญ ููุญูู ''%s''';
+  SFieldOutOfRange = 'ููู…ุฉ ุญูู ''%s'' ุฎุงุฑุฌ ุงูู…ุฌุงู ุงูู…ุณู…ูุญ';
 //  SBCDOverflow = '(Overflow)';
-  SCantAdjustPrecision = 'ฮุร Ýํ ึศุ ฯÞษ วแสัÞํใ วแฺิัํ วแหไวฦํ BCD precision';
-  SFieldRequired = 'อÞแ ''%s'' ํฬศ รไ ํอๆํ Þํใษ';
-  SDataSetMissing = 'อÞแ ''%s'' แํำ แๅ Þวฺฯษ ฯวสวำํส';
-  SInvalidCalcType = 'อÞแ ''%s'' แวํใ฿ไๅ รไ ํ฿ๆไ ใไ ไใุ อำวศํ รๆ ศอห (แๆ฿ รศ)';
-  SFieldReadOnly = 'อÞแ ''%s'' Ûํั Þวศแ แแสฺฯํแ';
-  SFieldIndexError = 'ัÞใ วแอÞแ ฮวัฬ วแใฬวแ วแใำใๆอ';
-  SNoFieldIndexes = 'แวํๆฬฯ ัÞใ อÞแ ไิุ อวแํว๐';
-  SNotIndexField = 'อÞแ ''%s'' แํำ ใÝๅัำ ๆแวํใ฿ไ สฺฯํแๅ';
-  SIndexFieldMissing = 'แวํใ฿ไ วแๆีๆแ แแอÞแ วแใÝๅัำ ''%s''';
-  SDuplicateIndexName = 'วำใ Ýๅัำ ใ฿ัั : ''%s''';
-  SNoIndexForFields = 'แวÝๅัำ แแอÞๆแ : ''%s''';
-  SIndexNotFound = 'วแÝๅัำ ''%s'' Ûํั ใๆฬๆฯ';
-  SDBDuplicateName = 'วำใ ''%s'' ใ฿ัั Ýํ %s';
-  SCircularDataLink = 'ๆีแวส วแศํวไวส สำสฯฺํ ศฺึๅว ศิ฿แ ฯวฦัํ (฿แ ใไๅว ํำสฯฺํ วแยฮั) ๆๅะว Ûํั ใำใๆอ';
-  SLookupInfoError = 'ใฺแๆใวส วแศอห Lookup แแอÞแ ''%s'' Ûํั ใ฿สใแษ';
-  SNewLookupFieldCaption = 'อÞแ ศอห Lookup ฬฯํฯ';
-  SDataSourceChange = 'แวํใ฿ไ สÛํํั ใไศฺ วแศํวไวส DataSource';
+  SCantAdjustPrecision = 'ุฎุทุฃ ูู ุถุจุท ุฏูุฉ ุงูุชุฑููู… ุงูุนุดุฑู ุงูุซูุงุฆู BCD precision';
+  SFieldRequired = 'ุญูู ''%s'' ูุฌุจ ุฃู ูุญูู ููู…ุฉ';
+  SDataSetMissing = 'ุญูู ''%s'' ููุณ ูู ูุงุนุฏุฉ ุฏุงุชุงุณูุช';
+  SInvalidCalcType = 'ุญูู ''%s'' ูุงูู…ููู ุฃู ูููู ู…ู ูู…ุท ุญุณุงุจู ุฃู ุจุญุซ (ููู ุฃุจ)';
+  SFieldReadOnly = 'ุญูู ''%s'' ุบูุฑ ูุงุจู ููุชุนุฏูู';
+  SFieldIndexError = 'ุฑูู… ุงูุญูู ุฎุงุฑุฌ ุงูู…ุฌุงู ุงูู…ุณู…ูุญ';
+  SNoFieldIndexes = 'ูุงููุฌุฏ ุฑูู… ุญูู ูุดุท ุญุงููุงู';
+  SNotIndexField = 'ุญูู ''%s'' ููุณ ู…ููุฑุณ ููุงูู…ูู ุชุนุฏููู';
+  SIndexFieldMissing = 'ูุงูู…ูู ุงููุตูู ููุญูู ุงูู…ููุฑุณ ''%s''';
+  SDuplicateIndexName = 'ุงุณู… ููุฑุณ ู…ูุฑุฑ : ''%s''';
+  SNoIndexForFields = 'ูุงููุฑุณ ููุญููู : ''%s''';
+  SIndexNotFound = 'ุงูููุฑุณ ''%s'' ุบูุฑ ู…ูุฌูุฏ';
+  SDBDuplicateName = 'ุงุณู… ''%s'' ู…ูุฑุฑ ูู %s';
+  SCircularDataLink = 'ูุตูุงุช ุงูุจูุงูุงุช ุชุณุชุฏุนู ุจุนุถูุง ุจุดูู ุฏุงุฆุฑู (ูู ู…ููุง ูุณุชุฏุนู ุงูุขุฎุฑ) ููุฐุง ุบูุฑ ู…ุณู…ูุญ';
+  SLookupInfoError = 'ู…ุนููู…ุงุช ุงูุจุญุซ Lookup ููุญูู ''%s'' ุบูุฑ ู…ูุชู…ูุฉ';
+  SNewLookupFieldCaption = 'ุญูู ุจุญุซ Lookup ุฌุฏูุฏ';
+  SDataSourceChange = 'ูุงูู…ูู ุชุบููุฑ ู…ูุจุน ุงูุจูุงูุงุช DataSource';
   SNoNestedMasterSource = 'Nested datasets cannot have a MasterSource';
-  SDataSetOpen = 'แวํใ฿ไ วแÞํวใ ศๅะๅ วแฺใแํษ ฺแ์ ฯวสวำํส ใÝสๆอษ';
-  SNotEditing = 'วแศํวไวส แํำส Ýํ ๆึฺ วแลฯฮวแ รๆ วแสฺฯํแ';
-  SDataSetClosed = 'แวํใ฿ไ วแÞํวใ ศๅะๅ วแฺใแํษ ฺแ์ Þวฺฯษ ศํวไวส ใÛแÞษ';
-  SDataSetEmpty = 'แวํใ฿ไ วแÞํวใ ศๅะๅ วแฺใแํษ ฺแ์ ฬฯๆแ ศํวไวส ÝวัÛ';
-  SDataSetReadOnly = 'แวํใ฿ไ สฺฯํแ ฬฯๆแ ศํวไวส ใฮีี แแÞัวมษ ÝÞุ';
+  SDataSetOpen = 'ูุงูู…ูู ุงูููุงู… ุจูุฐู ุงูุนู…ููุฉ ุนูู ุฏุงุชุงุณูุช ู…ูุชูุญุฉ';
+  SNotEditing = 'ุงูุจูุงูุงุช ููุณุช ูู ูุถุน ุงูุฅุฏุฎุงู ุฃู ุงูุชุนุฏูู';
+  SDataSetClosed = 'ูุงูู…ูู ุงูููุงู… ุจูุฐู ุงูุนู…ููุฉ ุนูู ูุงุนุฏุฉ ุจูุงูุงุช ู…ุบููุฉ';
+  SDataSetEmpty = 'ูุงูู…ูู ุงูููุงู… ุจูุฐู ุงูุนู…ููุฉ ุนูู ุฌุฏูู ุจูุงูุงุช ูุงุฑุบ';
+  SDataSetReadOnly = 'ูุงูู…ูู ุชุนุฏูู ุฌุฏูู ุจูุงูุงุช ู…ุฎุตุต ูููุฑุงุกุฉ ููุท';
   SNestedDataSetClass = 'Nested dataset must inherit from %s';
-  SExprTermination = 'สฺศํั วแÝแสัษ วไสๅ์ ศิ฿แ Ûํั ใไวำศ';
-  SExprNameError = 'วำใ วแอÞแ Ûํั ใไสๅํ Unterminated';
-  SExprStringError = 'หวศส ไีํ Ûํั ใไสๅํ Unterminated';
-  SExprInvalidChar = 'สใ วำสฮฯวใ ใอัÝ Ûํั ใไวำศ Ýํ สฺศํั วแÝแสัษ : ''%s''';
-  SExprNoLParen = '''('' ใสๆÞฺๅ , แ฿ไ %s ๆฬฯส';
-  SExprNoRParen = ''')'' ใสๆÞฺษ , แ฿ไ %s ๆฬฯส';
-  SExprNoRParenOrComma = ''')'' รๆ '','' ฿วไส ใสๆÞฺๅ ๆแ฿ไ %s ๆฬฯส';
-  SExprExpected = 'สฺศํั ใสๆÞฺ ๆศฯแว ใไๅ ๆฬฯ %s ';
-  SExprBadField = 'วแอÞแ ''%s'' แวํใ฿ไ วำสฮฯวใๅ Ýํ สฺศํั วแÝแสัษ';
-  SExprBadNullTest = 'วแÞํใษ วแฮวแํษ NULL ใำใๆอษ ÝÞุ ใฺ ''='' ๆ ''<>''';
-  SExprRangeError = 'วแหวศส วแใใั ฮวัฬ วแใฬวแ วแใำใๆอ';
-  SExprNotBoolean = 'อÞแ ''%s'' แํำ ใไ ไใุ ศๆแํวไํ';
-  SExprIncorrect = 'สฺศํั วแÝแสัษ แํำ ใีวÛ ศิ฿แ ีอํอ';
-  SExprNothing = 'แว ิํม';
-  SExprTypeMis = 'วแไใุ Ûํั ใุวศÞ Ýํ วแสฺศํั วแใำสฮฯใ';
+  SExprTermination = 'ุชุนุจูุฑ ุงูููุชุฑุฉ ุงูุชูู ุจุดูู ุบูุฑ ู…ูุงุณุจ';
+  SExprNameError = 'ุงุณู… ุงูุญูู ุบูุฑ ู…ูุชูู Unterminated';
+  SExprStringError = 'ุซุงุจุช ูุตู ุบูุฑ ู…ูุชูู Unterminated';
+  SExprInvalidChar = 'ุชู… ุงุณุชุฎุฏุงู… ู…ุญุฑู ุบูุฑ ู…ูุงุณุจ ูู ุชุนุจูุฑ ุงูููุชุฑุฉ : ''%s''';
+  SExprNoLParen = '''('' ู…ุชููุนู , ููู %s ูุฌุฏุช';
+  SExprNoRParen = ''')'' ู…ุชููุนุฉ , ููู %s ูุฌุฏุช';
+  SExprNoRParenOrComma = ''')'' ุฃู '','' ูุงูุช ู…ุชููุนู ูููู %s ูุฌุฏุช';
+  SExprExpected = 'ุชุนุจูุฑ ู…ุชููุน ูุจุฏูุง ู…ูู ูุฌุฏ %s ';
+  SExprBadField = 'ุงูุญูู ''%s'' ูุงูู…ูู ุงุณุชุฎุฏุงู…ู ูู ุชุนุจูุฑ ุงูููุชุฑุฉ';
+  SExprBadNullTest = 'ุงูููู…ุฉ ุงูุฎุงููุฉ NULL ู…ุณู…ูุญุฉ ููุท ู…ุน ''='' ู ''<>''';
+  SExprRangeError = 'ุงูุซุงุจุช ุงูู…ู…ุฑ ุฎุงุฑุฌ ุงูู…ุฌุงู ุงูู…ุณู…ูุญ';
+  SExprNotBoolean = 'ุญูู ''%s'' ููุณ ู…ู ูู…ุท ุจูููุงูู';
+  SExprIncorrect = 'ุชุนุจูุฑ ุงูููุชุฑุฉ ููุณ ู…ุตุงุบ ุจุดูู ุตุญูุญ';
+  SExprNothing = 'ูุง ุดูุก';
+  SExprTypeMis = 'ุงููู…ุท ุบูุฑ ู…ุทุงุจู ูู ุงูุชุนุจูุฑ ุงูู…ุณุชุฎุฏู…';
   SExprBadScope = 'Operation cannot mix aggregate value with record-varying value';
-  SExprNoArith = 'วแÞํวใ ศวแอำวศวส วแัํวึํษ Ýํ สฺศํั วแÝแสัษ Ûํั ใำใๆอษ';
+  SExprNoArith = 'ุงูููุงู… ุจุงูุญุณุงุจุงุช ุงูุฑูุงุถูุฉ ูู ุชุนุจูุฑ ุงูููุชุฑุฉ ุบูุฑ ู…ุณู…ูุญุฉ';
   SExprNotAgg = 'Expression is not an aggregate expression';
-  SExprBadConst = 'วแหวศส แํำ ใไ ไใุ ใไวำศ : %s';
-  SExprNoAggFilter = 'ฺศวัวส วแสฬใํฺ Ûํั ใำใๆอษ ศวแÝแวสั';
+  SExprBadConst = 'ุงูุซุงุจุช ููุณ ู…ู ูู…ุท ู…ูุงุณุจ : %s';
+  SExprNoAggFilter = 'ุนุจุงุฑุงุช ุงูุชุฌู…ูุน ุบูุฑ ู…ุณู…ูุญุฉ ุจุงูููุงุชุฑ';
   SExprEmptyInList = 'IN predicate list may not be empty';
-  SInvalidKeywordUse = 'วำสฮฯวใ ฮวุฦ แ฿แใษ ใÝสวอํษ';
-  STextFalse = 'แว';
-  STextTrue = 'ไฺใ';
-  SParameterNotFound = 'วแศวัวใสั ''%s'' Ûํั ใๆฬๆฯ';
-  SInvalidVersion = 'Ûํั Þวฯั ฺแ์ สอใํแ ใสÛํั วแัศุ bind parameters';
-  SParamTooBig = 'วแศวัวใสั ''%s'', แวํำสุํฺ อÝู ศํวไวส ร฿ศั ใไ  %d ศวํส';
-  SBadFieldType = 'อÞแ ''%s'' ใไ ไใุ Ûํั ใฯฺๆใ';
-  SAggActive = 'แวํใ฿ไ สฺฯํแ วแฮวีํษ ฺไฯใว ํ฿ๆไ วแสฬใํฺ Ýฺวแ';
-  SProviderSQLNotSupported = 'สฺวศํั ลำ ฿ํๆ ลแ Ûํั ใฯฺๆใษ';
-  SProviderExecuteNotSupported = 'วแสไÝํะ Ûํั ใฯฺๆใ';
-  SExprNoAggOnCalcs = 'วแอÞแ ''%s'' แํำ วแไใุ วแีอํอ แแอÞๆแ วแอำวศํษ วแะํ ํำสฮฯใ Ýํ วแสฬใํฺ aggregate,วำสฮฯใ internalcalc';
-  SRecordChanged = 'แใ ํสใ วแฺหๆั ฺแ์ วแำฬแ , ัศใว สใ สฺฯํแๅ ใไ ใำสฮฯใ ยฮั';
-  SDataSetUnidirectional = 'วแฺใแํษ Ûํั ใำใๆอษ ฺแ์ ฬฯๆแ ศํวไวส ใไ ไใุ Ûํั วสฬวๅํ';
-  SUnassignedVar = 'Þํใษ Ûํั ใๅํรษ ใไ ไๆฺ variant';
-  SRecordNotFound = 'แใ ํสใ วแฺหๆั ฺแ์ วแำฬแ';
-  SFileNameBlank = 'ฮวีํษ วำใ วแใแÝ แวํฬศ วไ ส฿ๆไ ÝวัÛษ';
-  SFieldNameTooLarge = 'วแอÞแ %s สฮุ์ ฺฯฯ ใอวัÝ %d ';
+  SInvalidKeywordUse = 'ุงุณุชุฎุฏุงู… ุฎุงุทุฆ ูููู…ุฉ ู…ูุชุงุญูุฉ';
+  STextFalse = 'ูุง';
+  STextTrue = 'ูุนู…';
+  SParameterNotFound = 'ุงูุจุงุฑุงู…ุชุฑ ''%s'' ุบูุฑ ู…ูุฌูุฏ';
+  SInvalidVersion = 'ุบูุฑ ูุงุฏุฑ ุนูู ุชุญู…ูู ู…ุชุบูุฑ ุงูุฑุจุท bind parameters';
+  SParamTooBig = 'ุงูุจุงุฑุงู…ุชุฑ ''%s'', ูุงูุณุชุทูุน ุญูุธ ุจูุงูุงุช ุฃูุจุฑ ู…ู  %d ุจุงูุช';
+  SBadFieldType = 'ุญูู ''%s'' ู…ู ูู…ุท ุบูุฑ ู…ุฏุนูู…';
+  SAggActive = 'ูุงูู…ูู ุชุนุฏูู ุงูุฎุงุตูุฉ ุนูุฏู…ุง ูููู ุงูุชุฌู…ูุน ูุนุงู';
+  SProviderSQLNotSupported = 'ุชุนุงุจูุฑ ุฅุณ ููู ุฅู ุบูุฑ ู…ุฏุนูู…ุฉ';
+  SProviderExecuteNotSupported = 'ุงูุชูููุฐ ุบูุฑ ู…ุฏุนูู…';
+  SExprNoAggOnCalcs = 'ุงูุญูู ''%s'' ููุณ ุงููู…ุท ุงูุตุญูุญ ููุญููู ุงูุญุณุงุจูุฉ ุงูุฐู ูุณุชุฎุฏู… ูู ุงูุชุฌู…ูุน aggregate,ุงุณุชุฎุฏู… internalcalc';
+  SRecordChanged = 'ูู… ูุชู… ุงูุนุซูุฑ ุนูู ุงูุณุฌู , ุฑุจู…ุง ุชู… ุชุนุฏููู ู…ู ู…ุณุชุฎุฏู… ุขุฎุฑ';
+  SDataSetUnidirectional = 'ุงูุนู…ููุฉ ุบูุฑ ู…ุณู…ูุญุฉ ุนูู ุฌุฏูู ุจูุงูุงุช ู…ู ูู…ุท ุบูุฑ ุงุชุฌุงูู';
+  SUnassignedVar = 'ููู…ุฉ ุบูุฑ ู…ููุฃุฉ ู…ู ููุน variant';
+  SRecordNotFound = 'ูู… ูุชู… ุงูุนุซูุฑ ุนูู ุงูุณุฌู';
+  SFileNameBlank = 'ุฎุงุตูุฉ ุงุณู… ุงูู…ูู ูุงูุฌุจ ุงู ุชููู ูุงุฑุบุฉ';
+  SFieldNameTooLarge = 'ุงูุญูู %s ุชุฎุทู ุนุฏุฏ ู…ุญุงุฑู %d ';
 
 { For FMTBcd }
 
   SBcdOverflow = 'BCD overflow';
-  SInvalidBcdValue = '%s แํำส Þํใษ สัÞํใ ฺิัํ หไวฦํ ีวแอษ';
-  SInvalidFormatType = 'ไใุ วแสไำํÞ Ûํั ีวแอ แแสัÞํใ วแฺิัํ วแหไวฦํ BCD';
+  SInvalidBcdValue = '%s ููุณุช ููู…ุฉ ุชุฑููู… ุนุดุฑู ุซูุงุฆู ุตุงูุญุฉ';
+  SInvalidFormatType = 'ูู…ุท ุงูุชูุณูู ุบูุฑ ุตุงูุญ ููุชุฑููู… ุงูุนุดุฑู ุงูุซูุงุฆู BCD';
 
 { For SqlTimSt }
 
-  SCouldNotParseTimeStamp = 'แว ํใ฿ไ วแสฺใแ ใฺ วแสวัํฮ ึใไ วแวำสฺแวใ';
-  SInvalidSqlTimeStamp = 'Þํใษ วแสวัํฮ ๆวแๆÞส วแใำสฮฯใษ Ýํ วแวำสฺแวใ Ûํั ีวแอษ';
-  SCalendarTimeCannotBeRepresented = 'แวํใ฿ไ สใหํแ ๆฺัึ วแสๆÞํส Ýํ วแสÞๆํใ (วแัๆาไวใๅ)';
+  SCouldNotParseTimeStamp = 'ูุง ูู…ูู ุงูุชุนู…ู ู…ุน ุงูุชุงุฑูุฎ ุถู…ู ุงูุงุณุชุนูุงู…';
+  SInvalidSqlTimeStamp = 'ููู…ุฉ ุงูุชุงุฑูุฎ ูุงูููุช ุงูู…ุณุชุฎุฏู…ุฉ ูู ุงูุงุณุชุนูุงู… ุบูุฑ ุตุงูุญุฉ';
+  SCalendarTimeCannotBeRepresented = 'ูุงูู…ูู ุชู…ุซูู ูุนุฑุถ ุงูุชูููุช ูู ุงูุชูููู… (ุงูุฑูุฒูุงู…ู)';
 
-  SDeleteRecordQuestion = 'ๅแ สัํฯ สร฿ํฯ อะÝ วแำฬแ ฟ';
-  SDeleteMultipleRecordsQuestion = 'ๅแ สัํฯ อะÝ ฬใํฺ วแำฬแวส วแใอฯฯษฟ';
-  STooManyColumns = 'ํุแศ ใไ วแิศ฿ษ วไ สฺัึ ร฿หั ใไ 256 ฺใๆฯ';
+  SDeleteRecordQuestion = 'ูู ุชุฑูุฏ ุชุฃููุฏ ุญุฐู ุงูุณุฌู ุ';
+  SDeleteMultipleRecordsQuestion = 'ูู ุชุฑูุฏ ุญุฐู ุฌู…ูุน ุงูุณุฌูุงุช ุงูู…ุญุฏุฏุฉุ';
+  STooManyColumns = 'ูุทูุจ ู…ู ุงูุดุจูุฉ ุงู ุชุนุฑุถ ุฃูุซุฑ ู…ู 256 ุนู…ูุฏ';
 
   { For reconcile error }
-  SSkip = 'สฮุํ';
-  SAbort = 'ลอศวุ';
-  SMerge = 'ฯใฬ';
-  SCorrect = 'สีอํอ';
-  SCancel  = 'ลแÛวม';
-  SRefresh = 'สอฯํห';
-  SModified = 'สใ สฺฯํแๅ';
-  SInserted = 'สใ ลึวÝสๅ';
-  SDeleted  = 'สใ อะÝๅ';
-  SCaption = 'ฮุร Ýํ วแสอฯํห - %s';
-  SUnchanged = '<แใ ํฺฯแ>';  
-  SBinary = '(หไวฦํ)';                              
-  SAdt = '(ใÛแÝ)';   
-  SArray = '(ใีÝๆÝษ)'; 
-  SFieldName = 'วำใ วแอÞแ'; 
-  SOriginal = 'วแÞํใษ วแรีแํษ'; 
-  SConflict = 'วแÞํใษ วแใสึวัศษ';  
-  SValue = ' Þํใษ';   
-  SNoData = '<แวำฬแวส>';
-  SNew = 'ฬฯํฯ';    
+  SSkip = 'ุชุฎุทู';
+  SAbort = 'ุฅุญุจุงุท';
+  SMerge = 'ุฏู…ุฌ';
+  SCorrect = 'ุชุตุญูุญ';
+  SCancel  = 'ุฅูุบุงุก';
+  SRefresh = 'ุชุญุฏูุซ';
+  SModified = 'ุชู… ุชุนุฏููู';
+  SInserted = 'ุชู… ุฅุถุงูุชู';
+  SDeleted  = 'ุชู… ุญุฐูู';
+  SCaption = 'ุฎุทุฃ ูู ุงูุชุญุฏูุซ - %s';
+  SUnchanged = '<ูู… ูุนุฏู>';  
+  SBinary = '(ุซูุงุฆู)';                              
+  SAdt = '(ู…ุบูู)';   
+  SArray = '(ู…ุตูููุฉ)'; 
+  SFieldName = 'ุงุณู… ุงูุญูู'; 
+  SOriginal = 'ุงูููู…ุฉ ุงูุฃุตููุฉ'; 
+  SConflict = 'ุงูููู…ุฉ ุงูู…ุชุถุงุฑุจุฉ';  
+  SValue = ' ููู…ุฉ';   
+  SNoData = '<ูุงุณุฌูุงุช>';
+  SNew = 'ุฌุฏูุฏ';    
 
 implementation
 
