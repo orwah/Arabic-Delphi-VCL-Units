@@ -1,4 +1,4 @@
-{*******************************************************}
+๏ปฟ{*******************************************************}
 {                                                       }
 {            Arabic Delphi VCL Units                    }
 {                                                       }
@@ -16,7 +16,8 @@
 {                                                       }
 {           CodeGear Delphi Runtime Library             }
 {                                                       }
-{ Copyright(c) 1995-2015 Embarcadero Technologies, Inc. }
+{ Copyright(c) 2016 Embarcadero Technologies, Inc.      }
+{              All rights reserved                      }
 {                                                       }
 {*******************************************************}
 
@@ -26,84 +27,90 @@ unit System.SysConst;
 {$define USE_LIBICU}
 {$ENDIF ANDROID}
 
+                                                                                  
+{$IFDEF LINUX64}
+//  {$DEFINE USE_LIBICU}
+{$ENDIF LINUX64}
+
 interface
+{$HPPEMIT LEGACYHPP}
 
 resourcestring
-  SUnknown = '<Ûํั ใฺัๆÝ>';
-  SInvalidInteger = '''%s'' แํำส Þํใษ ใไวำศษ แัÞใ ีอํอ (ศแว Ýวีแษ)';
-  SInvalidFloat = '''%s'' แํำส Þํใษ ใไวำศษ แัÞใ ฺิัํ (Ýวีแษ ฺวฦใษ)';
-  SInvalidCurrency = '''%s'' แํำ Þํใษ ใไวำศษ แแฯÝฺวส วแไÞฯํษ';
-  SInvalidDate = '''%s'' แํำ สวัํฮ ีวแอ';
-  SInvalidTime = '''%s'' แํำ ๆÞส ีวแอ';
-  SInvalidDateTime = '''%s'' แํำส Þํใษ ใไวำศษ แแสวัํฮ';
-  SInvalidDateTimeFloat = '''%g'' แํำส Þํใษ ใไวำศษ แแสวัํฮ ๆวแๆÞส';
-  SInvalidTimeStamp = '''%d.%d'' แํำส Þํใษ ใไุÞษ าใไํษ ใไวำศษ';
-  SInvalidGUID = '''%s'' แํำส Þํใษ GUID ีวแอษ';
-  SInvalidBoolean = '''%s'' แํำส Þํใษ ศๆแํวไํษ ใไวำศษ';
-  STimeEncodeError = 'ใฺวใแ สไำํÞ วแๆÞส Ûํั ใำใๆอ';
-  SDateEncodeError = 'ใฺวใแ สไำํÞ วแสวัํฮ Ûํั ใำใๆอ';
-  SOutOfMemory = 'วแะว฿ัษ แวส฿Ýํ';
-  SInOutError = 'ฮุร ใไ ไๆฺ ลฯฮวแ /ลฮัวฬ %d';
-  SFileNotFound = 'วแใแÝ Ûํั ใๆฬๆฯ';
-  SInvalidFilename = 'วำใ ใแÝ Ûํั ีวแอ';
-  STooManyOpenFiles = 'วแใแÝวส วแใÝสๆอษ ร฿หั ใไ วแใสๆÞฺ';
-  SAccessDenied = 'สใ ัÝึ วแๆีๆแ แแใแÝ';
-  SEndOfFile = 'สฬัํ วแÞัวมษ ฮแÝ ไๅวํษ ศํวไวส วแใแÝ';
-  SDiskFull = 'วแÞัี ใใสแฦ';
-  SInvalidInput = 'ลฯฮวแ Þํใษ ัÞใํษ Ûํั ีวแอษ';
-  SDivByZero = 'วแสÞำํใ ฺแ์ ีÝั';
-  SRangeError = 'ฮุร Ýํ Ýอี วแใฬวแ วแใำใๆอ';
-  SIntOverflow = 'Þํใษ ฺฯฯ ีอํอ Ýวฦึษ';
-  SInvalidOp = 'ฺใแํษ ฺิัํษ Ûํั ใำใๆอษ';
-  SZeroDivide = 'Þำใษ ฺฯฯ ฺิัํ ฺแ์ วแีÝั';
-  SOverflow = 'Þํใษ ฺฯฯ ฺิัํ Ýวฦึษ';
-  SUnderflow = 'Þํใษ ฺฯฯ ฺิัํ ฯๆไ วแใำใๆอ';
-  SInvalidPointer = 'ฺใแํษ ใฤิัวส Ûํั ใำใๆอษ';
-  SInvalidCast = 'สอๆํแ Ûํั ีวแอ แแรีไวÝ';
+  SUnknown = '<ุบูุฑ ู…ุนุฑูู>';
+  SInvalidInteger = '''%s'' ููุณุช ููู…ุฉ ู…ูุงุณุจุฉ ูุฑูู… ุตุญูุญ (ุจูุง ูุงุตูุฉ)';
+  SInvalidFloat = '''%s'' ููุณุช ููู…ุฉ ู…ูุงุณุจุฉ ูุฑูู… ุนุดุฑู (ูุงุตูุฉ ุนุงุฆู…ุฉ)';
+  SInvalidCurrency = '''%s'' ููุณ ููู…ุฉ ู…ูุงุณุจุฉ ููุฏูุนุงุช ุงูููุฏูุฉ';
+  SInvalidDate = '''%s'' ููุณ ุชุงุฑูุฎ ุตุงูุญ';
+  SInvalidTime = '''%s'' ููุณ ููุช ุตุงูุญ';
+  SInvalidDateTime = '''%s'' ููุณุช ููู…ุฉ ู…ูุงุณุจุฉ ููุชุงุฑูุฎ';
+  SInvalidDateTimeFloat = '''%g'' ููุณุช ููู…ุฉ ู…ูุงุณุจุฉ ููุชุงุฑูุฎ ูุงูููุช';
+  SInvalidTimeStamp = '''%d.%d'' ููุณุช ููู…ุฉ ู…ูุทูุฉ ุฒู…ููุฉ ู…ูุงุณุจุฉ';
+  SInvalidGUID = '''%s'' ููุณุช ููู…ุฉ GUID ุตุงูุญุฉ';
+  SInvalidBoolean = '''%s'' ููุณุช ููู…ุฉ ุจูููุงููุฉ ู…ูุงุณุจุฉ';
+  STimeEncodeError = 'ู…ุนุงู…ู ุชูุณูู ุงูููุช ุบูุฑ ู…ุณู…ูุญ';
+  SDateEncodeError = 'ู…ุนุงู…ู ุชูุณูู ุงูุชุงุฑูุฎ ุบูุฑ ู…ุณู…ูุญ';
+  SOutOfMemory = 'ุงูุฐุงูุฑุฉ ูุงุชููู';
+  SInOutError = 'ุฎุทุฃ ู…ู ููุน ุฅุฏุฎุงู /ุฅุฎุฑุงุฌ %d';
+  SFileNotFound = 'ุงูู…ูู ุบูุฑ ู…ูุฌูุฏ';
+  SInvalidFilename = 'ุงุณู… ู…ูู ุบูุฑ ุตุงูุญ';
+  STooManyOpenFiles = 'ุงูู…ููุงุช ุงูู…ูุชูุญุฉ ุฃูุซุฑ ู…ู ุงูู…ุชููุน';
+  SAccessDenied = 'ุชู… ุฑูุถ ุงููุตูู ููู…ูู';
+  SEndOfFile = 'ุชุฌุฑู ุงููุฑุงุกุฉ ุฎูู ููุงูุฉ ุจูุงูุงุช ุงูู…ูู';
+  SDiskFull = 'ุงููุฑุต ู…ู…ุชูุฆ';
+  SInvalidInput = 'ุฅุฏุฎุงู ููู…ุฉ ุฑูู…ูุฉ ุบูุฑ ุตุงูุญุฉ';
+  SDivByZero = 'ุงูุชูุณูู… ุนูู ุตูุฑ';
+  SRangeError = 'ุฎุทุฃ ูู ูุญุต ุงูู…ุฌุงู ุงูู…ุณู…ูุญ';
+  SIntOverflow = 'ููู…ุฉ ุนุฏุฏ ุตุญูุญ ูุงุฆุถุฉ';
+  SInvalidOp = 'ุนู…ููุฉ ุนุดุฑูุฉ ุบูุฑ ู…ุณู…ูุญุฉ';
+  SZeroDivide = 'ูุณู…ุฉ ุนุฏุฏ ุนุดุฑู ุนูู ุงูุตูุฑ';
+  SOverflow = 'ููู…ุฉ ุนุฏุฏ ุนุดุฑู ูุงุฆุถุฉ';
+  SUnderflow = 'ููู…ุฉ ุนุฏุฏ ุนุดุฑู ุฏูู ุงูู…ุณู…ูุญ';
+  SInvalidPointer = 'ุนู…ููุฉ ู…ุคุดุฑุงุช ุบูุฑ ู…ุณู…ูุญุฉ';
+  SInvalidCast = 'ุชุญููู ุบูุฑ ุตุงูุญ ููุฃุตูุงู';
 {$IFDEF MSWINDOWS}
-  SAccessViolationArg3 = 'ฯฮๆแ วไสๅว฿ํ แแฺไๆวไ %p. %s ใไ วแฺไๆวไ %p';
+  SAccessViolationArg3 = 'ุฏุฎูู ุงูุชูุงูู ููุนููุงู %p. %s ู…ู ุงูุนููุงู %p';
 {$ENDIF MSWINDOWS}
 {$IF Defined(LINUX) or Defined(MACOS) or Defined(ANDROID)}
-  SAccessViolationArg2 = 'ฯฮๆแ วไสๅว฿ํ แแฺไๆวไ %p, ฺไๆวไ วแฯฮๆแ %p';
+  SAccessViolationArg2 = 'ุฏุฎูู ุงูุชูุงูู ููุนููุงู %p, ุนููุงู ุงูุฏุฎูู %p';
 {$ENDIF LINUX or MACOS or ANDROID}
-  SAccessViolationNoArg = 'ฯฮๆแ วไสๅว฿ํ';
-  SStackOverflow = 'Ýํึ Ýํ วแใ฿ฯำ';
-  SControlC = 'ลึÛุ Control-C';
-  SQuit = 'ลึÛุ าั วแฮัๆฬ Quit';
-  SPrivilege = 'วแสฺแํใษ สอสวฬ ีแวอํวส';
-  SOperationAborted = 'สใ วไๅวม วแฺใแํษ';
-  SException = 'วำสหไวม %s Ýํ ๆอฯษ %s Ýํ %p.' + sLineBreak + '%s%s' + sLineBreak;
-  SExceptTitle = 'ฮุร Ýํ วแสุศํÞ ';
+  SAccessViolationNoArg = 'ุฏุฎูู ุงูุชูุงูู';
+  SStackOverflow = 'ููุถ ูู ุงูู…ูุฏุณ';
+  SControlC = 'ุฅุถุบุท Control-C';
+  SQuit = 'ุฅุถุบุท ุฒุฑ ุงูุฎุฑูุฌ Quit';
+  SPrivilege = 'ุงูุชุนููู…ุฉ ุชุญุชุงุฌ ุตูุงุญูุงุช';
+  SOperationAborted = 'ุชู… ุงููุงุก ุงูุนู…ููุฉ';
+  SException = 'ุงุณุชุซูุงุก %s ูู ูุญุฏุฉ %s ูู %p.' + sLineBreak + '%s%s' + sLineBreak;
+  SExceptTitle = 'ุฎุทุฃ ูู ุงูุชุทุจูู ';
 {$IF Defined(LINUX) or Defined(MACOS) or Defined(ANDROID)}
   SSigactionFailed = 'sigaction call failed';
   SOSExceptionHandlingFailed = 'OS exception handling initialization failed';
 {$ENDIF LINUX or MACOS or ANDROID}
-  SInvalidFormat = 'วแสไำํÞ ''%s'' Ûํั ีวแอ รๆ Ûํั ใสๆวÝÞ ใฺ วแใฺวใแ';
-  SArgumentMissing = 'แวใฺวใแ  ใไ รฬแ วแสไำํÞ ''%s''';
-  SDispatchError = 'วำสฯฺวมวส วแใไวๅฬ ใไ ไๆฺ Variant Ûํั ใฯฺๆใษ';
-  SReadAccess = 'Þัวมษ';
-  SWriteAccess = '฿สวศษ';
-  SExecuteAccess = 'สไÝํะ';
-  SInvalidAccess = 'ฯฮๆแ Ûํั ใำใๆอ';
-  SResultTooLong = 'ไสํฬษ วแสไำํÞ ร฿ศั ใไ 4096 ใอัÝ';
-  SFormatTooLong = 'ไี วแสไำํÞ ุๆํแ ฬฯว';
+  SInvalidFormat = 'ุงูุชูุณูู ''%s'' ุบูุฑ ุตุงูุญ ุฃู ุบูุฑ ู…ุชูุงูู ู…ุน ุงูู…ุนุงู…ู';
+  SArgumentMissing = 'ูุงู…ุนุงู…ู  ู…ู ุฃุฌู ุงูุชูุณูู ''%s''';
+  SDispatchError = 'ุงุณุชุฏุนุงุกุงุช ุงูู…ูุงูุฌ ู…ู ููุน Variant ุบูุฑ ู…ุฏุนูู…ุฉ';
+  SReadAccess = 'ูุฑุงุกุฉ';
+  SWriteAccess = 'ูุชุงุจุฉ';
+  SExecuteAccess = 'ุชูููุฐ';
+  SInvalidAccess = 'ุฏุฎูู ุบูุฑ ู…ุณู…ูุญ';
+  SResultTooLong = 'ูุชูุฌุฉ ุงูุชูุณูู ุฃูุจุฑ ู…ู 4096 ู…ุญุฑู';
+  SFormatTooLong = 'ูุต ุงูุชูุณูู ุทููู ุฌุฏุง';
 {$IFDEF MACOS}
-  SCFStringFailed = 'ฮุร Ýํ ลไิวม CFString';
+  SCFStringFailed = 'ุฎุทุฃ ูู ุฅูุดุงุก CFString';
 {$ENDIF MACOS}
 {$IF defined(USE_LIBICU)}
-  SICUError = 'ฮุร ICU : %d, %s';
+  SICUError = 'ุฎุทุฃ ICU : %d, %s';
   SICUErrorOverflow = 'ICU Overflow Error: %d, %s, Needed Length=%d';
 {$ENDIF defined(USE_LIBICU)}
 
-  SVarArrayCreate = 'ฮุร Ýํ ลไิวม วแใสÛํั รๆ วแใีÝๆÝษ';
-  SVarArrayBounds = 'วแÝๅัำ วแใอฯฯ ฮวัฬ วแอฯๆฯ';
-  SVarArrayLocked = 'วแใสÛํั รๆ วแใีÝๆÝษ ใÞÝแษ';
-  SVarArrayWithHResult = 'ฮุร Ûํั ใสๆÞฺ Ýํ วแใสÛํั วๆ วแใีÝๆÝษ : %s%.8x';
+  SVarArrayCreate = 'ุฎุทุฃ ูู ุฅูุดุงุก ุงูู…ุชุบูุฑ ุฃู ุงูู…ุตูููุฉ';
+  SVarArrayBounds = 'ุงูููุฑุณ ุงูู…ุญุฏุฏ ุฎุงุฑุฌ ุงูุญุฏูุฏ';
+  SVarArrayLocked = 'ุงูู…ุชุบูุฑ ุฃู ุงูู…ุตูููุฉ ู…ูููุฉ';
+  SVarArrayWithHResult = 'ุฎุทุฃ ุบูุฑ ู…ุชููุน ูู ุงูู…ุชุบูุฑ ุงู ุงูู…ุตูููุฉ : %s%.8x';
 
-  SInvalidVarCast = 'สÛํั Ûํั ีวแอ แไใุ วแใสอๆแ ใไ ไๆฺ variant';
-  SInvalidVarOp = 'ฺใแํษ Ûํั ีวแอษ ฺแ์ ใสอๆแ ใไ ไใุ variant';
-  SInvalidVarNullOp = 'ฺใแํษ Ûํั ีวแอษ ฺแ์ ใสÛํั variant Þํใสๅ  NULL';
-  SInvalidVarOpWithHResultWithPrefix = 'ฺใแํษ Ûํั ีวแอษ ฺแ์ ใสÛํั ใไ ไใุ variant (%s%.8x)'#10'%s';
+  SInvalidVarCast = 'ุชุบูุฑ ุบูุฑ ุตุงูุญ ููู…ุท ุงูู…ุชุญูู ู…ู ููุน variant';
+  SInvalidVarOp = 'ุนู…ููุฉ ุบูุฑ ุตุงูุญุฉ ุนูู ู…ุชุญูู ู…ู ูู…ุท variant';
+  SInvalidVarNullOp = 'ุนู…ููุฉ ุบูุฑ ุตุงูุญุฉ ุนูู ู…ุชุบูุฑ variant ููู…ุชู  NULL';
+  SInvalidVarOpWithHResultWithPrefix = 'ุนู…ููุฉ ุบูุฑ ุตุงูุญุฉ ุนูู ู…ุชุบูุฑ ู…ู ูู…ุท variant (%s%.8x)'#10'%s';
   SVarTypeRangeCheck1 = 'Range check error for variant of type (%s)';
   SVarTypeRangeCheck2 = 'Range check error while converting variant of type (%s) into type (%s)';
   SVarTypeOutOfRangeWithPrefix = 'Custom variant type (%s%.4x) is out of range';
@@ -111,108 +118,109 @@ resourcestring
   SVarTypeNotUsableWithPrefix = 'Custom variant type (%s%.4x) is not usable';
   SVarTypeTooManyCustom = 'Too many custom variant types have been registered';
 
-  SVarTypeCouldNotConvert = 'แวํใ฿ไ สอๆํแ ใสอๆแ variant ใไ ไใุ (%s) วแ์ ไใุ (%s)';
-  SVarTypeConvertOverflow = 'อฯหส อวแษ Ýํึ ฺไฯ สÛํํั ใสอๆแ variant ใไ ไใุ (%s) ลแ์ ไใุ (%s)';
-  SVarOverflow = 'อฯหส อวแษ Ýํึ ใฺ ใสอๆแ ใไ ไๆฺ Variant';
-  SVarInvalid = 'ใฺวใแ Ûํั ีวแอ';
-  SVarBadType = 'ไใุ ใสอๆแ variant Ûํั ีวแอ';
-  SVarNotImplemented = 'วแฺใแํษ Ûํั ใฯฺๆใษ';
-  SVarOutOfMemory = 'วแฺใแํษ ฺแ์ ใสอๆแ Variant ฮัฬส ฺไ วแะว฿ัษ วแใฮีีษ';
-  SVarUnexpected = 'ฮุร Ûํั ใฺัๆÝ Ýํ ใสอๆแ variant';
+  SVarTypeCouldNotConvert = 'ูุงูู…ูู ุชุญููู ู…ุชุญูู variant ู…ู ูู…ุท (%s) ุงูู ูู…ุท (%s)';
+  SVarTypeConvertOverflow = 'ุญุฏุซุช ุญุงูุฉ ููุถ ุนูุฏ ุชุบููุฑ ู…ุชุญูู variant ู…ู ูู…ุท (%s) ุฅูู ูู…ุท (%s)';
+  SVarOverflow = 'ุญุฏุซุช ุญุงูุฉ ููุถ ู…ุน ู…ุชุญูู ู…ู ููุน Variant';
+  SVarInvalid = 'ู…ุนุงู…ู ุบูุฑ ุตุงูุญ';
+  SVarBadType = 'ูู…ุท ู…ุชุญูู variant ุบูุฑ ุตุงูุญ';
+  SVarNotImplemented = 'ุงูุนู…ููุฉ ุบูุฑ ู…ุฏุนูู…ุฉ';
+  SVarOutOfMemory = 'ุงูุนู…ููุฉ ุนูู ู…ุชุญูู Variant ุฎุฑุฌุช ุนู ุงูุฐุงูุฑุฉ ุงูู…ุฎุตุตุฉ';
+  SVarUnexpected = 'ุฎุทุฃ ุบูุฑ ู…ุนุฑูู ูู ู…ุชุญูู variant';
 
   SVarDataClearRecursing = 'Recursion while doing a VarDataClear';
   SVarDataCopyRecursing = 'Recursion while doing a VarDataCopy';
   SVarDataCopyNoIndRecursing = 'Recursion while doing a VarDataCopyNoInd';
   SVarDataInitRecursing = 'Recursion while doing a VarDataInit';
   SVarDataCastToRecursing = 'Recursion while doing a VarDataCastTo';
-  SVarIsEmpty = 'วแใสอๆแ Variant ÝวัÛ';
-  sUnknownFromType = 'แวํใ฿ไ วแสอๆํแ ใไ วแไใุ วแใอฯฯ';
-  sUnknownToType = 'แวํใ฿ไ วแสอๆํแ ลแ์ วแไใุ วแใอฯฯ';
-  SExternalException = 'วำสหไวม ฮวัฬํ %x';
-  SAssertionFailed = 'Ýิแ Ýํ วแสๆ฿ํฯ';
-  SIntfCastError = 'วแๆวฬๅษ Ûํั ใฯฺๆใษ';
+  SVarIsEmpty = 'ุงูู…ุชุญูู Variant ูุงุฑุบ';
+  sUnknownFromType = 'ูุงูู…ูู ุงูุชุญููู ู…ู ุงููู…ุท ุงูู…ุญุฏุฏ';
+  sUnknownToType = 'ูุงูู…ูู ุงูุชุญููู ุฅูู ุงููู…ุท ุงูู…ุญุฏุฏ';
+  SExternalException = 'ุงุณุชุซูุงุก ุฎุงุฑุฌู %x';
+  SAssertionFailed = 'ูุดู ูู ุงูุชูููุฏ';
+  SIntfCastError = 'ุงููุงุฌูุฉ ุบูุฑ ู…ุฏุนูู…ุฉ';
   SSafecallException = 'Exception in safecall method';
   SMonitorLockException = 'Object lock not owned';
   SNoMonitorSupportException = 'Monitor support function not initialized';
-  SNotImplemented = 'วแใําษ Ûํั ใฯฺๆใษ';
+  SNotImplemented = 'ุงูู…ูุฒุฉ ุบูุฑ ู…ุฏุนูู…ุฉ';
   SObjectDisposed = 'Method called on disposed object';
-  SAssertError = '%s (%s, วแำุั %d)';
+  SAssertError = '%s (%s, ุงูุณุทุฑ %d)';
   SAbstractError = 'Abstract Error';
-  SModuleAccessViolation = 'วไสๅว฿ Ýํ วแๆีๆแ แแฺไๆวไ %p Ýํ วแๆอฯษ ''%s''. %s แแฺไๆวไ %p';
-  SCannotReadPackageInfo = 'แวํใ฿ไ วแฯฮๆแ วแ์ ใฺแๆใวส วแัาใษ , แแอาใษ ''%s''';
-  sErrorLoadingPackage = 'แวํใ฿ไ สอใํแ วแอาใษ %s.'+sLineBreak+'%s';
-  SInvalidPackageFile = 'ใแÝ วแอาใษ Ûํั ีวแอ ''%s''';
-  SInvalidPackageHandle = 'ัÞใ ใÞศึ วแอาใษ Ûํั ีวแอ';
-  SDuplicatePackageUnit = 'แวํใ฿ไ สอใํแ วแอาใษ ''%s.''  วไๅว สอๆํ วแๆอฯษ ''%s'', ' +
-    'ๆวแสํ ๅํ วํึว ใอสๆวษ Ýํ วแอาใษ ''%s''';
-  SOSError = 'ฮุร Ýํ วแไูวใ.  วแ฿ๆฯ: %d.'+sLineBreak+'%s%s';
-  SUnkOSError = 'Ýิแ วำสฯฺวม ๆูํÝษ ใไ วแไูวใ';
+  SModuleAccessViolation = 'ุงูุชูุงู ูู ุงููุตูู ููุนููุงู %p ูู ุงููุญุฏุฉ ''%s''. %s ููุนููุงู %p';
+  SCannotReadPackageInfo = 'ูุงูู…ูู ุงูุฏุฎูู ุงูู ู…ุนููู…ุงุช ุงูุฑุฒู…ุฉ , ููุญุฒู…ุฉ ''%s''';
+  sErrorLoadingPackage = 'ูุงูู…ูู ุชุญู…ูู ุงูุญุฒู…ุฉ %s.'+sLineBreak+'%s';
+  SInvalidPackageFile = 'ู…ูู ุงูุญุฒู…ุฉ ุบูุฑ ุตุงูุญ ''%s''';
+  SInvalidPackageHandle = 'ุฑูู… ู…ูุจุถ ุงูุญุฒู…ุฉ ุบูุฑ ุตุงูุญ';
+  SDuplicatePackageUnit = 'ูุงูู…ูู ุชุญู…ูู ุงูุญุฒู…ุฉ ''%s.''  ุงููุง ุชุญูู ุงููุญุฏุฉ ''%s'', ' +
+    'ูุงูุชู ูู ุงูุถุง ู…ุญุชูุงุฉ ูู ุงูุญุฒู…ุฉ ''%s''';
+  SOSError = 'ุฎุทุฃ ูู ุงููุธุงู….  ุงูููุฏ: %d.'+sLineBreak+'%s%s';
+  SUnkOSError = 'ูุดู ุงุณุชุฏุนุงุก ูุธููุฉ ู…ู ุงููุธุงู…';
 {$IFDEF MSWINDOWS}
-  SWin32Error = 'ฮุร ๆํไฯๆา32 , วแัใา: %d.'#10'%s' deprecated 'Use SOSError'; 
+  SWin32Error = 'ุฎุทุฃ ูููุฏูุฒ32 , ุงูุฑู…ุฒ: %d.'#10'%s' deprecated 'Use SOSError'; 
   SUnkWin32Error = 'A Win32 API function failed' deprecated 'Use SUnkOSError';
 {$ENDIF}
-  SNL = 'วแสุศํÞ Ûํั ใัฮี แวำสฮฯวใ ๅะๅ วแใําษ';
+  SNL = 'ุงูุชุทุจูู ุบูุฑ ู…ุฑุฎุต ูุงุณุชุฎุฏุงู… ูุฐู ุงูู…ูุฒุฉ';
 
-  SShortMonthNameJan = '฿ว2';
-  SShortMonthNameFeb = 'ิศว';
-  SShortMonthNameMar = 'ยะว';
-  SShortMonthNameApr = 'ไํำ';
-  SShortMonthNameMay = 'รํว';
-  SShortMonthNameJun = 'อาํ';
-  SShortMonthNameJul = 'สใๆ';
-  SShortMonthNameAug = 'วศ ';
-  SShortMonthNameSep = 'วํแ';
-  SShortMonthNameOct = 'สิ1';
-  SShortMonthNameNov = 'สิ2';
-  SShortMonthNameDec = '฿ว1';
+  SShortMonthNameJan = 'ูุง2';
+  SShortMonthNameFeb = 'ุดุจุง';
+  SShortMonthNameMar = 'ุขุฐุง';
+  SShortMonthNameApr = 'ููุณ';
+  SShortMonthNameMay = 'ุฃูุง';
+  SShortMonthNameJun = 'ุญุฒู';
+  SShortMonthNameJul = 'ุชู…ู';
+  SShortMonthNameAug = 'ุงุจ ';
+  SShortMonthNameSep = 'ุงูู';
+  SShortMonthNameOct = 'ุชุด1';
+  SShortMonthNameNov = 'ุชุด2';
+  SShortMonthNameDec = 'ูุง1';
 
-  SLongMonthNameJan = '฿วไๆไ วแหวไํ';
-  SLongMonthNameFeb = 'ิศวุ';
-  SLongMonthNameMar = 'ยะวั';
-  SLongMonthNameApr = 'ไํำวไ';
-  SLongMonthNameMay = 'รํวั';
-  SLongMonthNameJun = 'อาํัวไ';
-  SLongMonthNameJul = 'สใๆา';
-  SLongMonthNameAug = 'ยศ';
-  SLongMonthNameSep = 'รํแๆแ';
-  SLongMonthNameOct = 'สิัํไ วแรๆแ';
-  SLongMonthNameNov = 'สิัํไ วแหวไํ';
-  SLongMonthNameDec = '฿วไๆไ วแรๆแ';
+  SLongMonthNameJan = 'ูุงููู ุงูุซุงูู';
+  SLongMonthNameFeb = 'ุดุจุงุท';
+  SLongMonthNameMar = 'ุขุฐุงุฑ';
+  SLongMonthNameApr = 'ููุณุงู';
+  SLongMonthNameMay = 'ุฃูุงุฑ';
+  SLongMonthNameJun = 'ุญุฒูุฑุงู';
+  SLongMonthNameJul = 'ุชู…ูุฒ';
+  SLongMonthNameAug = 'ุขุจ';
+  SLongMonthNameSep = 'ุฃูููู';
+  SLongMonthNameOct = 'ุชุดุฑูู ุงูุฃูู';
+  SLongMonthNameNov = 'ุชุดุฑูู ุงูุซุงูู';
+  SLongMonthNameDec = 'ูุงููู ุงูุฃูู';
 
-  SShortDayNameSun = 'วอฯ';
-  SShortDayNameMon = 'ลหไ';
-  SShortDayNameTue = 'หแว';
-  SShortDayNameWed = 'รัศ';
-  SShortDayNameThu = 'ฮใํ';
-  SShortDayNameFri = 'ฬใฺ';
-  SShortDayNameSat = 'ำศส';
+  SShortDayNameSun = 'ุงุญุฏ';
+  SShortDayNameMon = 'ุฅุซู';
+  SShortDayNameTue = 'ุซูุง';
+  SShortDayNameWed = 'ุฃุฑุจ';
+  SShortDayNameThu = 'ุฎู…ู';
+  SShortDayNameFri = 'ุฌู…ุน';
+  SShortDayNameSat = 'ุณุจุช';
 
-  SLongDayNameSun = 'วแรอฯ';
-  SLongDayNameMon = 'วแลหไํไ';
-  SLongDayNameTue = 'วแหแวหวม';
-  SLongDayNameWed = 'วแรัศฺวม';
-  SLongDayNameThu = 'วแฮใํำ';
-  SLongDayNameFri = 'วแฬใฺษ';
-  SLongDayNameSat = 'วแำศส';
+  SLongDayNameSun = 'ุงูุฃุญุฏ';
+  SLongDayNameMon = 'ุงูุฅุซููู';
+  SLongDayNameTue = 'ุงูุซูุงุซุงุก';
+  SLongDayNameWed = 'ุงูุฃุฑุจุนุงุก';
+  SLongDayNameThu = 'ุงูุฎู…ูุณ';
+  SLongDayNameFri = 'ุงูุฌู…ุนุฉ';
+  SLongDayNameSat = 'ุงูุณุจุช';
 
 {$IFDEF POSIX}
   SEraEntries = '';
 {$ENDIF}
 
-  SCannotCreateDir = 'แวํใ฿ไ ลไิวม วแใฬแฯ';
-  SCodesetConversionError = 'Ýิแ Ýํ สอๆํแ Codeset';
+  SCannotCreateDir = 'ูุงูู…ูู ุฅูุดุงุก ุงูู…ุฌูุฏ';
+  SCodesetConversionError = 'ูุดู ูู ุชุญููู Codeset';
 
   // Used by TEncoding
-  SInvalidSourceArray = 'ใีÝๆÝษ วแใีฯั Ûํั ีวแอษ';
-  SInvalidDestinationArray = 'ใีÝๆÝษ วแๆฬๅษ Ûํั ีวแอษ';
-  SCharIndexOutOfBounds = 'Ýๅัำ วแใอัÝ ฮวัฬ วแอฯๆฯ (%d)';
-  SByteIndexOutOfBounds = 'Ýๅัำ วแศฯวํษ ฮวัฬ วแอฯๆฯ (%d)';
-  SInvalidCharCount = 'สฺฯวฯ Ûํั ีวแอ (%d)';
-  SInvalidDestinationIndex = 'Ýๅัำ ๆฬๅษ Ûํั ีวแอ (%d)';
-  SInvalidCodePage = 'ีÝอษ วแ฿ๆฯ Ûํั ีวแอษ';
-  SInvalidEncodingName = 'วำใ วแสัใํา Ûํั ีวแอ';
-  SNoMappingForUnicodeCharacter = 'แวํๆฬฯ สฮุํุ ใไ วฬแ ใอวัÝ ํๆไํ฿ๆฯ ใๆฬๆฯ Ýํ ีÝอษ วแ฿ๆฯ วแๅฯÝ multi-byte code page';
-
+  SInvalidSourceArray = 'ู…ุตูููุฉ ุงูู…ุตุฏุฑ ุบูุฑ ุตุงูุญุฉ';
+  SInvalidDestinationArray = 'ู…ุตูููุฉ ุงููุฌูุฉ ุบูุฑ ุตุงูุญุฉ';
+  SCharIndexOutOfBounds = 'ููุฑุณ ุงูู…ุญุฑู ุฎุงุฑุฌ ุงูุญุฏูุฏ (%d)';
+  SByteIndexOutOfBounds = 'ููุฑุณ ุงูุจุฏุงูุฉ ุฎุงุฑุฌ ุงูุญุฏูุฏ (%d)';
+  SInvalidCharCount = 'ุชุนุฏุงุฏ ุบูุฑ ุตุงูุญ (%d)';
+  SInvalidDestinationIndex = 'ููุฑุณ ูุฌูุฉ ุบูุฑ ุตุงูุญ (%d)';
+  SInvalidCodePage = 'ุตูุญุฉ ุงูููุฏ ุบูุฑ ุตุงูุญุฉ';
+  SInvalidEncodingName = 'ุงุณู… ุงูุชุฑู…ูุฒ ุบูุฑ ุตุงูุญ';
+  SNoMappingForUnicodeCharacter = 'ูุงููุฌุฏ ุชุฎุทูุท ู…ู ุงุฌู ู…ุญุงุฑู ููููููุฏ ู…ูุฌูุฏ ูู ุตูุญุฉ ุงูููุฏ ุงููุฏู multi-byte code page';
+ SOperationCancelled = 'ุงูุนู…ููุฉ ุงูุบูุช';
+ 
 implementation
 
 end.
