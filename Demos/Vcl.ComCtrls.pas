@@ -1,4 +1,4 @@
-{*******************************************************}
+ï»¿{*******************************************************}
 {                                                       }
 {            Arabic Delphi VCL Units                    }
 {                                                       }
@@ -5807,7 +5807,7 @@ begin
       //orwah
 if bidimode=bdRightToLeft then
 begin
-StyleElements := [ seBorder, seFont]; //áßí áÇÊÙåÑ ÇáÚäÇæíä ÈÇáãŞáæÈ
+StyleElements := [ seBorder, seFont]; //Ù„ÙƒÙŠ Ù„Ø§ØªØ¸Ù‡Ø± Ø§Ù„Ø¹Ù†Ø§ÙˆÙŠÙ† Ø¨Ø§Ù„Ù…Ù‚Ù„ÙˆØ¨
 Params.Style := Params.Style or TVS_RTLREADING;
 Params.ExStyle := Params.ExStyle or WS_EX_LAYOUTRTL or WS_EX_NOINHERITLAYOUT;
 end;
@@ -7292,7 +7292,7 @@ begin
   //orwah
   if bidimode=bdRightToLeft then
 begin
-StyleElements := [ seBorder, seFont]; //áßí áÇÊÙåÑ ÇáÚäÇæíä ÈÇáãŞáæÈ
+StyleElements := [ seBorder, seFont]; //Ù„ÙƒÙŠ Ù„Ø§ØªØ¸Ù‡Ø± Ø§Ù„Ø¹Ù†Ø§ÙˆÙŠÙ† Ø¨Ø§Ù„Ù…Ù‚Ù„ÙˆØ¨
   Params.Style := Params.Style or TVS_RTLREADING;
   Params.ExStyle := Params.ExStyle or WS_EX_LAYOUTRTL or WS_EX_RIGHT;
 end;
@@ -8035,7 +8035,7 @@ begin
         //orwah
     if bidimode=bdRightToLeft then
     begin
-     StyleElements := [ seBorder, seFont]; //áßí áÇÊÙåÑ ÇáÚäÇæíä ÈÇáãŞáæÈ
+     StyleElements := [ seBorder, seFont]; //Ù„ÙƒÙŠ Ù„Ø§ØªØ¸Ù‡Ø± Ø§Ù„Ø¹Ù†Ø§ÙˆÙŠÙ† Ø¨Ø§Ù„Ù…Ù‚Ù„ÙˆØ¨
      Params.ExStyle := Params.ExStyle or WS_EX_LAYOUTRTL or WS_EX_NOINHERITLAYOUT;
      end;
 
@@ -22420,7 +22420,7 @@ begin
     if parent.bidimode=bdRightToLeft then
     begin
   //  drawingstyle:=dsGradient;
-       StyleElements := [ seBorder, seFont]; // áßí áÇÊÙåÑ ÇáÚäæÇíä ÈÇáãŞáæÈ
+       StyleElements := [ seBorder, seFont]; // Ù„ÙƒÙŠ Ù„Ø§ØªØ¸Ù‡Ø± Ø§Ù„Ø¹Ù†ÙˆØ§ÙŠÙ† Ø¨Ø§Ù„Ù…Ù‚Ù„ÙˆØ¨
     transparent:=false;
     Params.ExStyle :=Params.ExStyle or WS_EX_TRANSPARENT or WS_EX_RTLREADING or WS_EX_RIGHT or WS_EX_LAYOUTRTL or WS_EX_NOINHERITLAYOUT;
     end;

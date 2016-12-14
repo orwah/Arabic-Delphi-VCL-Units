@@ -46,6 +46,10 @@ object CustomizeFrm: TCustomizeFrm
     TabOrder = 1
     object ToolbarsTab: TTabSheet
       Caption = #1571#1588#1585#1591#1577' '#1575#1604#1571#1583#1608#1575#1578
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       DesignSize = (
         350
         263)
@@ -129,6 +133,10 @@ object CustomizeFrm: TCustomizeFrm
     object ActionsTab: TTabSheet
       Caption = #1575#1604#1571#1581#1583#1575#1579' '
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       DesignSize = (
         350
         263)
@@ -254,6 +262,10 @@ object CustomizeFrm: TCustomizeFrm
     object OptionsTab: TTabSheet
       Caption = #1575#1604#1582#1610#1575#1585#1575#1578
       ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       DesignSize = (
         350
         263)
