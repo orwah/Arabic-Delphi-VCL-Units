@@ -1,4 +1,4 @@
-{*******************************************************}
+ï»¿{*******************************************************}
 {                                                       }
 {            Arabic Delphi VCL Units                    }
 {                                                       }
@@ -6954,13 +6954,13 @@ class procedure MyExceptionClass.MyExceptionHandler(Sender: TObject; E: Exceptio
 begin
 
       if E is EDivByZero then
-        MessageDlg( 'ÍÏË ÇáÎØÃ ÇáÊÇáí : ' +#13+#13+ 'áÇíãßä ÇáŞÓãÉ Úáì ÕİÑ' +#13,mtError,[mbOK],0)
+        MessageDlg( 'Ø­Ø¯Ø« Ø§Ù„Ø®Ø·Ø£ Ø§Ù„ØªØ§Ù„ÙŠ : ' +#13+#13+ 'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ù„Ù‚Ø³Ù…Ø© Ø¹Ù„Ù‰ ØµÙØ±' +#13,mtError,[mbOK],0)
 //else  if E is EConvertError  then
-//        MessageDlg( 'ÍÏË ÇáÎØÃ ÇáÊÇáí : ' +#13+#13+ 'ŞíãÉ ÛíÑ ÕÍíÍÉ!' +#13+E.Message,mtError,[mbOK],0)
+//        MessageDlg( 'Ø­Ø¯Ø« Ø§Ù„Ø®Ø·Ø£ Ø§Ù„ØªØ§Ù„ÙŠ : ' +#13+#13+ 'Ù‚ÙŠÙ…Ø© ØºÙŠØ± ØµØ­ÙŠØ­Ø©!' +#13+E.Message,mtError,[mbOK],0)
 else     if Pos('duplicate values', E.Message) <> 0 then
-     MessageDlg('ÍÏË ÇáÎØÃ ÇáÊÇáí : ' +#13+'áÇíãßä ÇáÍİÙ , ÇáÈíÇäÇÊ ãßÑÑÉ !'+#13+ E.Message+#13,mtError,[mbOK],0)
+     MessageDlg('Ø­Ø¯Ø« Ø§Ù„Ø®Ø·Ø£ Ø§Ù„ØªØ§Ù„ÙŠ : ' +#13+'Ù„Ø§ÙŠÙ…ÙƒÙ† Ø§Ù„Ø­ÙØ¸ , Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª Ù…ÙƒØ±Ø±Ø© !'+#13+ E.Message+#13,mtError,[mbOK],0)
 else
- MessageDlg( 'ÍÏË ÇáÎØÃ ÇáÊÇáí : ' +#13+#13+ E.Message+#13,mtError,[mbOK],0);
+ MessageDlg( 'Ø­Ø¯Ø« Ø§Ù„Ø®Ø·Ø£ Ø§Ù„ØªØ§Ù„ÙŠ : ' +#13+#13+ E.Message+#13,mtError,[mbOK],0);
 
 //    you could also call the default exception handler:
 //     Application.ShowException( E );
