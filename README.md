@@ -1,7 +1,7 @@
 # Arabic-Delphi-VCL-Units
 وحدات مكتبة مكونات دلفي الداعمة للغة العربية
 
-آخر تعديل : 14/12/2016
+آخر تعديل : 19/1/2017
 
 هي عبارة عن جهد متواضع الهدف منه تحديث وحدات ومكتبات دلفي القياسية بحيث تدعم اللغة العربية والرصف من اليمين لليسار , وبالتالي لاتحتاج تنصيب أي مكونات إضافية أو إجراء أي تعديلات على الكود . ويكفي إرفاقها ضمن ملفات المشروع وسيتم تعريب مكونات المشروع تلقائيا .
 
@@ -25,6 +25,9 @@ _______________
 - لاستخدامها في كل المشاريع , يكفي إضافة مسار الوحدات إلى لائحة مسارات مكتبة دلفي من خيار :
 tools -> Options -> Library -> Library Path
 وسيتم التعامل معها باعتبارها موجوده بعد الملفات الرئيسية في ترتيب الاستخدام 
+- يفضل ان تقوم بوضع السطر 
+Application.BiDiMode:= bdRightToLeft;
+عند بدء تنفيذ المشروع لانه مفيد ببعض الحالات 
 
 _______________
 البيئات المدعومة حاليا :
@@ -42,6 +45,11 @@ DrawingStyle = dsGradient
 لإصلاح ذلك يتم الغاء خاصية 
 styleElement : seClient 
 مما قد يتسبب باختلاف شكل المكون قليلا عن شكل الثيم
+- تم ازالة الضبط الالي للمشروع الى يمين لليسار
+باعتبار ان المستخدك قد يصمم مشاريع من اليسار لليمين ولا يحق للوحدات ان تضبط هذه الميزة افتراضيا  . 
+لذلك يجب ان تقوم يدويا بوضع السطر :
+Application.BiDiMode:= bdRightToLeft;
+عند بدء التنفيذ
 
 _______________
 روابط :
@@ -60,8 +68,15 @@ https://github.com/orwah/Arabic-Delphi-VCL-Units/wiki
 
 _______________
 English :
-- This is a replacement for VCL Standard Unites to make them support RTL Alignment (Right to Left) and Arabic Messages and Strings . 
-
+- This is a replacement for VCL Standard Unites to make them support Right to Left RTL Alignment  ( BidiMode = bdRightToLeft ) and Translate alot of Arabic Messages and Strings , 
+including :
+RTL ToolBar
+RTL TreeView
+RTL PageControl
+RTL DateTimePicker
+RTL StatusBar
+RTL ListView 
+etc ...
 
 _______________
 عروة علي عيسى
