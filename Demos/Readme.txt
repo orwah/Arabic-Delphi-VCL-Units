@@ -1,4 +1,4 @@
-# Arabic-Delphi-VCL-Units
+﻿# Arabic-Delphi-VCL-Units
 وحدات مكتبة أدوات دلفي الداعمة للغة العربية
 
 
@@ -13,6 +13,8 @@ _______________
 ضعها بنفس المجلد مع بقية ملفات برنامجك 
 وسيتم التعامل معها اليا من دون تغير اي سطر في الكود
 
+-يفضل ان تقوم بوضع السطر Application.BiDiMode:= bdRightToLeft; عند بدء تنفيذ المشروع لانه مفيد ببعض الحالات
+
 
 _______________
 البيئات المدعومة حاليا :
@@ -21,10 +23,13 @@ _______________
 
 _______________
 المشاكل المعروفة :
-- ToolBar DrawingStyle = dsNormal :
- يتسبب بانقلاب الصور , يمكن تلافي ذلك باختيار 
-DrawingStyle = dsGradient 
+ToolBar DrawingStyle = dsNormal : يتسبب بانقلاب الصور , يمكن تلافي ذلك باختيار DrawingStyle = dsGradient
+التلميحات : Hints لاتعمل بشكل صحيح
+عند استخدام الثيمات تنقلب بعض النصوص لإصلاح ذلك يتم الغاء خاصية styleElement : seClient مما قد يتسبب باختلاف شكل المكون قليلا عن شكل الثيم
+تم ازالة الضبط الالي للمشروع الى يمين لليسار باعتبار ان المستخدك قد يصمم مشاريع من اليسار لليمين ولا يحق للوحدات ان تضبط هذه الميزة افتراضيا . لذلك يجب ان تقوم يدويا بوضع السطر : Application.BiDiMode:= bdRightToLeft; عند بدء التنفيذ
 
+English :
+This is a replacement for VCL Standard Unites to make them support Right to Left RTL Alignment ( BidiMode = bdRightToLeft ) and Translate alot of Arabic Messages and Strings , including : RTL ToolBar RTL TreeView RTL PageControl RTL DateTimePicker RTL StatusBar RTL ListView etc ...
 
 _______________
 روابط :

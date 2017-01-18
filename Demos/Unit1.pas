@@ -1,4 +1,4 @@
-unit Unit1;
+ï»¿unit Unit1;
 
 interface
 
@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.StdCtrls, Vcl.ToolWin,
   Vcl.Menus, System.ImageList, Vcl.ImgList, Vcl.ActnPopup, AdvMemo,
   System.Actions, Vcl.ActnList, Vcl.PlatformDefaultStyleActnCtrls, Vcl.ActnMan,
-  Vcl.BandActn, Vcl.ActnCtrls, Vcl.ActnMenus;
+  Vcl.BandActn, Vcl.ActnCtrls, Vcl.ActnMenus, Vcl.ExtActns, Vcl.StdActns;
 
 type
   TForm1 = class(TForm)
@@ -39,13 +39,7 @@ type
     TabSheet2: TTabSheet;
     ActionMainMenuBar1: TActionMainMenuBar;
     ActionToolBar1: TActionToolBar;
-    Memo1: TMemo;
     ActionManager1: TActionManager;
-    AdvMemoRedo1: TAdvMemoRedo;
-    AdvMemoCut1: TAdvMemoCut;
-    AdvMemoCopy1: TAdvMemoCopy;
-    AdvMemoPaste1: TAdvMemoPaste;
-    AdvMemoDelete1: TAdvMemoDelete;
     PopupActionBar1: TPopupActionBar;
     MenuItem1: TMenuItem;
     N1: TMenuItem;
@@ -63,16 +57,15 @@ type
     ComboBox1: TComboBox;
     Button6: TButton;
     Button5: TButton;
+    FormatRichEditBold1: TRichEditBold;
+    FormatRichEditItalic1: TRichEditItalic;
+    FormatRichEditUnderline1: TRichEditUnderline;
+    RichEdit1: TRichEdit;
     procedure TrackBar1Change(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
-    procedure AdvMemoRedo1Execute(Sender: TObject);
-    procedure AdvMemoCut1Execute(Sender: TObject);
-    procedure AdvMemoCopy1Execute(Sender: TObject);
-    procedure AdvMemoPaste1Execute(Sender: TObject);
-    procedure AdvMemoDelete1Execute(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure ComboBox1Change(Sender: TObject);
@@ -93,35 +86,10 @@ implementation
  uses vcl.themes;
 
 
-procedure TForm1.AdvMemoCopy1Execute(Sender: TObject);
-begin
-//
-end;
-
-procedure TForm1.AdvMemoCut1Execute(Sender: TObject);
-begin
-//
-end;
-
-procedure TForm1.AdvMemoDelete1Execute(Sender: TObject);
-begin
-//
-end;
-
-procedure TForm1.AdvMemoPaste1Execute(Sender: TObject);
-begin
-//
-end;
-
-procedure TForm1.AdvMemoRedo1Execute(Sender: TObject);
-begin
-//
-end;
-
 procedure TForm1.Button1Click(Sender: TObject);
 
 begin
-ShowMessage('ÑÓÇáÉ ÚÑÈíÉ');
+ShowMessage('Ø±Ø³Ø§Ù„Ø© Ø¹Ø±Ø¨ÙŠØ©');
 
 end;
 
@@ -136,7 +104,7 @@ end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
-MessageDlg('ÕäÏæÞ ÑÓÇáÉ ÚÑÈí',mtInformation,mbYesNoCancel,0)
+MessageDlg('ØµÙ†Ø¯ÙˆÙ‚ Ø±Ø³Ø§Ù„Ø© Ø¹Ø±Ø¨ÙŠ',mtInformation,mbYesNoCancel,0)
 end;
 
 procedure TForm1.Button4Click(Sender: TObject);
@@ -152,7 +120,7 @@ end;
 
 procedure TForm1.Button6Click(Sender: TObject);
 begin
-InputBox('ÇáÚäæÇä','ÃÏÎá ÇáÞíãÉ','ÇáÞíãÉ');
+InputBox('Ø§Ù„Ø¹Ù†ÙˆØ§Ù†','Ø£Ø¯Ø®Ù„ Ø§Ù„Ù‚ÙŠÙ…Ø©','Ø§Ù„Ù‚ÙŠÙ…Ø©');
 end;
 
 procedure TForm1.ComboBox1Change(Sender: TObject);

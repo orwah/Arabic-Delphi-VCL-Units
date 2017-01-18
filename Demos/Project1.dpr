@@ -1,4 +1,4 @@
-program Project1;
+ï»¿program Project1;
 
 uses
   Vcl.Forms,
@@ -12,7 +12,7 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.Title := '   ÈÑäÇãÌ ÊÌÑíÈí';
+  Application.Title := '   Ø¨Ø±Ù†Ø§Ù…Ø¬ ØªØ¬Ø±ÙŠØ¨ÙŠ';
   Application.BiDiMode:=bdRightToLeft;
   Application.CreateForm(TForm1, Form1);
   Application.Run;
