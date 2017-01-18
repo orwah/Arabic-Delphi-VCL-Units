@@ -6995,7 +6995,8 @@ initialization
 //if not IsLibrary then { NOT WORK WITH DLL's .. }
  if Assigned(Application)  then
  begin
-  Application.BiDiMode:= bdRightToLeft;
+ // Best to Do this From Your APP 
+  //Application.BiDiMode:= bdRightToLeft;
   Application.OnException :=  MyExceptionClass.MyExceptionHandler;
  end;
 

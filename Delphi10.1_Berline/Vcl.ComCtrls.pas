@@ -4464,6 +4464,10 @@ type
     procedure CMColorChanged(var Message: TMessage); message CM_COLORCHANGED;
     procedure CMFontChanged(var Message: TMessage); message CM_FONTCHANGED;
     procedure CNNotify(var Message: TWMNotifyDT); message CN_NOTIFY;
+	
+	//orwah (Swap VK_LEFT <> VK_RIGHT)
+    procedure WMKeyDown(var Message: TWMKeyDown); message WM_KEYDOWN;
+	
     procedure SetFormat(const Value: String);
   protected
     function CanObserve(const ID: Integer): Boolean; override;
@@ -5715,6 +5719,7 @@ end;
 class constructor TCustomTabControl.Create;
 begin
   TCustomStyleEngine.RegisterStyleHook(TCustomTabControl, TTabControlStyleHook);
+
 end;
 
 constructor TCustomTabControl.Create(AOwner: TComponent);
@@ -5807,7 +5812,9 @@ begin
       //orwah
 if bidimode=bdRightToLeft then
 begin
+if seClient in StyleElements then
 StyleElements := [ seBorder, seFont]; //لكي لاتظهر العناوين بالمقلوب
+
 Params.Style := Params.Style or TVS_RTLREADING;
 Params.ExStyle := Params.ExStyle or WS_EX_LAYOUTRTL or WS_EX_NOINHERITLAYOUT;
 end;
@@ -5839,12 +5846,15 @@ begin
     FCanvas.FillRect(Rect);
 end;
 
+
+
 function TCustomTabControl.GetDisplayRect: TRect;
 begin
   Result := ClientRect;
   SendGetStructMessage(Handle, TCM_ADJUSTRECT, 0, Result, True);
   if TabPosition = tpTop then
     Inc(Result.Top, 2);
+
 end;
 
 function TCustomTabControl.GetImageIndex(TabIndex: Integer): Integer;
@@ -6508,7 +6518,7 @@ var
   Details: TThemedElementDetails;
 begin
   if (PageControl <> nil) and StyleServices.Enabled and
-    //orwah (seClient in PageControl.StyleElements) and
+    // (seClient in PageControl.StyleElements) and   // orwah
      ((PageControl.Style = tsTabs) or TStyleManager.IsCustomStyleActive) then
   begin
     GetWindowRect(Handle, R);
@@ -11911,7 +11921,7 @@ begin
         end;
     end;
 
-    //orwah
+
     //orwah
 // if bidimode=bdRightToLeft then
 //begin
@@ -28526,6 +28536,19 @@ begin
     else
       SetDateTime(LDateTime);
   end;
+end;
+
+procedure TDateTimePicker.WMKeyDown(var Message: TWMKeyDown);
+begin
+//orwah
+// (Swap VK_LEFT <> VK_RIGHT)
+if message.CharCode  = VK_Left then
+ message.CharCode  := VK_Right
+ else
+if message.CharCode  = VK_Right then
+ message.CharCode  := VK_Left;
+
+inherited;
 end;
 
 procedure TDateTimePicker.SetFormat(const Value: string);
