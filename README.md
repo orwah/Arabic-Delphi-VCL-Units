@@ -1,4 +1,5 @@
 # Arabic-Delphi-VCL-Units
+# Delphi RTL BidiRightToLeft Arabic VCL Units
 وحدات مكتبة مكونات دلفي الداعمة للغة العربية
 
 آخر تعديل : 19/1/2017
