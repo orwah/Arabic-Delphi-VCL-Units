@@ -186,7 +186,9 @@ var
 begin
 //orwah
 //error : parent is nil !! . so we use  Application.MainForm .
-if Application.MainForm.BiDiMode=bdRightToLeft then
+if not UseRightToLeftAlignment then
+if Assigned(Application) AND Assigned(Application.MainForm) then
+if Application.MainForm.UseRightToLeftAlignment then
 begin
 BiDiMode:=bdRightToLeft  ;
 GlyphLayout:= blGlyphright ;
@@ -265,7 +267,7 @@ end;
         LMenuItemMargins.cxRightWidth - LSubMenuGlyphMargins.cxLeftWidth;
 
         //orwah
-      if BiDiMode=bdRightToLeft  then
+      if UseRightToLeftAlignment  then
       OffsetRect(LBounds,Offset - LWidth, 0)
       else
       OffsetRect(LBounds,Offset, 0);
@@ -347,7 +349,7 @@ begin
   else
   begin
   //orwah
-  if BiDiMode=bdRightToLeft then
+  if UseRightToLeftAlignment then
   StyleServices.DrawText(DC, LDetails, LCaption, Rect, [tfRight, tfRtlReading], LColor)
   else
     StyleServices.DrawText(DC, LDetails, LCaption, Rect,LFormats , LColor);
@@ -484,7 +486,7 @@ begin
     Canvas.Font.Style := Canvas.Font.Style + [fsBold];
   LRect := FPaintRect;
   //orwah
-  if bidimode=bdrighttoleft then
+  if UseRightToLeftAlignment then
   begin
   LRect.Right:=LRect.Right- GetImageSize.X-14;
 
