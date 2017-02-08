@@ -1289,7 +1289,7 @@ function PromptForFileName(var AFileName: string; const AFilter: string = '';
 var
   ForceCurrentDirectory: Boolean = False;
   UseLatestCommonDialogs: Boolean = True;
-
+  IsUseRightToLeft:Boolean = True; //يستخدم الاتجاه من اليمين لليسار
 implementation
 
 uses
@@ -6170,7 +6170,10 @@ begin
   with Result do
   begin
     Font := Screen.MessageFont;
-    BiDiMode := Application.BiDiMode;
+    //orwah
+    if IsUseRightToLeft then
+    BiDiMode := bdRightToLeft;
+
     BorderStyle := bsDialog;
     Canvas.Font := Font;
     KeyPreview := True;
@@ -6253,7 +6256,7 @@ begin
         AutoSize := True;
 		
         //orwah
-        if Application.BiDiMode=bdRightToLeft then
+        if IsUseRightToLeft then
         SetBounds(Result.width-58, VertMargin, 32, 32)
         else
         SetBounds(HorzMargin, VertMargin, 32, 32);
@@ -6721,7 +6724,9 @@ begin
   with Form do
     try
       // orwah
-      BiDiMode := Application.BiDiMode;
+      if IsUseRightToLeft then
+      BiDiMode := bdRightToLeft;
+
       FCloseQueryFunc :=
         function: Boolean
         var
@@ -6766,7 +6771,7 @@ begin
 		  //Left := MulDiv(8, DialogUnits.X, 4);
 		  
           // orwah
-          if BiDiMode = bdRightToLeft then
+          if IsUseRightToLeft then
             Left := Form.Width - Width - 12
           else
             Left := MulDiv(8, DialogUnits.X, 4);
@@ -6782,7 +6787,7 @@ begin
           PasswordChar := GetPasswordChar(APrompts[I]);
 
           // orwah
-          if BiDiMode = bdRightToLeft then
+          if IsUseRightToLeft then
             Left := 8
           else
             Left := Prompt.Left + MaxPromptWidth;
@@ -6791,7 +6796,7 @@ begin
             (GetTextBaseline(Edit, Canvas) - GetTextBaseline(Prompt, Canvas));
 
           // orwah
-          if BiDiMode = bdRightToLeft then
+          if IsUseRightToLeft then
             Width := Form.ClientWidth - Left - Prompt.Width - 10
           else
             Width := Form.ClientWidth - Left - MulDiv(8, DialogUnits.X, 4);
@@ -6814,7 +6819,7 @@ begin
         Default := True;
 
         // orwah
-        if BiDiMode = bdRightToLeft then
+        if IsUseRightToLeft then
           SetBounds(Form.ClientWidth - (ButtonWidth + MulDiv(8, DialogUnits.X, 4)), ButtonTop, ButtonWidth,
             ButtonHeight)
         else
@@ -6830,7 +6835,7 @@ begin
         Cancel := True;
 
         // orwah
-        if BiDiMode = bdRightToLeft then
+        if IsUseRightToLeft then
           SetBounds(Form.ClientWidth - (ButtonWidth + MulDiv(8, DialogUnits.X, 4)) * 2, ButtonTop, ButtonWidth,
             ButtonHeight)
         else
@@ -6992,11 +6997,19 @@ initialization
   TLoginCredentialService.RegisterLoginHandler(TLoginCredentialService.DefaultUsrPwDm, TDefaultLoginCredentials.LoginEvent);
   TLoginCredentialService.RegisterLoginHandler(TLoginCredentialService.DefaultUsrPw, TDefaultLoginCredentials.LoginEventUsrPw);
 // orwah
+ //نعطي قيمة افتراضية للاتجاه
+  IsUseRightToLeft:= true ;
+  
 //if not IsLibrary then { NOT WORK WITH DLL's .. }
+
  if Assigned(Application)  then
  begin
- // Best to Do this From Your APP 
-  //Application.BiDiMode:= bdRightToLeft;
+   if Assigned(Application.MainForm) then
+     if Application.MainForm.UseRightToLeftAlignment then
+       Application.BiDiMode := bdRightToLeft
+     else
+       IsUseRightToLeft := False;
+   //if not IsLibrary then
   Application.OnException :=  MyExceptionClass.MyExceptionHandler;
  end;
 
