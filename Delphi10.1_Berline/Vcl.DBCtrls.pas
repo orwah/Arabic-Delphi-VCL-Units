@@ -5742,7 +5742,7 @@ begin
       Style := Style or WS_BORDER;
 
       //orwah
-      if BiDiMode=bdRightToLeft then
+      if UseRightToLeftAlignment then
       Params.ExStyle := Params.ExStyle or WS_EX_LAYOUTRTL or WS_EX_NOINHERITLAYOUT;
 end;
 
