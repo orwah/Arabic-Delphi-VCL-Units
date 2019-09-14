@@ -47,22 +47,19 @@ object Form1: TForm1
       0000000000FFFFFFFFFFFFFFFF00000000000000000000000001026400320022
       0000000000000000000000FFFFFFFFFFFFFFFF00000000000000000000000001
       0264003300}
-    ExplicitHeight = 287
   end
   object PageControl1: TPageControl
     Left = 11
     Top = 36
     Width = 533
     Height = 372
-    ActivePage = TabSheet1
+    ActivePage = TabSheet3
     Anchors = [akLeft, akTop, akRight, akBottom]
     TabHeight = 20
     TabOrder = 1
-    ExplicitHeight = 374
     object TabSheet1: TTabSheet
       Caption = '   '#1605#1603#1608#1606#1575#1578'   '
       PopupMenu = PopupMenu1
-      ExplicitHeight = 344
       DesignSize = (
         525
         342)
@@ -72,8 +69,8 @@ object Form1: TForm1
         Width = 167
         Height = 21
         Anchors = [akTop, akRight]
-        Date = 42637.106795046300000000
-        Time = 42637.106795046300000000
+        Date = 42637.000000000000000000
+        Time = 0.106795046296611000
         TabOrder = 0
       end
       object ListView1: TListView
@@ -145,7 +142,7 @@ object Form1: TForm1
         Width = 288
         Height = 160
         Anchors = [akTop, akRight]
-        Date = 42641.440620046300000000
+        Date = 42641.000000000000000000
         TabOrder = 5
       end
       object HeaderControl1: THeaderControl
@@ -172,7 +169,6 @@ object Form1: TForm1
     object TabSheet3: TTabSheet
       Caption = '  '#1589#1606#1575#1583#1610#1602' '#1575#1604#1585#1587#1575#1574#1604' '
       ImageIndex = 2
-      ExplicitHeight = 344
       DesignSize = (
         525
         342)
@@ -225,14 +221,12 @@ object Form1: TForm1
         Caption = 'Out Of Bound'
         TabOrder = 4
         OnClick = Button5Click
-        ExplicitLeft = 375
       end
     end
     object TabSheet2: TTabSheet
       Caption = 'Action Bars'
       ImageIndex = 2
       PopupMenu = PopupActionBar1
-      ExplicitHeight = 344
       object ActionMainMenuBar1: TActionMainMenuBar
         Left = 0
         Top = 0
@@ -282,7 +276,7 @@ object Form1: TForm1
         Width = 525
         Height = 283
         Align = alClient
-        Font.Charset = ARABIC_CHARSET
+        Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
         Font.Height = -11
         Font.Name = 'Tahoma'
@@ -292,10 +286,6 @@ object Form1: TForm1
         ParentFont = False
         TabOrder = 0
         Zoom = 100
-        ExplicitLeft = 96
-        ExplicitTop = 128
-        ExplicitWidth = 185
-        ExplicitHeight = 89
       end
     end
   end
@@ -315,8 +305,7 @@ object Form1: TForm1
         Text = #1605#1587#1575#1593#1583#1577
         Width = 150
       end>
-    SimpleText = #9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9'test'
-    ExplicitTop = 416
+    SimpleText = #9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9#9'test'
   end
   object ToolBar1: TToolBar
     Left = 0
@@ -333,9 +322,6 @@ object Form1: TForm1
     ShowCaptions = True
     TabOrder = 3
     Transparent = False
-    ExplicitLeft = 32
-    ExplicitTop = 8
-    ExplicitWidth = 671
     object ToolButton1: TToolButton
       Left = 0
       Top = 0
@@ -397,7 +383,6 @@ object Form1: TForm1
     Anchors = [akTop, akRight]
     TabOrder = 5
     OnChange = ComboBox1Change
-    ExplicitLeft = 530
   end
   object ImageList1: TImageList
     Height = 24
@@ -405,7 +390,7 @@ object Form1: TForm1
     Left = 56
     Top = 121
     Bitmap = {
-      494C010106001400640018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010106001400040018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000003000000001002000000000000048
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
