@@ -24,12 +24,7 @@ _______________
 - إذا اردت استخدام الوحدات في مشروع واحد فقط تستطيع إرفقات ملفات الوحدات مباشرة مع المشروع 
 .ضعها بنفس المجلد مع بقية وحدات المشروع وسيتم التعامل معها اليا من دون تغير اي سطر في الكود
 - أو بإمكانك فصلها في مجلد منفصل عن ملفات المشروع , ووضع روابط لها من ملف المشروع .dpr :
-  Vcl.Dialogs in 'Arabic_Units/Vcl.Dialogs.pas',
-  Vcl.Consts in 'Arabic_Units/Vcl.Consts.pas',
-  Vcl.ComCtrls in 'Arabic_Units/Vcl.ComCtrls.pas',
-  System.SysConst in 'Arabic_Units/System.SysConst.pas',
-  System.RTLConsts in 'Arabic_Units/System.RTLConsts.pas',
-
+![](https://github.com/orwah/Arabic-Delphi-VCL-Units/blob/master/Pics/add_units_folder_to_project_dpr.png)
 - لاستخدامها في كل المشاريع , يكفي إضافة مسار الوحدات إلى لائحة مسارات مكتبة دلفي من خيار :
 tools -> Options -> Library -> Library Path
 وسيتم التعامل معها باعتبارها موجوده بعد الملفات الرئيسية في ترتيب الاستخدام 
