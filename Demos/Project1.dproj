@@ -117,6 +117,10 @@
         <DCCReference Include="Arabic_Units\System.RTLConsts.pas"/>
         <DCCReference Include="Arabic_Units\Data.DBConsts.pas"/>
         <DCCReference Include="Arabic_Units\Data.Win.ADOConst.pas"/>
+        <DCCReference Include="Arabic_Units\Vcl.BandActn.pas"/>
+        <DCCReference Include="Arabic_Units\Vcl.CustomizeDlg.pas"/>
+        <DCCReference Include="Arabic_Units\Vcl.SysStyles.pas"/>
+        <DCCReference Include="Arabic_Units\Vcl.ThemedActnCtrls.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

@@ -13,7 +13,11 @@ uses
   System.SysConst in 'Arabic_Units/System.SysConst.pas',
   System.RTLConsts in 'Arabic_Units/System.RTLConsts.pas',
   Data.DBConsts in 'Arabic_Units/Data.DBConsts.pas',
-  Data.Win.ADOConst in 'Arabic_Units/Data.Win.ADOConst.pas';
+  Data.Win.ADOConst in 'Arabic_Units/Data.Win.ADOConst.pas',
+  Vcl.BandActn in 'Arabic_Units/Vcl.BandActn.pas',
+  Vcl.CustomizeDlg in 'Arabic_Units/Vcl.CustomizeDlg.pas',
+  Vcl.SysStyles in 'Arabic_Units/Vcl.SysStyles.pas',
+  Vcl.ThemedActnCtrls in 'Arabic_Units/Vcl.ThemedActnCtrls.pas';
 
 {$R *.res}
 
