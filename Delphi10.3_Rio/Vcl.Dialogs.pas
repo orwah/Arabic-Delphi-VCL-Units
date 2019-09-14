@@ -7126,16 +7126,18 @@ initialization
 // orwah
  //نعطي قيمة افتراضية للاتجاه
   IsUseRightToLeft:= true ;
-  
+  Application.BiDiMode := bdRightToLeft;
 //if not IsLibrary then { NOT WORK WITH DLL's .. }
 
  if Assigned(Application)  then
  begin
    if Assigned(Application.MainForm) then
-     if Application.MainForm.UseRightToLeftAlignment then
-       Application.BiDiMode := bdRightToLeft
-     else
+   begin
+     Application.BiDiMode := Application.MainForm.BiDiMode;
+     if not Application.MainForm.UseRightToLeftAlignment then
        IsUseRightToLeft := False;
+   end;
+
    //if not IsLibrary then
   Application.OnException :=  MyExceptionClass.MyExceptionHandler;
  end;
